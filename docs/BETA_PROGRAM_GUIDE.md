@@ -1,7 +1,8 @@
 # Beta Program Guide
 
 **Project:** ORCHORDS  
-**Owners:** ORCHORDS (QA Lead — testing program), ORCHORDS (Community Manager — beta community)  
+
+**Owner:** ORCHORDS (QA Lead), ORCHORDS (Community Manager)**Owners:** ORCHORDS (QA Lead — testing program), ORCHORDS (Community Manager — beta community)  
 **Reviewers:** ORCHORDS (CTO), ORCHORDS (Product Manager)  
 **ISO Standards:** ISO/IEC 12207:2017 (validation), ISO/IEC 25010:2023 (reliability, usability)  
 **Version:** 1.0.0  
@@ -46,9 +47,6 @@ The ORCHORDS Beta Program gives selected users early access to pre-release build
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
-
----
-
 
 ---
 
@@ -218,6 +216,21 @@ Top-performing beta testers are:
 *Grounded in: ISO/IEC 12207:2017 §6.4 (Validation Process), ISO/IEC 25010:2023 (Reliability, Usability)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -226,8 +239,8 @@ Top-performing beta testers are:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | ORCHORDS, ORCHORDS | Initial version |
+| 1.0.1 | June 2026 | ORCHORDS, ORCHORDS | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
