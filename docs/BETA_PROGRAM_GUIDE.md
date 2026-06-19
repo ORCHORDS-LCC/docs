@@ -2,7 +2,7 @@
 
 **Project:** ORCHORDS  
 
-**Owner:** ORCHORDS (QA Lead), ORCHORDS (Community Manager)**Owners:** ORCHORDS (QA Lead — testing program), ORCHORDS (Community Manager — beta community)  
+**Owner:** ORCHORDS (QA Lead — testing program), ORCHORDS (Community Manager — beta community)  
 **Reviewers:** ORCHORDS (CTO), ORCHORDS (Product Manager)  
 **ISO Standards:** ISO/IEC 12207:2017 (validation), ISO/IEC 25010:2023 (reliability, usability)  
 **Version:** 1.0.0  
