@@ -1,0 +1,76 @@
+# ORCHORDS â€” Code Owners
+# Each file/path is owned by the listed GitHub/Fogejo users.
+# PRs touching these paths require review from the owner.
+# Format: pattern<space>owners
+
+# Default owner
+*                                               @cto @orchords
+
+# Meta / Documentation / Style / Help / User docs
+/STYLE_GUIDE.md                                 @docs
+/README.md                                      @docs
+/help/                                          @docs
+/user/                                          @docs
+
+# Releases
+/releases/                                      @release
+
+# Engineering
+/engineering/BUILD_SYSTEM.md                    @devops
+/engineering/CI_CD_PIPELINE.md                  @devops
+/engineering/BRANCHING_STRATEGY.md              @devops
+/engineering/TEST_STRATEGY.md                   @devops
+/operations/INFRASTRUCTURE_OVERVIEW.md          @devops
+/engineering/TECHNICAL_STANDARDS.md             @cto
+/engineering/ARCHITECTURE_OVERVIEW.md           @cto
+/engineering/BACKUP_DISASTER_RECOVERY.md        @cto
+
+# UI/UX
+/ui/COMPONENT_LIBRARY.md                        @ui
+/ACCESSIBILITY_COMPLIANCE.md                    @ui
+
+# Graphics
+/graphics/                                      @graphics
+/PERFORMANCE_BENCHMARKS.md                      @graphics
+
+# Codecs
+/codecs/                                        @codec
+
+# Backend
+/backend/                                       @backend
+
+# Effects
+/effects/                                       @effects
+/OPENFX_PLUGIN_GUIDE.md                         @effects
+
+# Timeline
+/timeline/                                      @timeline
+
+# Audio
+/audio/                                         @audio
+
+# Product
+/product/                                       @product
+/PROJECT_SCHEDULE.md                            @product
+
+# Operations
+/operations/ONBOARDING_GUIDE.md                 @operations
+
+# Community
+/community/                                     @community
+
+# Marketing
+/marketing/                                     @marketing
+
+# Business
+/business/                                      @business
+
+# QA
+/BETA_PROGRAM_GUIDE.md                          @qa
+
+# Security
+/SECURITY_POLICY.md                             @cto
+
+# Operations manual
+/TEAM_OPERATIONS_MANUAL.md                      @cto
+/ORCHORDS_TEAM.md                          @orchords
