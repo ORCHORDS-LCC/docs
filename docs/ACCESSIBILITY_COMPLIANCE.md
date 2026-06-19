@@ -2,7 +2,7 @@
 
 **Project:** ORCHORDS  
 
-**Owner:** ORCHORDS (UI/UX Lead), ORCHORDS (UX Designer)**Owners:** ORCHORDS (UI implementation), ORCHORDS (UX design audit)  
+**Owner:** ORCHORDS (UI/UX Lead — implementation), ORCHORDS (UX Designer — design audit)  
 **Reviewers:** ORCHORDS (CTO), ORCHORDS (UX Designer)  
 **ISO Standards:** ISO 9241-171 (ergonomic requirements for office work with visual display terminals), ISO/IEC 25010:2023 (usability — accessibility subcharacteristic)  
 **Version:** 1.0.0  
