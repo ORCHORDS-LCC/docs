@@ -1,7 +1,7 @@
 # Build System
 
 **Project:** ORCHORDS  
-**Owner:** ORCHORDS (DevOps Lead)  
+**Owner:** ORCHORDS (Build & Release Engineer)  
 **Reviewers:** ORCHORDS (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (development process), ISO/IEC 25010:2023 (maintainability, portability)  
 **Version:** 1.0.0  
