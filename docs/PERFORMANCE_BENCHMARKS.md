@@ -2,7 +2,7 @@
 
 **Project:** ORCHORDS  
 
-**Owner:** ORCHORDS (Graphics Engineer), ORCHORDS (QA Lead), ORCHORDS (Codec Specialist)**Owners:** ORCHORDS (Graphics — GPU), ORCHORDS (Codec — encode/decode), ORCHORDS (QA — measurement)  
+**Owner:** ORCHORDS (Graphics Engineer — GPU), ORCHORDS (Codec Specialist — encode/decode), ORCHORDS (QA Lead — measurement)  
 **Reviewers:** ORCHORDS (CTO)  
 **ISO Standards:** ISO/IEC 25010:2023 (performance efficiency, time behavior, resource utilization)  
 **Version:** 1.0.0  
