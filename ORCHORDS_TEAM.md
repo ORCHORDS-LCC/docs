@@ -1,5 +1,63 @@
 # ORCHORDS Team
 
+**Project:** ORCHORDS
+**Owner:** ORCHORDS (CEO)
+**Reviewers:** ORCHORDS (CTO)
+**ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
+**Version:** 1.0.0
+**Last Updated:** June 2026
+
+---
+
+## Overview
+
+This document provides the canonical reference for the ORCHORDS team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
+
+---
+
+## Scope & Audience
+
+| Aspect | Definition |
+|---|---|
+| **Scope** | This document covers orchords team for the ORCHORDS team. |
+| **Diátaxis form** | Reference |
+| **Primary audience** | All team members |
+| **Secondary audience** | External partners and recruiters |
+
+---
+
+## Contents
+
+- [Leadership](#leadership)
+  - [1. ORCHORDS — Founder & CEO](#1-orchords-dev-founder-ceo)
+  - [2. ORCHORDS — Co-Founder & CTO](#2-kirk-beka-cofounder-cto)
+- [Engineering Department](#engineering-department)
+  - [3. ORCHORDS — Lead UI/UX Engineer](#3-alex-chen-lead-uiux-engineer)
+  - [4. ORCHORDS — Senior Backend Developer](#4-maya-rodriguez-senior-backend-developer)
+  - [5. ORCHORDS — Senior Graphics Engineer](#5-james-park-senior-graphics-engineer)
+  - [6. ORCHORDS — Video Codec Engineer](#6-sophie-williams-video-codec-engineer)
+  - [7. ORCHORDS — Effects & Compositing Engineer](#7-daniel-kim-effects-compositing-engineer)
+  - [8. ORCHORDS — Timeline Engineer](#8-emma-thompson-timeline-engineer)
+  - [9. ORCHORDS — Audio Engineer](#9-ryan-foster-audio-engineer)
+  - [10. ORCHORDS — Quality Assurance Lead](#10-lisa-martinez-quality-assurance-lead)
+- [Product & Design](#product-design)
+  - [11. ORCHORDS — Product Manager](#11-chris-taylor-product-manager)
+  - [12. ORCHORDS — UX Designer](#12-nina-patel-ux-designer)
+  - [13. ORCHORDS — Motion Graphics Designer](#13-david-lee-motion-graphics-designer)
+- [DevOps & Infrastructure](#devops-infrastructure)
+  - [14. ORCHORDS — DevOps Engineer](#14-mike-johnson-devops-engineer)
+  - [15. ORCHORDS — Build & Release Engineer](#15-sarah-miller-build-release-engineer)
+- [Marketing & Community](#marketing-community)
+  - [16. ORCHORDS — Marketing Manager](#16-jason-wong-marketing-manager)
+  - [17. ORCHORDS — Community Manager](#17-rachel-green-community-manager)
+  - [18. ORCHORDS — Technical Writer](#18-tom-anderson-technical-writer)
+- [Business & Operations](#business-operations)
+  - [19. ORCHORDS — Operations Manager](#19-amanda-clark-operations-manager)
+  - [20. ORCHORDS — Business Development](#20-kevin-brown-business-development)
+- [Team Structure Overview](#team-structure-overview)
+- [Hiring Priorities (In Order)](#hiring-priorities-in-order)
+
+---
 **Company:** ORCHORDS  
 **Product:** ORCHORDS (Professional Video Editor)  
 **Website:** www.orchords.com  
@@ -423,3 +481,35 @@ ORCHORDS (CEO)
 
 **Last Updated:** June 2025  
 **Version:** 1.0
+
+---
+
+## References
+
+### Internal Documents
+
+- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) â€” Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [docs/STYLE_GUIDE.md](./docs/STYLE_GUIDE.md) for the full standards catalog
+
+---
+
+## Document Maintenance
+
+### Change Log
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 1.0.0 | June 2026 | ORCHORDS | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
+
+### Review Cadence
+
+- **Next review:** September 2026
+- **Reviewer:** ORCHORDS (CTO)
+- **Cadence:** Quarterly
