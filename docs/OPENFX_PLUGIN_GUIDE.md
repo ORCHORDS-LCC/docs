@@ -2,7 +2,7 @@
 
 **Project:** ORCHORDS  
 
-**Owner:** ORCHORDS (Effects Lead), ORCHORDS (Technical Writer)**Owners:** ORCHORDS (Effects & Compositing Engineer — SDK), ORCHORDS (Technical Writer — user guide)  
+**Owner:** ORCHORDS (Effects & Compositing Engineer — SDK), ORCHORDS (Technical Writer — user guide)  
 **Reviewers:** ORCHORDS (CTO)  
 **ISO Standards:** ISO/IEC 12207:2017 (development — API documentation), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
