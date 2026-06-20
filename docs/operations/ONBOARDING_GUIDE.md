@@ -61,7 +61,7 @@ Before a new hire's first day, the following must be complete:
 
 - [ ] Laptop ordered and configured (or existing machine re-imaged)
 - [ ] Microsoft email account created (`name@orchords.dev`)
-- [ ] GitHub organization invite sent (`github.com/ORCHORDS-LCC`)
+- [ ] Forgejo organization invite sent (`https://github.com/ORCHORDS-LCC/docs`)
 - [ ] Azure DevOps / GitHub Actions access provisioned
 - [ ] Firebase project access granted (if backend or cloud role)
 - [ ] Slack workspace invite sent
