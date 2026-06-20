@@ -107,6 +107,16 @@ All documents in this directory follow the conventions defined in [`STYLE_GUIDE.
 | [`ui/COMPONENT_LIBRARY.md`](./ui/COMPONENT_LIBRARY.md) | ORCHORDS | Qt6 widget patterns, DPI handling, shortcuts |
 | [`backend/API_CONTRACT.md`](./backend/API_CONTRACT.md) | ORCHORDS | Firebase API endpoints, auth flow, sync protocol |
 
+
+
+### Audio Subsystem
+
+| Document | Owner | Description |
+|----------|-------|-------------|
+| [Transcriber Pipeline](audio/TRANSCRIBER_PIPELINE.md) | ORCHORDS | v1.3.0 — Demucs vocal separation + Whisper ASR + chapter detection + JSONL streaming |
+| [Transcriber Quality Audit](audio/TRANSCRIBER_QUALITY_AUDIT.md) | ORCHORDS | WER/CER measurements across real-world and synthetic audio |
+| [VST SDK Integration](audio/VST_SDK_INTEGRATION.md) | ORCHORDS | VST plugin hosting architecture and delay compensation |
+
 ### User Documentation
 *Owner: ORCHORDS (Technical Writer)*
 
