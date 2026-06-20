@@ -78,7 +78,7 @@ All executable code shipped by ORCHORDS -- installers, DLLs, executables, and cl
 
 | Certificate | Expiry | Renewal Deadline | Owner |
 |---|---|---|---|
-| Windows Code Signing | TBD | 60 days before expiry | ORCHORDS |
+| Windows Code Signing | June 2027 | April 2027 | ORCHORDS |
 
 ---
 
