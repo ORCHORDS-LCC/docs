@@ -2375,6 +2375,7 @@ ORCHORDS drives business development for ORCHORDS, focusing on partnerships, ent
 | #design | Design reviews and feedback | Product/Design |
 | #bugs | Bug tracking and triage | QA, Engineering |
 | #releases | Release coordination | DevOps, Engineering |
+| #ci-alerts | CI/CD pipeline failures and build status | DevOps, Engineering |
 | #random | Off-topic chat | All |
 
 ## MEETING SCHEDULE
