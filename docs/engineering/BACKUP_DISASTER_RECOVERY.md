@@ -210,10 +210,10 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 | Role | Name | Contact |
 |---|---|---|
-| Primary incident commander | ORCHORDS | |
-| Secondary incident commander | ORCHORDS | |
-| Infrastructure backup | ORCHORDS | |
-| Executive escalation | ORCHORDS | |
+| Primary incident commander | ORCHORDS | kirk@orchords.dev / Slack: @cto |
+| Secondary incident commander | ORCHORDS | mike@orchords.dev / Slack: @devops |
+| Infrastructure backup | ORCHORDS | sarah@orchords.dev / Slack: @release |
+| Executive escalation | ORCHORDS | admin@orchords.dev / Slack: @orchords |
 | Firebase support | Google Cloud Console | |
 | Azure support | Azure Portal / CSAM | |
 
