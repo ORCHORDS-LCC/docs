@@ -138,7 +138,7 @@ Before a new hire's first day, the following must be complete:
 
 - [ ] Read [`docs/engineering/TEST_STRATEGY.md`](../../docs/engineering/TEST_STRATEGY.md)
 - [ ] Read [`docs/PERFORMANCE_BENCHMARKS.md`](../../docs/PERFORMANCE_BENCHMARKS.md)
-- [ ] Access bug tracker (Linear) and understand issue lifecycle
+- [ ] Access bug tracker at [orchords.com](https://orchords.com) and understand issue lifecycle
 - [ ] Run the smoke test suite on the latest build
 - [ ] Understand the severity scale (S0–S3)
 
@@ -205,8 +205,8 @@ Before a new hire's first day, the following must be complete:
 |---|---|
 | Company handbook | Shared in onboarding email |
 | Team roster | [`ORCHORDS_TEAM.md`](../../ORCHORDS_TEAM.md) |
-| Bug tracker (Linear) | link in Slack |
-| GitHub repos | github.com/ORCHORDS-LCC |
+| Bug tracker | [orchords.com](https://orchords.com) |
+| Git repos (Forgejo) | [orchords.com](https://orchords.com) |
 | Documentation index | [`docs/README.md`](../../docs/README.md) |
 | ORCHORDS beta builds | Shared link in onboarding email |
 | Slack workspace | orchords.slack.com |
