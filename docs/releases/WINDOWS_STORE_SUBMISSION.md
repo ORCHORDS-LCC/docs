@@ -170,7 +170,7 @@ az signing certificate sign --file ORCHORDS.msix --output ORCHORDS_signed.msix
 4. Complete age rating questionnaire
 5. Complete privacy policy declaration
 6. Set pricing and distribution:
-   - **Pricing:** $XX.XX USD (set per ORCHORDS + ORCHORDS)
+   - **Pricing:** $49.99 USD (set per ORCHORDS + ORCHORDS)
    - **Countries:** All markets (or select specific markets)
    - **Distribution:** Public / Private (beta)
 7. Submit for certification
