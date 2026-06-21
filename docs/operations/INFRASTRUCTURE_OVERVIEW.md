@@ -1,3 +1,10 @@
+---
+title: "Infrastructure Overview"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Infrastructure Overview
 
 **Project:** ORCHORDS  
@@ -5,7 +12,7 @@
 **Reviewers:** ORCHORDS (CTO), ORCHORDS (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (Annex A: Operational Security), ISO/IEC 12207:2017 (development infrastructure)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -71,8 +78,8 @@ This document describes ORCHORDS's cloud and development infrastructure -- the A
 | **Azure Blob Storage** | Standard | CI artifacts, release builds, backups | Restricted |
 | **Azure Key Vault** | Standard | Secrets, signing certificates | Admin only |
 | **Azure Monitor / Log Analytics** | — | Infrastructure monitoring and alerting | ORCHORDS + ORCHORDS |
-| **GitHub Actions** | SaaS | CI/CD pipelines | All engineers |
-| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted GitHub Actions runners | ORCHORDS |
+| **Forgejo Actions (self-hosted)** | On-prem | CI/CD pipelines | All engineers |
+| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted Forgejo Actions runners (GitHub Actions–compatible) | ORCHORDS |
 
 ### Azure Blob Storage Containers
 
@@ -167,7 +174,7 @@ infrastructure/
 | What | Tool | Who Gets Alerted |
 |---|---|---|
 | Azure resource health | Azure Monitor + email | ORCHORDS |
-| GitHub Actions failures | GitHub notification → Slack #ci-alerts | ORCHORDS |
+| Forgejo Actions failures | Forgejo notification → project chat channel | ORCHORDS |
 | Firebase function errors | Firebase Console + email | ORCHORDS |
 | Firebase function latency | Firebase Performance + PagerDuty | ORCHORDS |
 | Release crash rate (first 24h) | Crashlytics → Slack #releases | ORCHORDS |

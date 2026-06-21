@@ -1,3 +1,10 @@
+---
+title: "Project v2.0 Feature Audit — ORCHORDS V1 Gap Analysis"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Project v2.0 Feature Audit — ORCHORDS V1 Gap Analysis
 
 Audited from project.net on 2026-06-20.
