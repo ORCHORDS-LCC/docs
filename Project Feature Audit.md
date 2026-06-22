@@ -1,3 +1,5 @@
+> Auto-generated from `Project Feature Audit.md` in the docs repo.
+
 > Auto-generated from `docs/product/PROJECT_FEATURE_AUDIT.md` in the docs repo.
 
 ---
