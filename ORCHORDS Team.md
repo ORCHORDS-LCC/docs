@@ -1,3 +1,5 @@
+> Auto-generated from `ORCHORDS Team.md` in the docs repo.
+
 > Auto-generated from `ORCHORDS_TEAM.md` in the docs repo.
 
 ---
