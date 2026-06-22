@@ -1,9 +1,3 @@
-> Auto-generated from `Home.md` in the docs repo.
-
-> Auto-generated from `Home.md` in the docs repo.
-
-> Auto-generated from `Home.md` in the docs repo.
-
 # ORCHORDS Wiki
 
 Welcome to the ORCHORDS wiki. This wiki is auto-generated from the project's documentation.
