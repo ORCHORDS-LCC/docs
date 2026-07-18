@@ -1,5 +1,3 @@
-> Auto-generated from `docs/product/ROADMAP.md` in the docs repo.
-
 ---
 title: "Product Roadmap"
 version: "1.0.0"

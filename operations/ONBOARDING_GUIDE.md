@@ -1,5 +1,3 @@
-> Auto-generated from `docs/operations/ONBOARDING_GUIDE.md` in the docs repo.
-
 ---
 title: "Team Onboarding Guide"
 version: "1.0.0"
@@ -37,7 +35,7 @@ This guide walks new team members through their first two weeks at ORCHORDS, cov
 
 ## Contents
 
-- [Before Day One (HR — ORCHORDS)](#before-day-one-hr-amanda-clark)
+- [Before Day One (HR — ORCHORDS)](#before-day-one-hr-orchords)
   - [Access & Accounts](#access-accounts)
   - [Welcome Package](#welcome-package)
 - [Day One](#day-one)
@@ -69,8 +67,8 @@ Before a new hire's first day, the following must be complete:
 ### Access & Accounts
 
 - [ ] Laptop ordered and configured (or existing machine re-imaged)
-- [ ] Microsoft email account created (`name@orchords.dev`)
-- [ ] Forgejo organization invite sent (`https://github.com/ORCHORDS-LCC/docs`)
+- [ ] Microsoft email account created (`user@example.com`)
+- [ ] Forgejo organization invite sent (`orchords.com/docs`)
 - [ ] Forgejo Actions + repository access provisioned
 - [ ] Firebase project access granted (if backend or cloud role)
 - [ ] Slack workspace invite sent

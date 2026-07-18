@@ -1,5 +1,3 @@
-> Auto-generated from `docs/product/PRIORITY_FRAMEWORK.md` in the docs repo.
-
 ---
 title: "Feature Prioritization Framework"
 version: "1.0.0"

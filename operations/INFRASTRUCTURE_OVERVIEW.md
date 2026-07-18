@@ -1,5 +1,3 @@
-> Auto-generated from `docs/operations/INFRASTRUCTURE_OVERVIEW.md` in the docs repo.
-
 ---
 title: "Infrastructure Overview"
 version: "1.0.0"
@@ -68,9 +66,9 @@ This document describes ORCHORDS's cloud and development infrastructure -- the A
 
 | Resource Group | Purpose | Environment |
 |---|---|---|
-| `orchords-prod` | Production ORCHORDS services | Production |
-| `orchords-staging` | Staging / pre-production | Non-production |
-| `orchords-shared` | Shared infra (CI runners, monitoring) | Shared |
+| `docs-prod` | Production ORCHORDS services | Production |
+| `docs-staging` | Staging / pre-production | Non-production |
+| `docs-shared` | Shared infra (CI runners, monitoring) | Shared |
 
 ### Azure Services
 
@@ -87,10 +85,10 @@ This document describes ORCHORDS's cloud and development infrastructure -- the A
 
 | Container | Access | Contents |
 |---|---|---|
-| `beetle-releases` | Private (signed URLs) | Release installers, portable builds |
-| `beetle-builds` | Private | CI artifacts (90-day retention) |
-| `beetle-backups` | Private | Source code mirrors, Firestore exports |
-| `beetle-website` | Public | Static website assets |
+| `orchords-releases` | Private (signed URLs) | Release installers, portable builds |
+| `orchords-builds` | Private | CI artifacts (90-day retention) |
+| `orchords-backups` | Private | Source code mirrors, Firestore exports |
+| `orchords-website` | Public | Static website assets |
 
 ---
 
@@ -109,7 +107,7 @@ This document describes ORCHORDS's cloud and development infrastructure -- the A
 ### Firebase Project Structure
 
 ```
-orchords-prod (Firebase project)
+docs-prod (Firebase project)
 ├── Authentication
 │   ├── Email/password
 │   └── Google OAuth
