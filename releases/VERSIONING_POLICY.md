@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/VERSIONING_POLICY.md` in the docs repo.
-
 ---
 title: "Software Versioning & Progression — Team Reference Guide"
 version: "1.0.0"

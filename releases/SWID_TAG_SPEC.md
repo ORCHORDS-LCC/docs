@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/SWID_TAG_SPEC.md` in the docs repo.
-
 ---
 title: "SWID Tag Specification"
 version: "1.0.0"
@@ -11,8 +9,8 @@ status: "review"
 
 **Project:** ORCHORDS  
 **Owner:** ORCHORDS (Build & Release Engineer)  
-**Reviewers:** ORCHORDS (CTO), ORCHORDS (Backend)  
-**ISO Standards:** ISO/IEC 19770-2:2015 (Software Identification Tag)  
+**Reviewers:** ORCHORDS (CTO), ORCHORDS (DevOps)  
+**ISO Standards:** ISO/IEC 19770-2:2015 (software identification tags), ISO/IEC 12207:2017 (transition)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
 
@@ -23,9 +21,9 @@ status: "review"
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | ISO/IEC 19770-2 SWID tag implementation for ORCHORDS |
+| **Scope** | ISO/IEC 19770-2 SWID tag structure and generation |
 | **Diátaxis form** | Reference |
-| **Primary audience** | ORCHORDS, ORCHORDS, ORCHORDS, enterprise IT customers |
+| **Primary audience** | ORCHORDS, ORCHORDS, enterprise IT administrators |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,171 +31,241 @@ status: "review"
 
 ## Overview
 
-Per **ISO/IEC 19770-2:2015**, software products should carry a Software Identification (SWID) tag to enable enterprise IT asset management tools (SCCM, Intune, LANDESK, ServiceNow) to correctly identify, track, and manage ORCHORDS on managed devices.
+This document defines the Software Identification (SWID) tag for ORCHORDS. Per **ISO/IEC 19770-2:2015**, SWID tags provide authoritative identification of software products for IT asset management (ITAM) systems. Enterprise customers use SWID tags to track software inventory, license compliance, and patch management.
 ## Contents
 
-- [SWID Tag Format](#swid-tag-format)
-  - [Example Tag (installed ORCHORDS v2.3.0)](#example-tag-installed-orchords-v230)
-  - [File Naming](#file-naming)
-- [Tag Fields Reference](#tag-fields-reference)
-  - [Required Fields (ISO/IEC 19770-2:2015 §6.2)](#required-fields-isoiec-19770-22015-62)
-  - [Optional but Recommended Fields](#optional-but-recommended-fields)
-- [Windows Registration](#windows-registration)
-  - [Registry Path](#registry-path)
-  - [Enterprise Discovery](#enterprise-discovery)
-- [Version-Specific Tags](#version-specific-tags)
-- [Installer Integration](#installer-integration)
-  - [Inno Setup Integration](#inno-setup-integration)
-  - [Auto-Generation in CI](#auto-generation-in-ci)
-- [Compliance Checklist](#compliance-checklist)
+- [What Is a SWID Tag?](#what-is-a-swid-tag)
+- [SWID Tag Structure](#swid-tag-structure)
+  - [Required Elements](#required-elements)
+  - [Optional Elements](#optional-elements)
+- [SWID Tag Schema](#swid-tag-schema)
+  - [Tag ID](#tag-id)
+  - [Entity](#entity)
+  - [Link](#link)
+  - [Meta](#meta)
+  - [Payload](#payload)
+  - [Evidence](#evidence)
+- [Example Tag: Installed ORCHORDS v2.3.0](#example-tag-installed-orchords-v230)
+- [Validation Rules](#validation-rules)
+  - [Schema Validation](#schema-validation)
+  - [Required Value Rules](#required-value-rules)
+- [Generation](#generation)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
 
 ---
 
-## SWID Tag Format
+## What Is a SWID Tag?
 
-We use the **Corpus SWID tag** format (for installed software), per ISO/IEC 19770-2:2015 §5.3.
+A SWID tag is an XML file that identifies a software product. When ORCHORDS is installed, the SWID tag:
+- Identifies the product (name, version, edition)
+- Identifies the publisher (ORCHORDS)
+- Links to the installation media (installer file hash)
+- Records the installation directory
 
-### Example Tag (installed ORCHORDS v2.3.0)
+Enterprise IT tools (Microsoft Intune, SCCM, BigFix, etc.) scan installed SWID tags to build software inventories.
+
+---
+
+## SWID Tag Structure
+
+### Required Elements
+
+| Element | Purpose | Example |
+|---|---|---|
+| `<SoftwareIdentity>` | Root element | — |
+| `@name` | Product name | `ORCHORDS` |
+| `@tagId` | Unique tag identifier | `ORCHORDS-v2.3.0` |
+| `@version` | Product version | `2.3.0` |
+| `@versionScheme` | Version scheme | `semver` |
+| `<Entity>` | Publisher information | ORCHORDS (see below) |
+
+### Optional Elements
+
+| Element | Purpose |
+|---|---|
+| `<Link>` | Related resources (installer URL, docs) |
+| `<Meta>` | Additional product metadata |
+| `<Payload>` | Files installed by this product |
+| `<Evidence>` | How the software was detected |
+
+---
+
+## SWID Tag Schema
+
+### Tag ID
+
+Format: `{regid}_{product}_{version}`
+
+| Field | Rule | Example |
+|---|---|---|
+| `regid` | Reverse DNS of publisher | `com.orchords` |
+| `product` | Product short name | `docs` |
+| `version` | Full version string | `2.3.0` |
+
+**Full example:** `com.orchords_docs_2.3.0`
+
+### Entity
+
+Identifies the software publisher:
+
+```xml
+<Entity
+  name="ORCHORDS"
+  regid="regid.example.com"
+  role="softwareCreator" />
+```
+
+### Link
+
+Links to related resources:
+
+```xml
+<Link
+  rel="installationmedia"
+  href="https://www.orchords.com/download/ORCHORDS-2.3.0-Setup.exe"
+  type="application/octet-stream" />
+<Link
+  rel="homepage"
+  href="https://www.orchords.com" />
+```
+
+### Meta
+
+Additional metadata for ITAM tools:
+
+```xml
+<Meta
+  product="ORCHORDS"
+  colloquialVersion="2026"
+  edition="Professional"
+  revision="2.3.0" />
+```
+
+### Payload
+
+Files installed by this product:
+
+```xml
+<Payload>
+  <File name="ORCHORDS.exe" size="125829120" />
+  <File name="ORCHORDSEngine.dll" size="52428800" />
+</Payload>
+```
+
+### Evidence
+
+How the software was detected (for ITAM scanning):
+
+```xml
+<Evidence>
+  <File name="ORCHORDS.exe" path="C:\Program Files\ORCHORDS\ORCHORDS.exe" />
+</Evidence>
+```
+
+---
+
+## Example Tag: Installed ORCHORDS v2.3.0
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<SoftwareIdentificationTag
-  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema"
-  schemaVersion="2.0">
+<SoftwareIdentity
+  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://standards.iso.org/iso/19770/-2/2015/schema.xsd swid.xsd"
+  xml:lang="en-US"
+  name="ORCHORDS"
+  tagId="com.orchords_docs_2.3.0"
+  version="2.3.0"
+  versionScheme="semver">
 
-  <ProductID>orchords-2.3.0</ProductID>
-  <ProductName>ORCHORDS</ProductName>
-  <ProductVersion>
-    <VersionScheme>alphanumeric</VersionScheme>
-    <Version>2.3.0</Version>
-  </ProductVersion>
-  <SoftwareCreator>
-    <Name>ORCHORDS</Name>
-    <Regid>regid.example.com</Regid>
-  </SoftwareCreator>
-  <LicensePrivacyURL>https://www.orchords.com/privacy</LicensePrivacyURL>
-  <Summary>Professional video editing software</Summary>
-  <Description>ORCHORDS is a professional-grade video editor with GPU-accelerated rendering, multi-track timeline, and FFmpeg-based codec support.</Description>
+  <!-- Publisher -->
+  <Entity
+    name="ORCHORDS"
+    regid="regid.example.com"
+    role="softwareCreator" />
 
-</SoftwareIdentificationTag>
+  <!-- Links -->
+  <Link
+    rel="installationmedia"
+    href="https://www.orchords.com/download/ORCHORDS-2.3.0-Setup.exe" />
+  <Link
+    rel="homepage"
+    href="https://www.orchords.com" />
+
+  <!-- Product metadata -->
+  <Meta
+    product="ORCHORDS"
+    colloquialVersion="2026"
+    edition="Professional"
+    revision="2.3.0" />
+
+  <!-- Installed files -->
+  <Payload>
+    <File name="ORCHORDS.exe" size="125829120" />
+    <File name="ORCHORDSEngine.dll" size="52428800" />
+    <File name="ORCHORDSSetup.exe" size="150994944" />
+  </Payload>
+
+  <!-- Detection evidence -->
+  <Evidence>
+    <File name="ORCHORDS.exe" path="C:\Program Files\ORCHORDS\ORCHORDS.exe" />
+  </Evidence>
+
+</SoftwareIdentity>
 ```
-
-### File Naming
-
-| Tag Type | Filename | Location |
-|---|---|---|
-| **Corpus tag** (installer) | `ORCHORDS_2.3.0.swidtag` | Bundled in installer payload |
-| **Installed tag** (post-install) | `ORCHORDS_2.3.0.swidtag` | `%ProgramData%\ORCHORDS\ORCHORDS\` |
 
 ---
 
-## Tag Fields Reference
+## Validation Rules
 
-### Required Fields (ISO/IEC 19770-2:2015 §6.2)
+### Schema Validation
 
-| Field | Value for ORCHORDS | Notes |
-|---|---|---|
-| `schemaVersion` | `2.0` | ISO/IEC 19770-2:2015 schema |
-| `ProductID` | `orchords-{MAJOR}.{MINOR}.{PATCH}` | Unique per version |
-| `ProductName` | `ORCHORDS` | Display name |
-| `Version` | `{MAJOR}.{MINOR}.{PATCH}` | Must match SemVer exactly |
-| `VersionScheme` | `alphanumeric` | Matches SemVer format |
-| `Name` (SoftwareCreator) | `ORCHORDS` | Legal entity name |
-| `Regid` (SoftwareCreator) | `regid.example.com` | Reverse domain identifier |
+The tag must validate against the ISO/IEC 19770-2:2015 schema:
+- `swid.xsd` — available from ISO
+- Validated at build time by the installer build script
 
-### Optional but Recommended Fields
+### Required Value Rules
 
-| Field | Value | Notes |
-|---|---|---|
-| `LicensePrivacyURL` | `https://www.orchords.com/privacy` | Links to privacy policy |
-| `Summary` | Short product description | One line |
-| `Description` | Full description | One paragraph |
-| `ProductSuite` | Not used | Reserved for product families |
-| `TagCreator` | Same as SoftwareCreator | Self-signed tag |
+| Rule | Requirement |
+|---|---|
+| `tagId` | Must match `com.orchords_docs_{version}` |
+| `version` | Must match the installer version |
+| `Entity@regid` | Must be `regid.example.com` |
+| `Meta@product` | Must be `ORCHORDS` |
 
 ---
 
-## Windows Registration
+## Generation
 
-During installation, the SWID tag must be registered with Windows via the `swiupdate` service or directly to the registry:
-
-### Registry Path
-
-```
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{ProductID}
-```
-
-Or using the SWID directory (preferred):
-
-```
-%ProgramData%\ORCHORDS\ORCHORDS\*.swidtag
-```
-
-### Enterprise Discovery
-
-Enterprise IT tools discover SWID tags in this order:
-1. `%ProgramData%\swidtag\<regid>\*.swidtag`
-2. `%ProgramFiles%\ORCHORDS\ORCHORDS\*.swidtag`
-3. Windows Registry Uninstall key
-
----
-
-## Version-Specific Tags
-
-Each ORCHORDS version gets a new SWID tag. Old tags must NOT be deleted on upgrade — each installed version should be individually trackable:
-
-| Installed Version | SWID Tag Filename | Tag Version Field |
-|---|---|---|
-| 2.2.0 | `ORCHORDS_2.2.0.swidtag` | `2.2.0` |
-| 2.3.0 | `ORCHORDS_2.3.0.swidtag` | `2.3.0` |
-| 2.3.2 | `ORCHORDS_2.3.2.swidtag` | `2.3.2` |
-
-When upgrading, install the new tag alongside the old one. When uninstalling, remove the uninstalled version's tag only (not all version tags).
-
----
-
-## Installer Integration
-
-### Inno Setup Integration
-
-The SWID tag file is bundled in the installer payload:
-
-```iss
-[Files]
-Source: "ORCHORDS_{#Version}.swidtag"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ORCHORDS_{#Version}.swidtag"; DestDir: "{commonappdata}\ORCHORDS\ORCHORDS"; Flags: ignoreversion
-```
-
-### Auto-Generation in CI
-
-ORCHORDS's CI pipeline generates the SWID tag file dynamically using the version number from the git tag:
+The SWID tag is generated during the build:
 
 ```python
-# scripts/generate_swid_tag.py (called in CI before installer build)
-import xml.etree.ElementTree as ET
+# scripts/generate_swid_tag.py
+# Called by CMake during release build
 
-def generate_swid_tag(version: str) -> str:
-    tag = ET.Element("SoftwareIdentificationTag", xmlns="http://standards.iso.org/iso/19770/-2/2015/schema")
-    tag.set("schemaVersion", "2.0")
-    # ... populate fields
-    return ET.tostring(tag, encoding="unicode")
+def generate_swid_tag(version: str, output_path: str):
+    tag = f'''<?xml version="1.0" encoding="UTF-8"?>
+<SoftwareIdentity
+  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xml:lang="en-US"
+  name="ORCHORDS"
+  tagId="com.orchords_docs_{version}"
+  version="{version}"
+  versionScheme="semver">
+  <Entity name="ORCHORDS" regid="regid.example.com" role="softwareCreator" />
+  <Meta product="ORCHORDS" colloquialVersion="2026" edition="Professional" revision="{version}" />
+</SoftwareIdentity>'''
+    
+    with open(output_path, 'w') as f:
+        f.write(tag)
 ```
 
----
-
-## Compliance Checklist
-
-- [ ] SWID tag generated for every release (including hotfixes)
-- [ ] `ProductID` uniquely identifies each version
-- [ ] `Version` field matches SemVer exactly
-- [ ] `Regid` uses `regid.example.com` format
-- [ ] Tag bundled in installer payload
-- [ ] Tag registered to `%ProgramData%\swidtag\regid.example.com\`
-- [ ] Tag discoverable by SCCM/Intune (validate with IT test environment)
-- [ ] Store submission includes SWID data in package manifest
+The generated `.swidtag` file is:
+1. Embedded in the installer
+2. Installed to `%PROGRAMDATA%\ORCHORDS\ORCHORDS.swidtag`
+3. Registered with Windows (optional, for WMI query)
 
 ---
 
@@ -205,11 +273,11 @@ def generate_swid_tag(version: str) -> str:
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial spec — fully aligned with ISO/IEC 19770-2:2015 |
+| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 19770-2:2015 and ISO/IEC 12207:2017 |
 
 ---
 
-*Grounded in: ISO/IEC 19770-2:2015 — Information technology — IT asset management — Part 2: Software identification tag*
+*Grounded in: ISO/IEC 19770-2:2015 (Software Identification Tags), ISO/IEC 12207:2017 §6.4 (Transition)*
 
 
 
@@ -240,6 +308,6 @@ _No internal documents referenced._
 
 ### Review Cadence
 
-- **Next review:** On ISO/IEC 19770 revision
+- **Next review:** On ISO standard update
 - **Reviewer:** ORCHORDS (Build & Release Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

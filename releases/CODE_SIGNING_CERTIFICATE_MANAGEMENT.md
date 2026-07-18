@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md` in the docs repo.
-
 ---
 title: "Code Signing & Certificate Management"
 version: "1.0.0"
@@ -11,10 +9,10 @@ status: "review"
 
 **Project:** ORCHORDS  
 **Owner:** ORCHORDS (Build & Release Engineer)  
-**Reviewers:** ORCHORDS (CTO), ORCHORDS (Backend — for API signing)  
-**ISO Standards:** ISO/IEC 27001:2022 Annex A (cryptographic controls), ISO/IEC 19770-2:2015 (software identification), ISO/IEC 12207:2017 (transition security)  
+**Reviewers:** ORCHORDS (CTO), ORCHORDS (DevOps)  
+**ISO Standards:** ISO/IEC 27001:2022 (Annex A: Cryptographic Controls), ISO/IEC 12207:2017 (transition)  
 **Version:** 1.0.0  
-**Last Updated:** 2026-06-21
+**Last Updated:** June 2026  
 
 ---
 
@@ -23,7 +21,7 @@ status: "review"
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | Certificate lifecycle, signing pipeline, and Azure Artifact Signing integration |
+| **Scope** | Certificate lifecycle, signing infrastructure, and SmartScreen reputation |
 | **Diátaxis form** | Reference |
 | **Primary audience** | ORCHORDS, ORCHORDS, ORCHORDS |
 | **Secondary audience** | Future maintainers and reviewers of this document |
@@ -33,160 +31,183 @@ status: "review"
 
 ## Overview
 
-All executable code shipped by ORCHORDS -- installers, DLLs, executables, and cloud functions -- must be signed. Per **ISO/IEC 27001:2022 Annex A**, cryptographic controls are required for protecting software integrity. Code signing is our primary integrity control. We use **Azure Artifact Signing** for all Windows binaries.
+This document defines ORCHORDS's code signing and certificate management practices. Per **ISO/IEC 27001:2022 Annex A**, cryptographic controls protect the integrity of information. Code signing proves that ORCHORDS releases are authentic and untampered.
 ## Contents
 
-- [What Must Be Signed](#what-must-be-signed)
-- [Certificate Types & Lifecycle](#certificate-types-lifecycle)
-  - [Windows Code Signing Certificate](#windows-code-signing-certificate)
-  - [Certificate Renewal Calendar](#certificate-renewal-calendar)
-- [Signing Process](#signing-process)
-  - [Build Pipeline Integration (Forgejo Actions, GitHub Actions–compatible)](#build-pipeline-integration-github-actions)
-  - [Manual Signing (Emergency)](#manual-signing-emergency)
-  - [Firebase Cloud Function Signing](#firebase-cloud-function-signing)
+- [Why Code Signing Matters](#why-code-signing-matters)
+- [Our Signing Strategy](#our-signing-strategy)
+  - [What Gets Signed](#what-gets-signed)
+  - [Certificate Standards](#certificate-standards)
+- [Signing Infrastructure](#signing-infrastructure)
+  - [Azure Artifact Signing (Cloud)](#azure-artifact-signing-cloud)
+  - [Manual Signing (Fallback)](#manual-signing-fallback)
+- [Certificate Lifecycle](#certificate-lifecycle)
+  - [Acquisition](#acquisition)
+  - [Storage](#storage)
+  - [Renewal](#renewal)
+  - [Revocation](#revocation)
+- [SmartScreen Reputation](#smartscreen-reputation)
+  - [How Reputation Works](#how-reputation-works)
+  - [Building Reputation Faster](#building-reputation-faster)
 - [Verification](#verification)
-  - [SmartScreen Check](#smartscreen-check)
-- [Certificate Storage & Access](#certificate-storage-access)
-  - [Secrets Rotation](#secrets-rotation)
-- [Revocation Procedure](#revocation-procedure)
+- [Troubleshooting](#troubleshooting)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
 
 ---
 
-## What Must Be Signed
+## Why Code Signing Matters
 
-| Artifact | Required | Notes |
-|---|---|---|
-| `ORCHORDS.exe` (main executable) | ✅ Mandatory | Core application |
-| `ORCHORDS.dll` and all plugin DLLs | ✅ Mandatory | Plugin SDK requires signed host |
-| `ORCHORDSSetup.exe` (Inno Setup installer) | ✅ Mandatory | SmartScreen reputation |
-| `ORCHORDS.msix` (Store package) | ✅ Mandatory | Store certification |
-| FFmpeg-related DLLs (static build) | ✅ Mandatory | Distributing LGPL components |
-| Cloud Functions (Firebase) | ✅ Mandatory | API integrity |
-| VST3 plugin stubs | ✅ Recommended | Plugin host trust |
-
----
-
-## Certificate Types & Lifecycle
-
-### Windows Code Signing Certificate
-
-| Property | Value |
+| Benefit | How It Helps |
 |---|---|
-| **Provider** | Azure Artifact Signing (certificate managed by Microsoft) |
-| **Key vault** | Azure Key Vault (Moonsign-mvs subscription) |
-| **Certificate type** | EV (Extended Validation) Code Signing |
-| **Algorithm** | SHA-256 with RSA 4096-bit key |
-| **Validity period** | 3 years (monitor at 1 year remaining) |
-| **Key rotation** | Automatically handled by Azure Artifact Signing |
-| **Emergency re-key** | Contact Azure support + ORCHORDS approval |
-
-### Certificate Renewal Calendar
-
-| Certificate | Expiry | Renewal Deadline | Owner |
-|---|---|---|---|
-| Windows Code Signing | June 2027 | April 2027 | ORCHORDS |
+| **Authenticity** | Users verify the software came from ORCHORDS |
+| **Integrity** | Detects tampering or corruption after signing |
+| **SmartScreen reputation** | Signed software passes Windows SmartScreen faster |
+| **Windows Store requirement** | Microsoft requires code signing for Store submissions |
+| **Enterprise distribution** | Signed code is required by corporate IT policies |
 
 ---
 
-## Signing Process
+## Our Signing Strategy
 
-### Build Pipeline Integration (Forgejo Actions, GitHub Actions–compatible)
+### What Gets Signed
+
+| Artifact | Signed? | Method |
+|---|---|---|
+| `ORCHORDS.exe` | ✅ | Azure Artifact Signing |
+| `ORCHORDSEngine.dll` | ✅ | Azure Artifact Signing |
+| `ORCHORDSSetup.exe` (installer) | ✅ | Azure Artifact Signing |
+| `ORCHORDSUpdate.exe` (updater) | ✅ | Azure Artifact Signing |
+| Third-party `.dll`s shipped with installer | ❌ | Third-party vendors sign their own |
+| OpenFX plugins | ⚠️ | Third-party developers sign their own |
+| `ORCHORDSSetup_signed.exe` | ✅ | Installer signed after compilation |
+
+### Certificate Standards
+
+- **Algorithm:** RSA-4096 with SHA-384
+- **Storage:** Azure Key Vault (HSM-backed) or physical USB token (for EV certificates)
+- **Chain:** Full certificate chain included in signature
+- **Timestamp:** DigiCert timestamp server (required)
+
+---
+
+## Signing Infrastructure
+
+### Azure Artifact Signing (Cloud)
+
+Primary signing method for releases:
 
 ```yaml
-# Simplified Forgejo Actions signing step (GitHub Actions–compatible syntax)
+# Forgejo Actions release workflow (GitHub Actions–compatible syntax)
 - name: Sign executables
   uses: azure/code-signing-action@v1
   with:
-    azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-    azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
-    azure-client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-    certificate-name: ${{ secrets.AZ_CERT_NAME }}
-    files: |
-      ./publish/*.exe
-      ./publish/*.dll
-      ./publish/ORCHORDSSetup.exe
+    azure-keyvault-uri: ${{ secrets.AZURE_KEYVAULT_URI }}
+    certificate-name: ${{ secrets.CODE_SIGNING_CERT_NAME }}
+    files-to-sign: |
+      ORCHORDS.exe
+      ORCHORDSEngine.dll
+      ORCHORDSSetup.exe
 ```
 
-### Manual Signing (Emergency)
+### Manual Signing (Fallback)
 
-```powershell
-# Sign a single file manually
-az signing certificate sign `
-  --file "ORCHORDSSetup.exe" `
-  --output "ORCHORDSSetup_signed.exe" `
-  --certificate-name "ORCHORDS-CodeSign-2026"
+If cloud signing is unavailable, ORCHORDS can sign manually:
 
-# Verify signature
-signtool verify /pa /v ORCHORDSSetup_signed.exe
-```
+1. Export certificate from Azure Key Vault to a secure USB token
+2. Sign locally using `signtool.exe`:
+   ```powershell
+   signtool sign /fd SHA384 /a /tr http://timestamp.digicert.com /td SHA384 ORCHORDS.exe
+   ```
+3. Verify: `signtool verify /pa ORCHORDS.exe`
 
-### Firebase Cloud Function Signing
+---
 
-Firebase Cloud Functions are signed automatically by Google. Ensure the Firebase project is under the ORCHORDS organization account with correct IAM permissions.
+## Certificate Lifecycle
+
+### Acquisition
+
+| Step | Owner | Notes |
+|---|---|---|
+| Generate CSR | ORCHORDS | From Azure Key Vault or token |
+| Submit to CA | ORCHORDS | DigiCert or Sectigo |
+| Complete identity verification | ORCHORDS | CA verifies ORCHORDS legal entity |
+| Certificate issued | CA | Sent to Azure Key Vault |
+| Test signing | ORCHORDS | Verify signature before production use |
+
+### Storage
+
+- **Never** store certificate files in Git repositories
+- **Never** email certificate files
+- Store only in Azure Key Vault with restricted access policies
+- Access logged and audited quarterly
+- Key rotation policy: new certificate every 2 years
+
+### Renewal
+
+- Renew at least **60 days** before expiry
+- Test new certificate on a non-release build first
+- Update Forgejo Actions secrets with new certificate name
+- Document renewal date in this file
+
+### Revocation
+
+If a certificate is compromised:
+
+1. **Immediately revoke** at the CA
+2. **Re-sign all affected releases** with a new certificate
+3. **Notify users** if the compromised certificate was used for a release
+4. **File incident report** (see [`engineering/BACKUP_DISASTER_RECOVERY.md`](../engineering/BACKUP_DISASTER_RECOVERY.md))
+
+---
+
+## SmartScreen Reputation
+
+### How Reputation Works
+
+- **New certificates start with zero reputation** — SmartScreen shows warnings to users
+- Reputation builds as more users install and run the signed software
+- **~1,000–5,000 installs** needed before SmartScreen trusts the certificate
+
+### Building Reputation Faster
+
+| Method | Effort | Timeline |
+|---|---|---|
+| Publish to Microsoft Store | Low | Reputation transfers from Store |
+| Sign installers + executables | Low | Required anyway |
+| Consistent signing over time | Low | Builds naturally |
+| Beta program (signed builds) | Medium | Beta users build reputation |
 
 ---
 
 ## Verification
 
-After signing, always verify:
+Every signed artifact must be verified before release:
 
 ```powershell
-# Basic Windows verification
-signtool verify /pa /v ORCHORDSSetup.exe
+# Verify the signature
+signtool verify /pa ORCHORDSSetup.exe
 
-# Full certificate chain verification
-signtool verify /pa /v /c ORCHORDSSetup.cert ORCHORDSSetup.exe
+# Check certificate details
+Get-AuthenticodeSignature ORCHORDSSetup.exe | Format-List
 
-# Output should show:
-# "Successfully verified: ORCHORDSSetup.exe"
-# "Certificate chain valid"
+# Expected output:
+# Status: Valid
+# SignerCertificate: CN=ORCHORDS CodeSign 2026, O=ORCHORDS, ...
+# TimeStamperCertificate: CN=DigiCert Timestamp 2026, ...
 ```
 
-### SmartScreen Check
-
-SmartScreen reputation builds over time with consistent signing. To check:
-
-- **New certificate:** Users may see "Windows protected your PC" warning
-- **Reputation established:** Warning disappears after ~1,000 downloads/installations
-- **Enterprise environments:** IT admins can whitelist via policy
-
 ---
 
-## Certificate Storage & Access
+## Troubleshooting
 
-Per **ISO/IEC 27001:2022 Annex A**, cryptographic keys must be protected:
-
-| Requirement | Implementation |
-|---|---|
-| **Key storage** | Azure Key Vault — hardware security module (HSM) backed |
-| **Access control** | RBAC — only ORCHORDS and ORCHORDS have signing permissions |
-| **CI/CD access** | Forgejo Actions OIDC token (per the `enable-openid-connect` key — see Forgejo docs) — no static secrets stored |
-| **Audit log** | Azure Key Vault logs all access (90-day retention) |
-| **Emergency access** | ORCHORDS holds backup access; ORCHORDS as ultimate owner |
-
-### Secrets Rotation
-
-| Secret | Rotation Frequency | Method |
+| Issue | Cause | Fix |
 |---|---|---|
-| Azure Client ID / Secret | 90 days | Manual via Azure portal |
-| GitHub OIDC (auto-rotated) | Ongoing | No manual action needed |
-| Firebase admin key | 180 days | Via Firebase console |
-
----
-
-## Revocation Procedure
-
-If a private key is compromised (suspected or confirmed):
-
-1. **Immediate:** Notify ORCHORDS and ORCHORDS
-2. **Revoke certificate:** File revocation request with Azure Artifact Signing
-3. **Notify Microsoft:** Submit to Microsoft Code Signing revocation list
-4. **Rebuild and resign:** Regenerate all affected artifacts from source
-5. **Push emergency update:** Expedited Store submission if Store app is affected
-6. **Post-incident review:** Document root cause; update this procedure
+| `signtool` error 0x8007000D | Invalid certificate file | Re-export from Key Vault |
+| SmartScreen still warning | New certificate reputation | Wait; publish via Store; collect installs |
+| Certificate expired | Not renewed in time | Re-issue + re-sign all releases |
+| Timestamp server unreachable | DigiCert downtime | Use alternate: `http://timestamp.sectigo.com` |
 
 ---
 
@@ -194,11 +215,11 @@ If a private key is compromised (suspected or confirmed):
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 27001:2022 Annex A cryptographic controls |
+| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 27001:2022 Annex A and ISO/IEC 12207:2017 |
 
 ---
 
-*Grounded in: ISO/IEC 27001:2022 Annex A (Cryptographic Controls), ISO/IEC 19770-2:2015, ISO/IEC 12207:2017 §6.4*
+*Grounded in: ISO/IEC 27001:2022 Annex A (Cryptographic Controls), ISO/IEC 12207:2017 §6.4 (Transition)*
 
 
 
@@ -208,7 +229,7 @@ If a private key is compromised (suspected or confirmed):
 
 ### Internal Documents
 
-_No internal documents referenced._
+- [$title](./../engineering/BACKUP_DISASTER_RECOVERY.md)
 
 ### Standards & Frameworks
 
@@ -229,6 +250,6 @@ _No internal documents referenced._
 
 ### Review Cadence
 
-- **Next review:** On certificate renewal (annual)
+- **Next review:** On certificate expiry
 - **Reviewer:** ORCHORDS (Build & Release Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/WINDOWS_STORE_SUBMISSION.md` in the docs repo.
-
 ---
 title: "Windows Store Submission Guide"
 version: "1.0.0"

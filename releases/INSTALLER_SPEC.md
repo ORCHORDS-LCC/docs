@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/INSTALLER_SPEC.md` in the docs repo.
-
 ---
 title: "Installer Specification"
 version: "1.0.0"
@@ -11,8 +9,8 @@ status: "review"
 
 **Project:** ORCHORDS  
 **Owner:** ORCHORDS (Build & Release Engineer)  
-**Reviewers:** ORCHORDS (DevOps), ORCHORDS (CTO)  
-**ISO Standards:** ISO/IEC 12207:2017 (installation as part of transition), ISO/IEC 19770-2:2015 (SWID tags), ISO/IEC 25010:2023 (usability, installability)  
+**Reviewers:** ORCHORDS (CTO), ORCHORDS (DevOps)  
+**ISO Standards:** ISO/IEC 12207:2017 (transition, development), ISO/IEC 25010:2023 (installability, portability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
 
@@ -23,9 +21,9 @@ status: "review"
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | Installer requirements for all distribution channels |
+| **Scope** | Inno Setup installer, features, and upgrade behavior |
 | **Diátaxis form** | Reference |
-| **Primary audience** | ORCHORDS, ORCHORDS, ORCHORDS |
+| **Primary audience** | ORCHORDS, ORCHORDS, QA team |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,160 +31,199 @@ status: "review"
 
 ## Overview
 
-This document specifies the installer requirements for ORCHORDS. Per **ISO/IEC 12207:2017**, installation (transition into operational use) must be planned, documented, and executed in a controlled manner. The installer is the delivery vehicle for that transition. We use **Inno Setup** for Windows x64 builds.
+This document defines the ORCHORDS installer for Windows. Per **ISO/IEC 12207:2017 §6.4**, the transition process includes packaging and distribution. The installer must be reliable, secure, and user-friendly. It must also satisfy **ISO/IEC 25010:2023**'s installability and portability characteristics.
 ## Contents
 
-- [Installer Requirements](#installer-requirements)
-  - [Functional Requirements](#functional-requirements)
-  - [Components Bundled](#components-bundled)
-  - [Per-User Installation](#per-user-installation)
-  - [Per-Machine Installation (Admin)](#per-machine-installation-admin)
-- [Component Selection](#component-selection)
-- [Upgrade Behavior](#upgrade-behavior)
-- [Uninstaller Behavior](#uninstaller-behavior)
-- [Silent Install Configuration](#silent-install-configuration)
-  - [Direct Download Installer](#direct-download-installer)
-  - [Enterprise Deployment (SCCM/Intune)](#enterprise-deployment-sccmintune)
-- [Installer Metadata](#installer-metadata)
+- [Technology](#technology)
+- [Installer Features](#installer-features)
+  - [1. Welcome Screen](#1-welcome-screen)
+  - [2. License Agreement](#2-license-agreement)
+  - [3. Component Selection](#3-component-selection)
+  - [4. Installation Location](#4-installation-location)
+  - [5. Additional Tasks](#5-additional-tasks)
+  - [6. Installing Screen](#6-installing-screen)
+  - [7. Completion Screen](#7-completion-screen)
+- [Inno Setup Script Structure](#inno-setup-script-structure)
+- [Installation Artifacts](#installation-artifacts)
+- [File Associations](#file-associations)
+- [Upgrade & Uninstall Behavior](#upgrade-uninstall-behavior)
+  - [Upgrade from Previous Version](#upgrade-from-previous-version)
+  - [Uninstall](#uninstall)
+- [Code Signing](#code-signing)
+- [Testing Checklist](#testing-checklist)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
 
 ---
 
-## Installer Requirements
+## Technology
 
-### Functional Requirements
-
-| Requirement | Detail |
+| Component | Technology |
 |---|---|
-| **Default install path** | `C:\Program Files\ORCHORDS\ORCHORDS` |
-| **Custom install path** | User-selectable; must persist across updates |
-| **Minimum disk space** | 2 GB (application) + 500 MB (working temp) |
-| **Recommended disk space** | 10 GB (for project cache and media scratch) |
-| **Admin rights** | Optional — install to user folder without admin |
-| **Silent install** | Supported via `/SILENT` or `/VERYSILENT` flags |
-| **Unattended install** | Supported via `/SUPPRESSMSGBOXES` combined with silent flags |
-
-### Components Bundled
-
-| Component | Required | Notes |
-|---|---|---|
-| ORCHORDS executable | ✅ | Code-signed |
-| FFmpeg runtime (static build) | ✅ | LGPL licensed |
-| Qt6 runtime libraries | ✅ | LGPL licensed |
-| GPU shader cache | ✅ | Created at first run |
-| Sample project templates | ✅ | Default templates, ~100 MB |
-| License and attribution files | ✅ | FFmpeg, Qt6, third-party libs |
-| Uninstaller | ✅ | Full cleanup including cache |
-| SWID tag file | ✅ | See [`SWID_TAG_SPEC.md`](./SWID_TAG_SPEC.md) |
-| Crash handler | ✅ | Sends crash reports with user consent |
-
-### Per-User Installation
-
-Support non-admin install to `%LOCALAPPDATA%\Programs\ORCHORDS`:
-
-| Item | Detail |
-|---|---|
-| **Install path** | `%LOCALAPPDATA%\Programs\ORCHORDS\<version>` |
-| **Uninstaller path** | `%APPDATA%\ORCHORDS\ORCHORDS\uninstall.exe` |
-| **Settings** | `%APPDATA%\ORCHORDS\ORCHORDS\config\` |
-| **Cache** | `%LOCALAPPDATA%\ORCHORDS\ORCHORDS\cache\` |
-| **Logs** | `%LOCALAPPDATA%\ORCHORDS\ORCHORDS\logs\` |
-
-### Per-Machine Installation (Admin)
-
-| Item | Detail |
-|---|---|
-| **Install path** | `%ProgramFiles%\ORCHORDS\ORCHORDS` |
-| **Uninstaller path** | `%ProgramData%\ORCHORDS\ORCHORDS\uninstall.exe` |
-| **Settings** | `%ProgramData%\ORCHORDS\ORCHORDS\config\` |
-| **Cache** | `%ProgramData%\ORCHORDS\ORCHORDS\cache\` |
-| **Logs** | `%ProgramData%\ORCHORDS\ORCHORDS\logs\` |
+| Installer | Inno Setup 6.x |
+| Script | `installer/docs-setup.iss` |
+| Output | `ORCHORDSSetup.exe` (signed) |
+| Target OS | Windows 10 (1903+) and Windows 11 |
+| Architecture | x64 only |
 
 ---
 
-## Component Selection
+## Installer Features
 
-Users can choose which components to install:
+### 1. Welcome Screen
 
-| Component | Default | Size |
-|---|---|---|
-| Core application | Always | ~300 MB |
-| Sample templates | Optional | ~100 MB |
-| Additional language packs | Optional | ~50 MB each |
-| Shader cache (pre-baked) | Optional | ~200 MB |
+| Element | Content |
+|---|---|
+| Title | "ORCHORDS Setup" |
+| Product name | "ORCHORDS vX.Y.Z" |
+| Company | "ORCHORDS" |
+| Icon | ORCHORDS logo |
+
+### 2. License Agreement
+
+- Full MIT license text (or EULA)
+- "I accept" / "I do not accept" radio buttons
+
+### 3. Component Selection
+
+| Component | Default | Size | Notes |
+|---|---|---|---|
+| **ORCHORDS Core** | Required | ~150 MB | Main application |
+| **Codecs** | Required | ~80 MB | FFmpeg, hardware codecs |
+| **Effects & Templates** | Default | ~50 MB | Built-in effects, title templates |
+| **VST Support** | Default | ~10 MB | VST plugin hosting |
+| **Documentation** | Optional | ~20 MB | User guide, tutorials |
+| **Desktop Shortcut** | Optional | — | Shortcut on desktop |
+| **Start Menu Shortcut** | Optional | — | Shortcut in Start Menu |
+
+### 4. Installation Location
+
+| Location | Default |
+|---|---|
+| Program Files | `%PROGRAMFILES%\ORCHORDS\` |
+| AppData | `%APPDATA%\ORCHORDS\ORCHORDS\` |
+| Temp files | `%TEMP%\ORCHORDSSetup\` |
+
+### 5. Additional Tasks
+
+- [ ] Create desktop shortcut
+- [ ] Create Start Menu shortcut
+- [ ] Launch ORCHORDS after installation
+- [ ] Create file association for `.orchords` project files
+
+### 6. Installing Screen
+
+| Feature | Implementation |
+|---|---|
+| Progress bar | Inno Setup built-in |
+| File extraction progress | Inno Setup built-in |
+| Custom branding | ORCHORDS banner image |
+
+### 7. Completion Screen
+
+- "Installation complete" message
+- "Launch ORCHORDS now" checkbox (default: checked)
+- "View release notes" link
 
 ---
 
-## Upgrade Behavior
+## Inno Setup Script Structure
+
+```pascal
+[Setup]
+AppName=ORCHORDS
+AppVersion={#Version}
+AppPublisher=ORCHORDS
+AppPublisherURL=https://www.orchords.com
+DefaultDirName={autopf}\ORCHORDS
+DefaultGroupName=ORCHORDS
+OutputBaseFilename=ORCHORDSSetup-{#Version}
+Compression=lzma2/ultra64
+SolidCompression=yes
+
+[Files]
+Source: "..\build\Release\ORCHORDS.exe"; DestDir: "{app}"
+Source: "..\build\Release\ORCHORDSEngine.dll"; DestDir: "{app}"
+Source: "..\build\Release\*.dll"; DestDir: "{app}"; Flags: recursesubdirs
+
+[Icons]
+Name: "{group}\ORCHORDS"; Filename: "{app}\ORCHORDS.exe"
+Name: "{autodesktop}\ORCHORDS"; Filename: "{app}\ORCHORDS.exe"
+
+[Registry]
+Root: HKCR; Subkey: ".orchords"; ValueType: string; ValueData: "ORCHORDS.Project"
+Root: HKCR; Subkey: "ORCHORDS.Project\shell\open\command"; ValueType: string; ValueData: "{app}\ORCHORDS.exe ""%1"""
+```
+
+---
+
+## Installation Artifacts
+
+| Artifact | Location | Signed? |
+|---|---|---|
+| `ORCHORDSSetup.exe` | CI artifact | ✅ (required) |
+| `ORCHORDS.zip` (portable) | CI artifact | ❌ (no installer needed) |
+| `ORCHORDS.pdb` (symbols) | CI artifact | ❌ (internal use) |
+| `ORCHORDS.swidtag` | Inside installer | ✅ (part of installer) |
+
+---
+
+## File Associations
+
+| Extension | Associated Action | Description |
+|---|---|---|
+| `.orchords` | Open with ORCHORDS | ORCHORDS project file |
+| `.orchords-template` | Open with ORCHORDS | Project template file |
+
+---
+
+## Upgrade & Uninstall Behavior
+
+### Upgrade from Previous Version
 
 | Scenario | Behavior |
 |---|---|
-| **Same MAJOR version** (e.g., 2.3.0 → 2.4.0) | In-place upgrade; preserve settings and cache |
-| **MAJOR version change** (e.g., 2.x → 3.0) | Offer to migrate settings; fresh cache |
-| **Downgrade** | Not supported; warn user and abort |
-| **Corrupt installation detected** | Offer repair or clean reinstall |
+| Same version | "Already installed" — repair or uninstall options |
+| Newer version | Upgrade — preserves settings, projects, plugins |
+| Older version | Downgrade blocked — requires uninstall first |
+| Install over existing | Clean install — old files removed |
 
----
+### Uninstall
 
-## Uninstaller Behavior
-
-Full cleanup on uninstall:
-
-- [ ] Remove all installed files in install directory
-- [ ] Remove settings directory (with user consent)
-- [ ] Remove cache directory (with user consent)
-- [ ] Remove SWID tag registration
-- [ ] Remove Windows Add/Remove Programs entry
-- [ ] Remove desktop and Start Menu shortcuts
-- [ ] Remove file associations (with user consent)
-- [ ] Remove shell preview handler (if installed)
-
----
-
-## Silent Install Configuration
-
-### Direct Download Installer
-
-```powershell
-# Silent install (user sees progress bar)
-ORCHORDSSetup.exe /SILENT
-
-# Very silent (no UI at all)
-ORCHORDSSetup.exe /VERYSILENT
-
-# Silent with custom path
-ORCHORDSSetup.exe /VERYSILENT /DIR="D:\Apps\ORCHORDS"
-```
-
-### Enterprise Deployment (SCCM/Intune)
-
-```powershell
-# Detect installed version
-$installed = Get-ItemProperty "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\ORCHORDS"
-
-# Install/upgrade
-ORCHORDSSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program Files\ORCHORDS\ORCHORDS"
-```
-
----
-
-## Installer Metadata
-
-| Field | Value |
+| Behavior | Detail |
 |---|---|
-| **Publisher** | ORCHORDS |
-| **DisplayName** | ORCHORDS |
-| **DisplayVersion** | MAJOR.MINOR.PATCH (e.g., `2.3.1`) |
-| **PublisherURL** | https://www.orchords.com |
-| **SupportURL** | https://www.orchords.com/support |
-| **InstallSource** | Set by installer to track source |
-| **UninstallString** | `"{uninstall_exe}" /VERYSILENT` |
-| **NoModify** | 1 (not modifiable via Add/Remove Programs) |
-| **NoRepair** | 0 (repair is supported) |
-| **EstimatedSize** | Installer-computed in KB |
-| **Language** | 1033 (English); additional per locale |
+| Remove program files | All files in `%PROGRAMFILES%\ORCHORDS\` |
+| Remove AppData | `%APPDATA%\ORCHORDS\ORCHORDS\` (prompt user) |
+| Remove registry entries | File associations, uninstall entry |
+| Preserve projects | `%USERPROFILE%\Documents\ORCHORDS\` never removed |
+| Leave shortcut | Removed (Start Menu and Desktop) |
+
+---
+
+## Code Signing
+
+The installer **must be signed** before distribution. See [`CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](./CODE_SIGNING_CERTIFICATE_MANAGEMENT.md) for the signing process.
+
+Unsigned installers trigger Windows SmartScreen warnings. Signed installers pass SmartScreen within ~1,000–5,000 installs.
+
+---
+
+## Testing Checklist
+
+Before every release:
+
+- [ ] Fresh install on Windows 10 (1903+)
+- [ ] Fresh install on Windows 11
+- [ ] Upgrade from previous version
+- [ ] Uninstall → clean reinstall
+- [ ] Verify all components installed
+- [ ] Verify file associations work
+- [ ] Verify SmartScreen doesn't block (or verify signed)
+- [ ] Verify app launches after install
+- [ ] Verify all shortcuts work
+- [ ] Verify no leftover files after uninstall
+- [ ] Verify installer size is reasonable (< 500 MB)
 
 ---
 
@@ -194,11 +231,11 @@ ORCHORDSSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program File
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 12207:2017 transition and ISO/IEC 25010:2023 installability |
+| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 12207:2017 §6.4 and ISO/IEC 25010:2023 |
 
 ---
 
-*Grounded in: ISO/IEC 12207:2017 §6.4 (Transition Process), ISO/IEC 19770-2:2015, ISO/IEC 25010:2023 (Installability sub-characteristic)*
+*Grounded in: ISO/IEC 12207:2017 §6.4 (Transition), ISO/IEC 25010:2023 (Installability, Portability)*
 
 
 
@@ -208,7 +245,7 @@ ORCHORDSSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program File
 
 ### Internal Documents
 
-- [$title](././SWID_TAG_SPEC.md)
+- [$title](././CODE_SIGNING_CERTIFICATE_MANAGEMENT.md)
 
 ### Standards & Frameworks
 
@@ -229,6 +266,6 @@ ORCHORDSSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program File
 
 ### Review Cadence
 
-- **Next review:** On installer framework change
+- **Next review:** On each installer major change
 - **Reviewer:** ORCHORDS (Build & Release Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
