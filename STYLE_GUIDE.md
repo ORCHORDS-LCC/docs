@@ -1,5 +1,3 @@
-> Auto-generated from `docs/STYLE_GUIDE.md` in the docs repo.
-
 ---
 title: "ORCHORDS — Documentation Style Guide"
 version: "1.0.0"

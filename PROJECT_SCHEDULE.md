@@ -26,7 +26,7 @@ This document provides the canonical reference for the ORCHORDS team's structure
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | This document covers orchords for the ORCHORDS team. |
+| **Scope** | This document covers orchords studio for the ORCHORDS team. |
 | **Diátaxis form** | Reference |
 | **Primary audience** | All team members, leadership |
 | **Secondary audience** | External stakeholders, investors |
@@ -657,9 +657,9 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 
 ### Internal Documents
 
-- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) â€” Team roster and roles
-- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
-- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) — Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) — Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) — Day-to-day team operations
 
 ### Standards & Frameworks
 
