@@ -1,5 +1,3 @@
-> Auto-generated from `docs/user/KEYBOARD_SHORTCUTS.md` in the docs repo.
-
 ---
 title: "Keyboard Shortcuts"
 version: "1.0.0"
