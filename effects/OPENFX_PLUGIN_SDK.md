@@ -1,5 +1,3 @@
-> Auto-generated from `docs/effects/OPENFX_PLUGIN_SDK.md` in the docs repo.
-
 ---
 title: "OpenFX Plugin SDK"
 version: "1.0.0"

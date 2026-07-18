@@ -1,5 +1,3 @@
-> Auto-generated from `docs/effects/EFFECTS_LIBRARY.md` in the docs repo.
-
 ---
 title: "Effects Library"
 version: "1.0.0"
