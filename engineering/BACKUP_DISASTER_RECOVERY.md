@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BACKUP_DISASTER_RECOVERY.md` in the docs repo.
-
 ---
 title: "Backup & Disaster Recovery"
 version: "1.0.0"
@@ -128,7 +126,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 5. Once Firebase is restored, users resume normal cloud sync
 6. Post-incident report within 48 hours
 
-**Duration:** **RTO 4h / RPO 1h** as a conservative interim target (pending Firebase Blaze SLA response, expected to land within the next billing cycle). These numbers are picked to align with the worst-case scenario from the *Firestore point-in-time recovery* window (7 days) and assume a regional outage (not a global Google Cloud one). Mike will tighten these once the SLA response is in; if Firebase commits to 99.95%+, RTO can drop to 2h without extra spend.
+**Duration:** **RTO 4h / RPO 1h** as a conservative interim target (pending Firebase Blaze SLA response, expected to land within the next billing cycle). These numbers are picked to align with the worst-case scenario from the *Firestore point-in-time recovery* window (7 days) and assume a regional outage (not a global Google Cloud one). ORCHORDS will tighten these once the SLA response is in; if Firebase commits to 99.95%+, RTO can drop to 2h without extra spend.
 
 ### Scenario 2: GitHub Repository Unavailable
 
@@ -139,7 +137,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. If GitHub down, activate Azure Blob Storage backup:
    ```bash
    # Clone from Azure Blob Storage backup
-   git clone https://azure_storage.blob.core.windows.net/backups/orchords.git
+   git clone https://azure_storage.blob.core.windows.net/backups/docs.git
    ```
 3. Developers work from local clones
 4. Resume normal operations once GitHub is restored
@@ -170,7 +168,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. Activate Azure geo-redundancy — fail over to secondary region:
    ```bash
    # Fail over storage account
-   az storage account failover --name beetlesa --resource-group orchords-rg
+   az storage account failover --name orchordssa --resource-group docs-rg
    ```
 3. Update DNS if App Service fails over
 4. Verify all endpoints respond in secondary region
@@ -187,7 +185,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. Restore from last known good backup:
    ```bash
    # Restore Firestore from monthly export
-   firestore-cli restore gs://beetle-backup/export_YYYYMMDD
+   firestore-cli restore gs://orchords-backup/export_YYYYMMDD
    ```
 3. Notify affected users
 4. Validate restored data
@@ -206,7 +204,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
    # Rotate Azure credentials
    az ad credential reset --id <app-id>
    # Revoke GitHub OIDC tokens
-   gh api /admin/orgs/orchords-dev/actions/oidc-custom-template -X DELETE
+   gh api /admin/orgs/ORCHORDS-LCC/docs/oidc-custom-template -X DELETE
    ```
 3. Regenerate new signing certificates if compromised
 4. Re-sign all release artifacts if signing keys were compromised

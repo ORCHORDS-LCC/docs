@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/ARCHITECTURE_OVERVIEW.md` in the docs repo.
-
 ---
 title: "Architecture Overview"
 version: "1.0.0"
@@ -38,10 +36,10 @@ This document describes the high-level system architecture of ORCHORDS. Per **IS
 
 - [Module Architecture](#module-architecture)
 - [Core Modules](#core-modules)
-  - [Engine — Rendering (`BeetleEngine`)](#engine-rendering-beetleengine)
-  - [Engine — Codec (`BeetleCodec`)](#engine-codec-beetlecodec)
-  - [Engine — Effects (`BeetleEffects`)](#engine-effects-beetleeffects)
-  - [Audio Engine (`BeetleAudio`)](#audio-engine-beetleaudio)
+  - [Engine — Rendering (`ORCHORDSEngine`)](#engine-rendering-orchordsengine)
+  - [Engine — Codec (`ORCHORDSCodec`)](#engine-codec-orchordscodec)
+  - [Engine — Effects (`ORCHORDSEffects`)](#engine-effects-orchordseffects)
+  - [Audio Engine (`ORCHORDSAudio`)](#audio-engine-orchordsaudio)
 - [Key Abstractions](#key-abstractions)
   - [Frame Buffer Abstraction](#frame-buffer-abstraction)
   - [Timeline Data Model](#timeline-data-model)
@@ -59,7 +57,7 @@ This document describes the high-level system architecture of ORCHORDS. Per **IS
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           ORCHORDS                                 │
+│                               ORCHORDS                               │
 │                                                                         │
 │  ┌─────────────────────────────────────────────────────────────────┐    │
 │  │                         UI LAYER (Qt6)                          │    │
@@ -113,7 +111,7 @@ This document describes the high-level system architecture of ORCHORDS. Per **IS
 
 ## Core Modules
 
-### Engine — Rendering (`BeetleEngine`)
+### Engine — Rendering (`ORCHORDSEngine`)
 **Owner:** ORCHORDS, ORCHORDS
 
 The rendering engine sits at the heart of ORCHORDS. It manages the GPU pipeline, shader compilation, frame pacing, and the viewport compositor.
@@ -124,7 +122,7 @@ The rendering engine sits at the heart of ORCHORDS. It manages the GPU pipeline,
 - **Frame pacing** — locked to display refresh rate; triple buffering
 - **Render graph** — dependency-ordered render passes with automatic resource management
 
-### Engine — Codec (`BeetleCodec`)
+### Engine — Codec (`ORCHORDSCodec`)
 **Owner:** ORCHORDS
 
 Handles all video and audio decoding and encoding via FFmpeg.
@@ -135,7 +133,7 @@ Handles all video and audio decoding and encoding via FFmpeg.
 - **Hardware encoding** — NVENC, QSV, VCE
 - **Audio decoding** — AAC, MP3, WAV, FLAC, OGG
 
-### Engine — Effects (`BeetleEffects`)
+### Engine — Effects (`ORCHORDSEffects`)
 **Owner:** ORCHORDS
 
 GPU-accelerated visual effects and compositing.
@@ -145,7 +143,7 @@ GPU-accelerated visual effects and compositing.
 - **Color pipeline** — color wheels, curves, LUT application, HDR
 - **Plugin host** — OpenFX v1.4 compatibility layer
 
-### Audio Engine (`BeetleAudio`)
+### Audio Engine (`ORCHORDSAudio`)
 **Owner:** ORCHORDS
 
 Multi-track audio playback, mixing, and effects.

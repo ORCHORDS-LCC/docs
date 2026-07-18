@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/TECHNICAL_STANDARDS.md` in the docs repo.
-
 ---
 title: "Technical Standards"
 version: "1.0.0"
@@ -76,7 +74,7 @@ These standards govern how ORCHORDS code is written, reviewed, and maintained. P
 
 | Element | Convention | Example |
 |---|---|---|
-| Class/Struct | PascalCase | `BeetleTimeline`, `AudioMixer` |
+| Class/Struct | PascalCase | `ORCHORDSTimeline`, `AudioMixer` |
 | Function | PascalCase | `LoadProject()`, `RenderFrame()` |
 | Member variable | `m_` prefix + PascalCase | `m_projectPath`, `m_frameRate` |
 | Static variable | `s_` prefix + PascalCase | `s_instanceCount` |
@@ -84,7 +82,7 @@ These standards govern how ORCHORDS code is written, reviewed, and maintained. P
 | Local variable | camelCase | `frameIndex`, `isReady` |
 | Enum value | PascalCase | `TrackType::VideoTrack` |
 | Macro / constant | SCREAMING_SNAKE | `MAX_TRACKS`, `DEFAULT_FPS` |
-| Header guard | `BEETLE_<MODULE>_<FILENAME>_H` | `BEETLE_TIMELINE_TRACK_H` |
+| Header guard | `ORCHORDS_<MODULE>_<FILENAME>_H` | `ORCHORDS_TIMELINE_TRACK_H` |
 
 ### Memory Management
 
@@ -106,7 +104,7 @@ delete[] buffer;
 |---|---|
 | Expected recoverable errors | `std::optional<T>` or `std::expected<T, E>` |
 | Unexpected/programming errors | `assert()` in debug; crash with logged context in release |
-| External system errors (file I/O, GPU) | Custom exception with context (`BeetleException`) |
+| External system errors (file I/O, GPU) | Custom exception with context (`ORCHORDSException`) |
 | Never silently swallow errors | Always log or propagate |
 
 ### No-Except Guidelines

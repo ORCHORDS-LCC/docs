@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BUILD_SYSTEM.md` in the docs repo.
-
 ---
 title: "Build System"
 version: "1.0.0"
@@ -125,10 +123,10 @@ cmake --list-presets
 | Target | Description | Output |
 |---|---|---|
 | `ORCHORDS` | Main application executable | `ORCHORDS.exe` |
-| `BeetleEngine` | Core engine library | `BeetleEngine.dll` |
-| `BeetleUI` | UI library | `BeetleUI.dll` |
-| `BeetleAudio` | Audio engine library | `BeetleAudio.dll` |
-| `BeetlePlugins` | Plugin host library | `BeetlePlugins.dll` |
+| `ORCHORDSEngine` | Core engine library | `ORCHORDSEngine.dll` |
+| `ORCHORDSUI` | UI library | `ORCHORDSUI.dll` |
+| `ORCHORDSAudio` | Audio engine library | `ORCHORDSAudio.dll` |
+| `ORCHORDSPlugins` | Plugin host library | `ORCHORDSPlugins.dll` |
 | `ShaderCompiler` | HLSL → DXIL shader compiler tool | `ShaderCompiler.exe` |
 | `tests` | All unit and integration tests | `test_runner.exe` |
 

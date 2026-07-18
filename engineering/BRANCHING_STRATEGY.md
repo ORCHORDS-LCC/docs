@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BRANCHING_STRATEGY.md` in the docs repo.
-
 ---
 title: "Branching Strategy"
 version: "1.0.0"
