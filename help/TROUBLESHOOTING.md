@@ -1,5 +1,3 @@
-> Auto-generated from `docs/help/TROUBLESHOOTING.md` in the docs repo.
-
 ---
 title: "Troubleshooting Guide"
 version: "1.0.0"
@@ -283,7 +281,7 @@ GPU and CPU at the OS level, which will cause preview playback to drop frames.
 |---|---|---|
 | **In-app report** | Crashes and technical bugs | Monitored daily |
 | **community.example.com** | How-to questions, workflow tips | Community + team |
-| **support@orchords.dev** | Account, licensing, billing issues | 1–2 business days |
+| **support@example.com** | Account, licensing, billing issues | 1–2 business days |
 | **Bug tracker** | Known issues and workarounds | Public list |
 
 ---

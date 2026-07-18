@@ -1,5 +1,3 @@
-> Auto-generated from `docs/help/FAQ.md` in the docs repo.
-
 ---
 title: "Frequently Asked Questions"
 version: "1.0.0"

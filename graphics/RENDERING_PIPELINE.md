@@ -1,5 +1,3 @@
-> Auto-generated from `docs/graphics/RENDERING_PIPELINE.md` in the docs repo.
-
 ---
 title: "Rendering Pipeline"
 version: "1.0.0"
