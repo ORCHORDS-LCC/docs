@@ -26,7 +26,7 @@ This document provides the canonical reference for the ORCHORDS team's structure
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | This document covers orchords for the ORCHORDS team. |
+| **Scope** | This document covers orchords studio for the ORCHORDS team. |
 | **Diátaxis form** | Reference |
 | **Primary audience** | All team members |
 | **Secondary audience** | New hires, contractors |
@@ -36,45 +36,45 @@ This document provides the canonical reference for the ORCHORDS team's structure
 ## Contents
 
 - [Comprehensive Team Operations Manual](#comprehensive-team-operations-manual)
-- [1. ORCHORDS](#1-orchords-dev)
+- [1. ORCHORDS](#1-orchords)
   - [Founder & CEO / Lead Graphics Engineer](#founder-ceo-lead-graphics-engineer)
-- [2. ORCHORDS](#2-kirk-beka)
+- [2. ORCHORDS](#2-orchords)
   - [Co-Founder & CTO](#cofounder-cto)
-- [3. ORCHORDS](#3-alex-chen)
+- [3. ORCHORDS](#3-orchords)
   - [Lead UI/UX Engineer](#lead-uiux-engineer)
-- [4. ORCHORDS](#4-maya-rodriguez)
+- [4. ORCHORDS](#4-orchords)
   - [Senior Backend Developer (Backend Lead)](#senior-backend-developer-backend-lead)
-- [5. ORCHORDS](#5-james-park)
+- [5. ORCHORDS](#5-orchords)
   - [Senior Graphics Engineer](#senior-graphics-engineer)
-- [6. ORCHORDS](#6-sophie-williams)
+- [6. ORCHORDS](#6-orchords)
   - [Video Codec Engineer](#video-codec-engineer)
-- [7. ORCHORDS](#7-daniel-kim)
+- [7. ORCHORDS](#7-orchords)
   - [Effects & Compositing Engineer](#effects-compositing-engineer)
-- [8. ORCHORDS](#8-emma-thompson)
+- [8. ORCHORDS](#8-orchords)
   - [Timeline Engineer](#timeline-engineer)
-- [9. ORCHORDS](#9-ryan-foster)
+- [9. ORCHORDS](#9-orchords)
   - [Audio Engineer](#audio-engineer)
-- [10. ORCHORDS](#10-lisa-martinez)
+- [10. ORCHORDS](#10-orchords)
   - [QA Lead](#qa-lead)
-- [11. ORCHORDS](#11-mike-johnson)
+- [11. ORCHORDS](#11-orchords)
   - [DevOps Lead](#devops-lead)
-- [12. ORCHORDS](#12-sarah-miller)
+- [12. ORCHORDS](#12-orchords)
   - [Build & Release Engineer](#build-release-engineer)
-- [13. ORCHORDS](#13-chris-taylor)
+- [13. ORCHORDS](#13-orchords)
   - [Product Manager](#product-manager)
-- [14. ORCHORDS](#14-nina-patel)
+- [14. ORCHORDS](#14-orchords)
   - [UX Designer](#ux-designer)
-- [15. ORCHORDS](#15-david-lee)
+- [15. ORCHORDS](#15-orchords)
   - [Motion Graphics Designer](#motion-graphics-designer)
-- [16. ORCHORDS](#16-tom-anderson)
+- [16. ORCHORDS](#16-orchords)
   - [Technical Writer](#technical-writer)
-- [17. ORCHORDS](#17-jason-wong)
+- [17. ORCHORDS](#17-orchords)
   - [Marketing Manager](#marketing-manager)
-- [18. ORCHORDS](#18-rachel-green)
+- [18. ORCHORDS](#18-orchords)
   - [Community Manager](#community-manager)
-- [19. ORCHORDS](#19-amanda-clark)
+- [19. ORCHORDS](#19-orchords)
   - [Operations Manager](#operations-manager)
-- [20. ORCHORDS](#20-kevin-brown)
+- [20. ORCHORDS](#20-orchords)
   - [Business Development](#business-development)
 - [MONDAY - THURSDAY](#monday-thursday)
 - [FRIDAY](#friday)
@@ -268,7 +268,7 @@ ORCHORDS serves as the visionary leader and technical driving force behind ORCHO
 
 #### ROLE OVERVIEW
 
-ORCHORDS serves as the Chief Technology Officer, bridging the gap between ORCHORDS's vision and technical implementation. As CTO, Kirk oversees all technical operations, ensures architectural consistency across teams, and manages the engineering department's day-to-day operations. Kirk represents the second technical pillar of the leadership team, handling system architecture, code quality, security, and infrastructure decisions.
+ORCHORDS serves as the Chief Technology Officer, bridging the gap between ORCHORDS's vision and technical implementation. As CTO, ORCHORDS oversees all technical operations, ensures architectural consistency across teams, and manages the engineering department's day-to-day operations. ORCHORDS represents the second technical pillar of the leadership team, handling system architecture, code quality, security, and infrastructure decisions.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -388,7 +388,7 @@ ORCHORDS serves as the Chief Technology Officer, bridging the gap between ORCHOR
 
 #### ROLE OVERVIEW
 
-ORCHORDS leads the user interface and user experience development for ORCHORDS. As the UI/UX Lead, Alex is responsible for building the visual and interactive components that users interact with daily. This includes the main application window, timeline, effect panels, preview viewport, and all user-facing controls. Alex ensures that ORCHORDS's interface is not only beautiful but also intuitive, responsive, and optimized for professional workflows.
+ORCHORDS leads the user interface and user experience development for ORCHORDS. As the UI/UX Lead, ORCHORDS is responsible for building the visual and interactive components that users interact with daily. This includes the main application window, timeline, effect panels, preview viewport, and all user-facing controls. ORCHORDS ensures that ORCHORDS's interface is not only beautiful but also intuitive, responsive, and optimized for professional workflows.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -489,7 +489,7 @@ ORCHORDS leads the user interface and user experience development for ORCHORDS. 
 
 #### ROLE OVERVIEW
 
-ORCHORDS leads all backend and cloud services for ORCHORDS. This includes Firebase authentication, Firestore database architecture, cloud functions, and the integration between desktop application and cloud services. Maya ensures that users have a seamless experience when logging in, syncing projects, and accessing cloud features.
+ORCHORDS leads all backend and cloud services for ORCHORDS. This includes Firebase authentication, Firestore database architecture, cloud functions, and the integration between desktop application and cloud services. ORCHORDS ensures that users have a seamless experience when logging in, syncing projects, and accessing cloud features.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -588,7 +588,7 @@ ORCHORDS leads all backend and cloud services for ORCHORDS. This includes Fireba
 
 #### ROLE OVERVIEW
 
-ORCHORDS is a senior graphics engineer focused on the rendering pipeline of ORCHORDS. Working alongside ORCHORDS, James is responsible for implementing the DirectX 12 rendering backend, developing shaders, and ensuring the preview viewport delivers professional-quality visuals. James brings deep expertise in GPU programming and real-time rendering techniques.
+ORCHORDS is a senior graphics engineer focused on the rendering pipeline of ORCHORDS. Working alongside ORCHORDS, ORCHORDS is responsible for implementing the DirectX 12 rendering backend, developing shaders, and ensuring the preview viewport delivers professional-quality visuals. ORCHORDS brings deep expertise in GPU programming and real-time rendering techniques.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -688,7 +688,7 @@ ORCHORDS is a senior graphics engineer focused on the rendering pipeline of ORCH
 
 #### ROLE OVERVIEW
 
-ORCHORDS is the video codec specialist for ORCHORDS. She is responsible for all video decoding and encoding functionality, FFmpeg integration, hardware acceleration support, and ensuring ORCHORDS can work with any video format professionals might encounter. Sophie's work is fundamental to ORCHORDS's ability to import and export video content.
+ORCHORDS is the video codec specialist for ORCHORDS. She is responsible for all video decoding and encoding functionality, FFmpeg integration, hardware acceleration support, and ensuring ORCHORDS can work with any video format professionals might encounter. ORCHORDS's work is fundamental to ORCHORDS's ability to import and export video content.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -785,7 +785,7 @@ ORCHORDS is the video codec specialist for ORCHORDS. She is responsible for all 
 
 #### ROLE OVERVIEW
 
-ORCHORDS builds the visual effects and compositing systems that make ORCHORDS a powerful creative tool. He implements GPU-accelerated effects, the layer compositing pipeline, color correction tools, and supports the OpenFX plugin system. Daniel transforms raw footage into polished content.
+ORCHORDS builds the visual effects and compositing systems that make ORCHORDS a powerful creative tool. He implements GPU-accelerated effects, the layer compositing pipeline, color correction tools, and supports the OpenFX plugin system. ORCHORDS transforms raw footage into polished content.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -883,7 +883,7 @@ ORCHORDS builds the visual effects and compositing systems that make ORCHORDS a 
 
 #### ROLE OVERVIEW
 
-ORCHORDS is the timeline systems engineer, responsible for one of the most critical and complex components of ORCHORDS—the timeline. The timeline is where all video editing happens, and Emma ensures it performs flawlessly, handles complex projects, and provides a responsive editing experience.
+ORCHORDS is the timeline systems engineer, responsible for one of the most critical and complex components of ORCHORDS—the timeline. The timeline is where all video editing happens, and ORCHORDS ensures it performs flawlessly, handles complex projects, and provides a responsive editing experience.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -979,7 +979,7 @@ ORCHORDS is the timeline systems engineer, responsible for one of the most criti
 
 #### ROLE OVERVIEW
 
-ORCHORDS is the audio systems engineer for ORCHORDS. He is responsible for audio playback, mixing, effects processing, and ensuring that ORCHORDS handles audio with the same professionalism as video. Audio is half of any video production, and Ryan ensures the experience is seamless.
+ORCHORDS is the audio systems engineer for ORCHORDS. He is responsible for audio playback, mixing, effects processing, and ensuring that ORCHORDS handles audio with the same professionalism as video. Audio is half of any video production, and ORCHORDS ensures the experience is seamless.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1388,7 +1388,7 @@ ORCHORDS specializes in the build and release process for ORCHORDS. She is respo
 
 #### ROLE OVERVIEW
 
-ORCHORDS is the Product Manager for ORCHORDS, responsible for defining the product roadmap, prioritizing features, gathering user feedback, and ensuring that development efforts align with user needs and business goals. Chris translates vision into actionable product plans.
+ORCHORDS is the Product Manager for ORCHORDS, responsible for defining the product roadmap, prioritizing features, gathering user feedback, and ensuring that development efforts align with user needs and business goals. ORCHORDS translates vision into actionable product plans.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1790,7 +1790,7 @@ ORCHORDS is the Technical Writer for ORCHORDS, responsible for all user-facing d
 
 #### ROLE OVERVIEW
 
-ORCHORDS leads the marketing efforts for ORCHORDS. He is responsible for brand positioning, content marketing, digital marketing campaigns, PR, and driving user acquisition. Jason builds awareness and drives adoption of ORCHORDS globally.
+ORCHORDS leads the marketing efforts for ORCHORDS. He is responsible for brand positioning, content marketing, digital marketing campaigns, PR, and driving user acquisition. ORCHORDS builds awareness and drives adoption of ORCHORDS globally.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -2436,9 +2436,9 @@ ORCHORDS drives business development for ORCHORDS, focusing on partnerships, ent
 
 ### Internal Documents
 
-- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) â€” Team roster and roles
-- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
-- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) — Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) — Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) — Day-to-day team operations
 
 ### Standards & Frameworks
 
