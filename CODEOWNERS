@@ -1,76 +1,76 @@
-# ORCHORDS â€” Code Owners
-# Each file/path is owned by the listed GitHub/Fogejo users.
+# ORCHORDS — Code Owners
+# Each file/path is owned by the listed GitHub/Forgejo users.
 # PRs touching these paths require review from the owner.
 # Format: pattern<space>owners
 
 # Default owner
-*                                               @cto @orchords
+*                                               @ORCHORDS @ORCHORDS
 
 # Meta / Documentation / Style / Help / User docs
-/STYLE_GUIDE.md                                 @docs
-/README.md                                      @docs
-/help/                                          @docs
-/user/                                          @docs
+/STYLE_GUIDE.md                                 @ORCHORDS
+/README.md                                      @ORCHORDS
+/help/                                          @ORCHORDS
+/user/                                          @ORCHORDS
 
 # Releases
-/releases/                                      @release
+/releases/                                      @ORCHORDS
 
 # Engineering
-/engineering/BUILD_SYSTEM.md                    @devops
-/engineering/CI_CD_PIPELINE.md                  @devops
-/engineering/BRANCHING_STRATEGY.md              @devops
-/engineering/TEST_STRATEGY.md                   @devops
-/operations/INFRASTRUCTURE_OVERVIEW.md          @devops
-/engineering/TECHNICAL_STANDARDS.md             @cto
-/engineering/ARCHITECTURE_OVERVIEW.md           @cto
-/engineering/BACKUP_DISASTER_RECOVERY.md        @cto
+/engineering/BUILD_SYSTEM.md                    @ORCHORDS
+/engineering/CI_CD_PIPELINE.md                  @ORCHORDS
+/engineering/BRANCHING_STRATEGY.md              @ORCHORDS
+/engineering/TEST_STRATEGY.md                   @ORCHORDS
+/operations/INFRASTRUCTURE_OVERVIEW.md          @ORCHORDS
+/engineering/TECHNICAL_STANDARDS.md             @ORCHORDS
+/engineering/ARCHITECTURE_OVERVIEW.md           @ORCHORDS
+/engineering/BACKUP_DISASTER_RECOVERY.md        @ORCHORDS
 
 # UI/UX
-/ui/COMPONENT_LIBRARY.md                        @ui
-/ACCESSIBILITY_COMPLIANCE.md                    @ui
+/ui/COMPONENT_LIBRARY.md                        @ORCHORDS
+/ACCESSIBILITY_COMPLIANCE.md                    @ORCHORDS
 
 # Graphics
-/graphics/                                      @graphics
-/PERFORMANCE_BENCHMARKS.md                      @graphics
+/graphics/                                      @ORCHORDS
+/PERFORMANCE_BENCHMARKS.md                      @ORCHORDS
 
 # Codecs
-/codecs/                                        @codec
+/codecs/                                        @ORCHORDS
 
 # Backend
-/backend/                                       @backend
+/backend/                                       @ORCHORDS
 
 # Effects
-/effects/                                       @effects
-/OPENFX_PLUGIN_GUIDE.md                         @effects
+/effects/                                       @ORCHORDS
+/OPENFX_PLUGIN_GUIDE.md                         @ORCHORDS
 
 # Timeline
-/timeline/                                      @timeline
+/timeline/                                      @ORCHORDS
 
 # Audio
-/audio/                                         @audio
+/audio/                                         @ORCHORDS
 
 # Product
-/product/                                       @product
-/PROJECT_SCHEDULE.md                            @product
+/product/                                       @ORCHORDS
+/PROJECT_SCHEDULE.md                            @ORCHORDS
 
 # Operations
-/operations/ONBOARDING_GUIDE.md                 @operations
+/operations/ONBOARDING_GUIDE.md                 @ORCHORDS
 
 # Community
-/community/                                     @community
+/community/                                     @ORCHORDS
 
 # Marketing
-/marketing/                                     @marketing
+/marketing/                                     @ORCHORDS
 
 # Business
-/business/                                      @business
+/business/                                      @ORCHORDS
 
 # QA
-/BETA_PROGRAM_GUIDE.md                          @qa
+/BETA_PROGRAM_GUIDE.md                          @ORCHORDS
 
 # Security
-/SECURITY_POLICY.md                             @cto
+/SECURITY_POLICY.md                             @ORCHORDS
 
 # Operations manual
-/TEAM_OPERATIONS_MANUAL.md                      @cto
-/ORCHORDS_TEAM.md                          @orchords
+/TEAM_OPERATIONS_MANUAL.md                      @ORCHORDS
+/ORCHORDS_TEAM.md                          @ORCHORDS

@@ -1,5 +1,3 @@
-> Auto-generated from `docs/PERFORMANCE_BENCHMARKS.md` in the docs repo.
-
 ---
 title: "Performance Benchmarks"
 version: "1.0.0"

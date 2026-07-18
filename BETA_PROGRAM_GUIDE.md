@@ -1,5 +1,3 @@
-> Auto-generated from `docs/BETA_PROGRAM_GUIDE.md` in the docs repo.
-
 ---
 title: "Beta Program Guide"
 version: "1.0.0"

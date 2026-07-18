@@ -1,5 +1,3 @@
-> Auto-generated from `docs/OPENFX_PLUGIN_GUIDE.md` in the docs repo.
-
 ---
 title: "OpenFX Plugin Guide (Third-Party)"
 version: "1.0.0"
