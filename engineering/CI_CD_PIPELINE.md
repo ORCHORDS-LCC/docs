@@ -1,10 +1,8 @@
-> Auto-generated from `docs/engineering/CI_CD_PIPELINE.md` in the docs repo.
-
 ---
 title: "CI/CD Pipeline"
 version: "2.0.0"
 last-updated: "2026-06-21"
-owner: "mike.johnson (DevOps Lead)"
+owner: "ORCHORDS (DevOps Lead)"
 status: "approved"
 iso-refs: ["ISO/IEC 12207:2017 §6.3.5", "ISO/IEC 25010:2023 (Reliability)", "ISO/IEC 19770-2:2015"]
 ---
@@ -18,7 +16,7 @@ iso-refs: ["ISO/IEC 12207:2017 §6.3.5", "ISO/IEC 25010:2023 (Reliability)", "IS
 **Version:** 2.0.0 — corrected 2026-06-21 (see Change Log)
 **Last Updated:** 2026-06-21
 
-> **2026-06-21 correction:** v1.0.0 of this document described a pipeline that did not match the actual Forgejo Actions workflows in `ORCHORDS-LCC/docs@.forgejo/workflows/`. v2.0.0 has been rewritten to reflect the **current** 8-workflow state. Earlier references to SonarQube, Trivy, FOSSA, Checkov, Dependabot, Azure Artifact Signing, and the GitHub Release pipeline have been removed — those tools are **not configured** in the project and should not be cited as in-use.
+> **2026-06-21 correction:** v1.0.0 of this document described a pipeline that did not match the actual Forgejo Actions workflows in `docs/docs@.forgejo/workflows/`. v2.0.0 has been rewritten to reflect the **current** 8-workflow state. Earlier references to SonarQube, Trivy, FOSSA, Checkov, Dependabot, Azure Artifact Signing, and the GitHub Release pipeline have been removed — those tools are **not configured** in the project and should not be cited as in-use.
 
 ---
 
@@ -35,7 +33,7 @@ iso-refs: ["ISO/IEC 12207:2017 §6.3.5", "ISO/IEC 25010:2023 (Reliability)", "IS
 
 ## Overview
 
-ORCHORDS uses **Forgejo Actions** for all CI/CD. Workflows are written in GitHub Actions YAML syntax (Forgejo Actions is *familiar* but not *compatible* with GitHub Actions — see [Workflows README](./workflows/README.md) for the differences). All workflows live in `.forgejo/workflows/` of the `ORCHORDS-LCC/docs` repository. The current pipeline has 8 workflows (see [Workflows Index](./workflows/README.md) for per-workflow documentation).
+ORCHORDS uses **Forgejo Actions** for all CI/CD. Workflows are written in GitHub Actions YAML syntax (Forgejo Actions is *familiar* but not *compatible* with GitHub Actions — see [Workflows README](./workflows/README.md) for the differences). All workflows live in `.forgejo/workflows/` of the `docs/docs` repository. The current pipeline has 8 workflows (see [Workflows Index](./workflows/README.md) for per-workflow documentation).
 
 ## Contents
 
@@ -191,7 +189,7 @@ If a security finding is accepted as risk, the waiver is logged in [`../security
 
 | Severity | Intended action | Currently enforced? |
 |---|---|---|
-| Critical | Block merge + page `@security-team` + incident | No (advisory) |
+| Critical | Block merge + page `@ORCHORDS` + incident | No (advisory) |
 | High | Block merge + waiver required to override | No (advisory) |
 | Medium | Warn; allow merge; open ticket | No (advisory) |
 | Low | Log only | Yes (always) |
@@ -230,7 +228,7 @@ The advisory-only state is acknowledged and tracked; converting the scanners to 
 
 ---
 
-*Grounded in: ISO/IEC 12207:2017 §6.3.5 (Development & transition processes), ISO/IEC 25010:2023 (Reliability subcharacteristic), ISO/IEC 19770-2:2015 (SWID). Workflows source-of-truth: `ORCHORDS-LCC/docs@.forgejo/workflows/*.yml`.*
+*Grounded in: ISO/IEC 12207:2017 §6.3.5 (Development & transition processes), ISO/IEC 25010:2023 (Reliability subcharacteristic), ISO/IEC 19770-2:2015 (SWID). Workflows source-of-truth: `docs/docs@.forgejo/workflows/*.yml`.*
 
 ## Document Maintenance
 
@@ -240,7 +238,7 @@ The advisory-only state is acknowledged and tracked; converting the scanners to 
 |---|---|---|---|
 | 1.0.0 | June 2026 | ORCHORDS | Initial spec — aligned with ISO/IEC 12207:2017 §6.3.5 and ISO/IEC 25010:2023 |
 | 1.0.1 | June 2026 | ORCHORDS | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
-| 2.0.0 | 2026-06-21 | kirk.beka (CTO) | **Corrective rewrite** — removed references to GitHub Actions, GitHub Releases, SonarQube, Trivy, FOSSA, Checkov, Dependabot, Azure Artifact Signing, and Qt6 toolchain — none of which are configured in the actual `ORCHORDS-LCC/docs@.forgejo/workflows/` files. Re-aligned with the 8 actual workflows. Per-workflow docs moved to [`./workflows/`](./workflows/). Acknowledged the advisory-only state of most scanners. |
+| 2.0.0 | 2026-06-21 | ORCHORDS (CTO) | **Corrective rewrite** — removed references to GitHub Actions, GitHub Releases, SonarQube, Trivy, FOSSA, Checkov, Dependabot, Azure Artifact Signing, and Qt6 toolchain — none of which are configured in the actual `docs/docs@.forgejo/workflows/` files. Re-aligned with the 8 actual workflows. Per-workflow docs moved to [`./workflows/`](./workflows/). Acknowledged the advisory-only state of most scanners. |
 
 ### Review Cadence
 

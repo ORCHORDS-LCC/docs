@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/TEST_STRATEGY.md` in the docs repo.
-
 ---
 title: "Test Strategy"
 version: "1.0.0"
@@ -415,7 +413,7 @@ If you can point to a doc section or a spec line, do.]
 - **OS:** [Windows 11 23H2]
 - **Build:** [ORCHORDS 1.0.0-beta.3 (commit abc123)]
 - **GPU:** [NVIDIA RTX 3060]
-- **Project file:** [attach .beetle file or describe]
+- **Project file:** [attach .orchords file or describe]
 - **Media files:** [attach or describe source clip]
 
 ### 7. Visual Evidence
