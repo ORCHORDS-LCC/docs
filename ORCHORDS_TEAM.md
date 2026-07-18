@@ -26,7 +26,7 @@ This document provides the canonical reference for the ORCHORDS team's structure
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | This document covers orchords team for the ORCHORDS team. |
+| **Scope** | This document covers orchords studio team for the ORCHORDS team. |
 | **Diátaxis form** | Reference |
 | **Primary audience** | All team members |
 | **Secondary audience** | External partners and recruiters |
@@ -36,31 +36,31 @@ This document provides the canonical reference for the ORCHORDS team's structure
 ## Contents
 
 - [Leadership](#leadership)
-  - [1. ORCHORDS — Founder & CEO](#1-orchords-dev-founder-ceo)
-  - [2. ORCHORDS — Co-Founder & CTO](#2-kirk-beka-cofounder-cto)
+  - [1. ORCHORDS — Founder & CEO](#1-orchords-founder-ceo)
+  - [2. ORCHORDS — Co-Founder & CTO](#2-orchords-cofounder-cto)
 - [Engineering Department](#engineering-department)
-  - [3. ORCHORDS — Lead UI/UX Engineer](#3-alex-chen-lead-uiux-engineer)
-  - [4. ORCHORDS — Senior Backend Developer](#4-maya-rodriguez-senior-backend-developer)
-  - [5. ORCHORDS — Senior Graphics Engineer](#5-james-park-senior-graphics-engineer)
-  - [6. ORCHORDS — Video Codec Engineer](#6-sophie-williams-video-codec-engineer)
-  - [7. ORCHORDS — Effects & Compositing Engineer](#7-daniel-kim-effects-compositing-engineer)
-  - [8. ORCHORDS — Timeline Engineer](#8-emma-thompson-timeline-engineer)
-  - [9. ORCHORDS — Audio Engineer](#9-ryan-foster-audio-engineer)
-  - [10. ORCHORDS — Quality Assurance Lead](#10-lisa-martinez-quality-assurance-lead)
+  - [3. ORCHORDS — Lead UI/UX Engineer](#3-orchords-lead-uiux-engineer)
+  - [4. ORCHORDS — Senior Backend Developer](#4-orchords-senior-backend-developer)
+  - [5. ORCHORDS — Senior Graphics Engineer](#5-orchords-senior-graphics-engineer)
+  - [6. ORCHORDS — Video Codec Engineer](#6-orchords-video-codec-engineer)
+  - [7. ORCHORDS — Effects & Compositing Engineer](#7-orchords-effects-compositing-engineer)
+  - [8. ORCHORDS — Timeline Engineer](#8-orchords-timeline-engineer)
+  - [9. ORCHORDS — Audio Engineer](#9-orchords-audio-engineer)
+  - [10. ORCHORDS — Quality Assurance Lead](#10-orchords-quality-assurance-lead)
 - [Product & Design](#product-design)
-  - [11. ORCHORDS — Product Manager](#11-chris-taylor-product-manager)
-  - [12. ORCHORDS — UX Designer](#12-nina-patel-ux-designer)
-  - [13. ORCHORDS — Motion Graphics Designer](#13-david-lee-motion-graphics-designer)
+  - [11. ORCHORDS — Product Manager](#11-orchords-product-manager)
+  - [12. ORCHORDS — UX Designer](#12-orchords-ux-designer)
+  - [13. ORCHORDS — Motion Graphics Designer](#13-orchords-motion-graphics-designer)
 - [DevOps & Infrastructure](#devops-infrastructure)
-  - [14. ORCHORDS — DevOps Engineer](#14-mike-johnson-devops-engineer)
-  - [15. ORCHORDS — Build & Release Engineer](#15-sarah-miller-build-release-engineer)
+  - [14. ORCHORDS — DevOps Engineer](#14-orchords-devops-engineer)
+  - [15. ORCHORDS — Build & Release Engineer](#15-orchords-build-release-engineer)
 - [Marketing & Community](#marketing-community)
-  - [16. ORCHORDS — Marketing Manager](#16-jason-wong-marketing-manager)
-  - [17. ORCHORDS — Community Manager](#17-rachel-green-community-manager)
-  - [18. ORCHORDS — Technical Writer](#18-tom-anderson-technical-writer)
+  - [16. ORCHORDS — Marketing Manager](#16-orchords-marketing-manager)
+  - [17. ORCHORDS — Community Manager](#17-orchords-community-manager)
+  - [18. ORCHORDS — Technical Writer](#18-orchords-technical-writer)
 - [Business & Operations](#business-operations)
-  - [19. ORCHORDS — Operations Manager](#19-amanda-clark-operations-manager)
-  - [20. ORCHORDS — Business Development](#20-kevin-brown-business-development)
+  - [19. ORCHORDS — Operations Manager](#19-orchords-operations-manager)
+  - [20. ORCHORDS — Business Development](#20-orchords-business-development)
 - [Team Structure Overview](#team-structure-overview)
 - [Hiring Priorities (In Order)](#hiring-priorities-in-order)
 
@@ -495,9 +495,9 @@ ORCHORDS (CEO)
 
 ### Internal Documents
 
-- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) â€” Team roster and roles
-- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
-- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+- [ORCHORDS_TEAM.md](./ORCHORDS_TEAM.md) — Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) — Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) — Day-to-day team operations
 
 ### Standards & Frameworks
 

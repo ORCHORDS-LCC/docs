@@ -1,5 +1,3 @@
-> Auto-generated from `docs/ACCESSIBILITY_COMPLIANCE.md` in the docs repo.
-
 ---
 title: "Accessibility Compliance"
 version: "1.0.0"

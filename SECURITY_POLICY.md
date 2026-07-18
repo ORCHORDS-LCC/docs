@@ -1,5 +1,3 @@
-> Auto-generated from `docs/SECURITY_POLICY.md` in the docs repo.
-
 ---
 title: "Security Policy"
 version: "1.0.0"
@@ -164,7 +162,7 @@ OpenFX plugins run in the same process as ORCHORDS. Security controls:
 
 We follow a **coordinated vulnerability disclosure** process:
 
-1. **Report:** Security researcher contacts `security@orchords.dev`
+1. **Report:** Security researcher contacts `security@orchords.com`
 2. **Triage:** ORCHORDS triages within 7 days
 3. **Fix:** Development team prioritizes fix based on severity
 4. **Release:** Fix shipped in next patch or hotfix
@@ -227,7 +225,7 @@ This section enumerates the security checks we run against ORCHORDS, the marketi
 
 ### Vulnerability Disclosure
 
-- **Reporting channel:** `security@orchords.dev` + HackerOne program
+- **Reporting channel:** `security@orchords.com` + HackerOne program
 - **Acknowledgment:** within 48 hours
 - **Triage:** within 7 days
 - **Public disclosure:** coordinated with reporter, minimum 90 days from report to fix-or-disclose
