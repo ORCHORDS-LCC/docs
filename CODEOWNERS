@@ -1,76 +1,14 @@
-# ORCHORDS — Code Owners
-# Each file/path is owned by the listed GitHub/Forgejo users.
-# PRs touching these paths require review from the owner.
-# Format: pattern<space>owners
+# Default owner for public documentation
+* @ORCHORDS
 
-# Default owner
-*                                               @ORCHORDS @ORCHORDS
+# Security-sensitive public policy
+/SECURITY.md @ORCHORDS
+/SECURITY_POLICY.md @ORCHORDS
+/sop/SECURITY_EXCEPTION_SOP.md @ORCHORDS
+/sop/VULNERABILITY_MANAGEMENT_SOP.md @ORCHORDS
 
-# Meta / Documentation / Style / Help / User docs
-/STYLE_GUIDE.md                                 @ORCHORDS
-/README.md                                      @ORCHORDS
-/help/                                          @ORCHORDS
-/user/                                          @ORCHORDS
-
-# Releases
-/releases/                                      @ORCHORDS
-
-# Engineering
-/engineering/BUILD_SYSTEM.md                    @ORCHORDS
-/engineering/CI_CD_PIPELINE.md                  @ORCHORDS
-/engineering/BRANCHING_STRATEGY.md              @ORCHORDS
-/engineering/TEST_STRATEGY.md                   @ORCHORDS
-/operations/INFRASTRUCTURE_OVERVIEW.md          @ORCHORDS
-/engineering/TECHNICAL_STANDARDS.md             @ORCHORDS
-/engineering/ARCHITECTURE_OVERVIEW.md           @ORCHORDS
-/engineering/BACKUP_DISASTER_RECOVERY.md        @ORCHORDS
-
-# UI/UX
-/ui/COMPONENT_LIBRARY.md                        @ORCHORDS
-/ACCESSIBILITY_COMPLIANCE.md                    @ORCHORDS
-
-# Graphics
-/graphics/                                      @ORCHORDS
-/PERFORMANCE_BENCHMARKS.md                      @ORCHORDS
-
-# Codecs
-/codecs/                                        @ORCHORDS
-
-# Backend
-/backend/                                       @ORCHORDS
-
-# Effects
-/effects/                                       @ORCHORDS
-/OPENFX_PLUGIN_GUIDE.md                         @ORCHORDS
-
-# Timeline
-/timeline/                                      @ORCHORDS
-
-# Audio
-/audio/                                         @ORCHORDS
-
-# Product
-/product/                                       @ORCHORDS
-/PROJECT_SCHEDULE.md                            @ORCHORDS
-
-# Operations
-/operations/ONBOARDING_GUIDE.md                 @ORCHORDS
-
-# Community
-/community/                                     @ORCHORDS
-
-# Marketing
-/marketing/                                     @ORCHORDS
-
-# Business
-/business/                                      @ORCHORDS
-
-# QA
-/BETA_PROGRAM_GUIDE.md                          @ORCHORDS
-
-# Security
-/SECURITY_POLICY.md                             @ORCHORDS
-
-# Operations manual
-/TEAM_OPERATIONS_MANUAL.md                      @ORCHORDS
-/ORCHORDS_TEAM.md                          @ORCHORDS
+# Repository governance and automation
+/.github/ @ORCHORDS
+/scripts/ @ORCHORDS
+/DOCUMENT_CONTROL.md @ORCHORDS
+/GOVERNANCE.md @ORCHORDS
