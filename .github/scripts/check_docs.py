@@ -244,7 +244,10 @@ def check_local_target(path: Path, raw: str, target: str, *, is_image: bool) -> 
         return []
     resolved = (path.parent / decoded).resolve()
     try:
-        resolved.relative_to(ROOT)
+        # ROOT may sit under a symlinked path (macOS /tmp, /var/folders),
+        # so compare resolved-to-resolved or every relative link is
+        # reported as escaping the repository.
+        resolved.relative_to(ROOT.resolve())
     except ValueError:
         return [f"{path.relative_to(ROOT)}: link escapes repository: {raw}"]
 

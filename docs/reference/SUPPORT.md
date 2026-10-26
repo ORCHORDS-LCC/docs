@@ -4,7 +4,7 @@
 
 | Need | Route |
 | --- | --- |
-| Something in a document is wrong, outdated, unclear, or missing | [Open a documentation issue](https://github.com/ORCHORDS/docs/issues/new?template=doc_issue.yml) |
+| Something in a document is wrong, outdated, unclear, or missing | [Open a documentation issue](https://github.com/ORCHORDS-LCC/docs/issues/new?template=doc_issue.yml) |
 | Security-sensitive finding | [SECURITY.md](../../SECURITY.md) — never a public issue |
 | General question about this repository or its content | `crm@orchords.com` |
 
