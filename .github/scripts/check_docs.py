@@ -86,7 +86,33 @@ HTML_TARGET_RE = re.compile(
     re.I,
 )
 URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
+# A target is an EXTERNAL reference only if it uses a real URI scheme. The
+# broad pattern above also matches a relative path that carries a line
+# suffix ("risk-register.md:1"), which would silently exempt a genuinely
+# broken link from validation. These are the schemes that actually occur in
+# this corpus; anything else with a colon is treated as a relative path and
+# is resolved against the repository.
+EXTERNAL_SCHEMES = frozenset({
+    "http", "https", "mailto", "tel", "cid", "data", "javascript", "intent",
+    "ftp", "ftps", "sftp", "ssh", "git", "file", "irc", "ircs", "news",
+    "nntp", "xmpp", "matrix", "magnet", "bitcoin", "geo", "maps", "news",
+    "urn", "doi", "info", "ws", "wss", "chrome", "chrome-extension",
+    "about", "blob", "view-source", "javascript",
+})
 DYNAMIC_TARGET_PREFIXES = ("${", "{{", "{%", "<%")
+
+
+def is_external_target(target: str) -> bool:
+    """True if the target is an external reference rather than a relative path.
+
+    A relative path may legitimately contain a colon (a "file.md:12" line
+    reference), so the scheme must be one that is actually used in this
+    corpus rather than any string that merely looks like a scheme.
+    """
+    m = URL_RE.match(target)
+    if not m:
+        return False
+    return m.group(0)[:-1].lower() in EXTERNAL_SCHEMES
 
 
 def is_controlled(path: Path) -> bool:
@@ -233,16 +259,30 @@ def normalize_markdown_destination(raw: str) -> str:
     return raw.split()[0] if raw else ""
 
 
+LINE_SUFFIX_RE = re.compile(r"^(?P<stem>.+\.[A-Za-z0-9]+):(?P<line>\d+)$")
+
+
+def strip_line_suffix(target: str) -> str:
+    """Drop a trailing ":<line>" line reference from a relative link target.
+
+    "risk-register.md:12" is a reference to line 12 of "risk-register.md",
+    not to a file literally named "risk-register.md:12". The line part is
+    irrelevant to whether the link resolves, so only the stem is checked.
+    """
+    m = LINE_SUFFIX_RE.match(target)
+    return m.group("stem") if m else target
+
+
 def check_local_target(path: Path, raw: str, target: str, *, is_image: bool) -> list[str]:
     if not target or target.startswith(("#", "/")) or is_dynamic_target(target):
         return []
-    if target.startswith("mailto:") or URL_RE.match(target):
+    if target.startswith("mailto:") or is_external_target(target):
         return []
 
     decoded = unquote(target.split("#", 1)[0].split("?", 1)[0])
     if not decoded:
         return []
-    resolved = (path.parent / decoded).resolve()
+    resolved = (path.parent / strip_line_suffix(decoded)).resolve()
     try:
         # ROOT may sit under a symlinked path (macOS /tmp, /var/folders),
         # so compare resolved-to-resolved or every relative link is
