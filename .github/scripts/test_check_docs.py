@@ -129,6 +129,34 @@ class CheckLinksTests(unittest.TestCase):
         image.touch()
         self.assertEqual(self.check("![Banner](../assets/banner.jpg)"), [])
 
+    def test_rejects_missing_relative_link_with_line_suffix(self) -> None:
+        # "risk-register.md:1" is a relative path with a line suffix, not a
+        # URI scheme. It must be resolved against the repository, so a
+        # missing target is reported.
+        errors = self.check("See [risk register](risk-register.md:1).")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("broken relative link", errors[0])
+
+    def test_accepts_relative_link_with_line_suffix_to_existing_file(self) -> None:
+        (self.root / "docs" / "risk-register.md").write_text("ok", encoding="utf-8")
+        self.assertEqual(self.check("See [risk register](risk-register.md:1)."), [])
+
+    def test_accepts_real_external_schemes(self) -> None:
+        for target in (
+            "https://example.com/x",
+            "http://example.com/x",
+            "mailto:crm@orchords.com",
+            "cid:logo@example.com",
+            "data:image/png;base64,AAAA",
+            "javascript:void(0)",
+            "intent://example#Intent;end",
+        ):
+            with self.subTest(target=target):
+                self.assertEqual(self.check(f"[x]({target})"), [])
+
+    def test_accepts_existing_markdown_image_again(self) -> None:
+        self.assertEqual(self.check("[x](page.md)"), [])
+
     def test_accepts_balanced_parentheses_in_markdown_destination(self) -> None:
         image = self.root / "docs" / "assets" / "plot(1).png"
         image.parent.mkdir()
