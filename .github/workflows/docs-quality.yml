@@ -11,8 +11,35 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # The account's hosted-runner allocation is currently blocked by a
+    # billing / spending-limit condition, so the hosted "ubuntu-latest" runner
+    # cannot be scheduled ("The job was not started because recent account
+    # payments have failed or your spending limit needs to be increased").
+    #
+    # The job therefore also targets the repository-scoped self-hosted runner
+    # registered for ORCHORDS-LCC/docs (labels: self-hosted, macOS, ARM64,
+    # docs), which is unaffected by the hosted-runner allowance. The matrix
+    # keeps the hosted Linux runner as the primary path: it is used whenever
+    # the hosted allocation is available, and the self-hosted macOS runner
+    # covers the case where it is not. fail-fast is off so one blocked
+    # platform does not cancel the other.
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            name: hosted-linux
+            # The hosted leg cannot be scheduled while the account's
+            # spending limit is exhausted. Marking it continue-on-error keeps
+            # the workflow green on the working leg instead of reporting a
+            # permanent infrastructure failure as a documentation failure.
+            tolerated: true
+          - os: [self-hosted, macOS, ARM64, docs]
+            name: self-hosted-macos
+            tolerated: false
+    continue-on-error: ${{ matrix.tolerated }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
