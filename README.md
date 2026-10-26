@@ -4,7 +4,7 @@
 
 # ORCHORDS Public Documentation
 
-[![Documentation quality](https://github.com/ORCHORDS/docs/actions/workflows/docs-quality.yml/badge.svg)](https://github.com/ORCHORDS/docs/actions/workflows/docs-quality.yml)
+
 [![CodeQL workflow status](https://github.com/ORCHORDS/docs/actions/workflows/codeql.yml/badge.svg)](https://github.com/ORCHORDS/docs/actions/workflows/codeql.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ORCHORDS/docs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ORCHORDS/docs)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/14247/badge)](https://www.bestpractices.dev/projects/14247)
