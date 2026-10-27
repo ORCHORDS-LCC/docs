@@ -1,0 +1,33 @@
+# System Firmware Technique Engineering Review
+
+## Reference
+
+- Technique: **T1542.001 — System Firmware**
+
+Adversaries may modify system firmware to persist on systems.The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are examples of system firmware that operate as the software interface between the operating system and hardware of a computer. System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect.
+
+## Engineering review
+
+1. Identify the engineering boundary where the technique would apply: the component, the service, or the deployment.
+2. Review the design decision that would prevent the technique, and record the alternative considered.
+3. Review the implementation evidence for the preventive control.
+4. Review the test coverage that would fail if the control regressed.
+5. Review the observability: which signal would show the control is not operating.
+6. Record the residual risk where prevention is not achievable, and the detection that compensates.
+
+## Review evidence
+
+- the design record for the preventive decision;
+- the implementation or configuration evidence;
+- the test record showing the control is exercised;
+- the observability mapping.
+
+## Limitations
+
+An engineering review describes what the design and the implementation evidence show. It does not claim the technique has been addressed in production.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1542.001: https://attack.mitre.org/techniques/T1542/001
+- Reviewed: 2026-10-27

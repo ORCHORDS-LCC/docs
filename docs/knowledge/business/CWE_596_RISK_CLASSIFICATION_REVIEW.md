@@ -1,0 +1,39 @@
+# DEPRECATED: Incorrect Semantic Object Comparison Risk Classification Review
+
+## Reference
+
+- Weakness: **596 — DEPRECATED: Incorrect Semantic Object Comparison**
+- Abstraction: Base
+- Status: Deprecated
+
+## Weakness description
+
+This weakness has been deprecated. It was poorly described and difficult to distinguish from other entries. It was also inappropriate to assign a separate ID solely because of domain-specific considerations. Its closest equivalent is CWE-1023.
+
+## Risk classification review
+
+1. Record whether the weakness class is relevant to the systems and data in scope, and the reason.
+2. Record the business impact if the weakness class were present and exploited, in terms of the affected capability.
+3. Record the likelihood assessment and the evidence behind it.
+4. Record the classification and the criteria it was measured against.
+5. Record the treatment: remediate, mitigate, transfer, or accept, with the owner.
+6. Record the review trigger for the classification.
+
+## Classification record
+
+- In scope: _to be completed_
+- Impact: _to be completed_
+- Likelihood: _to be completed_
+- Classification: _to be completed_
+- Treatment and owner: _to be completed_
+- Review trigger: _to be completed_
+
+## Limitations
+
+A weakness entry describes a class of weakness. The classification is a judgement about a specific estate, recorded with its evidence.
+
+## Source
+
+- MITRE CWE catalog: https://cwe.mitre.org/data/xml/cwec_latest.xml.zip
+- 596: https://cwe.mitre.org/data/definitions/596.html
+- Reviewed: 2026-10-27

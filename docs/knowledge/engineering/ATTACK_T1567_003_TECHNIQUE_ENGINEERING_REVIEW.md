@@ -1,0 +1,33 @@
+# Exfiltration to Text Storage Sites Technique Engineering Review
+
+## Reference
+
+- Technique: **T1567.003 — Exfiltration to Text Storage Sites**
+
+Adversaries may exfiltrate data to text storage sites instead of their primary command and control channel. Text storage sites, such as pastebin[.]com, are commonly used by developers to share code and other information. Text storage sites are often used to host malicious code for C2 communication (e.g., Stage Capabilities), but adversaries may also use these sites to exfiltrate collected data. Furthermore, paid features and encryption options may allow adversaries to conceal and store data more securely. **Note:** This is distinct from Exfiltration to Code Repository, which highlight access to code repositories via APIs.
+
+## Engineering review
+
+1. Identify the engineering boundary where the technique would apply: the component, the service, or the deployment.
+2. Review the design decision that would prevent the technique, and record the alternative considered.
+3. Review the implementation evidence for the preventive control.
+4. Review the test coverage that would fail if the control regressed.
+5. Review the observability: which signal would show the control is not operating.
+6. Record the residual risk where prevention is not achievable, and the detection that compensates.
+
+## Review evidence
+
+- the design record for the preventive decision;
+- the implementation or configuration evidence;
+- the test record showing the control is exercised;
+- the observability mapping.
+
+## Limitations
+
+An engineering review describes what the design and the implementation evidence show. It does not claim the technique has been addressed in production.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1567.003: https://attack.mitre.org/techniques/T1567/003
+- Reviewed: 2026-10-27

@@ -1,0 +1,33 @@
+# Clear Command History Technique Engineering Review
+
+## Reference
+
+- Technique: **T1070.003 — Clear Command History**
+
+In addition to clearing system logs, an adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they've done. On Linux and macOS, these command histories can be accessed in a few different ways. While logged in, this command history is tracked in a file pointed to by the environment variable HISTFILE. When a user logs off a system, this information is flushed to a file in the user's home directory called ~/.bash_history. The benefit of this is that it allows users to go back to commands they've used before in different sessions. Adversaries may delete their commands from these logs by manually clearing the history (history -c) or deleting the bash history file rm ~/.bash_history. Adversaries may also leverage a Network Device CLI on network devices to clear command history data (clear logging and/or clear history). On ESXi servers, command history may be manually removed from the `/var/log/shell.log` file. On Windows hosts, PowerShell has two different command history providers: the built-in history and the command history managed by the PSReadLine module. The built-in history only tracks the commands used in the current session. This command history is not available to other sessions and is deleted when the session ends. The PSReadLine command history tracks the commands used in all PowerShell sessions and writes them to a file ($env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt by default). This history file is available to all sessions and contains all past history since the file is not deleted when the session ends. Adversaries may run the PowerShell command Clear-History to flush the entire command history from a current PowerShell session. This, however, will not delete/flush the ConsoleHost_history.txt file. Adversaries may also delete the ConsoleHost_history.txt file or edit its contents to hide PowerShell commands they have run.
+
+## Engineering review
+
+1. Identify the engineering boundary where the technique would apply: the component, the service, or the deployment.
+2. Review the design decision that would prevent the technique, and record the alternative considered.
+3. Review the implementation evidence for the preventive control.
+4. Review the test coverage that would fail if the control regressed.
+5. Review the observability: which signal would show the control is not operating.
+6. Record the residual risk where prevention is not achievable, and the detection that compensates.
+
+## Review evidence
+
+- the design record for the preventive decision;
+- the implementation or configuration evidence;
+- the test record showing the control is exercised;
+- the observability mapping.
+
+## Limitations
+
+An engineering review describes what the design and the implementation evidence show. It does not claim the technique has been addressed in production.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1070.003: https://attack.mitre.org/techniques/T1070/003
+- Reviewed: 2026-10-27
