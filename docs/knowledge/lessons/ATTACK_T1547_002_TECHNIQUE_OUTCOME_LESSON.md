@@ -1,0 +1,31 @@
+# T1547.002 Authentication Package Outcome Lesson
+
+## Authoritative description
+
+- Technique: **T1547.002 — Authentication Package**
+- Tactics: persistence, privilege-escalation
+- Platforms: Windows
+
+Adversaries may abuse authentication packages to execute DLLs when the system boots. Windows authentication package DLLs are loaded by the Local Security Authority (LSA) process at system start. They provide support for multiple logon processes and multiple security protocols to the operating system. Adversaries can use the autostart mechanism provided by LSA authentication packages for persistence by placing a reference to a binary in the Windows Registry location <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\</code> with the key value of <code>"Authentication Packages"=&lt;target binary&gt;</code>. The binary will then be executed by the system when the authentication packages are loaded.
+
+## Reusable lesson
+
+This technique should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be covered by a generic control statement or by tooling that reports a related signal.
+
+## Apply the lesson
+
+1. Define the real scope before judging coverage.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit when the underlying scope, threat environment, technology, suppliers, or mission materially changes.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1547.002: https://attack.mitre.org/techniques/T1547/002
+- Reviewed: 2026-10-27
+
+## Boundary
+
+This lesson is derived from the published technique description. It does not invent an incident, prescribe one implementation, or claim the technique has been addressed.

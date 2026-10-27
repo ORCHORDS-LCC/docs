@@ -1,0 +1,30 @@
+# AN1548 Analytic 1548 Outcome Lesson
+
+## Authoritative description
+
+- Technique: **AN1548 — Analytic 1548**
+- Platforms: Windows
+
+Adversary installs or side-loads an IDE extension (VS Code, IntelliJ/JetBrains, Eclipse) or enables IDE tunneling. Chain: (1) IDE binary starts on a non-developer endpoint or server, often with install/force/tunnel flags → (2) extension files/registrations appear under user profile → (3) browser/IDE initiates outbound connections to extension marketplaces, update endpoints, or IDE remote/tunnel services → (4) optional child tools (ssh, node, powershell) execute under the IDE context.
+
+## Reusable lesson
+
+This technique should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be covered by a generic control statement or by tooling that reports a related signal.
+
+## Apply the lesson
+
+1. Define the real scope before judging coverage.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit when the underlying scope, threat environment, technology, suppliers, or mission materially changes.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- AN1548: https://attack.mitre.org/detectionstrategies/DET0561#AN1548
+- Reviewed: 2026-10-27
+
+## Boundary
+
+This lesson is derived from the published technique description. It does not invent an incident, prescribe one implementation, or claim the technique has been addressed.

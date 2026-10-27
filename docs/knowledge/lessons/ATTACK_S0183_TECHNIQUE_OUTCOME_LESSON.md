@@ -1,0 +1,30 @@
+# S0183 Tor Outcome Lesson
+
+## Authoritative description
+
+- Technique: **S0183 — Tor**
+- Platforms: Linux, Windows, macOS
+
+Tor is a software suite and network that provides increased anonymity on the Internet. It creates a multi-hop proxy network and utilizes multilayer encryption to protect both the message and routing information. Tor utilizes "Onion Routing," in which messages are encrypted with multiple layers of encryption; at each step in the proxy network, the topmost layer is decrypted and the contents forwarded on to the next node until it reaches its destination.
+
+## Reusable lesson
+
+This technique should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be covered by a generic control statement or by tooling that reports a related signal.
+
+## Apply the lesson
+
+1. Define the real scope before judging coverage.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit when the underlying scope, threat environment, technology, suppliers, or mission materially changes.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- S0183: https://attack.mitre.org/software/S0183
+- Reviewed: 2026-10-27
+
+## Boundary
+
+This lesson is derived from the published technique description. It does not invent an incident, prescribe one implementation, or claim the technique has been addressed.

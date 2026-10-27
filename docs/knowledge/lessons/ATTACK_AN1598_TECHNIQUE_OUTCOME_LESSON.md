@@ -1,0 +1,30 @@
+# AN1598 Analytic 1598 Outcome Lesson
+
+## Authoritative description
+
+- Technique: **AN1598 — Analytic 1598**
+- Platforms: Windows
+
+Detects registration of new or modified network provider DLLs via registry changes, anomalous file creation of DLLs in system directories, and suspicious process activity (mpnotify.exe interacting with non-standard DLLs). Multi-event correlation ties registry modification events to subsequent DLL loads during user logon activity.
+
+## Reusable lesson
+
+This technique should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be covered by a generic control statement or by tooling that reports a related signal.
+
+## Apply the lesson
+
+1. Define the real scope before judging coverage.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit when the underlying scope, threat environment, technology, suppliers, or mission materially changes.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- AN1598: https://attack.mitre.org/detectionstrategies/DET0580#AN1598
+- Reviewed: 2026-10-27
+
+## Boundary
+
+This lesson is derived from the published technique description. It does not invent an incident, prescribe one implementation, or claim the technique has been addressed.

@@ -1,0 +1,35 @@
+# Definitions of Managed Objects for the DS1, E1, DS2 and E2 Interface Types. D. Fowler, Ed.. Standards Track Profile
+
+## Scope
+
+RFC 02495, *Definitions of Managed Objects for the DS1, E1, DS2 and E2 Interface Types. D. Fowler, Ed..*, is a standards-track document in the IETF series. Definitions of Managed Objects for the DS1, E1, DS2 and E2 Interface Types. D. Fowler, Ed.. January 1999. (Format: TXT, HTML) (Obsoletes RFC1406) (Obsoleted by RFC3895) (Status: PROPOSED STANDARD) (DOI: 10.17487/RFC2495).
+
+This profile records the document's position in the standards track, the obligations it carries, and the dependencies an adopting implementation inherits. It does not restate the document and it does not replace it.
+
+## Standards-track position
+
+- Document: RFC 02495 — Definitions of Managed Objects for the DS1, E1, DS2 and E2 Interface Types. D. Fowler, Ed..
+- Series status recorded in the index: PROPOSED STANDARD
+- Published: True
+- DOI: 10.17487/RFC2495
+- Relationship metadata: obsoletes RFC1406, obsoleted by RFC3895, updates none recorded, updated by none recorded
+
+## Requirements profile
+
+1. Read the source document and separate normative from informative text.
+2. Record the protocol elements an implementation must support: message formats, state transitions, and error handling.
+3. Record the extension points and the rules for using them.
+4. Record the security considerations and the assumptions the document makes.
+5. Record the interoperability expectations the document places on peers.
+6. Record the implementation-defined parameters and the value chosen for each.
+7. Track the document's relationship metadata so a successor is picked up when one is published.
+
+## Conformance note
+
+Conformance to a standards-track document is a property of an implementation, not of this profile. The profile records what conformance would require so the decision can be made on evidence.
+
+## Source
+
+- RFC Editor index: https://www.rfc-editor.org/rfc-index.txt
+- RFC 02495: https://www.rfc-editor.org/info/rfc2495
+- Reviewed: 2026-10-27

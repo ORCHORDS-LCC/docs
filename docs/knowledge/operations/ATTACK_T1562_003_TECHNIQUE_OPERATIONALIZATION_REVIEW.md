@@ -1,0 +1,33 @@
+# Impair Command History Logging Technique Operationalization Review
+
+## Reference
+
+- Technique: **T1562.003 — Impair Command History Logging**
+
+Adversaries may impair command history logging to hide commands they run on a compromised system. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they've done. On Linux and macOS, command history is tracked in a file pointed to by the environment variable <code>HISTFILE</code>. When a user logs off a system, this information is flushed to a file in the user's home directory called <code>~/.bash_history</code>. The <code>HISTCONTROL</code> environment variable keeps track of what should be saved by the <code>history</code> command and eventually into the <code>~/.bash_history</code> file when a user logs out. <code>HISTCONTROL</code> does not exist by default on macOS, but can be set by the user and will be respected. The `HISTFILE` environment variable is also used in some ESXi systems. Adversaries may clear the history environment variable (<code>unset HISTFILE</code>) or set the command history size to zero (<code>export HISTFILESIZE=0</code>) to prevent logging of commands. Additionally, <code>HISTCONTROL</code> can be configured to ignore commands that start with a space by simply setting it to "ignorespace". <code>HISTCONTROL</code> can also be set to ignore duplicate commands by setting it to "ignoredups". In some Linux systems, this is set by default to "ignoreboth" which covers both of the previous examples. This means that “ ls” will not be saved, but “ls” would be saved by history. Adversaries can abuse this to operate without leaving traces by simply prepending a space to all of their terminal commands. On Windows systems, the <code>PSReadLine</code> module tracks commands used in all PowerShell sessions and writes them to a file (<code>$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code> by default). Adversaries may change where these logs are saved using <code>Set-PSReadLineOption -HistorySavePath {File Path}</code>. This will cause <code>ConsoleHost_history.txt</code> to stop receiving logs. Additionally, it is possible to turn off logging to this file using the PowerShell command <code>Set-PSReadlineOption -HistorySaveStyle SaveNothing</code>. Adversaries may also leverage a Network Device CLI on network devices to disable historical command logging (e.g. <code>no logging</code>).
+
+## Operationalization review
+
+1. Record the operational scope: which services, environments, and data the technique could affect.
+2. Record the runbook that would be executed, and its owner.
+3. Record the telemetry the runbook depends on, and whether it is retained long enough to investigate.
+4. Record the detection that would surface the technique before or after it has an effect.
+5. Record the recovery path, and the evidence that recovery has been rehearsed.
+6. Record the residual operational risk where the runbook depends on a manual step.
+
+## Review evidence
+
+- the runbook and its owner;
+- the telemetry retention and coverage record;
+- the detection mapping;
+- the exercise or rehearsal record.
+
+## Limitations
+
+An operationalization review describes the runbook and the evidence around it. It does not claim the technique has been prevented or detected in a live environment.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1562.003: https://attack.mitre.org/techniques/T1562/003
+- Reviewed: 2026-10-27

@@ -1,0 +1,33 @@
+# Domain or Tenant Policy Modification Technique Operationalization Review
+
+## Reference
+
+- Technique: **T1484 — Domain or Tenant Policy Modification**
+
+Adversaries may modify the configuration settings of a domain or identity tenant to evade defenses and/or escalate privileges in centrally managed environments. Such services provide a centralized means of managing identity resources such as devices and accounts, and often include configuration settings that may apply between domains or tenants such as trust relationships, identity syncing, or identity federation. Modifications to domain or tenant settings may include altering domain Group Policy Objects (GPOs) in Microsoft Active Directory (AD) or changing trust settings for domains, including federation trusts relationships between domains or tenants. With sufficient permissions, adversaries can modify domain or tenant policy settings. Since configuration settings for these services apply to a large number of identity resources, there are a great number of potential attacks malicious outcomes that can stem from this abuse. Examples of such abuse include: * modifying GPOs to push a malicious Scheduled Task to computers throughout the domain environment * modifying domain trusts to include an adversary-controlled domain, allowing adversaries to forge access tokens that will subsequently be accepted by victim domain resources * changing configuration settings within the AD environment to implement a Rogue Domain Controller. * adding new, adversary-controlled federated identity providers to identity tenants, allowing adversaries to authenticate as any user managed by the victim tenant Adversaries may temporarily modify domain or tenant policy, carry out a malicious action(s), and then revert the change to remove suspicious indicators.
+
+## Operationalization review
+
+1. Record the operational scope: which services, environments, and data the technique could affect.
+2. Record the runbook that would be executed, and its owner.
+3. Record the telemetry the runbook depends on, and whether it is retained long enough to investigate.
+4. Record the detection that would surface the technique before or after it has an effect.
+5. Record the recovery path, and the evidence that recovery has been rehearsed.
+6. Record the residual operational risk where the runbook depends on a manual step.
+
+## Review evidence
+
+- the runbook and its owner;
+- the telemetry retention and coverage record;
+- the detection mapping;
+- the exercise or rehearsal record.
+
+## Limitations
+
+An operationalization review describes the runbook and the evidence around it. It does not claim the technique has been prevented or detected in a live environment.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1484: https://attack.mitre.org/techniques/T1484
+- Reviewed: 2026-10-27

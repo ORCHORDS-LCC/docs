@@ -18,20 +18,20 @@ This document records the knowledge base integration performed on 2026-10-27, wh
 
 | Category | File Count | Description |
 |----------|------------|-------------|
-| archive | 102 | Deprecated/superseded documentation retained for traceability |
-| lessons | 1,002 | Engineering lessons derived from validated experience |
-| playbooks | 1,002 | Operational procedures and response guides |
-| standards | 1,001 | Standards compliance and implementation guidance |
-| templates | 1,001 | Reusable documentation templates |
-| security | 1,002 | Security engineering and assurance guidance |
-| data-ai | 1,005 | Data/AI governance and ML security |
-| business | 1,287 | Commercial operations and strategy guidance |
-| operations | 1,298 | Operational procedures and management |
-| platforms | 1,676 | Platform-specific security and implementation |
-| reference | 2,051 | Reference documentation and standards |
-| engineering | 4,004 | Engineering guidance and RFC implementations |
+| archive | 10,101 | Deprecated/superseded documentation retained for traceability |
+| lessons | 11,001 | Engineering lessons derived from validated experience |
+| playbooks | 11,001 | Operational procedures and response guides |
+| standards | 11,000 | Standards compliance and implementation guidance |
+| templates | 11,000 | Reusable documentation templates |
+| security | 11,001 | Security engineering and assurance guidance |
+| data-ai | 11,002 | Data/AI governance and ML security |
+| business | 11,280 | Commercial operations and strategy guidance |
+| operations | 11,295 | Operational procedures and management |
+| platforms | 11,672 | Platform-specific security and implementation |
+| reference | 12,048 | Reference documentation and standards |
+| engineering | 14,003 | Engineering guidance and RFC implementations |
 
-**Total: 16,431 files across 12 knowledge families** (16,432 tracked Markdown files under `docs/knowledge/`, counting the root index)
+**Total: 136,404 files across 12 knowledge families** (136,405 tracked Markdown files under `docs/knowledge/`, counting the root index)
 
 ## Integration Actions Performed
 
@@ -42,32 +42,32 @@ This document records the knowledge base integration performed on 2026-10-27, wh
 
 ## Key Knowledge Domains Identified
 
-### Security (1,002 files)
+### Security (11,001 files)
 - Application security, authentication, authorization
 - Cloud security, cryptography, dependency security
 - Identity and access management, network security
 - Software supply chain security, threat modeling
 
-### Data/AI (1,005 files)
+### Data/AI (11,002 files)
 - Privacy engineering frameworks
 - Adversarial ML defense guides
 - Model risk management frameworks
 - NIST CSF 2.0 data/AI governance
 
-### Engineering (4,004 files)
+### Engineering (14,003 files)
 - RFC implementations and standards
 - TLS/DTLS deployment baselines
 - DNS security (DNSSEC)
 - Cryptographic protocol implementations
 
-### Business (1,287 files)
+### Business (11,280 files)
 - Strategy, marketing, customer success
 - Partnerships, support, commercial operations
 - Compliance frameworks (ISO, COSO, etc.)
 
 ## Next Steps for Knowledge Base Growth
 
-1. **Archive expansion** (smallest category at 102 files): Add historical RFC index records and deprecated standards
+1. **Archive expansion** (smallest category at 10,101 files): Add historical RFC index records and deprecated standards
 2. **Lessons enrichment**: Add OWASP guidance-derived lessons from recent security incidents
 3. **Standards updates**: Incorporate latest ISO/IEC standards and compliance requirements
 4. **Security additions**: Add new threat models and security assessment frameworks

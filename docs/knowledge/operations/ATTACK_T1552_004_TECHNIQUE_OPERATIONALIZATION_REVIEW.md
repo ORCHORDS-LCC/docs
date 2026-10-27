@@ -1,0 +1,33 @@
+# Private Keys Technique Operationalization Review
+
+## Reference
+
+- Technique: **T1552.004 — Private Keys**
+
+Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. Private cryptographic keys and certificates are used for authentication, encryption/decryption, and digital signatures. Common key and certificate file extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, .pfx, .cer, .p7b, .asc. Adversaries may also look in common key directories, such as <code>~/.ssh</code> for SSH keys on * nix-based systems or <code>C:&#92;Users&#92;(username)&#92;.ssh&#92;</code> on Windows. Adversary tools may also search compromised systems for file extensions relating to cryptographic keys and certificates. When a device is registered to Entra ID, a device key and a transport key are generated and used to verify the device’s identity. An adversary with access to the device may be able to export the keys in order to impersonate the device. On network devices, private keys may be exported via Network Device CLI commands such as `crypto pki export`. Some private keys require a password or passphrase for operation, so an adversary may also use Input Capture for keylogging or attempt to Brute Force the passphrase off-line. These private keys can be used to authenticate to Remote Services like SSH or for use in decrypting other collected files such as email.
+
+## Operationalization review
+
+1. Record the operational scope: which services, environments, and data the technique could affect.
+2. Record the runbook that would be executed, and its owner.
+3. Record the telemetry the runbook depends on, and whether it is retained long enough to investigate.
+4. Record the detection that would surface the technique before or after it has an effect.
+5. Record the recovery path, and the evidence that recovery has been rehearsed.
+6. Record the residual operational risk where the runbook depends on a manual step.
+
+## Review evidence
+
+- the runbook and its owner;
+- the telemetry retention and coverage record;
+- the detection mapping;
+- the exercise or rehearsal record.
+
+## Limitations
+
+An operationalization review describes the runbook and the evidence around it. It does not claim the technique has been prevented or detected in a live environment.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1552.004: https://attack.mitre.org/techniques/T1552/004
+- Reviewed: 2026-10-27

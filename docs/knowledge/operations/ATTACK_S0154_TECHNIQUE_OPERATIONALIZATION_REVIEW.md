@@ -1,0 +1,33 @@
+# Cobalt Strike Technique Operationalization Review
+
+## Reference
+
+- Technique: **S0154 — Cobalt Strike**
+
+Cobalt Strike is a commercial, full-featured, remote access tool that bills itself as “adversary simulation software designed to execute targeted attacks and emulate the post-exploitation actions of advanced threat actors”. Cobalt Strike’s interactive post-exploit capabilities cover the full range of ATT&CK tactics, all executed within a single, integrated system. In addition to its own capabilities, Cobalt Strike leverages the capabilities of other well-known tools such as Metasploit and Mimikatz.
+
+## Operationalization review
+
+1. Record the operational scope: which services, environments, and data the technique could affect.
+2. Record the runbook that would be executed, and its owner.
+3. Record the telemetry the runbook depends on, and whether it is retained long enough to investigate.
+4. Record the detection that would surface the technique before or after it has an effect.
+5. Record the recovery path, and the evidence that recovery has been rehearsed.
+6. Record the residual operational risk where the runbook depends on a manual step.
+
+## Review evidence
+
+- the runbook and its owner;
+- the telemetry retention and coverage record;
+- the detection mapping;
+- the exercise or rehearsal record.
+
+## Limitations
+
+An operationalization review describes the runbook and the evidence around it. It does not claim the technique has been prevented or detected in a live environment.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- S0154: https://attack.mitre.org/software/S0154
+- Reviewed: 2026-10-27

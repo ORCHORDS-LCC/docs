@@ -1,0 +1,43 @@
+# Microsoft Partner Center Improper Access Control Vulnerability Emergency Patch Playbook
+
+## Reference
+
+- Vulnerability: **CVE-2024-49035**
+- Vendor project: Microsoft
+- Product: Partner Center
+- Date added: 2025-02-25
+- Remediation due: 2025-03-18
+
+## Required action
+
+Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.
+
+## Preconditions
+
+- the affected product is confirmed present in scope;
+- an owner is accountable for the affected estate;
+- a change path and verification path exist for the remediation;
+- the urgency is understood relative to the stated due date.
+
+## Procedure
+
+1. Confirm the affected version range against the deployment inventory.
+2. Prioritise the estate by exposure and business impact.
+3. Apply the required action, or an approved compensating control where immediate patching is not possible.
+4. Verify the remediation, and record the verification evidence.
+5. Escalate where the due date will be missed, with the compensating control and the review date.
+6. Confirm the recurring check that would catch a reintroduction of the affected version.
+
+## Failure handling
+
+If the affected version persists after the due date, treat it as an accepted exception with a named owner, a compensating control, and a fixed review date, and route it through the risk process.
+
+## Completion evidence
+
+Scope, owner, inventory evidence, change record, verification result, exception and compensating control where applicable, reviewer, and next check date.
+
+## Source
+
+- CISA Known Exploited Vulnerabilities catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+- CVE-2024-49035: https://nvd.nist.gov/vuln/detail/CVE-2024-49035
+- Reviewed: 2026-10-27

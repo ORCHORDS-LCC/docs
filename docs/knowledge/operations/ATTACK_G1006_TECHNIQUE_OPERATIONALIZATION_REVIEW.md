@@ -1,0 +1,33 @@
+# Earth Lusca Technique Operationalization Review
+
+## Reference
+
+- Technique: **G1006 — Earth Lusca**
+
+Earth Lusca is a suspected China-based cyber espionage group that has been active since at least April 2019. Earth Lusca has targeted organizations in Australia, China, Hong Kong, Mongolia, Nepal, the Philippines, Taiwan, Thailand, Vietnam, the United Arab Emirates, Nigeria, Germany, France, and the United States. Targets included government institutions, news media outlets, gambling companies, educational institutions, COVID-19 research organizations, telecommunications companies, religious movements banned in China, and cryptocurrency trading platforms; security researchers assess some Earth Lusca operations may be financially motivated. Earth Lusca has used malware commonly used by other Chinese threat groups, including APT41 and the Winnti Group cluster, however security researchers assess Earth Lusca's techniques and infrastructure are separate.
+
+## Operationalization review
+
+1. Record the operational scope: which services, environments, and data the technique could affect.
+2. Record the runbook that would be executed, and its owner.
+3. Record the telemetry the runbook depends on, and whether it is retained long enough to investigate.
+4. Record the detection that would surface the technique before or after it has an effect.
+5. Record the recovery path, and the evidence that recovery has been rehearsed.
+6. Record the residual operational risk where the runbook depends on a manual step.
+
+## Review evidence
+
+- the runbook and its owner;
+- the telemetry retention and coverage record;
+- the detection mapping;
+- the exercise or rehearsal record.
+
+## Limitations
+
+An operationalization review describes the runbook and the evidence around it. It does not claim the technique has been prevented or detected in a live environment.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- G1006: https://attack.mitre.org/groups/G1006
+- Reviewed: 2026-10-27

@@ -1,0 +1,30 @@
+# AN1311 Analytic 1311 Outcome Lesson
+
+## Authoritative description
+
+- Technique: **AN1311 — Analytic 1311**
+- Platforms: macOS
+
+Monitors Mail.app database or maildir file access, automation via AppleScript, and abnormal mail rule creation using scripting or UI automation frameworks.
+
+## Reusable lesson
+
+This technique should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be covered by a generic control statement or by tooling that reports a related signal.
+
+## Apply the lesson
+
+1. Define the real scope before judging coverage.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit when the underlying scope, threat environment, technology, suppliers, or mission materially changes.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- AN1311: https://attack.mitre.org/detectionstrategies/DET0476#AN1311
+- Reviewed: 2026-10-27
+
+## Boundary
+
+This lesson is derived from the published technique description. It does not invent an incident, prescribe one implementation, or claim the technique has been addressed.

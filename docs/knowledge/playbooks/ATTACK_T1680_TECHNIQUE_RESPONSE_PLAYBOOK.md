@@ -1,0 +1,42 @@
+# Local Storage Discovery Technique Response Playbook
+
+## Target technique
+
+**T1680 — Local Storage Discovery**
+
+- Tactics: discovery
+- Platforms: ESXi, IaaS, Linux, macOS, Windows
+
+Adversaries may enumerate local drives, disks, and/or volumes and their attributes like total or free space and volume serial number. This can be done to prepare for ransomware-related encryption, to perform Lateral Movement, or as a precursor to Direct Volume Access. On ESXi systems, adversaries may use Hypervisor CLI commands such as `esxcli` to list storage connected to the host as well as `.vmdk` files. On Windows systems, adversaries can use `wmic logicaldisk get` to find information about local network drives. They can also use `Get-PSDrive` in PowerShell to retrieve drives and may additionally use Windows API functions such as `GetDriveType`. Linux has commands such as `parted`, `lsblk`, `fdisk`, `lshw`, and `df` that can list information about disk partitions such as size, type, file system types, and free space. The command `diskutil` on MacOS can be used to list disks while `system_profiler SPStorageDataType` can additionally show information such as a volume’s mount path, file system, and the type of drive in the system. Infrastructure as a Service (IaaS) cloud providers also have commands for storage discovery such as `describe volume` in AWS, `gcloud compute disks list` in GCP, and `az disk list` in Azure.
+
+## Preconditions
+
+- the estate in scope is identified, with the systems the technique could apply to;
+- an owner is accountable for detection and response;
+- current telemetry and configuration can be inspected;
+- the technique is applicable or requires an applicability decision.
+
+## Procedure
+
+1. Confirm the scope and owner.
+2. Read the current technique description and the associated detection guidance.
+3. Inventory the telemetry that would carry the technique's indicators.
+4. Inspect whether the indicators are present in the environment.
+5. Exercise the detection path and confirm it produces the expected signal.
+6. Record gaps in detection coverage and assign remediation owners.
+7. Record justified non-applicability or accepted detection gaps separately.
+8. Set the next event-driven or periodic verification trigger.
+
+## Failure handling
+
+If the detection path does not produce the expected signal, treat the coverage as unverified, preserve the test evidence, and route the gap through the appropriate remediation or risk process.
+
+## Completion evidence
+
+Scope, owner, source version, telemetry inspected, tests performed, findings, exceptions, remediation links, reviewer, and next trigger.
+
+## Source
+
+- MITRE ATT&CK: https://attack.mitre.org/
+- T1680: https://attack.mitre.org/techniques/T1680
+- Reviewed: 2026-10-27

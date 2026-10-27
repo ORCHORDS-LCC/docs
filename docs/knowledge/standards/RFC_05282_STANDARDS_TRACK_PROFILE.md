@@ -1,0 +1,35 @@
+# Using Authenticated Encryption Algorithms with the Encrypted Payload of the Internet Key Exchange version 2 (IKEv2) Protocol Standards Track Profile
+
+## Scope
+
+RFC 05282, *Using Authenticated Encryption Algorithms with the Encrypted Payload of the Internet Key Exchange version 2 (IKEv2) Protocol*, is a standards-track document in the IETF series. Using Authenticated Encryption Algorithms with the Encrypted Payload of the Internet Key Exchange version 2 (IKEv2) Protocol. D. Black, D. McGrew. August 2008. (Format: TXT, HTML) (Updates RFC4306) (Status: PROPOSED STANDARD) (DOI: 10.17487/RFC5282).
+
+This profile records the document's position in the standards track, the obligations it carries, and the dependencies an adopting implementation inherits. It does not restate the document and it does not replace it.
+
+## Standards-track position
+
+- Document: RFC 05282 — Using Authenticated Encryption Algorithms with the Encrypted Payload of the Internet Key Exchange version 2 (IKEv2) Protocol
+- Series status recorded in the index: PROPOSED STANDARD
+- Published: True
+- DOI: 10.17487/RFC5282
+- Relationship metadata: obsoletes none recorded, obsoleted by none recorded, updates RFC4306, updated by none recorded
+
+## Requirements profile
+
+1. Read the source document and separate normative from informative text.
+2. Record the protocol elements an implementation must support: message formats, state transitions, and error handling.
+3. Record the extension points and the rules for using them.
+4. Record the security considerations and the assumptions the document makes.
+5. Record the interoperability expectations the document places on peers.
+6. Record the implementation-defined parameters and the value chosen for each.
+7. Track the document's relationship metadata so a successor is picked up when one is published.
+
+## Conformance note
+
+Conformance to a standards-track document is a property of an implementation, not of this profile. The profile records what conformance would require so the decision can be made on evidence.
+
+## Source
+
+- RFC Editor index: https://www.rfc-editor.org/rfc-index.txt
+- RFC 05282: https://www.rfc-editor.org/info/rfc5282
+- Reviewed: 2026-10-27
