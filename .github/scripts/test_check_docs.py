@@ -267,5 +267,31 @@ class CheckLinksTests(unittest.TestCase):
         )
 
 
+class ForbiddenReferenceTests(unittest.TestCase):
+    """The absolute user-home path rule must catch a home directory and
+    must not catch a URL path segment that happens to be named "users"."""
+
+    pattern = check_docs.FORBIDDEN_PATTERNS["absolute user-home path"]
+
+    def test_rejects_absolute_home_directories(self) -> None:
+        for text in (
+            "/Users/john/documents/notes.md",
+            "see /home/alice/.ssh/id_rsa for the key",
+            "file:///Users/bob/notes",
+            r"C:\Users\carol\app.log",
+        ):
+            with self.subTest(text=text):
+                self.assertTrue(self.pattern.search(text))
+
+    def test_accepts_url_path_segments_named_users(self) -> None:
+        for text in (
+            "admin/users/add/user/do/",
+            "/data/system/users/0/settings_secure.xml",
+            "the /users/ directory in the image",
+        ):
+            with self.subTest(text=text):
+                self.assertIsNone(self.pattern.search(text))
+
+
 if __name__ == "__main__":
     unittest.main()

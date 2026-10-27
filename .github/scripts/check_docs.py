@@ -46,7 +46,12 @@ FORBIDDEN_PATTERNS = {
     "private repository shorthand": re.compile(r"\b(?:ORCHORDS|sapperskills)/(?!docs\b)[A-Za-z0-9_.-]+\b", re.I),
     "private knowledge-base path": re.compile(r"(?:^|[\\/])knowledge_base[\\/]", re.I | re.M),
     "private fleet path": re.compile(r"(?:^|[\\/])\.fleet[\\/]", re.I | re.M),
-    "absolute user-home path": re.compile(r"(?:/home/[^/\s]+/|/Users/[^/\s]+/|[A-Z]:\\Users\\[^\\\s]+\\)", re.I),
+    "absolute user-home path": re.compile(
+        r"(?:(?<![A-Za-z0-9_./~-])(?:/home|/Users)/[^/\s]+/"
+        r"|(?<=://)(?:/home|/Users)/[^/\s]+/"
+        r"|[A-Z]:\\Users\\[^\\\s]+\\)",
+        re.I,
+    ),
     "conversation sandbox path": re.compile(r"/mnt/data/[^\s)]+", re.I),
 }
 
