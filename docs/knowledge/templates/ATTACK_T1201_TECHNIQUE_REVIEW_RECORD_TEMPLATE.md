@@ -1,8 +1,8 @@
-# Password Policy Discovery Mitigation Technique Review Record Template
+# Password Policy Discovery Technique Review Record Template
 
 ## Subject
 
-**T1201 — Password Policy Discovery Mitigation**
+**T1201 — Password Policy Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1201: https://attack.mitre.org/mitigations/T1201
+- T1201: https://attack.mitre.org/techniques/T1201
 - Template issued: 2026-10-27

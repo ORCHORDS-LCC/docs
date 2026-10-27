@@ -1,10 +1,10 @@
-# Browser Extensions Mitigation Technique Operationalization Review
+# Software Extensions Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1176 — Browser Extensions Mitigation**
+- Technique: **T1176 — Software Extensions**
 
-Only install browser extensions from trusted sources that can be verified. Ensure extensions that are installed are the intended ones as many malicious extensions will masquerade as legitimate ones. Browser extensions for some browsers can be controlled through Group Policy. Set a browser extension white or black list as appropriate for your security policy. Change settings to prevent the browser from installing extensions without sufficient permissions. Close out all browser sessions when finished using them.
+Adversaries may abuse software extensions to establish persistent access to victim systems. Software extensions are modular components that enhance or customize the functionality of software applications, including web browsers, Integrated Development Environments (IDEs), and other platforms. Extensions are typically installed via official marketplaces, app stores, or manually loaded by users, and they often inherit the permissions and access levels of the host application. Malicious extensions can be introduced through various methods, including social engineering, compromised marketplaces, or direct installation by users or by adversaries who have already gained access to a system. Malicious extensions can be named similarly or identically to benign extensions in marketplaces. Security mechanisms in extension marketplaces may be insufficient to detect malicious components, allowing adversaries to bypass automated scanners or exploit trust established during the installation process. Adversaries may also abuse benign extensions to achieve their objectives, such as using legitimate functionality to tunnel data or bypass security controls. The modular nature of extensions and their integration with host applications make them an attractive target for adversaries seeking to exploit trusted software ecosystems. Detection can be challenging due to the inherent trust placed in extensions during installation and their ability to blend into normal application workflows.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1176: https://attack.mitre.org/mitigations/T1176
+- T1176: https://attack.mitre.org/techniques/T1176
 - Reviewed: 2026-10-27

@@ -1,10 +1,10 @@
-# System Time Discovery Mitigation Technique Engineering Review
+# System Time Discovery Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1124 — System Time Discovery Mitigation**
+- Technique: **T1124 — System Time Discovery**
 
-Benign software uses legitimate processes to gather system time. Efforts should be focused on preventing unwanted or unknown code from executing on a system. Some common tools, such as net.exe, may be blocked by policy to prevent common ways of acquiring remote system time. Identify unnecessary system utilities or potentially malicious software that may be used to acquire system time information, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+An adversary may gather the system time and/or time zone settings from a local or remote system. The system time is set and stored by services, such as the Windows Time Service on Windows or systemsetup on macOS. These time settings may also be synchronized between systems and services in an enterprise network, typically accomplished with a network time server within a domain. System time information may be gathered in a number of ways, such as with Net on Windows by performing net time \\hostname to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using w32tm /tz. In addition, adversaries can discover device uptime through functions such as GetTickCount() to determine how long it has been since the system booted up. On network devices, Network Device CLI commands such as `show clock detail` can be used to see the current time configuration. On ESXi servers, `esxcli system clock get` can be used for the same purpose. In addition, system calls – such as time() – have been used to collect the current time on Linux devices. On macOS systems, adversaries may use commands such as systemsetup -gettimezone or timeIntervalSinceNow to gather current time zone information or current date and time. This information could be useful for performing other techniques, such as executing a file with a Scheduled Task/Job, or to discover locality information based on time zone to assist in victim targeting (i.e. System Location Discovery). Adversaries may also use knowledge of system time as part of a time bomb, or delaying execution until a specified date/time.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1124: https://attack.mitre.org/mitigations/T1124
+- T1124: https://attack.mitre.org/techniques/T1124
 - Reviewed: 2026-10-27

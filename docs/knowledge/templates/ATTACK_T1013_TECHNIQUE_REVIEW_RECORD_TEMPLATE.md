@@ -1,8 +1,8 @@
-# Port Monitors Mitigation Technique Review Record Template
+# Port Monitors Technique Review Record Template
 
 ## Subject
 
-**T1013 — Port Monitors Mitigation**
+**T1013 — Port Monitors**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1013: https://attack.mitre.org/mitigations/T1013
+- T1013: https://attack.mitre.org/techniques/T1013
 - Template issued: 2026-10-27

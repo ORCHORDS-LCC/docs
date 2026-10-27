@@ -1,11 +1,11 @@
-# Plist Modification Mitigation Technique Platform Profile
+# Plist Modification Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1150 — Plist Modification Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1150 — Plist Modification**
+- Platforms named in the source: macOS
 
-Prevent plist files from being modified by users by making them read-only.
+Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UTF-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanism.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1150: https://attack.mitre.org/mitigations/T1150
+- T1150: https://attack.mitre.org/techniques/T1150
 - Reviewed: 2026-10-27

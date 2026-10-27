@@ -1,10 +1,10 @@
-# Keychain Mitigation Technique Engineering Review
+# Keychain Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1142 — Keychain Mitigation**
+- Technique: **T1142 — Keychain**
 
-The password for the user's login keychain can be changed from the user's login password. This increases the complexity for an adversary because they need to know an additional password.
+Keychains are the built-in way for macOS to keep track of users' passwords and credentials for many services and features such as WiFi passwords, websites, secure notes, certificates, and Kerberos. Keychain files are located in ~/Library/Keychains/,/Library/Keychains/, and /Network/Library/Keychains/. The security command-line utility, which is built into macOS by default, provides a useful way to manage these credentials. To manage their credentials, users have to use additional credentials to access their keychain. If an adversary knows the credentials for the login keychain, then they can get access to all the other credentials stored in this vault. By default, the passphrase for the keychain is the user’s logon credentials.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1142: https://attack.mitre.org/mitigations/T1142
+- T1142: https://attack.mitre.org/techniques/T1142
 - Reviewed: 2026-10-27

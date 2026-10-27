@@ -1,8 +1,8 @@
-# Domain Fronting Mitigation Technique Review Record Template
+# Domain Fronting Technique Review Record Template
 
 ## Subject
 
-**T1172 — Domain Fronting Mitigation**
+**T1172 — Domain Fronting**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1172: https://attack.mitre.org/mitigations/T1172
+- T1172: https://attack.mitre.org/techniques/T1172
 - Template issued: 2026-10-27

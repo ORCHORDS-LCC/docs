@@ -1,10 +1,12 @@
-# T1063 Security Software Discovery Mitigation Outcome Lesson
+# T1063 Security Software Discovery Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1063 — Security Software Discovery Mitigation**
+- Technique: **T1063 — Security Software Discovery**
+- Tactics: discovery
+- Platforms: macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about local security software, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on the system. This may include things such as local firewall rules and anti-virus. Adversaries may use the information from Security Software Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions. ### Windows Example commands that can be used to obtain security software information are netsh, reg query with Reg, dir with cmd, and Tasklist, but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. ### Mac It's becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1063: https://attack.mitre.org/mitigations/T1063
+- T1063: https://attack.mitre.org/techniques/T1063
 - Reviewed: 2026-10-27
 
 ## Boundary

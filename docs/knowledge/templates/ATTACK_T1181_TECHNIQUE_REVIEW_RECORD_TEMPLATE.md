@@ -1,8 +1,8 @@
-# Extra Window Memory Injection Mitigation Technique Review Record Template
+# Extra Window Memory Injection Technique Review Record Template
 
 ## Subject
 
-**T1181 — Extra Window Memory Injection Mitigation**
+**T1181 — Extra Window Memory Injection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1181: https://attack.mitre.org/mitigations/T1181
+- T1181: https://attack.mitre.org/techniques/T1181
 - Template issued: 2026-10-27

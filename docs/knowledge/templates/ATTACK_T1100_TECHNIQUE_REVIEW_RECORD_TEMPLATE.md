@@ -1,8 +1,8 @@
-# Web Shell Mitigation Technique Review Record Template
+# Web Shell Technique Review Record Template
 
 ## Subject
 
-**T1100 — Web Shell Mitigation**
+**T1100 — Web Shell**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1100: https://attack.mitre.org/mitigations/T1100
+- T1100: https://attack.mitre.org/techniques/T1100
 - Template issued: 2026-10-27

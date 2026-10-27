@@ -1,8 +1,8 @@
-# Exploitation for Defense Evasion Mitigation Technique Review Record Template
+# Exploitation for Stealth Technique Review Record Template
 
 ## Subject
 
-**T1211 — Exploitation for Defense Evasion Mitigation**
+**T1211 — Exploitation for Stealth**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1211: https://attack.mitre.org/mitigations/T1211
+- T1211: https://attack.mitre.org/techniques/T1211
 - Template issued: 2026-10-27

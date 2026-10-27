@@ -1,8 +1,8 @@
-# Netsh Helper DLL Mitigation Technique Review Record Template
+# Netsh Helper DLL Technique Review Record Template
 
 ## Subject
 
-**T1128 — Netsh Helper DLL Mitigation**
+**T1128 — Netsh Helper DLL**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1128: https://attack.mitre.org/mitigations/T1128
+- T1128: https://attack.mitre.org/techniques/T1128
 - Template issued: 2026-10-27

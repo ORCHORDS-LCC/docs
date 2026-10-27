@@ -1,8 +1,8 @@
-# Credential Dumping Mitigation Technique Review Record Template
+# OS Credential Dumping Technique Review Record Template
 
 ## Subject
 
-**T1003 — Credential Dumping Mitigation**
+**T1003 — OS Credential Dumping**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1003: https://attack.mitre.org/mitigations/T1003
+- T1003: https://attack.mitre.org/techniques/T1003
 - Template issued: 2026-10-27

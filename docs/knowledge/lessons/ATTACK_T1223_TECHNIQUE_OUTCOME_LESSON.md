@@ -1,10 +1,12 @@
-# T1223 Compiled HTML File Mitigation Outcome Lesson
+# T1223 Compiled HTML File Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1223 — Compiled HTML File Mitigation**
+- Technique: **T1223 — Compiled HTML File**
+- Tactics: stealth, execution
+- Platforms: Windows
 
-Consider blocking download/transfer and execution of potentially uncommon file types known to be used in adversary campaigns, such as CHM files. Also consider using application whitelisting to prevent execution of hh.exe if it is not required for a given system or network to prevent potential misuse by adversaries.
+Compiled HTML files (.chm) are commonly distributed as part of the Microsoft HTML Help system. CHM files are compressed compilations of various content such as HTML documents, images, and scripting/web related programming languages such VBA, JScript, Java, and ActiveX. CHM content is displayed using underlying components of the Internet Explorer browser loaded by the HTML Help executable program (hh.exe). Adversaries may abuse this technology to conceal malicious code. A custom CHM file containing embedded payloads could be delivered to a victim then triggered by User Execution. CHM execution may also bypass application whitelisting on older and/or unpatched systems that do not account for execution of binaries through hh.exe.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1223: https://attack.mitre.org/mitigations/T1223
+- T1223: https://attack.mitre.org/techniques/T1223
 - Reviewed: 2026-10-27
 
 ## Boundary

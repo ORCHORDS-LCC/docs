@@ -1,11 +1,11 @@
-# Clipboard Data Mitigation Technique Platform Profile
+# Clipboard Data Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1115 — Clipboard Data Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1115 — Clipboard Data**
+- Platforms named in the source: Linux, macOS, Windows
 
-Instead of blocking software based on clipboard capture behavior, identify potentially malicious software that may contain this functionality, and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may collect data stored in the clipboard from users copying information within or between applications. For example, on Windows adversaries can access clipboard data by using clip.exe or Get-Clipboard. Additionally, adversaries may monitor then replace users’ clipboard with their data (e.g., Transmitted Data Manipulation). macOS and Linux also have commands, such as pbpaste, to grab clipboard contents.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1115: https://attack.mitre.org/mitigations/T1115
+- T1115: https://attack.mitre.org/techniques/T1115
 - Reviewed: 2026-10-27

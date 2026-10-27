@@ -1,11 +1,13 @@
-# Data Staged Mitigation Technique Response Playbook
+# Data Staged Technique Response Playbook
 
 ## Target technique
 
-**T1074 — Data Staged Mitigation**
+**T1074 — Data Staged**
 
+- Tactics: collection
+- Platforms: ESXi, IaaS, Linux, macOS, Windows
 
-Identify system utilities, remote access or third-party tools, users or potentially malicious software that may be used to store compressed or encrypted data in a publicly writeable directory, central location, or commonly used staging directories (e.g. recycle bin) that is indicative of non-standard behavior, and audit and/or block them by using file integrity monitoring tools where appropriate. Consider applying data size limits or blocking file writes of common compression and encryption utilities such as 7zip, RAR, ZIP, or zlib on frequently used staging directories or central locations and monitor attempted violations of those restrictions.
+Adversaries may stage collected data in a central location or directory prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as Archive Collected Data. Interactive command shells may be used, and common functionality within cmd and bash may be used to copy data into a staging location. In cloud environments, adversaries may stage data within a particular instance or virtual machine before exfiltration. An adversary may Create Cloud Instance and stage data in that instance. Adversaries may choose to stage data from a victim network in a centralized location prior to Exfiltration to minimize the number of connections made to their C2 server and better evade detection.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1074: https://attack.mitre.org/mitigations/T1074
+- T1074: https://attack.mitre.org/techniques/T1074
 - Reviewed: 2026-10-27

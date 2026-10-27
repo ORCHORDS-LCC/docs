@@ -1,8 +1,8 @@
-# Sudo Mitigation Technique Review Record Template
+# Sudo Technique Review Record Template
 
 ## Subject
 
-**T1169 — Sudo Mitigation**
+**T1169 — Sudo**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1169: https://attack.mitre.org/mitigations/T1169
+- T1169: https://attack.mitre.org/techniques/T1169
 - Template issued: 2026-10-27

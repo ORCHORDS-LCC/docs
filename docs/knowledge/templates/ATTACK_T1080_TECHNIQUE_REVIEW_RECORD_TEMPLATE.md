@@ -1,8 +1,8 @@
-# Taint Shared Content Mitigation Technique Review Record Template
+# Taint Shared Content Technique Review Record Template
 
 ## Subject
 
-**T1080 — Taint Shared Content Mitigation**
+**T1080 — Taint Shared Content**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1080: https://attack.mitre.org/mitigations/T1080
+- T1080: https://attack.mitre.org/techniques/T1080
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# System Information Discovery Mitigation Technique Review Record Template
+# System Information Discovery Technique Review Record Template
 
 ## Subject
 
-**T1082 — System Information Discovery Mitigation**
+**T1082 — System Information Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1082: https://attack.mitre.org/mitigations/T1082
+- T1082: https://attack.mitre.org/techniques/T1082
 - Template issued: 2026-10-27

@@ -1,10 +1,10 @@
-# Regsvcs/Regasm Mitigation Technique Operationalization Review
+# Regsvcs/Regasm Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1121 — Regsvcs/Regasm Mitigation**
+- Technique: **T1121 — Regsvcs/Regasm**
 
-Regsvcs and Regasm may not be necessary within a given environment. Block execution of Regsvcs.exe and Regasm.exe if they are not required for a given system or network to prevent potential misuse by adversaries.
+Regsvcs and Regasm are Windows command-line utilities that are used to register .NET Component Object Model (COM) assemblies. Both are digitally signed by Microsoft. Adversaries can use Regsvcs and Regasm to proxy execution of code through a trusted Windows utility. Both utilities may be used to bypass process whitelisting through use of attributes within the binary to specify code that should be run before registration or unregistration: [ComRegisterFunction] or [ComUnregisterFunction] respectively. The code with the registration and unregistration attributes will be executed even if the process is run under insufficient privileges and fails to execute.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1121: https://attack.mitre.org/mitigations/T1121
+- T1121: https://attack.mitre.org/techniques/T1121
 - Reviewed: 2026-10-27

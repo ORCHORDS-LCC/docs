@@ -1,8 +1,8 @@
-# DEPRECATED:  Target Influence via Neuro-Linguistic Programming (NLP) Attack Pattern Assurance Profile
+# DEPRECATED: Target Influence via Neuro-Linguistic Programming (NLP) Attack Pattern Assurance Profile
 
 ## Reference
 
-- Attack pattern: **431 — DEPRECATED:  Target Influence via Neuro-Linguistic Programming (NLP)**
+- Attack pattern: **431 — DEPRECATED: Target Influence via Neuro-Linguistic Programming (NLP)**
 - Status: Deprecated
 
 ## Pattern description

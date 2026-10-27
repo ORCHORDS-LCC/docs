@@ -1,8 +1,8 @@
-# User Execution Mitigation Technique Review Record Template
+# User Execution Technique Review Record Template
 
 ## Subject
 
-**T1204 — User Execution Mitigation**
+**T1204 — User Execution**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1204: https://attack.mitre.org/mitigations/T1204
+- T1204: https://attack.mitre.org/techniques/T1204
 - Template issued: 2026-10-27

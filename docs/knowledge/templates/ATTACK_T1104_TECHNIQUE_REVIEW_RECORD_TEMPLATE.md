@@ -1,8 +1,8 @@
-# Multi-Stage Channels Mitigation Technique Review Record Template
+# Multi-Stage Channels Technique Review Record Template
 
 ## Subject
 
-**T1104 — Multi-Stage Channels Mitigation**
+**T1104 — Multi-Stage Channels**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1104: https://attack.mitre.org/mitigations/T1104
+- T1104: https://attack.mitre.org/techniques/T1104
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Hidden Window Mitigation Technique Review Record Template
+# Hidden Window Technique Review Record Template
 
 ## Subject
 
-**T1143 — Hidden Window Mitigation**
+**T1143 — Hidden Window**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1143: https://attack.mitre.org/mitigations/T1143
+- T1143: https://attack.mitre.org/techniques/T1143
 - Template issued: 2026-10-27

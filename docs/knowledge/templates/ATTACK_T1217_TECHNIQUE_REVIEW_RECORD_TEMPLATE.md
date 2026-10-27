@@ -1,8 +1,8 @@
-# Browser Bookmark Discovery Mitigation Technique Review Record Template
+# Browser Information Discovery Technique Review Record Template
 
 ## Subject
 
-**T1217 — Browser Bookmark Discovery Mitigation**
+**T1217 — Browser Information Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1217: https://attack.mitre.org/mitigations/T1217
+- T1217: https://attack.mitre.org/techniques/T1217
 - Template issued: 2026-10-27

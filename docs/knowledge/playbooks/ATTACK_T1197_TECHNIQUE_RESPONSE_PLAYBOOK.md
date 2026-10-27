@@ -1,11 +1,13 @@
-# BITS Jobs Mitigation Technique Response Playbook
+# BITS Jobs Technique Response Playbook
 
 ## Target technique
 
-**T1197 — BITS Jobs Mitigation**
+**T1197 — BITS Jobs**
 
+- Tactics: stealth, persistence, execution
+- Platforms: Windows
 
-This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of operating system design features. For example, disabling all BITS functionality will likely have unintended side effects, such as preventing legitimate software patching and updating. Efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identification of subsequent malicious behavior. Modify network and/or host firewall rules, as well as other network controls, to only allow legitimate BITS traffic. Consider limiting access to the BITS interface to specific users or groups. Consider reducing the default BITS job lifetime in Group Policy or by editing the <code>JobInactivityTimeout</code> and <code>MaxDownloadTime</code> Registry values in <code> HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\BITS</code>.
+Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks. Windows Background Intelligent Transfer Service (BITS) is a low-bandwidth, asynchronous file transfer mechanism exposed through Component Object Model (COM). BITS is commonly used by updaters, messengers, and other applications preferred to operate in the background (using available idle bandwidth) without interrupting other networked applications. File transfer tasks are implemented as BITS jobs, which contain a queue of one or more file operations. The interface to create and manage BITS jobs is accessible through PowerShell and the BITSAdmin tool. Adversaries may abuse BITS to download (e.g. Ingress Tool Transfer), execute, and even clean up after running malicious code (e.g. Indicator Removal). BITS tasks are self-contained in the BITS job database, without new files or registry modifications, and often permitted by host firewalls. BITS enabled execution may also enable persistence by creating long-standing jobs (the default maximum lifetime is 90 days and extendable) or invoking an arbitrary program when a job completes or errors (including after system reboots). BITS upload functionalities can also be used to perform Exfiltration Over Alternative Protocol.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1197: https://attack.mitre.org/mitigations/T1197
+- T1197: https://attack.mitre.org/techniques/T1197
 - Reviewed: 2026-10-27

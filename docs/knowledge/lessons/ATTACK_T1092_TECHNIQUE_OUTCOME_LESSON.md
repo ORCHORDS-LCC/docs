@@ -1,10 +1,12 @@
-# T1092 Communication Through Removable Media Mitigation Outcome Lesson
+# T1092 Communication Through Removable Media Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1092 — Communication Through Removable Media Mitigation**
+- Technique: **T1092 — Communication Through Removable Media**
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Disable Autorun if it is unnecessary. Disallow or restrict removable media at an organizational policy level if they are not required for business operations.
+Adversaries can perform command and control between compromised hosts on potentially disconnected networks using removable media to transfer commands from system to system. Both systems would need to be compromised, with the likelihood that an Internet-connected system was compromised first and the second through lateral movement by Replication Through Removable Media. Commands and files would be relayed from the disconnected system to the Internet-connected system to which the adversary has direct access.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1092: https://attack.mitre.org/mitigations/T1092
+- T1092: https://attack.mitre.org/techniques/T1092
 - Reviewed: 2026-10-27
 
 ## Boundary

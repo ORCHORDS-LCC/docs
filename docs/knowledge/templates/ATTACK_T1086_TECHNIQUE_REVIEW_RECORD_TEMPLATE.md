@@ -1,8 +1,8 @@
-# PowerShell Mitigation Technique Review Record Template
+# PowerShell Technique Review Record Template
 
 ## Subject
 
-**T1086 — PowerShell Mitigation**
+**T1086 — PowerShell**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1086: https://attack.mitre.org/mitigations/T1086
+- T1086: https://attack.mitre.org/techniques/T1086
 - Template issued: 2026-10-27

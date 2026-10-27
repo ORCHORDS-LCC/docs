@@ -1,8 +1,8 @@
-# Valid Accounts Mitigation Technique Review Record Template
+# Valid Accounts Technique Review Record Template
 
 ## Subject
 
-**T1078 — Valid Accounts Mitigation**
+**T1078 — Valid Accounts**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1078: https://attack.mitre.org/mitigations/T1078
+- T1078: https://attack.mitre.org/techniques/T1078
 - Template issued: 2026-10-27

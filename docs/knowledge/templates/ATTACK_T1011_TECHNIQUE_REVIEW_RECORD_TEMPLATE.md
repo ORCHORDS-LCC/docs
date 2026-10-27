@@ -1,8 +1,8 @@
-# Exfiltration Over Other Network Medium Mitigation Technique Review Record Template
+# Exfiltration Over Other Network Medium Technique Review Record Template
 
 ## Subject
 
-**T1011 — Exfiltration Over Other Network Medium Mitigation**
+**T1011 — Exfiltration Over Other Network Medium**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1011: https://attack.mitre.org/mitigations/T1011
+- T1011: https://attack.mitre.org/techniques/T1011
 - Template issued: 2026-10-27

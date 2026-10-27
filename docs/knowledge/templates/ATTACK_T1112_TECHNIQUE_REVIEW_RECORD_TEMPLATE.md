@@ -1,8 +1,8 @@
-# Modify Registry Mitigation Technique Review Record Template
+# Modify Registry Technique Review Record Template
 
 ## Subject
 
-**T1112 — Modify Registry Mitigation**
+**T1112 — Modify Registry**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1112: https://attack.mitre.org/mitigations/T1112
+- T1112: https://attack.mitre.org/techniques/T1112
 - Template issued: 2026-10-27

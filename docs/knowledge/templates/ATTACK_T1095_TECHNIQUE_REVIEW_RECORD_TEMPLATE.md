@@ -1,8 +1,8 @@
-# Standard Non-Application Layer Protocol Mitigation Technique Review Record Template
+# Non-Application Layer Protocol Technique Review Record Template
 
 ## Subject
 
-**T1095 — Standard Non-Application Layer Protocol Mitigation**
+**T1095 — Non-Application Layer Protocol**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1095: https://attack.mitre.org/mitigations/T1095
+- T1095: https://attack.mitre.org/techniques/T1095
 - Template issued: 2026-10-27

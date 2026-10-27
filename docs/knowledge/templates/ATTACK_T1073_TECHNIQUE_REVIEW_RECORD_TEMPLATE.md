@@ -1,8 +1,8 @@
-# DLL Side-Loading Mitigation Technique Review Record Template
+# DLL Side-Loading Technique Review Record Template
 
 ## Subject
 
-**T1073 — DLL Side-Loading Mitigation**
+**T1073 — DLL Side-Loading**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1073: https://attack.mitre.org/mitigations/T1073
+- T1073: https://attack.mitre.org/techniques/T1073
 - Template issued: 2026-10-27

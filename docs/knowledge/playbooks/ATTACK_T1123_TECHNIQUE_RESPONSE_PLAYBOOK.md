@@ -1,11 +1,13 @@
-# Audio Capture Mitigation Technique Response Playbook
+# Audio Capture Technique Response Playbook
 
 ## Target technique
 
-**T1123 — Audio Capture Mitigation**
+**T1123 — Audio Capture**
 
+- Tactics: collection
+- Platforms: Linux, macOS, Windows
 
-Mitigating this technique specifically may be difficult as it requires fine-grained API control. Efforts should be focused on preventing unwanted or unknown code from executing on a system. Identify and block potentially malicious software that may be used to record audio by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information. Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture audio. Audio files may be written to disk and exfiltrated later.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1123: https://attack.mitre.org/mitigations/T1123
+- T1123: https://attack.mitre.org/techniques/T1123
 - Reviewed: 2026-10-27

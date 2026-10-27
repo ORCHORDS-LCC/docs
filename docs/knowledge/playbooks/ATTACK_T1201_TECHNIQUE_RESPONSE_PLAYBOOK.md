@@ -1,11 +1,13 @@
-# Password Policy Discovery Mitigation Technique Response Playbook
+# Password Policy Discovery Technique Response Playbook
 
 ## Target technique
 
-**T1201 — Password Policy Discovery Mitigation**
+**T1201 — Password Policy Discovery**
 
+- Tactics: discovery
+- Platforms: Windows, Linux, macOS, IaaS, Network Devices, Identity Provider, SaaS, Office Suite
 
-Mitigating discovery of password policies is not advised since the information is required to be known by systems and users of a network. Ensure password policies are such that they mitigate brute force attacks yet will not give an adversary an information advantage because the policies are too light. Active Directory is a common way to set and enforce password policies throughout an enterprise network.
+Adversaries may attempt to access detailed information about the password policy used within an enterprise network or cloud environment. Password policies are a way to enforce complex passwords that are difficult to guess or crack through Brute Force. This information may help the adversary to create a list of common passwords and launch dictionary and/or brute force attacks which adheres to the policy (e.g. if the minimum password length should be 8, then not trying passwords such as 'pass123'; not checking for more than 3-4 passwords per account if the lockout is set to 6 as to not lock out accounts). Password policies can be set and discovered on Windows, Linux, and macOS systems via various command shell utilities such as net accounts (/domain), Get-ADDefaultDomainPasswordPolicy, chage -l <username>, cat /etc/pam.d/common-password, and pwpolicy getaccountpolicies . Adversaries may also leverage a Network Device CLI on network devices to discover password policy information (e.g. show aaa, show aaa common-criteria policy all). Password policies can be discovered in cloud environments using available APIs such as GetAccountPasswordPolicy in AWS .
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1201: https://attack.mitre.org/mitigations/T1201
+- T1201: https://attack.mitre.org/techniques/T1201
 - Reviewed: 2026-10-27

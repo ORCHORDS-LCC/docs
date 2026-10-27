@@ -1,8 +1,8 @@
-# Exploitation for Privilege Escalation Mitigation Technique Review Record Template
+# Exploitation for Privilege Escalation Technique Review Record Template
 
 ## Subject
 
-**T1068 — Exploitation for Privilege Escalation Mitigation**
+**T1068 — Exploitation for Privilege Escalation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1068: https://attack.mitre.org/mitigations/T1068
+- T1068: https://attack.mitre.org/techniques/T1068
 - Template issued: 2026-10-27

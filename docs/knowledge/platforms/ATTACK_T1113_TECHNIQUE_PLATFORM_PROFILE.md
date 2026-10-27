@@ -1,11 +1,11 @@
-# Screen Capture Mitigation Technique Platform Profile
+# Screen Capture Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1113 — Screen Capture Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1113 — Screen Capture**
+- Platforms named in the source: Linux, macOS, Windows
 
-Blocking software based on screen capture functionality may be difficult, and there may be legitimate software that performs those actions. Instead, identify potentially malicious software that may have functionality to acquire screen captures, and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as CopyFromScreen, xwd, or screencapture.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1113: https://attack.mitre.org/mitigations/T1113
+- T1113: https://attack.mitre.org/techniques/T1113
 - Reviewed: 2026-10-27

@@ -1,8 +1,8 @@
-# Sudo Caching Mitigation Technique Review Record Template
+# Sudo Caching Technique Review Record Template
 
 ## Subject
 
-**T1206 — Sudo Caching Mitigation**
+**T1206 — Sudo Caching**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1206: https://attack.mitre.org/mitigations/T1206
+- T1206: https://attack.mitre.org/techniques/T1206
 - Template issued: 2026-10-27

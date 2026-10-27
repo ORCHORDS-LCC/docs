@@ -1,10 +1,10 @@
-# Gatekeeper Bypass Mitigation Technique Operationalization Review
+# Gatekeeper Bypass Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1144 — Gatekeeper Bypass Mitigation**
+- Technique: **T1144 — Gatekeeper Bypass**
 
-Other tools should be used to supplement Gatekeeper's functionality. Additionally, system settings can prevent applications from running that haven't been downloaded through the Apple Store which can help mitigate some of these issues.
+In macOS and OS X, when applications or programs are downloaded from the internet, there is a special attribute set on the file called com.apple.quarantine. This attribute is read by Apple's Gatekeeper defense program at execution time and provides a prompt to the user to allow or deny execution. Apps loaded onto the system from USB flash drive, optical disk, external hard drive, or even from a drive shared over the local network won’t set this flag. Additionally, other utilities or events like drive-by downloads don’t necessarily set it either. This completely bypasses the built-in Gatekeeper check. The presence of the quarantine flag can be checked by the xattr command xattr /path/to/MyApp.app for com.apple.quarantine. Similarly, given sudo access or elevated permission, this attribute can be removed with xattr as well, sudo xattr -r -d com.apple.quarantine /path/to/MyApp.app. In typical operation, a file will be downloaded from the internet and given a quarantine flag before being saved to disk. When the user tries to open the file or application, macOS’s gatekeeper will step in and check for the presence of this flag. If it exists, then macOS will then prompt the user to confirmation that they want to run the program and will even provide the URL where the application came from. However, this is all based on the file being downloaded from a quarantine-savvy application.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1144: https://attack.mitre.org/mitigations/T1144
+- T1144: https://attack.mitre.org/techniques/T1144
 - Reviewed: 2026-10-27

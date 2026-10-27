@@ -1,8 +1,8 @@
-# Launchctl Mitigation Technique Review Record Template
+# Launchctl Technique Review Record Template
 
 ## Subject
 
-**T1152 — Launchctl Mitigation**
+**T1152 — Launchctl**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1152: https://attack.mitre.org/mitigations/T1152
+- T1152: https://attack.mitre.org/techniques/T1152
 - Template issued: 2026-10-27

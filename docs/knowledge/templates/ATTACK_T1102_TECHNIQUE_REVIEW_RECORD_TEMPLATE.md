@@ -1,8 +1,8 @@
-# Web Service Mitigation Technique Review Record Template
+# Web Service Technique Review Record Template
 
 ## Subject
 
-**T1102 — Web Service Mitigation**
+**T1102 — Web Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1102: https://attack.mitre.org/mitigations/T1102
+- T1102: https://attack.mitre.org/techniques/T1102
 - Template issued: 2026-10-27

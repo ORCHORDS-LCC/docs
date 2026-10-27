@@ -1,8 +1,8 @@
-# Inhibit System Recovery Mitigation Technique Review Record Template
+# Inhibit System Recovery Technique Review Record Template
 
 ## Subject
 
-**T1490 — Inhibit System Recovery Mitigation**
+**T1490 — Inhibit System Recovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1490: https://attack.mitre.org/mitigations/T1490
+- T1490: https://attack.mitre.org/techniques/T1490
 - Template issued: 2026-10-27

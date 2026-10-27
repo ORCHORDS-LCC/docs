@@ -1,8 +1,8 @@
-# Create Account Mitigation Technique Review Record Template
+# Create Account Technique Review Record Template
 
 ## Subject
 
-**T1136 — Create Account Mitigation**
+**T1136 — Create Account**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1136: https://attack.mitre.org/mitigations/T1136
+- T1136: https://attack.mitre.org/techniques/T1136
 - Template issued: 2026-10-27

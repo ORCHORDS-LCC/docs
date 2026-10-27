@@ -1,8 +1,8 @@
-# Network Sniffing Mitigation Technique Review Record Template
+# Network Sniffing Technique Review Record Template
 
 ## Subject
 
-**T1040 — Network Sniffing Mitigation**
+**T1040 — Network Sniffing**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1040: https://attack.mitre.org/mitigations/T1040
+- T1040: https://attack.mitre.org/techniques/T1040
 - Template issued: 2026-10-27

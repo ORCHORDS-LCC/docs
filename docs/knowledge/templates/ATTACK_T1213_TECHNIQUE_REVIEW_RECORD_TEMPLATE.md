@@ -1,8 +1,8 @@
-# Data from Information Repositories Mitigation Technique Review Record Template
+# Data from Information Repositories Technique Review Record Template
 
 ## Subject
 
-**T1213 — Data from Information Repositories Mitigation**
+**T1213 — Data from Information Repositories**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1213: https://attack.mitre.org/mitigations/T1213
+- T1213: https://attack.mitre.org/techniques/T1213
 - Template issued: 2026-10-27

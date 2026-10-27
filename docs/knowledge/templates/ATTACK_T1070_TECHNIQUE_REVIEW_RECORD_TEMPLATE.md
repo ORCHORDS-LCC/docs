@@ -1,8 +1,8 @@
-# Indicator Removal on Host Mitigation Technique Review Record Template
+# Indicator Removal Technique Review Record Template
 
 ## Subject
 
-**T1070 — Indicator Removal on Host Mitigation**
+**T1070 — Indicator Removal**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1070: https://attack.mitre.org/mitigations/T1070
+- T1070: https://attack.mitre.org/techniques/T1070
 - Template issued: 2026-10-27

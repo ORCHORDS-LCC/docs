@@ -1,11 +1,11 @@
-# Data Obfuscation Mitigation Technique Platform Profile
+# Data Obfuscation Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1001 — Data Obfuscation Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1001 — Data Obfuscation**
+- Platforms named in the source: ESXi, Linux, macOS, Windows
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+Adversaries may obfuscate command and control traffic to make it more difficult to detect. Command and control (C2) communications are hidden (but not necessarily encrypted) in an attempt to make the content more difficult to discover or decipher and to make the communication less conspicuous and hide commands from being seen. This encompasses many methods, such as adding junk data to protocol traffic, using steganography, or impersonating legitimate protocols.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1001: https://attack.mitre.org/mitigations/T1001
+- T1001: https://attack.mitre.org/techniques/T1001
 - Reviewed: 2026-10-27

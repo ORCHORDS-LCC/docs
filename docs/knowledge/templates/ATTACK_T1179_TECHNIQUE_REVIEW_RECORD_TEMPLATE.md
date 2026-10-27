@@ -1,8 +1,8 @@
-# Hooking Mitigation Technique Review Record Template
+# Hooking Technique Review Record Template
 
 ## Subject
 
-**T1179 — Hooking Mitigation**
+**T1179 — Hooking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1179: https://attack.mitre.org/mitigations/T1179
+- T1179: https://attack.mitre.org/techniques/T1179
 - Template issued: 2026-10-27

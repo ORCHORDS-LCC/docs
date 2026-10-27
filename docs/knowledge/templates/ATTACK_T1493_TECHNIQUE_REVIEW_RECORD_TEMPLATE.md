@@ -1,8 +1,8 @@
-# Transmitted Data Manipulation Mitigation Technique Review Record Template
+# Transmitted Data Manipulation Technique Review Record Template
 
 ## Subject
 
-**T1493 — Transmitted Data Manipulation Mitigation**
+**T1493 — Transmitted Data Manipulation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1493: https://attack.mitre.org/mitigations/T1493
+- T1493: https://attack.mitre.org/techniques/T1493
 - Template issued: 2026-10-27

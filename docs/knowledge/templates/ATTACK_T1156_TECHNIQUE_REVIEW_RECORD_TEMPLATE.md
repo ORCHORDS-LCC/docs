@@ -1,8 +1,8 @@
-# .bash_profile and .bashrc Mitigation Technique Review Record Template
+# Malicious Shell Modification Technique Review Record Template
 
 ## Subject
 
-**T1156 — .bash_profile and .bashrc Mitigation**
+**T1156 — Malicious Shell Modification**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1156: https://attack.mitre.org/mitigations/T1156
+- T1156: https://attack.mitre.org/techniques/T1156
 - Template issued: 2026-10-27

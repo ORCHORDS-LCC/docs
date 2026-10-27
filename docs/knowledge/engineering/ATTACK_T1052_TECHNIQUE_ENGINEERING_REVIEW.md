@@ -1,10 +1,10 @@
-# Exfiltration Over Physical Medium Mitigation Technique Engineering Review
+# Exfiltration Over Physical Medium Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1052 — Exfiltration Over Physical Medium Mitigation**
+- Technique: **T1052 — Exfiltration Over Physical Medium**
 
-Disable Autorun if it is unnecessary. Disallow or restrict removable media at an organizational policy level if they are not required for business operations.
+Adversaries may attempt to exfiltrate data via a physical medium, such as a removable drive. In certain circumstances, such as an air-gapped network compromise, exfiltration could occur via a physical medium or device introduced by a user. Such media could be an external hard drive, USB drive, cellular phone, MP3 player, or other removable storage and processing device. The physical medium or device could be used as the final exfiltration point or to hop between otherwise disconnected systems.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1052: https://attack.mitre.org/mitigations/T1052
+- T1052: https://attack.mitre.org/techniques/T1052
 - Reviewed: 2026-10-27

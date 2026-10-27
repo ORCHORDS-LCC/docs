@@ -1,8 +1,8 @@
-# Bash History Mitigation Technique Review Record Template
+# Bash History Technique Review Record Template
 
 ## Subject
 
-**T1139 — Bash History Mitigation**
+**T1139 — Bash History**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1139: https://attack.mitre.org/mitigations/T1139
+- T1139: https://attack.mitre.org/techniques/T1139
 - Template issued: 2026-10-27

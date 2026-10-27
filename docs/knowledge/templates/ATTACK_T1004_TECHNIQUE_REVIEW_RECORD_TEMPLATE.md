@@ -1,8 +1,8 @@
-# Winlogon Helper DLL Mitigation Technique Review Record Template
+# Winlogon Helper DLL Technique Review Record Template
 
 ## Subject
 
-**T1004 — Winlogon Helper DLL Mitigation**
+**T1004 — Winlogon Helper DLL**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1004: https://attack.mitre.org/mitigations/T1004
+- T1004: https://attack.mitre.org/techniques/T1004
 - Template issued: 2026-10-27

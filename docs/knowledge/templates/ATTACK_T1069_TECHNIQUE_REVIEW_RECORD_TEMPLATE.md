@@ -1,8 +1,8 @@
-# Permission Groups Discovery Mitigation Technique Review Record Template
+# Permission Groups Discovery Technique Review Record Template
 
 ## Subject
 
-**T1069 — Permission Groups Discovery Mitigation**
+**T1069 — Permission Groups Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1069: https://attack.mitre.org/mitigations/T1069
+- T1069: https://attack.mitre.org/techniques/T1069
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Space after Filename Mitigation Technique Review Record Template
+# Space after Filename Technique Review Record Template
 
 ## Subject
 
-**T1151 — Space after Filename Mitigation**
+**T1151 — Space after Filename**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1151: https://attack.mitre.org/mitigations/T1151
+- T1151: https://attack.mitre.org/techniques/T1151
 - Template issued: 2026-10-27

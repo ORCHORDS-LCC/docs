@@ -1,8 +1,8 @@
-# Redundant Access Mitigation Technique Review Record Template
+# Redundant Access Technique Review Record Template
 
 ## Subject
 
-**T1108 — Redundant Access Mitigation**
+**T1108 — Redundant Access**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1108: https://attack.mitre.org/mitigations/T1108
+- T1108: https://attack.mitre.org/techniques/T1108
 - Template issued: 2026-10-27

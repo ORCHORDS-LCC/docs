@@ -1,8 +1,8 @@
-# Supply Chain Compromise Mitigation Technique Review Record Template
+# Supply Chain Compromise Technique Review Record Template
 
 ## Subject
 
-**T1195 — Supply Chain Compromise Mitigation**
+**T1195 — Supply Chain Compromise**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1195: https://attack.mitre.org/mitigations/T1195
+- T1195: https://attack.mitre.org/techniques/T1195
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Credentials in Registry Mitigation Technique Review Record Template
+# Credentials in Registry Technique Review Record Template
 
 ## Subject
 
-**T1214 — Credentials in Registry Mitigation**
+**T1214 — Credentials in Registry**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1214: https://attack.mitre.org/mitigations/T1214
+- T1214: https://attack.mitre.org/techniques/T1214
 - Template issued: 2026-10-27

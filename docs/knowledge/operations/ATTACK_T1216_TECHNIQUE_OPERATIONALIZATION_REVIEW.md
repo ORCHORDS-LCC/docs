@@ -1,10 +1,10 @@
-# Signed Script Proxy Execution Mitigation Technique Operationalization Review
+# System Script Proxy Execution Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1216 — Signed Script Proxy Execution Mitigation**
+- Technique: **T1216 — System Script Proxy Execution**
 
-Certain signed scripts that can be used to execute other programs may not be necessary within a given environment. Use application whitelisting configured to block execution of these scripts if they are not required for a given system or network to prevent potential misuse by adversaries.
+Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files. Several Microsoft signed scripts that have been downloaded from Microsoft or are default on Windows installations can be used to proxy execution of other files. This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1216: https://attack.mitre.org/mitigations/T1216
+- T1216: https://attack.mitre.org/techniques/T1216
 - Reviewed: 2026-10-27

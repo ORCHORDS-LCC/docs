@@ -1,10 +1,10 @@
-# Redundant Access Mitigation Technique Operationalization Review
+# Redundant Access Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1108 — Redundant Access Mitigation**
+- Technique: **T1108 — Redundant Access**
 
-Identify and block potentially malicious software that may be used as a remote access tool, and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate. Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and will be different across various malware families and versions. Adversaries will likely change tool signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+**This technique has been deprecated. Please use Create Account, Web Shell, and External Remote Services where appropriate.** Adversaries may use more than one remote access tool with varying command and control protocols or credentialed access to remote services so they can maintain access if an access mechanism is detected or mitigated. If one type of tool is detected and blocked or removed as a response but the organization did not gain a full understanding of the adversary's tools and access, then the adversary will be able to retain access to the network. Adversaries may also attempt to gain access to Valid Accounts to use External Remote Services such as external VPNs as a way to maintain access despite interruptions to remote access tools deployed within a target network. Adversaries may also retain access through cloud-based infrastructure and applications. Use of a Web Shell is one such way to maintain access to a network through an externally accessible Web server.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1108: https://attack.mitre.org/mitigations/T1108
+- T1108: https://attack.mitre.org/techniques/T1108
 - Reviewed: 2026-10-27

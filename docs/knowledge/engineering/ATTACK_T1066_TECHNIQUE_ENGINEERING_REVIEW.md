@@ -1,10 +1,10 @@
-# Indicator Removal from Tools Mitigation Technique Engineering Review
+# Indicator Removal from Tools Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1066 — Indicator Removal from Tools Mitigation**
+- Technique: **T1066 — Indicator Removal from Tools**
 
-Mitigation is difficult in instances like this because the adversary may have access to the system through another channel and can learn what techniques or tools are blocked by resident defenses. Exercising best practices with configuration and security as well as ensuring that proper process is followed during investigation of potential compromise is essential to detecting a larger intrusion through discrete alerts. Identify and block potentially malicious software that may be used by an adversary by using whitelisting tools like AppLocker or Software Restriction Policies where appropriate.
+If a malicious tool is detected and quarantined or otherwise curtailed, an adversary may be able to determine why the malicious tool was detected (the indicator), modify the tool by removing the indicator, and use the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems. A good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may use Software Packing or otherwise modify the file so it has a different signature, and then re-use the malware.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1066: https://attack.mitre.org/mitigations/T1066
+- T1066: https://attack.mitre.org/techniques/T1066
 - Reviewed: 2026-10-27

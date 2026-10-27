@@ -1,10 +1,10 @@
-# Bootkit Mitigation Technique Engineering Review
+# Bootkit Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1067 — Bootkit Mitigation**
+- Technique: **T1067 — Bootkit**
 
-Ensure proper permissions are in place to help prevent adversary access to privileged accounts necessary to perform this action. Use Trusted Platform Module technology and a secure or trusted boot process to prevent system integrity from being compromised.
+A bootkit is a malware variant that modifies the boot sectors of a hard drive, including the Master Boot Record (MBR) and Volume Boot Record (VBR). Adversaries may use bootkits to persist on systems at a layer below the operating system, which may make it difficult to perform full remediation unless an organization suspects one was used and can act accordingly. ### Master Boot Record The MBR is the section of disk that is first loaded after completing hardware initialization by the BIOS. It is the location of the boot loader. An adversary who has raw access to the boot drive may overwrite this area, diverting execution during startup from the normal boot loader to adversary code. ### Volume Boot Record The MBR passes control of the boot process to the VBR. Similar to the case of MBR, an adversary who has raw access to the boot drive may overwrite the VBR to divert execution during startup to adversary code.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1067: https://attack.mitre.org/mitigations/T1067
+- T1067: https://attack.mitre.org/techniques/T1067
 - Reviewed: 2026-10-27

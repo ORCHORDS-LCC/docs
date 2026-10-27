@@ -1,11 +1,11 @@
-# Scheduled Task Mitigation Technique Platform Profile
+# Scheduled Task/Job Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1053 — Scheduled Task Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1053 — Scheduled Task/Job**
+- Platforms named in the source: Containers, ESXi, Linux, macOS, Network Devices, Windows
 
-Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create scheduled tasks on remote systems. Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for permission weaknesses in scheduled tasks that could be used to escalate privileges. Configure settings for scheduled tasks to force tasks to run under the context of the authenticated account instead of allowing them to run as SYSTEM. The associated Registry key is located at <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\SubmitControl</code>. The setting can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > Security Options: Domain Controller: Allow server operators to schedule tasks, set to disabled. Configure the Increase Scheduling Priority option to only allow the Administrators group the rights to schedule a priority process. This can be can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Increase scheduling priority. Identify and block unnecessary system utilities or potentially malicious software that may be used to schedule tasks using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code. Utilities exist within all major operating systems to schedule programs or scripts to be executed at a specified date and time. A task can also be scheduled on a remote system, provided the proper authentication is met (ex: RPC and file and printer sharing in Windows environments). Scheduling a task on a remote system typically may require being a member of an admin or otherwise privileged group on the remote system. Adversaries may use task scheduling to execute programs at system startup or on a scheduled basis for persistence. These mechanisms can also be abused to run a process under the context of a specified account (such as one with elevated permissions/privileges). Similar to System Binary Proxy Execution, adversaries have also abused task scheduling to potentially mask one-time execution under a trusted system process.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1053: https://attack.mitre.org/mitigations/T1053
+- T1053: https://attack.mitre.org/techniques/T1053
 - Reviewed: 2026-10-27

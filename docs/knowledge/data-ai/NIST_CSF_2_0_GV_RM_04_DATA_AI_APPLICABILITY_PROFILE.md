@@ -1,38 +1,36 @@
-# NIST CSF 2.0 GV.RM-04 Data and AI Applicability Profile
+# Strategic direction that describes appropriate risk response options is established and communicated Data AI Applicability Profile
 
-## Outcome
+## Authoritative outcome
 
 **GV.RM-04:** Strategic direction that describes appropriate risk response options is established and communicated
 
-## Data and AI applicability review
+## Data and AI applicability
 
-Evaluate this outcome against the real architecture rather than assuming that an AI-specific framework replaces ordinary cybersecurity outcomes.
+- Function: GV — GOVERN
+- Category: GV.RM — Risk Management Strategy
 
-### Review surfaces
+## Applicability review
 
-- datasets, metadata, lineage, and storage;
-- training, tuning, evaluation, and inference systems;
-- retrieval and embedding pipelines;
-- agents, tools, delegated actions, and automation;
-- APIs, identities, secrets, networks, and dependencies supporting the workflow;
-- human review, governance, supplier, and operational processes around the system.
+1. Identify the data pipeline, model, agent, retrieval system, or AI-facing service in scope.
+2. Decide whether the outcome applies, and record the reason rather than assuming either answer.
+3. Review the outcome against the system's actual behaviour, separating documented intent from verified behaviour.
+4. Record the evidence that would demonstrate the outcome for a data or AI context.
+5. Record partial coverage where the outcome holds for some data flows and not others.
+6. Revisit when the model, the data flow, or the surrounding system changes materially.
 
-## Decision method
+## Evidence expectations
 
-1. Identify which review surfaces actually exist.
-2. Decide whether the outcome applies to those surfaces.
-3. Link applicable requirements to real technical or governance evidence.
-4. Record partial applicability and shared responsibility.
-5. Record non-applicability with an architecture-based rationale.
-6. Revisit after model, data, tool, provider, identity, or deployment changes.
+- the model and data-flow inventory for the scope;
+- the applicability decision per system;
+- the evidence reviewed, with its date;
+- the gap list with owners.
+
+## Limitations
+
+This review is derived from the stated outcome. It does not claim applicability for any specific system and does not replace the assessment evidence.
 
 ## Source
 
-- NIST Cybersecurity Framework 2.0: https://doi.org/10.6028/NIST.CSWP.29
 - NIST OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/CSF/v2.0/json/NIST_CSF_v2.0_catalog.json
-- Catalog version: 1.2.0
-- Catalog published: 2026-05-13
-
-## Boundary
-
-This profile does not force the outcome onto an AI/data system where the relevant surface does not exist, and it does not treat AI-specific controls as a substitute for applicable general cybersecurity outcomes.
+- Catalog: https://doi.org/10.6028/NIST.CSWP.29
+- Reviewed: 2026-10-27

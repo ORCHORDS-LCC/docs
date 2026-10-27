@@ -1,8 +1,8 @@
-# Rootkit Mitigation Technique Review Record Template
+# Rootkit Technique Review Record Template
 
 ## Subject
 
-**T1014 — Rootkit Mitigation**
+**T1014 — Rootkit**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1014: https://attack.mitre.org/mitigations/T1014
+- T1014: https://attack.mitre.org/techniques/T1014
 - Template issued: 2026-10-27

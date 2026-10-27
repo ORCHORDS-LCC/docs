@@ -1,8 +1,8 @@
-# Spearphishing Link Mitigation Technique Review Record Template
+# Spearphishing Link Technique Review Record Template
 
 ## Subject
 
-**T1192 — Spearphishing Link Mitigation**
+**T1192 — Spearphishing Link**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1192: https://attack.mitre.org/mitigations/T1192
+- T1192: https://attack.mitre.org/techniques/T1192
 - Template issued: 2026-10-27

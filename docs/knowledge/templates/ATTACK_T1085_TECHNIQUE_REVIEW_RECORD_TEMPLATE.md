@@ -1,8 +1,8 @@
-# Rundll32 Mitigation Technique Review Record Template
+# Rundll32 Technique Review Record Template
 
 ## Subject
 
-**T1085 — Rundll32 Mitigation**
+**T1085 — Rundll32**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1085: https://attack.mitre.org/mitigations/T1085
+- T1085: https://attack.mitre.org/techniques/T1085
 - Template issued: 2026-10-27

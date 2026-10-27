@@ -1,8 +1,8 @@
-# Kerberoasting Mitigation Technique Review Record Template
+# Kerberoasting Technique Review Record Template
 
 ## Subject
 
-**T1208 — Kerberoasting Mitigation**
+**T1208 — Kerberoasting**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1208: https://attack.mitre.org/mitigations/T1208
+- T1208: https://attack.mitre.org/techniques/T1208
 - Template issued: 2026-10-27

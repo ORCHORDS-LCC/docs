@@ -1,10 +1,12 @@
-# T1026 Multiband Communication Mitigation Outcome Lesson
+# T1026 Multiband Communication Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1026 — Multiband Communication Mitigation**
+- Technique: **T1026 — Multiband Communication**
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+**This technique has been deprecated and should no longer be used.** Some adversaries may split communications between different protocols. There could be one protocol for inbound command and control and another for outbound data, allowing it to bypass certain firewall restrictions. The split could also be random to simply avoid data threshold alerts on any one communication.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1026: https://attack.mitre.org/mitigations/T1026
+- T1026: https://attack.mitre.org/techniques/T1026
 - Reviewed: 2026-10-27
 
 ## Boundary

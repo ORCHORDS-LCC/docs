@@ -1,8 +1,8 @@
-# Communication Through Removable Media Mitigation Technique Review Record Template
+# Communication Through Removable Media Technique Review Record Template
 
 ## Subject
 
-**T1092 — Communication Through Removable Media Mitigation**
+**T1092 — Communication Through Removable Media**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1092: https://attack.mitre.org/mitigations/T1092
+- T1092: https://attack.mitre.org/techniques/T1092
 - Template issued: 2026-10-27

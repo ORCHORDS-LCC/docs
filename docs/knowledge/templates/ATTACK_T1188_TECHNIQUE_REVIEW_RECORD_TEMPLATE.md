@@ -1,8 +1,8 @@
-# Multi-hop Proxy Mitigation Technique Review Record Template
+# Multi-hop Proxy Technique Review Record Template
 
 ## Subject
 
-**T1188 — Multi-hop Proxy Mitigation**
+**T1188 — Multi-hop Proxy**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1188: https://attack.mitre.org/mitigations/T1188
+- T1188: https://attack.mitre.org/techniques/T1188
 - Template issued: 2026-10-27

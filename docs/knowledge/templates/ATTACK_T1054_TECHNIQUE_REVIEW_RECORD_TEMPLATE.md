@@ -1,8 +1,8 @@
-# Indicator Blocking Mitigation Technique Review Record Template
+# Indicator Blocking Technique Review Record Template
 
 ## Subject
 
-**T1054 — Indicator Blocking Mitigation**
+**T1054 — Indicator Blocking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1054: https://attack.mitre.org/mitigations/T1054
+- T1054: https://attack.mitre.org/techniques/T1054
 - Template issued: 2026-10-27

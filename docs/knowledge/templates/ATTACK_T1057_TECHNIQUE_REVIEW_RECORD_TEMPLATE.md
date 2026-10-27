@@ -1,8 +1,8 @@
-# Process Discovery Mitigation Technique Review Record Template
+# Process Discovery Technique Review Record Template
 
 ## Subject
 
-**T1057 — Process Discovery Mitigation**
+**T1057 — Process Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1057: https://attack.mitre.org/mitigations/T1057
+- T1057: https://attack.mitre.org/techniques/T1057
 - Template issued: 2026-10-27

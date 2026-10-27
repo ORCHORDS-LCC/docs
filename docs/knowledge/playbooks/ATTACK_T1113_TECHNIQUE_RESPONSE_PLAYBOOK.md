@@ -1,11 +1,13 @@
-# Screen Capture Mitigation Technique Response Playbook
+# Screen Capture Technique Response Playbook
 
 ## Target technique
 
-**T1113 — Screen Capture Mitigation**
+**T1113 — Screen Capture**
 
+- Tactics: collection
+- Platforms: Linux, macOS, Windows
 
-Blocking software based on screen capture functionality may be difficult, and there may be legitimate software that performs those actions. Instead, identify potentially malicious software that may have functionality to acquire screen captures, and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as CopyFromScreen, xwd, or screencapture.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1113: https://attack.mitre.org/mitigations/T1113
+- T1113: https://attack.mitre.org/techniques/T1113
 - Reviewed: 2026-10-27

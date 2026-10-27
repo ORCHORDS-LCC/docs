@@ -1,11 +1,11 @@
-# Data from Network Shared Drive Mitigation Technique Platform Profile
+# Data from Network Shared Drive Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1039 — Data from Network Shared Drive Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1039 — Data from Network Shared Drive**
+- Platforms named in the source: Linux, macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to collect data from a network share, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within cmd may be used to gather information.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1039: https://attack.mitre.org/mitigations/T1039
+- T1039: https://attack.mitre.org/techniques/T1039
 - Reviewed: 2026-10-27

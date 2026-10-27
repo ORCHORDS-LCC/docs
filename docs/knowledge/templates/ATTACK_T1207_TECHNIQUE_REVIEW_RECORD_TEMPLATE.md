@@ -1,8 +1,8 @@
-# DCShadow Mitigation Technique Review Record Template
+# Rogue Domain Controller Technique Review Record Template
 
 ## Subject
 
-**T1207 — DCShadow Mitigation**
+**T1207 — Rogue Domain Controller**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1207: https://attack.mitre.org/mitigations/T1207
+- T1207: https://attack.mitre.org/techniques/T1207
 - Template issued: 2026-10-27

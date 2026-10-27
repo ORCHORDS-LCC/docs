@@ -1,11 +1,11 @@
-# Security Support Provider Mitigation Technique Platform Profile
+# Security Support Provider Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1101 — Security Support Provider Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1101 — Security Support Provider**
+- Platforms named in the source: Windows
 
-Windows 8.1, Windows Server 2012 R2, and later versions may make LSA run as a Protected Process Light (PPL) by setting the Registry key <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\RunAsPPL</code>, which requires all SSP DLLs to be signed by Microsoft.
+Windows Security Support Provider (SSP) DLLs are loaded into the Local Security Authority (LSA) process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages and HKLM\SYSTEM\CurrentControlSet\Control\Lsa\OSConfig\Security Packages. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1101: https://attack.mitre.org/mitigations/T1101
+- T1101: https://attack.mitre.org/techniques/T1101
 - Reviewed: 2026-10-27

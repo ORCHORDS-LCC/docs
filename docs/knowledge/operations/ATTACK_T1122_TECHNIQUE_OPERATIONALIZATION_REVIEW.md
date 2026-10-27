@@ -1,10 +1,10 @@
-# Component Object Model Hijacking Mitigation Technique Operationalization Review
+# Component Object Model Hijacking Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1122 — Component Object Model Hijacking Mitigation**
+- Technique: **T1122 — Component Object Model Hijacking**
 
-Direct mitigation of this technique may not be recommended for a particular environment since COM objects are a legitimate part of the operating system and installed software. Blocking COM object changes may have unforeseen side effects to legitimate functionality. Instead, identify and block potentially malicious software that may execute, or be executed by, this technique using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+The Component Object Model (COM) is a system within Windows to enable interaction between software components through the operating system. Adversaries can use this system to insert malicious code that can be executed in place of legitimate software through hijacking the COM references and relationships as a means for persistence. Hijacking a COM object requires a change in the Windows Registry to replace a reference to a legitimate system component which may cause that component to not work when executed. When that system component is executed through normal system operation the adversary's code will be executed instead. An adversary is likely to hijack objects that are used frequently enough to maintain a consistent level of persistence, but are unlikely to break noticeable functionality within the system as to avoid system instability that could lead to detection.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1122: https://attack.mitre.org/mitigations/T1122
+- T1122: https://attack.mitre.org/techniques/T1122
 - Reviewed: 2026-10-27

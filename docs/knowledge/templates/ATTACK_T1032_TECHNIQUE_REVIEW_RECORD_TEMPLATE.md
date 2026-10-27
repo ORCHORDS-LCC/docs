@@ -1,8 +1,8 @@
-# Standard Cryptographic Protocol Mitigation Technique Review Record Template
+# Standard Cryptographic Protocol Technique Review Record Template
 
 ## Subject
 
-**T1032 — Standard Cryptographic Protocol Mitigation**
+**T1032 — Standard Cryptographic Protocol**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1032: https://attack.mitre.org/mitigations/T1032
+- T1032: https://attack.mitre.org/techniques/T1032
 - Template issued: 2026-10-27

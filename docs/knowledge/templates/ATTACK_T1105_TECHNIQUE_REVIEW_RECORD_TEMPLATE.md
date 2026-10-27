@@ -1,8 +1,8 @@
-# Remote File Copy Mitigation Technique Review Record Template
+# Ingress Tool Transfer Technique Review Record Template
 
 ## Subject
 
-**T1105 — Remote File Copy Mitigation**
+**T1105 — Ingress Tool Transfer**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1105: https://attack.mitre.org/mitigations/T1105
+- T1105: https://attack.mitre.org/techniques/T1105
 - Template issued: 2026-10-27

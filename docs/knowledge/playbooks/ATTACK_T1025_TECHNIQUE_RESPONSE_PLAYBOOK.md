@@ -1,11 +1,13 @@
-# Data from Removable Media Mitigation Technique Response Playbook
+# Data from Removable Media Technique Response Playbook
 
 ## Target technique
 
-**T1025 — Data from Removable Media Mitigation**
+**T1025 — Data from Removable Media**
 
+- Tactics: collection
+- Platforms: Linux, macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to collect data from removable media, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may search connected removable media on computers they have compromised to find files of interest. Sensitive data can be collected from any removable media (optical disk drive, USB memory, etc.) connected to the compromised system prior to Exfiltration. Interactive command shells may be in use, and common functionality within cmd may be used to gather information. Some adversaries may also use Automated Collection on removable media.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1025: https://attack.mitre.org/mitigations/T1025
+- T1025: https://attack.mitre.org/techniques/T1025
 - Reviewed: 2026-10-27

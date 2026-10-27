@@ -1,11 +1,11 @@
-# Windows Management Instrumentation Event Subscription Mitigation Technique Platform Profile
+# Windows Management Instrumentation Event Subscription Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1084 — Windows Management Instrumentation Event Subscription Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1084 — Windows Management Instrumentation Event Subscription**
+- Platforms named in the source: Windows
 
-Disabling WMI services may cause system instability and should be evaluated to assess the impact to a network. By default, only administrators are allowed to connect remotely using WMI; restrict other users that are allowed to connect, or disallow all users from connecting remotely to WMI. Prevent credential overlap across systems of administrator and privileged accounts.
+Windows Management Instrumentation (WMI) can be used to install event filters, providers, consumers, and bindings that execute code when a defined event occurs. Adversaries may use the capabilities of WMI to subscribe to an event and execute arbitrary code when that event occurs, providing persistence on a system. Adversaries may attempt to evade detection of this technique by compiling WMI scripts into Windows Management Object (MOF) files (.mof extension). Examples of events that may be subscribed to are the wall clock time or the computer's uptime. Several threat groups have reportedly used this technique to maintain persistence.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1084: https://attack.mitre.org/mitigations/T1084
+- T1084: https://attack.mitre.org/techniques/T1084
 - Reviewed: 2026-10-27

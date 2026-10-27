@@ -1,11 +1,11 @@
-# Timestomp Mitigation Technique Platform Profile
+# Timestomp Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1099 — Timestomp Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1099 — Timestomp**
+- Platforms named in the source: Linux, Windows, macOS
 
-Mitigation of timestomping specifically is likely difficult. Efforts should be focused on preventing potentially malicious software from running. Identify and block potentially malicious software that may contain functionality to perform timestomping by using whitelisting tools like AppLocker or Software Restriction Policies where appropriate.
+Adversaries may take actions to hide the deployment of new, or modification of existing files to obfuscate their activities. Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. This is done, for example, on files that have been modified or created by the adversary so that they do not appear conspicuous to forensic investigators or file analysis tools. Timestomping may be used along with file name Masquerading to hide malware and tools.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1099: https://attack.mitre.org/mitigations/T1099
+- T1099: https://attack.mitre.org/techniques/T1099
 - Reviewed: 2026-10-27

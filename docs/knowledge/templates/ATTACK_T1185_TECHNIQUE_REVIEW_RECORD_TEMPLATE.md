@@ -1,8 +1,8 @@
-# Man in the Browser Mitigation Technique Review Record Template
+# Browser Session Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1185 — Man in the Browser Mitigation**
+**T1185 — Browser Session Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1185: https://attack.mitre.org/mitigations/T1185
+- T1185: https://attack.mitre.org/techniques/T1185
 - Template issued: 2026-10-27

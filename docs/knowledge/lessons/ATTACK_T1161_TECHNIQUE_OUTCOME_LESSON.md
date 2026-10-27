@@ -1,10 +1,12 @@
-# T1161 LC_LOAD_DYLIB Addition Mitigation Outcome Lesson
+# T1161 LC_LOAD_DYLIB Addition Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1161 — LC_LOAD_DYLIB Addition Mitigation**
+- Technique: **T1161 — LC_LOAD_DYLIB Addition**
+- Tactics: persistence
+- Platforms: macOS
 
-Enforce that all binaries be signed by the correct Apple Developer IDs, and whitelist applications via known hashes. Binaries can also be baselined for what dynamic libraries they require, and if an app requires a new dynamic library that wasn’t included as part of an update, it should be investigated.
+Mach-O binaries have a series of headers that are used to perform certain operations when a binary is loaded. The LC_LOAD_DYLIB header in a Mach-O binary tells macOS and OS X which dynamic libraries (dylibs) to load during execution time. These can be added ad-hoc to the compiled binary as long adjustments are made to the rest of the fields and dependencies . There are tools available to perform these changes. Any changes will invalidate digital signatures on binaries because the binary is being modified. Adversaries can remediate this issue by simply removing the LC_CODE_SIGNATURE command from the binary so that the signature isn’t checked at load time .
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1161: https://attack.mitre.org/mitigations/T1161
+- T1161: https://attack.mitre.org/techniques/T1161
 - Reviewed: 2026-10-27
 
 ## Boundary

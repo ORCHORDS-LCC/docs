@@ -1,8 +1,8 @@
-# Graphical User Interface Mitigation Technique Review Record Template
+# Graphical User Interface Technique Review Record Template
 
 ## Subject
 
-**T1061 — Graphical User Interface Mitigation**
+**T1061 — Graphical User Interface**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1061: https://attack.mitre.org/mitigations/T1061
+- T1061: https://attack.mitre.org/techniques/T1061
 - Template issued: 2026-10-27

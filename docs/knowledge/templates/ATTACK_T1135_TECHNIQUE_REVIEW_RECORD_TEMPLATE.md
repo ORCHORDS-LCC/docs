@@ -1,8 +1,8 @@
-# Network Share Discovery Mitigation Technique Review Record Template
+# Network Share Discovery Technique Review Record Template
 
 ## Subject
 
-**T1135 — Network Share Discovery Mitigation**
+**T1135 — Network Share Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1135: https://attack.mitre.org/mitigations/T1135
+- T1135: https://attack.mitre.org/techniques/T1135
 - Template issued: 2026-10-27

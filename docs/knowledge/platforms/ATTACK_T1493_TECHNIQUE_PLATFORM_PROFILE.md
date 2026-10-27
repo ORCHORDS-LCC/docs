@@ -1,11 +1,11 @@
-# Transmitted Data Manipulation Mitigation Technique Platform Profile
+# Transmitted Data Manipulation Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1493 — Transmitted Data Manipulation Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1493 — Transmitted Data Manipulation**
+- Platforms named in the source: Linux, macOS, Windows
 
-Identify critical business and system processes that may be targeted by adversaries and work to secure communications related to those processes against tampering. Encrypt all important data flows to reduce the impact of tailored modifications on data in transit.
+Adversaries may alter data en route to storage or other systems in order to manipulate external outcomes or hide activity. By manipulating transmitted data, adversaries may attempt to affect a business process, organizational understanding, and decision making. Manipulation may be possible over a network connection or between system processes where there is an opportunity deploy a tool that will intercept and change information. The type of modification and the impact it will have depends on the target transmission mechanism as well as the goals and objectives of the adversary. For complex systems, an adversary would likely need special expertise and possibly access to specialized software related to the system that would typically be gained through a prolonged information gathering campaign in order to have the desired impact.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1493: https://attack.mitre.org/mitigations/T1493
+- T1493: https://attack.mitre.org/techniques/T1493
 - Reviewed: 2026-10-27

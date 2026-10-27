@@ -1,10 +1,12 @@
-# T1032 Standard Cryptographic Protocol Mitigation Outcome Lesson
+# T1032 Standard Cryptographic Protocol Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1032 — Standard Cryptographic Protocol Mitigation**
+- Technique: **T1032 — Standard Cryptographic Protocol**
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Use of encryption protocols may make typical network-based C2 detection more difficult due to a reduced ability to signature the traffic. Prior knowledge of adversary C2 infrastructure may be useful for domain and IP address blocking, but will likely not be an effective long-term solution because adversaries can change infrastructure often.
+Adversaries may explicitly employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Despite the use of a secure algorithm, these implementations may be vulnerable to reverse engineering if necessary secret keys are encoded and/or generated within malware samples/configuration files.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1032: https://attack.mitre.org/mitigations/T1032
+- T1032: https://attack.mitre.org/techniques/T1032
 - Reviewed: 2026-10-27
 
 ## Boundary

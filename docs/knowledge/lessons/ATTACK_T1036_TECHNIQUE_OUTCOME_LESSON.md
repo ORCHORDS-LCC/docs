@@ -1,10 +1,12 @@
-# T1036 Masquerading Mitigation Outcome Lesson
+# T1036 Masquerading Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1036 — Masquerading Mitigation**
+- Technique: **T1036 — Masquerading**
+- Tactics: stealth
+- Platforms: Containers, ESXi, Linux, macOS, Windows
 
-When creating security rules, avoid exclusions based on file name or file path. Require signed binaries. Use file system access controls to protect folders such as C:\Windows\System32. Use tools that restrict program execution via whitelisting by attributes other than file name. Identify potentially malicious software that may look like a legitimate program based on name and location, and audit and/or block it by using whitelisting tools like AppLocker or Software Restriction Policies where appropriate.
+Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names. Renaming abusable system utilities to evade security monitoring is also a form of Masquerading.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1036: https://attack.mitre.org/mitigations/T1036
+- T1036: https://attack.mitre.org/techniques/T1036
 - Reviewed: 2026-10-27
 
 ## Boundary

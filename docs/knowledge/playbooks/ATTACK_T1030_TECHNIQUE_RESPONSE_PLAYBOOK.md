@@ -1,11 +1,13 @@
-# Data Transfer Size Limits Mitigation Technique Response Playbook
+# Data Transfer Size Limits Technique Response Playbook
 
 ## Target technique
 
-**T1030 — Data Transfer Size Limits Mitigation**
+**T1030 — Data Transfer Size Limits**
 
+- Tactics: exfiltration
+- Platforms: Linux, macOS, Windows, ESXi
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool command and control signatures over time or construct protocols in such a way to avoid detection by common defensive tools.
+An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1030: https://attack.mitre.org/mitigations/T1030
+- T1030: https://attack.mitre.org/techniques/T1030
 - Reviewed: 2026-10-27

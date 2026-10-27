@@ -5,7 +5,7 @@
 - Technique: **T1070.002 — Clear Linux or Mac System Logs**
 - Platforms named in the source: Linux, macOS
 
-Adversaries may clear system logs to hide evidence of an intrusion. macOS and Linux both keep track of system or user-initiated actions via system logs. The majority of native system logging is stored under the <code>/var/log/</code> directory. Subfolders in this directory categorize logs by their related functions, such as: * <code>/var/log/messages:</code>: General and system-related messages * <code>/var/log/secure</code> or <code>/var/log/auth.log</code>: Authentication logs * <code>/var/log/utmp</code> or <code>/var/log/wtmp</code>: Login records * <code>/var/log/kern.log</code>: Kernel logs * <code>/var/log/cron.log</code>: Crond logs * <code>/var/log/maillog</code>: Mail server logs * <code>/var/log/httpd/</code>: Web server access and error logs.
+Adversaries may clear system logs to hide evidence of an intrusion. macOS and Linux both keep track of system or user-initiated actions via system logs. The majority of native system logging is stored under the /var/log/ directory. Subfolders in this directory categorize logs by their related functions, such as: * /var/log/messages:: General and system-related messages * /var/log/secure or /var/log/auth.log: Authentication logs * /var/log/utmp or /var/log/wtmp: Login records * /var/log/kern.log: Kernel logs * /var/log/cron.log: Crond logs * /var/log/maillog: Mail server logs * /var/log/httpd/: Web server access and error logs.
 
 ## Platform profile
 

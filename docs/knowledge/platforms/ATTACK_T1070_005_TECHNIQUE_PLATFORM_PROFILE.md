@@ -5,7 +5,7 @@
 - Technique: **T1070.005 — Network Share Connection Removal**
 - Platforms named in the source: Windows
 
-Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation. Windows shared drive and SMB/Windows Admin Shares connections can be removed when no longer needed. Net is an example utility that can be used to remove network share connections with the <code>net use \\system\share /delete</code> command.
+Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation. Windows shared drive and SMB/Windows Admin Shares connections can be removed when no longer needed. Net is an example utility that can be used to remove network share connections with the net use \\system\share /delete command.
 
 ## Platform profile
 

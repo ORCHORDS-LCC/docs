@@ -1,11 +1,13 @@
-# Remote Access Tools Mitigation Technique Response Playbook
+# Remote Access Tools Technique Response Playbook
 
 ## Target technique
 
-**T1219 — Remote Access Tools Mitigation**
+**T1219 — Remote Access Tools**
 
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Properly configure firewalls, application firewalls, and proxies to limit outgoing traffic to sites and services used by remote access tools. Network intrusion detection and prevention systems that use network signatures may be able to prevent traffic to these services as well. Use application whitelisting to mitigate use of and installation of unapproved software.
+An adversary may use legitimate remote access tools to establish an interactive command and control channel within a network. Remote access tools create a session between two trusted hosts through a graphical interface, a command line interaction, a protocol tunnel via development or management software, or hardware-level access such as KVM (Keyboard, Video, Mouse) over IP solutions. Desktop support software (usually graphical interface) and remote management software (typically command line interface) allow a user to control a computer remotely as if they are a local user inheriting the user or software permissions. This software is commonly used for troubleshooting, software installation, and system management. Adversaries may similarly abuse response features included in EDR and other defensive tools that enable remote access. Remote access tools may be installed and used post-compromise as an alternate communications channel for redundant access or to establish an interactive remote desktop session with the target system. It may also be used as a malware component to establish a reverse connection or back-connect to a service or adversary-controlled system. Installation of many remote access tools may also include persistence (e.g., the software's installation routine creates a Windows Service). Remote access modules/features may also exist as part of otherwise existing software (e.g., Google Chrome’s Remote Desktop).
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1219: https://attack.mitre.org/mitigations/T1219
+- T1219: https://attack.mitre.org/techniques/T1219
 - Reviewed: 2026-10-27

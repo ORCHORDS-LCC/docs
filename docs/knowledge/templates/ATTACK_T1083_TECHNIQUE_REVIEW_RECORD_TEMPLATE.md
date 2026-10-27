@@ -1,8 +1,8 @@
-# File and Directory Discovery Mitigation Technique Review Record Template
+# File and Directory Discovery Technique Review Record Template
 
 ## Subject
 
-**T1083 — File and Directory Discovery Mitigation**
+**T1083 — File and Directory Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1083: https://attack.mitre.org/mitigations/T1083
+- T1083: https://attack.mitre.org/techniques/T1083
 - Template issued: 2026-10-27

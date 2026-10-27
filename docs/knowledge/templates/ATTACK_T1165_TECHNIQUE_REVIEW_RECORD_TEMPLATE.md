@@ -1,8 +1,8 @@
-# Startup Items Mitigation Technique Review Record Template
+# Startup Items Technique Review Record Template
 
 ## Subject
 
-**T1165 — Startup Items Mitigation**
+**T1165 — Startup Items**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1165: https://attack.mitre.org/mitigations/T1165
+- T1165: https://attack.mitre.org/techniques/T1165
 - Template issued: 2026-10-27

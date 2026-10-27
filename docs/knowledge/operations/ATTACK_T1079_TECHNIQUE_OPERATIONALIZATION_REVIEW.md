@@ -1,10 +1,10 @@
-# Multilayer Encryption Mitigation Technique Operationalization Review
+# Multilayer Encryption Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1079 — Multilayer Encryption Mitigation**
+- Technique: **T1079 — Multilayer Encryption**
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Use of encryption protocols may make typical network-based C2 detection more difficult due to a reduced ability to signature the traffic. Prior knowledge of adversary C2 infrastructure may be useful for domain and IP address blocking, but will likely not be an effective long-term solution because adversaries can change infrastructure often.
+An adversary performs C2 communications using multiple layers of encryption, typically (but not exclusively) tunneling a custom encryption scheme within a protocol encryption scheme such as HTTPS or SMTPS.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1079: https://attack.mitre.org/mitigations/T1079
+- T1079: https://attack.mitre.org/techniques/T1079
 - Reviewed: 2026-10-27

@@ -1,11 +1,11 @@
-# Hardware Additions Mitigation Technique Platform Profile
+# Hardware Additions Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1200 — Hardware Additions Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1200 — Hardware Additions**
+- Platforms named in the source: Windows, Linux, macOS
 
-Establish network access control policies, such as using device certificates and the 802.1x standard. Restrict use of DHCP to registered devices to prevent unregistered devices from communicating with trusted systems. Block unknown devices and accessories by endpoint security configuration and monitoring agent.
+Adversaries may physically introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access. Rather than just connecting and distributing payloads via removable storage (i.e. Replication Through Removable Media), more robust hardware additions can be used to introduce new functionalities and/or features into a system that can then be abused. While public references of usage by threat actors are scarce, many red teams/penetration testers leverage hardware additions for initial access. Commercial and open source products can be leveraged with capabilities such as passive network tapping, network traffic modification (i.e. Adversary-in-the-Middle), keystroke injection, kernel memory reading via DMA, addition of new wireless access points to an existing network, and others.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1200: https://attack.mitre.org/mitigations/T1200
+- T1200: https://attack.mitre.org/techniques/T1200
 - Reviewed: 2026-10-27

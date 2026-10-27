@@ -1,8 +1,8 @@
-# Component Firmware Mitigation Technique Review Record Template
+# Component Firmware Technique Review Record Template
 
 ## Subject
 
-**T1109 — Component Firmware Mitigation**
+**T1109 — Component Firmware**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1109: https://attack.mitre.org/mitigations/T1109
+- T1109: https://attack.mitre.org/techniques/T1109
 - Template issued: 2026-10-27

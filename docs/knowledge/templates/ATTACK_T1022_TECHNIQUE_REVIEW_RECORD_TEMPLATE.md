@@ -1,8 +1,8 @@
-# Data Encrypted Mitigation Technique Review Record Template
+# Data Encrypted Technique Review Record Template
 
 ## Subject
 
-**T1022 — Data Encrypted Mitigation**
+**T1022 — Data Encrypted**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1022: https://attack.mitre.org/mitigations/T1022
+- T1022: https://attack.mitre.org/techniques/T1022
 - Template issued: 2026-10-27

@@ -1,11 +1,11 @@
-# Automated Collection Mitigation Technique Platform Profile
+# Automated Collection Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1119 — Automated Collection Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1119 — Automated Collection**
+- Platforms named in the source: IaaS, Linux, macOS, Office Suite, SaaS, Windows
 
-Encryption and off-system storage of sensitive information may be one way to mitigate collection of files, but may not stop an adversary from acquiring the information if an intrusion persists over a long period of time and the adversary is able to discover and access the data through other means. A keylogger installed on a system may be able to intercept passwords through Input Capture and be used to decrypt protected documents that an adversary may have collected. Strong passwords should be used to prevent offline cracking of encrypted documents through Brute Force techniques. Identify unnecessary system utilities, third-party tools, or potentially malicious software that may be used to collect files and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a Command and Scripting Interpreter to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. In cloud-based environments, adversaries may also use cloud APIs, data pipelines, command line interfaces, or extract, transform, and load (ETL) services to automatically collect data. This functionality could also be built into remote access tools. This technique may incorporate use of other techniques such as File and Directory Discovery and Lateral Tool Transfer to identify and move files, as well as Cloud Service Dashboard and Cloud Storage Object Discovery to identify resources in cloud environments.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1119: https://attack.mitre.org/mitigations/T1119
+- T1119: https://attack.mitre.org/techniques/T1119
 - Reviewed: 2026-10-27

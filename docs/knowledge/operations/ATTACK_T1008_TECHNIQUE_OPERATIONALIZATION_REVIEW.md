@@ -1,10 +1,10 @@
-# Fallback Channels Mitigation Technique Operationalization Review
+# Fallback Channels Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1008 — Fallback Channels Mitigation**
+- Technique: **T1008 — Fallback Channels**
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thresholds.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1008: https://attack.mitre.org/mitigations/T1008
+- T1008: https://attack.mitre.org/techniques/T1008
 - Reviewed: 2026-10-27

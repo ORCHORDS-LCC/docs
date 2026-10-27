@@ -1,11 +1,13 @@
-# Disabling Security Tools Mitigation Technique Response Playbook
+# Disabling Security Tools Technique Response Playbook
 
 ## Target technique
 
-**T1089 — Disabling Security Tools Mitigation**
+**T1089 — Disabling Security Tools**
 
+- Tactics: stealth
+- Platforms: Linux, macOS, Windows
 
-Ensure proper process, registry, and file permissions are in place to prevent adversaries from disabling or interfering with security services.
+Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security scanning or event reporting.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1089: https://attack.mitre.org/mitigations/T1089
+- T1089: https://attack.mitre.org/techniques/T1089
 - Reviewed: 2026-10-27

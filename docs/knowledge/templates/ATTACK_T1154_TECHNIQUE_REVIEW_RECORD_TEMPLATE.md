@@ -1,8 +1,8 @@
-# Trap Mitigation Technique Review Record Template
+# Trap Technique Review Record Template
 
 ## Subject
 
-**T1154 — Trap Mitigation**
+**T1154 — Trap**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1154: https://attack.mitre.org/mitigations/T1154
+- T1154: https://attack.mitre.org/techniques/T1154
 - Template issued: 2026-10-27

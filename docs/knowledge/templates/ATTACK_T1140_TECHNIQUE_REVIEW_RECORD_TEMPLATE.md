@@ -1,8 +1,8 @@
-# Deobfuscate/Decode Files or Information Mitigation Technique Review Record Template
+# Deobfuscate/Decode Files or Information Technique Review Record Template
 
 ## Subject
 
-**T1140 — Deobfuscate/Decode Files or Information Mitigation**
+**T1140 — Deobfuscate/Decode Files or Information**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1140: https://attack.mitre.org/mitigations/T1140
+- T1140: https://attack.mitre.org/techniques/T1140
 - Template issued: 2026-10-27

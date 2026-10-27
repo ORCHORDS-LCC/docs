@@ -1,8 +1,8 @@
-# Environmental Keying Mitigation Technique Review Record Template
+# Execution Guardrails Technique Review Record Template
 
 ## Subject
 
-**T1480 — Environmental Keying Mitigation**
+**T1480 — Execution Guardrails**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1480: https://attack.mitre.org/mitigations/T1480
+- T1480: https://attack.mitre.org/techniques/T1480
 - Template issued: 2026-10-27

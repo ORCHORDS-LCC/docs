@@ -1,11 +1,13 @@
-# Automated Exfiltration Mitigation Technique Response Playbook
+# Automated Exfiltration Technique Response Playbook
 
 ## Target technique
 
-**T1020 — Automated Exfiltration Mitigation**
+**T1020 — Automated Exfiltration**
 
+- Tactics: exfiltration
+- Platforms: Linux, macOS, Network Devices, Windows
 
-Identify unnecessary system utilities, scripts, or potentially malicious software that may be used to transfer data outside of a network, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection. When automated exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over C2 Channel and Exfiltration Over Alternative Protocol.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1020: https://attack.mitre.org/mitigations/T1020
+- T1020: https://attack.mitre.org/techniques/T1020
 - Reviewed: 2026-10-27

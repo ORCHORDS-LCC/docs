@@ -1,11 +1,13 @@
-# Shared Webroot Mitigation Technique Response Playbook
+# Shared Webroot Technique Response Playbook
 
 ## Target technique
 
-**T1051 — Shared Webroot Mitigation**
+**T1051 — Shared Webroot**
 
+- Tactics: lateral-movement
+- Platforms: Windows
 
-Networks that allow for open development and testing of Web content and allow users to set up their own Web servers on the enterprise network may be particularly vulnerable if the systems and Web servers are not properly secured to limit privileged account use, unauthenticated network share access, and network/system isolation. Ensure proper permissions on directories that are accessible through a Web server. Disallow remote access to the webroot or other directories used to serve Web content. Disable execution on directories within the webroot. Ensure that permissions of the Web server process are only what is required by not using built-in accounts; instead, create specific accounts to limit unnecessary access or permissions overlap across multiple systems.
+**This technique has been deprecated and should no longer be used.** Adversaries may add malicious content to an internally accessible website through an open network file share that contains the website's webroot or Web content directory and then browse to that content with a Web browser to cause the server to execute the malicious content. The malicious content will typically run under the context and permissions of the Web server process, often resulting in local system or administrative privileges, depending on how the Web server is configured. This mechanism of shared access and remote execution could be used for lateral movement to the system running the Web server. For example, a Web server running PHP with an open network share could allow an adversary to upload a remote access tool and PHP script to execute the RAT on the system running the Web server when a specific page is visited.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1051: https://attack.mitre.org/mitigations/T1051
+- T1051: https://attack.mitre.org/techniques/T1051
 - Reviewed: 2026-10-27

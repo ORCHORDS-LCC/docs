@@ -1,10 +1,12 @@
-# T1125 Video Capture Mitigation Outcome Lesson
+# T1125 Video Capture Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1125 — Video Capture Mitigation**
+- Technique: **T1125 — Video Capture**
+- Tactics: collection
+- Platforms: Linux, macOS, Windows
 
-Mitigating this technique specifically may be difficult as it requires fine-grained API control. Efforts should be focused on preventing unwanted or unknown code from executing on a system. Identify and block potentially malicious software that may be used to capture video and images by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+An adversary can leverage a computer's peripheral devices (e.g., integrated cameras or webcams) or applications (e.g., video call services) to capture video recordings for the purpose of gathering information. Images may also be captured from devices or applications, potentially in specified intervals, in lieu of video files. Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture video or images. Video or image files may be written to disk and exfiltrated later. This technique differs from Screen Capture due to use of specific devices or applications for video recording rather than capturing the victim's screen. In macOS, there are a few different malware samples that record the user's webcam such as FruitFly and Proton.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1125: https://attack.mitre.org/mitigations/T1125
+- T1125: https://attack.mitre.org/techniques/T1125
 - Reviewed: 2026-10-27
 
 ## Boundary

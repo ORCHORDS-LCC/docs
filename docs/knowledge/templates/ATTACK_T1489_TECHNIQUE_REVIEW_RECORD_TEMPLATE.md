@@ -1,8 +1,8 @@
-# Service Stop Mitigation Technique Review Record Template
+# Service Stop Technique Review Record Template
 
 ## Subject
 
-**T1489 — Service Stop Mitigation**
+**T1489 — Service Stop**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1489: https://attack.mitre.org/mitigations/T1489
+- T1489: https://attack.mitre.org/techniques/T1489
 - Template issued: 2026-10-27

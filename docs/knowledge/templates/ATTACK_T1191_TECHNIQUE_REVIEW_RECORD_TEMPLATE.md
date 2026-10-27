@@ -1,8 +1,8 @@
-# CMSTP Mitigation Technique Review Record Template
+# CMSTP Technique Review Record Template
 
 ## Subject
 
-**T1191 — CMSTP Mitigation**
+**T1191 — CMSTP**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1191: https://attack.mitre.org/mitigations/T1191
+- T1191: https://attack.mitre.org/techniques/T1191
 - Template issued: 2026-10-27

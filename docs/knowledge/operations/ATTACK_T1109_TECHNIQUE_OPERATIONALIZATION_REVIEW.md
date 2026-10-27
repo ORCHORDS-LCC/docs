@@ -1,10 +1,10 @@
-# Component Firmware Mitigation Technique Operationalization Review
+# Component Firmware Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1109 — Component Firmware Mitigation**
+- Technique: **T1109 — Component Firmware**
 
-Prevent adversary access to privileged accounts or access necessary to perform this technique. Consider removing and replacing system components suspected of being compromised.
+Some adversaries may employ sophisticated means to compromise computer components and install malicious firmware that will execute adversary code outside of the operating system and main system firmware or BIOS. This technique may be similar to System Firmware but conducted upon other system components that may not have the same capability or level of integrity checking. Malicious device firmware could provide both a persistent level of access to systems despite potential typical failures to maintain access and hard disk re-images, as well as a way to evade host software-based defenses and integrity checks.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1109: https://attack.mitre.org/mitigations/T1109
+- T1109: https://attack.mitre.org/techniques/T1109
 - Reviewed: 2026-10-27

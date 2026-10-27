@@ -1,8 +1,8 @@
-# Image File Execution Options Injection Mitigation Technique Review Record Template
+# Image File Execution Options Injection Technique Review Record Template
 
 ## Subject
 
-**T1183 — Image File Execution Options Injection Mitigation**
+**T1183 — Image File Execution Options Injection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1183: https://attack.mitre.org/mitigations/T1183
+- T1183: https://attack.mitre.org/techniques/T1183
 - Template issued: 2026-10-27

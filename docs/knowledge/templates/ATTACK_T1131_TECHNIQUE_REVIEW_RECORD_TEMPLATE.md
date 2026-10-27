@@ -1,8 +1,8 @@
-# Authentication Package Mitigation Technique Review Record Template
+# Authentication Package Technique Review Record Template
 
 ## Subject
 
-**T1131 — Authentication Package Mitigation**
+**T1131 — Authentication Package**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1131: https://attack.mitre.org/mitigations/T1131
+- T1131: https://attack.mitre.org/techniques/T1131
 - Template issued: 2026-10-27

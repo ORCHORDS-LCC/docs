@@ -1,8 +1,8 @@
-# Gatekeeper Bypass Mitigation Technique Review Record Template
+# Gatekeeper Bypass Technique Review Record Template
 
 ## Subject
 
-**T1144 — Gatekeeper Bypass Mitigation**
+**T1144 — Gatekeeper Bypass**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1144: https://attack.mitre.org/mitigations/T1144
+- T1144: https://attack.mitre.org/techniques/T1144
 - Template issued: 2026-10-27

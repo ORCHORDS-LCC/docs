@@ -1,8 +1,8 @@
-# Credentials in Files Mitigation Technique Review Record Template
+# Credentials in Files Technique Review Record Template
 
 ## Subject
 
-**T1081 — Credentials in Files Mitigation**
+**T1081 — Credentials in Files**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1081: https://attack.mitre.org/mitigations/T1081
+- T1081: https://attack.mitre.org/techniques/T1081
 - Template issued: 2026-10-27

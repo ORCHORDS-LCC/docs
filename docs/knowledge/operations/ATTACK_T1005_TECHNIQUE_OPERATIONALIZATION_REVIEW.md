@@ -1,10 +1,10 @@
-# Data from Local System Mitigation Technique Operationalization Review
+# Data from Local System Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1005 — Data from Local System Mitigation**
+- Technique: **T1005 — Data from Local System**
 
-Identify unnecessary system utilities or potentially malicious software that may be used to collect data from the local system, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may search local system sources, such as file systems, configuration files, local databases, virtual machine files, or process memory, to find files of interest and sensitive data prior to Exfiltration. Adversaries may do this using a Command and Scripting Interpreter, such as cmd as well as a Network Device CLI, which have functionality to interact with the file system to gather information. Adversaries may also use Automated Collection on the local system.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1005: https://attack.mitre.org/mitigations/T1005
+- T1005: https://attack.mitre.org/techniques/T1005
 - Reviewed: 2026-10-27

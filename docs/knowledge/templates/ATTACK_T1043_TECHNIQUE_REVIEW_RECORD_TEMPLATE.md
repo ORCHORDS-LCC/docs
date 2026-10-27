@@ -1,8 +1,8 @@
-# Commonly Used Port Mitigation Technique Review Record Template
+# Commonly Used Port Technique Review Record Template
 
 ## Subject
 
-**T1043 — Commonly Used Port Mitigation**
+**T1043 — Commonly Used Port**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1043: https://attack.mitre.org/mitigations/T1043
+- T1043: https://attack.mitre.org/techniques/T1043
 - Template issued: 2026-10-27

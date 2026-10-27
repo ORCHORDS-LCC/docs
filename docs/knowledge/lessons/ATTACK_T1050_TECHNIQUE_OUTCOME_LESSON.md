@@ -1,10 +1,12 @@
-# T1050 New Service Mitigation Outcome Lesson
+# T1050 New Service Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1050 — New Service Mitigation**
+- Technique: **T1050 — New Service**
+- Tactics: persistence, privilege-escalation
+- Platforms: Windows
 
-Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create new services. Identify and block unnecessary system utilities or potentially malicious software that may be used to create services by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+When operating systems boot up, they can start programs or applications called services that perform background system functions. A service's configuration information, including the file path to the service's executable, is stored in the Windows Registry. Adversaries may install a new service that can be configured to execute at startup by using utilities to interact with services or by directly modifying the Registry. The service name may be disguised by using a name from a related operating system or benign software with Masquerading. Services may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges from administrator to SYSTEM. Adversaries may also directly start services through Service Execution.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1050: https://attack.mitre.org/mitigations/T1050
+- T1050: https://attack.mitre.org/techniques/T1050
 - Reviewed: 2026-10-27
 
 ## Boundary

@@ -1,8 +1,8 @@
-# Application Shimming Mitigation Technique Review Record Template
+# Application Shimming Technique Review Record Template
 
 ## Subject
 
-**T1138 — Application Shimming Mitigation**
+**T1138 — Application Shimming**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1138: https://attack.mitre.org/mitigations/T1138
+- T1138: https://attack.mitre.org/techniques/T1138
 - Template issued: 2026-10-27

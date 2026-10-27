@@ -1,10 +1,12 @@
-# T1089 Disabling Security Tools Mitigation Outcome Lesson
+# T1089 Disabling Security Tools Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1089 — Disabling Security Tools Mitigation**
+- Technique: **T1089 — Disabling Security Tools**
+- Tactics: stealth
+- Platforms: Linux, macOS, Windows
 
-Ensure proper process, registry, and file permissions are in place to prevent adversaries from disabling or interfering with security services.
+Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security scanning or event reporting.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1089: https://attack.mitre.org/mitigations/T1089
+- T1089: https://attack.mitre.org/techniques/T1089
 - Reviewed: 2026-10-27
 
 ## Boundary

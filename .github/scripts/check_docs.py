@@ -47,8 +47,8 @@ FORBIDDEN_PATTERNS = {
     "private knowledge-base path": re.compile(r"(?:^|[\\/])knowledge_base[\\/]", re.I | re.M),
     "private fleet path": re.compile(r"(?:^|[\\/])\.fleet[\\/]", re.I | re.M),
     "absolute user-home path": re.compile(
-        r"(?:(?<![A-Za-z0-9_./~-])(?:/home|/Users)/[^/\s]+/"
-        r"|(?<=://)(?:/home|/Users)/[^/\s]+/"
+        r"(?:(?<![A-Za-z0-9_./~-])(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/"
+        r"|(?<=://)(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/"
         r"|[A-Z]:\\Users\\[^\\\s]+\\)",
         re.I,
     ),

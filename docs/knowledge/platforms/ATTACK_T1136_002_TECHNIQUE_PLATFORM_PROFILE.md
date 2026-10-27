@@ -5,7 +5,7 @@
 - Technique: **T1136.002 — Domain Account**
 - Platforms named in the source: Linux, macOS, Windows
 
-Adversaries may create a domain account to maintain access to victim systems. Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain. Domain accounts can cover user, administrator, and service accounts. With a sufficient level of access, the <code>net user /add /domain</code> command can be used to create a domain account. Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
+Adversaries may create a domain account to maintain access to victim systems. Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain. Domain accounts can cover user, administrator, and service accounts. With a sufficient level of access, the net user /add /domain command can be used to create a domain account. Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
 
 ## Platform profile
 

@@ -1,10 +1,12 @@
-# T1057 Process Discovery Mitigation Outcome Lesson
+# T1057 Process Discovery Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1057 — Process Discovery Mitigation**
+- Technique: **T1057 — Process Discovery**
+- Tactics: discovery
+- Platforms: ESXi, Linux, macOS, Network Devices, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about processes, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Administrator or otherwise elevated access may provide better process details. Adversaries may use the information from Process Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions. In Windows environments, adversaries could obtain details on running processes using the Tasklist utility via cmd or Get-Process via PowerShell. Information about processes can also be extracted from the output of Native API calls such as CreateToolhelp32Snapshot. In Mac and Linux, this is accomplished with the ps command. Adversaries may also opt to enumerate processes via `/proc`. ESXi also supports use of the `ps` command, as well as `esxcli system process list`. On network devices, Network Device CLI commands such as `show processes` can be used to display current running processes.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1057: https://attack.mitre.org/mitigations/T1057
+- T1057: https://attack.mitre.org/techniques/T1057
 - Reviewed: 2026-10-27
 
 ## Boundary

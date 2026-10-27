@@ -1,11 +1,11 @@
-# Graphical User Interface Mitigation Technique Platform Profile
+# Graphical User Interface Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1061 — Graphical User Interface Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1061 — Graphical User Interface**
+- Platforms named in the source: Linux, macOS, Windows
 
-Prevent adversaries from gaining access to credentials through Credential Access that can be used to log into remote desktop sessions on systems. Identify unnecessary system utilities, third-party tools, or potentially malicious software that may be used to log into remote interactive sessions, and audit and/or block them by using whitelisting tools, like AppLocker and Software Restriction Policies where appropriate.
+**This technique has been deprecated. Please use Remote Services where appropriate.** The Graphical User Interfaces (GUI) is a common way to interact with an operating system. Adversaries may use a system's GUI during an operation, commonly through a remote interactive session such as Remote Desktop Protocol, instead of through a Command and Scripting Interpreter, to search for information and execute files via mouse double-click events, the Windows Run command , or other potentially difficult to monitor interactions.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1061: https://attack.mitre.org/mitigations/T1061
+- T1061: https://attack.mitre.org/techniques/T1061
 - Reviewed: 2026-10-27

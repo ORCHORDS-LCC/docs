@@ -1,10 +1,10 @@
-# Data from Network Shared Drive Mitigation Technique Engineering Review
+# Data from Network Shared Drive Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1039 — Data from Network Shared Drive Mitigation**
+- Technique: **T1039 — Data from Network Shared Drive**
 
-Identify unnecessary system utilities or potentially malicious software that may be used to collect data from a network share, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within cmd may be used to gather information.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1039: https://attack.mitre.org/mitigations/T1039
+- T1039: https://attack.mitre.org/techniques/T1039
 - Reviewed: 2026-10-27

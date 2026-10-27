@@ -1,8 +1,8 @@
-# Distributed Component Object Model Mitigation Technique Review Record Template
+# Component Object Model and Distributed COM Technique Review Record Template
 
 ## Subject
 
-**T1175 — Distributed Component Object Model Mitigation**
+**T1175 — Component Object Model and Distributed COM**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1175: https://attack.mitre.org/mitigations/T1175
+- T1175: https://attack.mitre.org/techniques/T1175
 - Template issued: 2026-10-27

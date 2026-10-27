@@ -1,8 +1,8 @@
-# SID-History Injection Mitigation Technique Review Record Template
+# SID-History Injection Technique Review Record Template
 
 ## Subject
 
-**T1178 — SID-History Injection Mitigation**
+**T1178 — SID-History Injection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1178: https://attack.mitre.org/mitigations/T1178
+- T1178: https://attack.mitre.org/techniques/T1178
 - Template issued: 2026-10-27

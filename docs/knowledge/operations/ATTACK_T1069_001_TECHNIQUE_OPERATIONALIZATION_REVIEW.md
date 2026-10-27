@@ -4,7 +4,7 @@
 
 - Technique: **T1069.001 — Local Groups**
 
-Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group. Commands such as <code>net localgroup</code> of the Net utility, <code>dscl . -list /Groups</code> on macOS, and <code>groups</code> on Linux can list local groups.
+Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group. Commands such as net localgroup of the Net utility, dscl . -list /Groups on macOS, and groups on Linux can list local groups.
 
 ## Operationalization review
 

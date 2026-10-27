@@ -1,8 +1,8 @@
-# Hidden Files and Directories Mitigation Technique Review Record Template
+# Hidden Files and Directories Technique Review Record Template
 
 ## Subject
 
-**T1158 — Hidden Files and Directories Mitigation**
+**T1158 — Hidden Files and Directories**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1158: https://attack.mitre.org/mitigations/T1158
+- T1158: https://attack.mitre.org/techniques/T1158
 - Template issued: 2026-10-27

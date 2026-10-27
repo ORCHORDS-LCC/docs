@@ -1,8 +1,8 @@
-# Application Window Discovery Mitigation Technique Review Record Template
+# Application Window Discovery Technique Review Record Template
 
 ## Subject
 
-**T1010 — Application Window Discovery Mitigation**
+**T1010 — Application Window Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1010: https://attack.mitre.org/mitigations/T1010
+- T1010: https://attack.mitre.org/techniques/T1010
 - Template issued: 2026-10-27

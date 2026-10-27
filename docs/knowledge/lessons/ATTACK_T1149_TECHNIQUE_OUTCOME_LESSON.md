@@ -1,10 +1,12 @@
-# T1149 LC_MAIN Hijacking Mitigation Outcome Lesson
+# T1149 LC_MAIN Hijacking Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1149 — LC_MAIN Hijacking Mitigation**
+- Technique: **T1149 — LC_MAIN Hijacking**
+- Tactics: stealth
+- Platforms: macOS
 
-Enforce valid digital signatures for signed code on all applications and only trust applications with signatures from trusted parties.
+**This technique has been deprecated and should no longer be used.** As of OS X 10.8, mach-O binaries introduced a new header called LC_MAIN that points to the binary’s entry point for execution. Previously, there were two headers to achieve this same effect: LC_THREAD and LC_UNIXTHREAD . The entry point for a binary can be hijacked so that initial execution flows to a malicious addition (either another section or a code cave) and then goes back to the initial entry point so that the victim doesn’t know anything was different . By modifying a binary in this way, application whitelisting can be bypassed because the file name or application path is still the same.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1149: https://attack.mitre.org/mitigations/T1149
+- T1149: https://attack.mitre.org/techniques/T1149
 - Reviewed: 2026-10-27
 
 ## Boundary

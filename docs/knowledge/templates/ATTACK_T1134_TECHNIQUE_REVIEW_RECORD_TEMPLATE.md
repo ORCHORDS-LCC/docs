@@ -1,8 +1,8 @@
-# Access Token Manipulation Mitigation Technique Review Record Template
+# Access Token Manipulation Technique Review Record Template
 
 ## Subject
 
-**T1134 — Access Token Manipulation Mitigation**
+**T1134 — Access Token Manipulation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1134: https://attack.mitre.org/mitigations/T1134
+- T1134: https://attack.mitre.org/techniques/T1134
 - Template issued: 2026-10-27

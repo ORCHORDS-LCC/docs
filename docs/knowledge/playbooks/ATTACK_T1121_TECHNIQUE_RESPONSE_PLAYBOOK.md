@@ -1,11 +1,13 @@
-# Regsvcs/Regasm Mitigation Technique Response Playbook
+# Regsvcs/Regasm Technique Response Playbook
 
 ## Target technique
 
-**T1121 — Regsvcs/Regasm Mitigation**
+**T1121 — Regsvcs/Regasm**
 
+- Tactics: stealth, execution
+- Platforms: Windows
 
-Regsvcs and Regasm may not be necessary within a given environment. Block execution of Regsvcs.exe and Regasm.exe if they are not required for a given system or network to prevent potential misuse by adversaries.
+Regsvcs and Regasm are Windows command-line utilities that are used to register .NET Component Object Model (COM) assemblies. Both are digitally signed by Microsoft. Adversaries can use Regsvcs and Regasm to proxy execution of code through a trusted Windows utility. Both utilities may be used to bypass process whitelisting through use of attributes within the binary to specify code that should be run before registration or unregistration: [ComRegisterFunction] or [ComUnregisterFunction] respectively. The code with the registration and unregistration attributes will be executed even if the process is run under insufficient privileges and fails to execute.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1121: https://attack.mitre.org/mitigations/T1121
+- T1121: https://attack.mitre.org/techniques/T1121
 - Reviewed: 2026-10-27

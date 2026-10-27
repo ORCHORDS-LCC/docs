@@ -1,11 +1,11 @@
-# Service Execution Mitigation Technique Platform Profile
+# Service Execution Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1035 — Service Execution Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1035 — Service Execution**
+- Platforms named in the source: Windows
 
-Ensure that permissions disallow services that run at a higher permissions level from being created or interacted with by a user with a lower permission level. Also ensure that high permission level service binaries cannot be replaced or modified by users with a lower permission level. Identify unnecessary system utilities or potentially malicious software that may be used to interact with Windows services, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may execute a binary, command, or script via a method that interacts with Windows services, such as the Service Control Manager. This can be done by either creating a new service or modifying an existing service. This technique is the execution used in conjunction with New Service and Modify Existing Service during service persistence or privilege escalation.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1035: https://attack.mitre.org/mitigations/T1035
+- T1035: https://attack.mitre.org/techniques/T1035
 - Reviewed: 2026-10-27

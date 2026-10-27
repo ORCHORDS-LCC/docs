@@ -1,8 +1,8 @@
-# Exploitation for Credential Access Mitigation Technique Review Record Template
+# Exploitation for Credential Access Technique Review Record Template
 
 ## Subject
 
-**T1212 — Exploitation for Credential Access Mitigation**
+**T1212 — Exploitation for Credential Access**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1212: https://attack.mitre.org/mitigations/T1212
+- T1212: https://attack.mitre.org/techniques/T1212
 - Template issued: 2026-10-27

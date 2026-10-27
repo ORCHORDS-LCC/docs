@@ -1,10 +1,10 @@
-# Software Packing Mitigation Technique Engineering Review
+# Software Packing Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1045 — Software Packing Mitigation**
+- Technique: **T1045 — Software Packing**
 
-Ensure updated virus definitions. Create custom signatures for observed malware. Employ heuristic-based malware detection. Identify and prevent execution of potentially malicious software that may have been packed by using whitelisting tools like AppLocker or Software Restriction Policies where appropriate.
+Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory. Utilities used to perform software packing are called packers. Example packers are MPRESS and UPX. A more comprehensive list of known packers is available, but adversaries may create their own packing techniques that do not leave the same artifacts as well-known packers to evade defenses. Adversaries may use virtual machine software protection as a form of software packing to protect their code. Virtual machine software protection translates an executable's original code into a special format that only a special virtual machine can run. A virtual machine is then called to run this code.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1045: https://attack.mitre.org/mitigations/T1045
+- T1045: https://attack.mitre.org/techniques/T1045
 - Reviewed: 2026-10-27

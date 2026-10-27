@@ -1,8 +1,8 @@
-# InstallUtil Mitigation Technique Review Record Template
+# InstallUtil Technique Review Record Template
 
 ## Subject
 
-**T1118 — InstallUtil Mitigation**
+**T1118 — InstallUtil**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1118: https://attack.mitre.org/mitigations/T1118
+- T1118: https://attack.mitre.org/techniques/T1118
 - Template issued: 2026-10-27

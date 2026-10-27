@@ -1,10 +1,12 @@
-# T1150 Plist Modification Mitigation Outcome Lesson
+# T1150 Plist Modification Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1150 — Plist Modification Mitigation**
+- Technique: **T1150 — Plist Modification**
+- Tactics: stealth, persistence, privilege-escalation
+- Platforms: macOS
 
-Prevent plist files from being modified by users by making them read-only.
+Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UTF-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanism.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1150: https://attack.mitre.org/mitigations/T1150
+- T1150: https://attack.mitre.org/techniques/T1150
 - Reviewed: 2026-10-27
 
 ## Boundary

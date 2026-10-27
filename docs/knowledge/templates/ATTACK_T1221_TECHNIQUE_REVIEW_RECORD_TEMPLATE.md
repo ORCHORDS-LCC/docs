@@ -1,8 +1,8 @@
-# Template Injection Mitigation Technique Review Record Template
+# Template Injection Technique Review Record Template
 
 ## Subject
 
-**T1221 — Template Injection Mitigation**
+**T1221 — Template Injection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1221: https://attack.mitre.org/mitigations/T1221
+- T1221: https://attack.mitre.org/techniques/T1221
 - Template issued: 2026-10-27

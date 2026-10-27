@@ -1,8 +1,8 @@
-# Time Providers Mitigation Technique Review Record Template
+# Time Providers Technique Review Record Template
 
 ## Subject
 
-**T1209 — Time Providers Mitigation**
+**T1209 — Time Providers**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1209: https://attack.mitre.org/mitigations/T1209
+- T1209: https://attack.mitre.org/techniques/T1209
 - Template issued: 2026-10-27

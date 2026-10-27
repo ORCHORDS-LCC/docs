@@ -1,10 +1,12 @@
-# T1114 Email Collection Mitigation Outcome Lesson
+# T1114 Email Collection Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1114 — Email Collection Mitigation**
+- Technique: **T1114 — Email Collection**
+- Tactics: collection
+- Platforms: Windows, macOS, Linux, Office Suite
 
-Use of encryption provides an added layer of security to sensitive information sent over email. Encryption using public key cryptography requires the adversary to obtain the private certificate along with an encryption key to decrypt messages. Use of two-factor authentication for public-facing webmail servers is also a recommended best practice to minimize the usefulness of user names and passwords to adversaries. Identify unnecessary system utilities or potentially malicious software that may be used to collect email data files or access the corporate email server, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may target user email to collect sensitive information. Emails may contain sensitive data, including trade secrets or personal information, that can prove valuable to adversaries. Emails may also contain details of ongoing incident response operations, which may allow adversaries to adjust their techniques in order to maintain persistence or evade defenses. Adversaries can collect or forward email from mail servers or clients.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1114: https://attack.mitre.org/mitigations/T1114
+- T1114: https://attack.mitre.org/techniques/T1114
 - Reviewed: 2026-10-27
 
 ## Boundary

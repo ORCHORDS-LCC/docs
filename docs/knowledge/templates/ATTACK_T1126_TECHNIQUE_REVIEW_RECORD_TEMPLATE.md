@@ -1,8 +1,8 @@
-# Network Share Connection Removal Mitigation Technique Review Record Template
+# Network Share Connection Removal Technique Review Record Template
 
 ## Subject
 
-**T1126 — Network Share Connection Removal Mitigation**
+**T1126 — Network Share Connection Removal**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1126: https://attack.mitre.org/mitigations/T1126
+- T1126: https://attack.mitre.org/techniques/T1126
 - Template issued: 2026-10-27

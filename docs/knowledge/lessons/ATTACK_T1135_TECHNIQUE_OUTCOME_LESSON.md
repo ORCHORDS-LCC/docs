@@ -1,10 +1,12 @@
-# T1135 Network Share Discovery Mitigation Outcome Lesson
+# T1135 Network Share Discovery Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1135 — Network Share Discovery Mitigation**
+- Technique: **T1135 — Network Share Discovery**
+- Tactics: discovery
+- Platforms: Linux, macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire network share information, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement. Networks often contain shared network drives and folders that enable users to access file directories on various systems across a network. File sharing over a Windows network occurs over the SMB protocol. Net can be used to query a remote system for available shared drives using the net view \\\\remotesystem command. It can also be used to query shared drives on the local system using net share. For macOS, the sharing -l command lists all shared points used for smb services.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1135: https://attack.mitre.org/mitigations/T1135
+- T1135: https://attack.mitre.org/techniques/T1135
 - Reviewed: 2026-10-27
 
 ## Boundary

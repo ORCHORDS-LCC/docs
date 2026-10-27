@@ -1,8 +1,8 @@
-# LC_MAIN Hijacking Mitigation Technique Review Record Template
+# LC_MAIN Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1149 — LC_MAIN Hijacking Mitigation**
+**T1149 — LC_MAIN Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1149: https://attack.mitre.org/mitigations/T1149
+- T1149: https://attack.mitre.org/techniques/T1149
 - Template issued: 2026-10-27

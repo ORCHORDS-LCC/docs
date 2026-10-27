@@ -1,8 +1,8 @@
-# Trusted Relationship Mitigation Technique Review Record Template
+# Trusted Relationship Technique Review Record Template
 
 ## Subject
 
-**T1199 — Trusted Relationship Mitigation**
+**T1199 — Trusted Relationship**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1199: https://attack.mitre.org/mitigations/T1199
+- T1199: https://attack.mitre.org/techniques/T1199
 - Template issued: 2026-10-27

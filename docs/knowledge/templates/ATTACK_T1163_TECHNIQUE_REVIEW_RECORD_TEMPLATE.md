@@ -1,8 +1,8 @@
-# Rc.common Mitigation Technique Review Record Template
+# Rc.common Technique Review Record Template
 
 ## Subject
 
-**T1163 — Rc.common Mitigation**
+**T1163 — Rc.common**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1163: https://attack.mitre.org/mitigations/T1163
+- T1163: https://attack.mitre.org/techniques/T1163
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# DEPRECATED:  Target Influence via Voice in NLP Attack Pattern Assurance Profile
+# DEPRECATED: Target Influence via Voice in NLP Attack Pattern Assurance Profile
 
 ## Reference
 
-- Attack pattern: **432 — DEPRECATED:  Target Influence via Voice in NLP**
+- Attack pattern: **432 — DEPRECATED: Target Influence via Voice in NLP**
 - Status: Deprecated
 
 ## Pattern description

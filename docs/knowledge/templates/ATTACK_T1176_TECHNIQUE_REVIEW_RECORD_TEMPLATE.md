@@ -1,8 +1,8 @@
-# Browser Extensions Mitigation Technique Review Record Template
+# Software Extensions Technique Review Record Template
 
 ## Subject
 
-**T1176 — Browser Extensions Mitigation**
+**T1176 — Software Extensions**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1176: https://attack.mitre.org/mitigations/T1176
+- T1176: https://attack.mitre.org/techniques/T1176
 - Template issued: 2026-10-27

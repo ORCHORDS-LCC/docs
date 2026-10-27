@@ -1,10 +1,10 @@
-# System Firmware Mitigation Technique Engineering Review
+# System Firmware Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1019 — System Firmware Mitigation**
+- Technique: **T1019 — System Firmware**
 
-Prevent adversary access to privileged accounts or access necessary to perform this technique. Check the integrity of the existing BIOS or EFI to determine if it is vulnerable to modification. Patch the BIOS and EFI as necessary. Use Trusted Platform Module technology.
+The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are examples of system firmware that operate as the software interface between the operating system and hardware of a computer. System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1019: https://attack.mitre.org/mitigations/T1019
+- T1019: https://attack.mitre.org/techniques/T1019
 - Reviewed: 2026-10-27

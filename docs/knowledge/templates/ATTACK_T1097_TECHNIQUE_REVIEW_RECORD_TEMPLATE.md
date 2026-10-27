@@ -1,8 +1,8 @@
-# Pass the Ticket Mitigation Technique Review Record Template
+# Pass the Ticket Technique Review Record Template
 
 ## Subject
 
-**T1097 — Pass the Ticket Mitigation**
+**T1097 — Pass the Ticket**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1097: https://attack.mitre.org/mitigations/T1097
+- T1097: https://attack.mitre.org/techniques/T1097
 - Template issued: 2026-10-27

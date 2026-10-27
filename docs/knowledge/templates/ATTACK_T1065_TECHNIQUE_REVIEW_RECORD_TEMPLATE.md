@@ -1,8 +1,8 @@
-# Uncommonly Used Port Mitigation Technique Review Record Template
+# Uncommonly Used Port Technique Review Record Template
 
 ## Subject
 
-**T1065 — Uncommonly Used Port Mitigation**
+**T1065 — Uncommonly Used Port**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1065: https://attack.mitre.org/mitigations/T1065
+- T1065: https://attack.mitre.org/techniques/T1065
 - Template issued: 2026-10-27

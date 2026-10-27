@@ -1,8 +1,8 @@
-# Execution through Module Load Mitigation Technique Review Record Template
+# Shared Modules Technique Review Record Template
 
 ## Subject
 
-**T1129 — Execution through Module Load Mitigation**
+**T1129 — Shared Modules**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1129: https://attack.mitre.org/mitigations/T1129
+- T1129: https://attack.mitre.org/techniques/T1129
 - Template issued: 2026-10-27

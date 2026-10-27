@@ -1,11 +1,13 @@
-# Data Compressed Mitigation Technique Response Playbook
+# Data Compressed Technique Response Playbook
 
 ## Target technique
 
-**T1002 — Data Compressed Mitigation**
+**T1002 — Data Compressed**
 
+- Tactics: exfiltration
+- Platforms: Linux, Windows, macOS
 
-Identify unnecessary system utilities, third-party tools, or potentially malicious software that may be used to compress files, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate. If network intrusion prevention or data loss prevention tools are set to block specific file types from leaving the network over unencrypted channels, then an adversary may move to an encrypted channel.
+An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration in order to make it portable and minimize the amount of data sent over the network. The compression is done separately from the exfiltration channel and is performed using a custom program or algorithm, or a more common compression library or utility such as 7zip, RAR, ZIP, or zlib.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1002: https://attack.mitre.org/mitigations/T1002
+- T1002: https://attack.mitre.org/techniques/T1002
 - Reviewed: 2026-10-27

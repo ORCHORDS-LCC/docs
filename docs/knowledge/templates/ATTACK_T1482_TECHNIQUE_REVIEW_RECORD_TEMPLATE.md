@@ -1,8 +1,8 @@
-# Domain Trust Discovery Mitigation Technique Review Record Template
+# Domain Trust Discovery Technique Review Record Template
 
 ## Subject
 
-**T1482 — Domain Trust Discovery Mitigation**
+**T1482 — Domain Trust Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1482: https://attack.mitre.org/mitigations/T1482
+- T1482: https://attack.mitre.org/techniques/T1482
 - Template issued: 2026-10-27

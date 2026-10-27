@@ -1,8 +1,8 @@
-# Runtime Data Manipulation Mitigation Technique Review Record Template
+# Runtime Data Manipulation Technique Review Record Template
 
 ## Subject
 
-**T1494 — Runtime Data Manipulation Mitigation**
+**T1494 — Runtime Data Manipulation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1494: https://attack.mitre.org/mitigations/T1494
+- T1494: https://attack.mitre.org/techniques/T1494
 - Template issued: 2026-10-27

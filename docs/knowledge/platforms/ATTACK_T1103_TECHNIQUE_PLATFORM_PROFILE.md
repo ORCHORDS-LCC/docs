@@ -1,11 +1,11 @@
-# AppInit DLLs Mitigation Technique Platform Profile
+# AppInit DLLs Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1103 — AppInit DLLs Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1103 — AppInit DLLs**
+- Platforms named in the source: Windows
 
-Upgrade to Windows 8 or later and enable secure boot. Identify and block potentially malicious software that may be executed through AppInit DLLs by using whitelisting tools, like AppLocker, that are capable of auditing and/or blocking unknown DLLs.
+Dynamic-link libraries (DLLs) that are specified in the AppInit_DLLs value in the Registry keys HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows or HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows are loaded by user32.dll into every process that loads user32.dll. In practice this is nearly every program, since user32.dll is a very common library. Similar to Process Injection, these values can be abused to obtain persistence and privilege escalation by causing a malicious DLL to be loaded and run in the context of separate processes on the computer. The AppInit DLL functionality is disabled in Windows 8 and later versions when secure boot is enabled.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1103: https://attack.mitre.org/mitigations/T1103
+- T1103: https://attack.mitre.org/techniques/T1103
 - Reviewed: 2026-10-27

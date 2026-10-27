@@ -1,8 +1,8 @@
-# Data Staged Mitigation Technique Review Record Template
+# Data Staged Technique Review Record Template
 
 ## Subject
 
-**T1074 — Data Staged Mitigation**
+**T1074 — Data Staged**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1074: https://attack.mitre.org/mitigations/T1074
+- T1074: https://attack.mitre.org/techniques/T1074
 - Template issued: 2026-10-27

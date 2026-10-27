@@ -1,8 +1,8 @@
-# Regsvcs/Regasm Mitigation Technique Review Record Template
+# Regsvcs/Regasm Technique Review Record Template
 
 ## Subject
 
-**T1121 — Regsvcs/Regasm Mitigation**
+**T1121 — Regsvcs/Regasm**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1121: https://attack.mitre.org/mitigations/T1121
+- T1121: https://attack.mitre.org/techniques/T1121
 - Template issued: 2026-10-27

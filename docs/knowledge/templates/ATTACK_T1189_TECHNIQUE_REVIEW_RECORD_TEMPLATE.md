@@ -1,8 +1,8 @@
-# Drive-by Compromise Mitigation Technique Review Record Template
+# Drive-by Compromise Technique Review Record Template
 
 ## Subject
 
-**T1189 — Drive-by Compromise Mitigation**
+**T1189 — Drive-by Compromise**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1189: https://attack.mitre.org/mitigations/T1189
+- T1189: https://attack.mitre.org/techniques/T1189
 - Template issued: 2026-10-27

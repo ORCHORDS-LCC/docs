@@ -1,8 +1,8 @@
-# Registry Run Keys / Startup Folder Mitigation Technique Review Record Template
+# Registry Run Keys / Startup Folder Technique Review Record Template
 
 ## Subject
 
-**T1060 — Registry Run Keys / Startup Folder Mitigation**
+**T1060 — Registry Run Keys / Startup Folder**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1060: https://attack.mitre.org/mitigations/T1060
+- T1060: https://attack.mitre.org/techniques/T1060
 - Template issued: 2026-10-27

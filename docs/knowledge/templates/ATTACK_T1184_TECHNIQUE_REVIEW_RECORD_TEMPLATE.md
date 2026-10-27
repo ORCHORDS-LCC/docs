@@ -1,8 +1,8 @@
-# SSH Hijacking Mitigation Technique Review Record Template
+# SSH Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1184 — SSH Hijacking Mitigation**
+**T1184 — SSH Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1184: https://attack.mitre.org/mitigations/T1184
+- T1184: https://attack.mitre.org/techniques/T1184
 - Template issued: 2026-10-27

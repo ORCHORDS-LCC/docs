@@ -1,8 +1,8 @@
-# LLMNR/NBT-NS Poisoning Mitigation Technique Review Record Template
+# LLMNR/NBT-NS Poisoning and Relay Technique Review Record Template
 
 ## Subject
 
-**T1171 — LLMNR/NBT-NS Poisoning Mitigation**
+**T1171 — LLMNR/NBT-NS Poisoning and Relay**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1171: https://attack.mitre.org/mitigations/T1171
+- T1171: https://attack.mitre.org/techniques/T1171
 - Template issued: 2026-10-27

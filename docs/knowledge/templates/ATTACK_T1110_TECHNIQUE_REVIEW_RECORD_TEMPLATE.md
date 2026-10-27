@@ -1,8 +1,8 @@
-# Brute Force Mitigation Technique Review Record Template
+# Brute Force Technique Review Record Template
 
 ## Subject
 
-**T1110 — Brute Force Mitigation**
+**T1110 — Brute Force**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1110: https://attack.mitre.org/mitigations/T1110
+- T1110: https://attack.mitre.org/techniques/T1110
 - Template issued: 2026-10-27

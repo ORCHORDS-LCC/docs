@@ -1,10 +1,12 @@
-# T1039 Data from Network Shared Drive Mitigation Outcome Lesson
+# T1039 Data from Network Shared Drive Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1039 — Data from Network Shared Drive Mitigation**
+- Technique: **T1039 — Data from Network Shared Drive**
+- Tactics: collection
+- Platforms: Linux, macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to collect data from a network share, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within cmd may be used to gather information.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1039: https://attack.mitre.org/mitigations/T1039
+- T1039: https://attack.mitre.org/techniques/T1039
 - Reviewed: 2026-10-27
 
 ## Boundary

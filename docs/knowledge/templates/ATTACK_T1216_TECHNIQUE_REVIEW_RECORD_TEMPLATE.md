@@ -1,8 +1,8 @@
-# Signed Script Proxy Execution Mitigation Technique Review Record Template
+# System Script Proxy Execution Technique Review Record Template
 
 ## Subject
 
-**T1216 — Signed Script Proxy Execution Mitigation**
+**T1216 — System Script Proxy Execution**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1216: https://attack.mitre.org/mitigations/T1216
+- T1216: https://attack.mitre.org/techniques/T1216
 - Template issued: 2026-10-27

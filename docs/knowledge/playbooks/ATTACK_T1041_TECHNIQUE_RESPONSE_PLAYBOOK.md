@@ -1,11 +1,13 @@
-# Exfiltration Over Command and Control Channel Mitigation Technique Response Playbook
+# Exfiltration Over C2 Channel Technique Response Playbook
 
 ## Target technique
 
-**T1041 — Exfiltration Over Command and Control Channel Mitigation**
+**T1041 — Exfiltration Over C2 Channel**
 
+- Tactics: exfiltration
+- Platforms: ESXi, Linux, macOS, Windows
 
-Mitigations for command and control apply. Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool command and control signatures over time or construct protocols in such a way to avoid detection by common defensive tools.
+Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1041: https://attack.mitre.org/mitigations/T1041
+- T1041: https://attack.mitre.org/techniques/T1041
 - Reviewed: 2026-10-27

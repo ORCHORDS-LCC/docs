@@ -1,11 +1,13 @@
-# Network Share Connection Removal Mitigation Technique Response Playbook
+# Network Share Connection Removal Technique Response Playbook
 
 ## Target technique
 
-**T1126 — Network Share Connection Removal Mitigation**
+**T1126 — Network Share Connection Removal**
 
+- Tactics: stealth
+- Platforms: Windows
 
-Follow best practices for mitigation of activity related to establishing Windows Admin Shares. Identify unnecessary system utilities or potentially malicious software that may be used to leverage network shares, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation. Windows shared drive and Windows Admin Shares connections can be removed when no longer needed. Net is an example utility that can be used to remove network share connections with the net use \\system\share /delete command.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1126: https://attack.mitre.org/mitigations/T1126
+- T1126: https://attack.mitre.org/techniques/T1126
 - Reviewed: 2026-10-27

@@ -1,11 +1,13 @@
-# Resource Hijacking Mitigation Technique Response Playbook
+# Resource Hijacking Technique Response Playbook
 
 ## Target technique
 
-**T1496 — Resource Hijacking Mitigation**
+**T1496 — Resource Hijacking**
 
+- Tactics: impact
+- Platforms: Windows, IaaS, Linux, macOS, Containers, SaaS
 
-Identify potentially malicious software and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may leverage the resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability. Resource hijacking may take a number of different forms. For example, adversaries may: * Leverage compute resources in order to mine cryptocurrency * Sell network bandwidth to proxy networks * Generate SMS traffic for profit * Abuse cloud-based messaging services to send large quantities of spam messages In some cases, adversaries may leverage multiple types of Resource Hijacking at once.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1496: https://attack.mitre.org/mitigations/T1496
+- T1496: https://attack.mitre.org/techniques/T1496
 - Reviewed: 2026-10-27

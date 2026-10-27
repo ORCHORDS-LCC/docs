@@ -1,11 +1,11 @@
-# Input Prompt Mitigation Technique Platform Profile
+# Input Prompt Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1141 — Input Prompt Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1141 — Input Prompt**
+- Platforms named in the source: macOS, Windows
 
-This technique exploits users' tendencies to always supply credentials when prompted, which makes it very difficult to mitigate. Use user training as a way to bring awareness and raise suspicion for potentially malicious events (ex: Office documents prompting for credentials).
+When programs are executed that need additional privileges than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: Bypass User Account Control). Adversaries may mimic this functionality to prompt users for credentials with a seemingly legitimate prompt for a number of reasons that mimic normal usage, such as a fake installer requiring additional access or a fake malware removal suite. This type of prompt can be used to collect credentials via various languages such as AppleScript and PowerShell.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1141: https://attack.mitre.org/mitigations/T1141
+- T1141: https://attack.mitre.org/techniques/T1141
 - Reviewed: 2026-10-27

@@ -5,7 +5,7 @@
 - Technique: **S0106 — cmd**
 - Platforms named in the source: Windows
 
-Cmd is the Windows command-line interpreter that can be used to interact with systems and execute other processes and utilities. Cmd.exe contains native functionality to perform many operations to interact with the system, including listing files in a directory (e.g., <code>dir</code> ), deleting files (e.g., <code>del</code> ), and copying files (e.g., <code>copy</code> ).
+Cmd is the Windows command-line interpreter that can be used to interact with systems and execute other processes and utilities. Cmd.exe contains native functionality to perform many operations to interact with the system, including listing files in a directory (e.g., dir ), deleting files (e.g., del ), and copying files (e.g., copy ).
 
 ## Platform profile
 

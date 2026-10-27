@@ -1,11 +1,11 @@
-# Service Registry Permissions Weakness Mitigation Technique Platform Profile
+# Service Registry Permissions Weakness Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1058 — Service Registry Permissions Weakness Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1058 — Service Registry Permissions Weakness**
+- Platforms named in the source: Windows
 
-Ensure proper permissions are set for Registry hives to prevent users from modifying keys for system components that may lead to privilege escalation. Identify and block potentially malicious software that may be executed through service abuse by using whitelisting tools like AppLocker that are capable of auditing and/or blocking unknown programs.
+Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services. The information stored under a service's Registry keys can be manipulated to modify a service's execution parameters through tools such as the service controller, sc.exe, PowerShell, or Reg. Access to Registry keys is controlled through Access Control Lists and permissions. If the permissions for users and groups are not properly set and allow access to the Registry keys for a service, then adversaries can change the service binPath/ImagePath to point to a different executable under their control. When the service starts or is restarted, then the adversary-controlled program will execute, allowing the adversary to gain persistence and/or privilege escalation to the account context the service is set to execute under (local/domain account, SYSTEM, LocalService, or NetworkService). Adversaries may also alter Registry keys associated with service failure parameters (such as FailureCommand) that may be executed in an elevated context anytime the service fails or is intentionally corrupted.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1058: https://attack.mitre.org/mitigations/T1058
+- T1058: https://attack.mitre.org/techniques/T1058
 - Reviewed: 2026-10-27

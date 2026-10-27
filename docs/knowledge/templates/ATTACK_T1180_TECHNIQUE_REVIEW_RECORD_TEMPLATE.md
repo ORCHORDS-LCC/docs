@@ -1,8 +1,8 @@
-# Screensaver Mitigation Technique Review Record Template
+# Screensaver Technique Review Record Template
 
 ## Subject
 
-**T1180 — Screensaver Mitigation**
+**T1180 — Screensaver**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1180: https://attack.mitre.org/mitigations/T1180
+- T1180: https://attack.mitre.org/techniques/T1180
 - Template issued: 2026-10-27

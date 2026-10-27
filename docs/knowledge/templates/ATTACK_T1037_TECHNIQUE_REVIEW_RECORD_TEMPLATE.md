@@ -1,8 +1,8 @@
-# Logon Scripts Mitigation Technique Review Record Template
+# Boot or Logon Initialization Scripts Technique Review Record Template
 
 ## Subject
 
-**T1037 — Logon Scripts Mitigation**
+**T1037 — Boot or Logon Initialization Scripts**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1037: https://attack.mitre.org/mitigations/T1037
+- T1037: https://attack.mitre.org/techniques/T1037
 - Template issued: 2026-10-27

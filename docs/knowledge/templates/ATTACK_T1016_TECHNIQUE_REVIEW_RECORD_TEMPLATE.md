@@ -1,8 +1,8 @@
-# System Network Configuration Discovery Mitigation Technique Review Record Template
+# System Network Configuration Discovery Technique Review Record Template
 
 ## Subject
 
-**T1016 — System Network Configuration Discovery Mitigation**
+**T1016 — System Network Configuration Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1016: https://attack.mitre.org/mitigations/T1016
+- T1016: https://attack.mitre.org/techniques/T1016
 - Template issued: 2026-10-27

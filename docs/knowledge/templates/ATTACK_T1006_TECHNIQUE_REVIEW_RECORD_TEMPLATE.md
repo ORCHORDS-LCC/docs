@@ -1,8 +1,8 @@
-# File System Logical Offsets Mitigation Technique Review Record Template
+# Direct Volume Access Technique Review Record Template
 
 ## Subject
 
-**T1006 — File System Logical Offsets Mitigation**
+**T1006 — Direct Volume Access**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1006: https://attack.mitre.org/mitigations/T1006
+- T1006: https://attack.mitre.org/techniques/T1006
 - Template issued: 2026-10-27

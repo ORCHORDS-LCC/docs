@@ -1,8 +1,8 @@
-# Dylib Hijacking Mitigation Technique Review Record Template
+# Dylib Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1157 — Dylib Hijacking Mitigation**
+**T1157 — Dylib Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1157: https://attack.mitre.org/mitigations/T1157
+- T1157: https://attack.mitre.org/techniques/T1157
 - Template issued: 2026-10-27

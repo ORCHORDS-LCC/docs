@@ -1,8 +1,8 @@
-# Windows Admin Shares Mitigation Technique Review Record Template
+# Windows Admin Shares Technique Review Record Template
 
 ## Subject
 
-**T1077 — Windows Admin Shares Mitigation**
+**T1077 — Windows Admin Shares**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1077: https://attack.mitre.org/mitigations/T1077
+- T1077: https://attack.mitre.org/techniques/T1077
 - Template issued: 2026-10-27

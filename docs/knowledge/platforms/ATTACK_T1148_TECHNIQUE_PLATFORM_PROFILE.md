@@ -1,11 +1,11 @@
-# HISTCONTROL Mitigation Technique Platform Profile
+# HISTCONTROL Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1148 — HISTCONTROL Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1148 — HISTCONTROL**
+- Platforms named in the source: Linux, macOS
 
-Prevent users from changing the <code>HISTCONTROL</code> environment variable . Also, make sure that the <code>HISTCONTROL</code> environment variable is set to “ignoredup” instead of “ignoreboth” or “ignorespace”.
+The HISTCONTROL environment variable keeps track of what should be saved by the history command and eventually into the ~/.bash_history file when a user logs out. This setting can be configured to ignore commands that start with a space by simply setting it to "ignorespace". HISTCONTROL can also be set to ignore duplicate commands by setting it to "ignoredups". In some Linux systems, this is set by default to "ignoreboth" which covers both of the previous examples. This means that “ ls” will not be saved, but “ls” would be saved by history. HISTCONTROL does not exist by default on macOS, but can be set by the user and will be respected. Adversaries can use this to operate without leaving traces by simply prepending a space to all of their terminal commands.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1148: https://attack.mitre.org/mitigations/T1148
+- T1148: https://attack.mitre.org/techniques/T1148
 - Reviewed: 2026-10-27

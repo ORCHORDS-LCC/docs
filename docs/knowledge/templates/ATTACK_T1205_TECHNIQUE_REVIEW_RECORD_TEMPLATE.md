@@ -1,8 +1,8 @@
-# Port Knocking Mitigation Technique Review Record Template
+# Traffic Signaling Technique Review Record Template
 
 ## Subject
 
-**T1205 — Port Knocking Mitigation**
+**T1205 — Traffic Signaling**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1205: https://attack.mitre.org/mitigations/T1205
+- T1205: https://attack.mitre.org/techniques/T1205
 - Template issued: 2026-10-27

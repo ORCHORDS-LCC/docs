@@ -1,8 +1,8 @@
-# BITS Jobs Mitigation Technique Review Record Template
+# BITS Jobs Technique Review Record Template
 
 ## Subject
 
-**T1197 — BITS Jobs Mitigation**
+**T1197 — BITS Jobs**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1197: https://attack.mitre.org/mitigations/T1197
+- T1197: https://attack.mitre.org/techniques/T1197
 - Template issued: 2026-10-27

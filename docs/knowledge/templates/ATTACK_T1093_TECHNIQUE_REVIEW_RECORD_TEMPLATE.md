@@ -1,8 +1,8 @@
-# Process Hollowing Mitigation Technique Review Record Template
+# Process Hollowing Technique Review Record Template
 
 ## Subject
 
-**T1093 — Process Hollowing Mitigation**
+**T1093 — Process Hollowing**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1093: https://attack.mitre.org/mitigations/T1093
+- T1093: https://attack.mitre.org/techniques/T1093
 - Template issued: 2026-10-27

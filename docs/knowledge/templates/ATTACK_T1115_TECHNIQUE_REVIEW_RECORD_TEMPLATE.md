@@ -1,8 +1,8 @@
-# Clipboard Data Mitigation Technique Review Record Template
+# Clipboard Data Technique Review Record Template
 
 ## Subject
 
-**T1115 — Clipboard Data Mitigation**
+**T1115 — Clipboard Data**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1115: https://attack.mitre.org/mitigations/T1115
+- T1115: https://attack.mitre.org/techniques/T1115
 - Template issued: 2026-10-27

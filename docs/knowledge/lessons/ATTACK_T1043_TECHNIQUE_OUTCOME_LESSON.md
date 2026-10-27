@@ -1,10 +1,12 @@
-# T1043 Commonly Used Port Mitigation Outcome Lesson
+# T1043 Commonly Used Port Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1043 — Commonly Used Port Mitigation**
+- Technique: **T1043 — Commonly Used Port**
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+**This technique has been deprecated. Please use Non-Standard Port where appropriate.** Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend with normal network activity to avoid more detailed inspection. They may use commonly open ports such as * TCP:80 (HTTP) * TCP:443 (HTTPS) * TCP:25 (SMTP) * TCP/UDP:53 (DNS) They may use the protocol associated with the port or a completely different protocol. For connections that occur internally within an enclave (such as those between a proxy or pivot node and other nodes), examples of common ports are * TCP/UDP:135 (RPC) * TCP/UDP:22 (SSH) * TCP/UDP:3389 (RDP).
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1043: https://attack.mitre.org/mitigations/T1043
+- T1043: https://attack.mitre.org/techniques/T1043
 - Reviewed: 2026-10-27
 
 ## Boundary

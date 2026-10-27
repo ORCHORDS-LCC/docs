@@ -1,11 +1,11 @@
-# Trap Mitigation Technique Platform Profile
+# Trap Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1154 — Trap Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1154 — Trap**
+- Platforms named in the source: Linux, macOS
 
-Due to potential legitimate uses of trap commands, it's may be difficult to mitigate use of this technique.
+The trap command allows programs and shells to specify commands that will be executed upon receiving interrupt signals. A common situation is a script allowing for graceful termination and handling of common keyboard interrupts like ctrl+c and ctrl+d. Adversaries can use this to register code to be executed when the shell encounters specific interrupts either to gain execution or as a persistence mechanism. Trap commands are of the following format trap 'command list' signals where "command list" will be executed when "signals" are received.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1154: https://attack.mitre.org/mitigations/T1154
+- T1154: https://attack.mitre.org/techniques/T1154
 - Reviewed: 2026-10-27

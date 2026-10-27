@@ -1,10 +1,10 @@
-# Dynamic Data Exchange Mitigation Technique Operationalization Review
+# Dynamic Data Exchange Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1173 — Dynamic Data Exchange Mitigation**
+- Technique: **T1173 — Dynamic Data Exchange**
 
-Registry keys specific to Microsoft Office feature control security can be set to disable automatic DDE/OLE execution. Microsoft also created, and enabled by default, Registry keys to completely disable DDE execution in Word and Excel. Ensure Protected View is enabled and consider disabling embedded files in Office programs, such as OneNote, not enrolled in Protected View. On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs.
+Windows Dynamic Data Exchange (DDE) is a client-server protocol for one-time and/or continuous inter-process communication (IPC) between applications. Once a link is established, applications can autonomously exchange transactions consisting of strings, warm data links (notifications when a data item changes), hot data links (duplications of changes to a data item), and requests for command execution. Object Linking and Embedding (OLE), or the ability to link data between documents, was originally implemented through DDE. Despite being superseded by COM, DDE may be enabled in Windows 10 and most of Microsoft Office 2016 via Registry keys. Adversaries may use DDE to execute arbitrary commands. Microsoft Office documents can be poisoned with DDE commands , directly or through embedded files , and used to deliver execution via phishing campaigns or hosted Web content, avoiding the use of Visual Basic for Applications (VBA) macros. DDE could also be leveraged by an adversary operating on a compromised machine who does not have direct access to command line execution.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1173: https://attack.mitre.org/mitigations/T1173
+- T1173: https://attack.mitre.org/techniques/T1173
 - Reviewed: 2026-10-27

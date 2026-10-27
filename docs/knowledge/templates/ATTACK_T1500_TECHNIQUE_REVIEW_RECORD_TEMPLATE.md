@@ -1,8 +1,8 @@
-# Compile After Delivery Mitigation Technique Review Record Template
+# Compile After Delivery Technique Review Record Template
 
 ## Subject
 
-**T1500 — Compile After Delivery Mitigation**
+**T1500 — Compile After Delivery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1500: https://attack.mitre.org/mitigations/T1500
+- T1500: https://attack.mitre.org/techniques/T1500
 - Template issued: 2026-10-27

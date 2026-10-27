@@ -1,10 +1,12 @@
-# T1500 Compile After Delivery Mitigation Outcome Lesson
+# T1500 Compile After Delivery Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1500 — Compile After Delivery Mitigation**
+- Technique: **T1500 — Compile After Delivery**
+- Tactics: stealth
+- Platforms: Linux, macOS, Windows
 
-This type of technique cannot be easily mitigated with preventive controls or patched since it is based on the abuse of operating system design features. For example, blocking all file compilation may have unintended side effects, such as preventing legitimate OS frameworks and code development mechanisms from operating properly. Consider removing compilers if not needed, otherwise efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identifying subsequent malicious behavior. Identify unnecessary system utilities or potentially malicious software that may be used to decrypt, deobfuscate, decode, and compile files or information, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code. Similar to Obfuscated Files or Information, text-based source code files may subvert analysis and scrutiny from protections targeting executables/binaries. These payloads will need to be compiled before execution; typically via native utilities such as csc.exe or GCC/MinGW. Source code payloads may also be encrypted, encoded, and/or embedded within other files, such as those delivered as a Spearphishing Attachment. Payloads may also be delivered in formats unrecognizable and inherently benign to the native OS (ex: EXEs on macOS/Linux) before later being (re)compiled into a proper executable binary with a bundled compiler and execution framework.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1500: https://attack.mitre.org/mitigations/T1500
+- T1500: https://attack.mitre.org/techniques/T1500
 - Reviewed: 2026-10-27
 
 ## Boundary

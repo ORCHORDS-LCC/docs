@@ -1,11 +1,11 @@
-# PowerShell Mitigation Technique Platform Profile
+# PowerShell Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1086 — PowerShell Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1086 — PowerShell**
+- Platforms named in the source: Windows
 
-It may be possible to remove PowerShell from systems when not needed, but a review should be performed to assess the impact to an environment, since it could be in use for many legitimate purposes and administrative functions. When PowerShell is necessary, restrict PowerShell execution policy to administrators and to only execute signed scripts. Be aware that there are methods of bypassing the PowerShell execution policy, depending on environment configuration. Disable/restrict the WinRM Service to help prevent uses of PowerShell for remote execution.
+PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the Start-Process cmdlet which can be used to run an executable and the Invoke-Command cmdlet which runs a command locally or on a remote computer. PowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk. Administrator permissions are required to use PowerShell to connect to remote systems. A number of PowerShell-based offensive testing tools are available, including Empire, PowerSploit, and PSAttack. PowerShell commands/scripts can also be executed without directly invoking the powershell.exe binary through interfaces to PowerShell's underlying System.Management.Automation assembly exposed through the .NET framework and Windows Common Language Interface (CLI).
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1086: https://attack.mitre.org/mitigations/T1086
+- T1086: https://attack.mitre.org/techniques/T1086
 - Reviewed: 2026-10-27

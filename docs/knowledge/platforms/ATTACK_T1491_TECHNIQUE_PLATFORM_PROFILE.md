@@ -1,11 +1,11 @@
-# Defacement Mitigation Technique Platform Profile
+# Defacement Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1491 — Defacement Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1491 — Defacement**
+- Platforms named in the source: Windows, IaaS, Linux, macOS, ESXi
 
-Implementing best practices for websites such as defending against Exploit Public-Facing Application . Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data. (Ready.gov IT DRP) Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery.
+Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content. Reasons for Defacement include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. Disturbing or offensive images may be used as a part of Defacement in order to cause user discomfort, or to pressure compliance with accompanying messages.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1491: https://attack.mitre.org/mitigations/T1491
+- T1491: https://attack.mitre.org/techniques/T1491
 - Reviewed: 2026-10-27

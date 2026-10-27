@@ -1,8 +1,8 @@
-# System Network Connections Discovery Mitigation Technique Review Record Template
+# System Network Connections Discovery Technique Review Record Template
 
 ## Subject
 
-**T1049 — System Network Connections Discovery Mitigation**
+**T1049 — System Network Connections Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1049: https://attack.mitre.org/mitigations/T1049
+- T1049: https://attack.mitre.org/techniques/T1049
 - Template issued: 2026-10-27

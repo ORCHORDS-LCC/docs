@@ -1,8 +1,8 @@
-# Audio Capture Mitigation Technique Review Record Template
+# Audio Capture Technique Review Record Template
 
 ## Subject
 
-**T1123 — Audio Capture Mitigation**
+**T1123 — Audio Capture**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1123: https://attack.mitre.org/mitigations/T1123
+- T1123: https://attack.mitre.org/techniques/T1123
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Multiband Communication Mitigation Technique Review Record Template
+# Multiband Communication Technique Review Record Template
 
 ## Subject
 
-**T1026 — Multiband Communication Mitigation**
+**T1026 — Multiband Communication**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1026: https://attack.mitre.org/mitigations/T1026
+- T1026: https://attack.mitre.org/techniques/T1026
 - Template issued: 2026-10-27

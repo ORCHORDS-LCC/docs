@@ -1,8 +1,8 @@
-# Third-party Software Mitigation Technique Review Record Template
+# Software Deployment Tools Technique Review Record Template
 
 ## Subject
 
-**T1072 — Third-party Software Mitigation**
+**T1072 — Software Deployment Tools**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1072: https://attack.mitre.org/mitigations/T1072
+- T1072: https://attack.mitre.org/techniques/T1072
 - Template issued: 2026-10-27

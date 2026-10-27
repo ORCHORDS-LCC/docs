@@ -1,8 +1,8 @@
-# DEPRECATED:  Target Influence via Micro-Expressions Attack Pattern Assurance Profile
+# DEPRECATED: Target Influence via Micro-Expressions Attack Pattern Assurance Profile
 
 ## Reference
 
-- Attack pattern: **430 — DEPRECATED:  Target Influence via Micro-Expressions**
+- Attack pattern: **430 — DEPRECATED: Target Influence via Micro-Expressions**
 - Status: Deprecated
 
 ## Pattern description

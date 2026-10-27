@@ -1,8 +1,8 @@
-# System Firmware Mitigation Technique Review Record Template
+# System Firmware Technique Review Record Template
 
 ## Subject
 
-**T1019 — System Firmware Mitigation**
+**T1019 — System Firmware**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1019: https://attack.mitre.org/mitigations/T1019
+- T1019: https://attack.mitre.org/techniques/T1019
 - Template issued: 2026-10-27

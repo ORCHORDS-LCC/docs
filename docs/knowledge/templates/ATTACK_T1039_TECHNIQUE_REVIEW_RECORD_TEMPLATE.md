@@ -1,8 +1,8 @@
-# Data from Network Shared Drive Mitigation Technique Review Record Template
+# Data from Network Shared Drive Technique Review Record Template
 
 ## Subject
 
-**T1039 — Data from Network Shared Drive Mitigation**
+**T1039 — Data from Network Shared Drive**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1039: https://attack.mitre.org/mitigations/T1039
+- T1039: https://attack.mitre.org/techniques/T1039
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Install Root Certificate Mitigation Technique Review Record Template
+# Install Root Certificate Technique Review Record Template
 
 ## Subject
 
-**T1130 — Install Root Certificate Mitigation**
+**T1130 — Install Root Certificate**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1130: https://attack.mitre.org/mitigations/T1130
+- T1130: https://attack.mitre.org/techniques/T1130
 - Template issued: 2026-10-27

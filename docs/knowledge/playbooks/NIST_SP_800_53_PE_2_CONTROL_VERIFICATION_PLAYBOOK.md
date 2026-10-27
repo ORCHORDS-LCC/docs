@@ -1,38 +1,39 @@
-# NIST SP 800-53 PE-2 Physical Access Authorizations Verification Playbook
+# Physical Access Authorizations Control Verification Playbook
 
-## Target
+## Target control
 
-- Control: **PE-2 — Physical Access Authorizations**
-- Family: Physical and Environmental Protection
+**pe-2 — Physical Access Authorizations**
+
+
 
 ## Preconditions
 
-- scope and owner are defined;
-- the applicable baseline or profile is known;
-- organization-defined parameters can be resolved;
-- current implementation and operating evidence is available.
+- a defined system, service, organizational process, or supplier relationship is in scope;
+- an accountable owner is identified;
+- current evidence can be inspected;
+- the control is applicable or requires an applicability decision.
 
 ## Procedure
 
-1. Read the current control and assessment objectives in the official OSCAL catalog.
-2. Confirm applicability, tailoring, and inheritance.
-3. Resolve all organization-defined parameters used by the scoped implementation.
-4. Gather evidence from the implementation, configuration, process, and operations.
-5. Perform the relevant examination, interview, or test activities.
-6. Record evidence conflicts and incomplete coverage as findings.
-7. Assign remediation or exception ownership.
-8. Set the next verification trigger.
+1. Confirm the scope and owner.
+2. Read the current control text and any organization-defined parameters.
+3. Inventory the evidence that should demonstrate the control.
+4. Inspect implementation and operating evidence rather than relying on declarations.
+5. Exercise tests or review procedures appropriate to the control.
+6. Record gaps and assign remediation owners.
+7. Record justified non-applicability or exceptions separately.
+8. Set the next event-driven or periodic verification trigger.
 
 ## Failure handling
 
-If evidence is stale, contradictory, unavailable, or fails the assessment objective, mark the control unverified or partially verified for that scope. Do not substitute policy intent for evidence.
+If evidence contradicts the documented state, treat the control as unverified or partially verified, preserve the evidence, and route the gap through the appropriate remediation or risk process.
 
-## Completion record
+## Completion evidence
 
-Scope, profile, parameters, evidence, assessment activities, result, findings, exceptions, reviewer, and next trigger.
+Scope, owner, source version, evidence reviewed, tests performed, findings, exceptions, remediation links, reviewer, and next trigger.
 
 ## Source
 
-- NIST SP 800-53 Rev. 5.2.0 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
-- Catalog version: 5.2.0
-- Catalog last modified: 2026-05-11
+- NIST SP 800-53 Rev. 5 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
+- Catalog: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+- Reviewed: 2026-10-27

@@ -1,8 +1,8 @@
-# Change Default File Association Mitigation Technique Review Record Template
+# Change Default File Association Technique Review Record Template
 
 ## Subject
 
-**T1042 — Change Default File Association Mitigation**
+**T1042 — Change Default File Association**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1042: https://attack.mitre.org/mitigations/T1042
+- T1042: https://attack.mitre.org/techniques/T1042
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Software Packing Mitigation Technique Review Record Template
+# Software Packing Technique Review Record Template
 
 ## Subject
 
-**T1045 — Software Packing Mitigation**
+**T1045 — Software Packing**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1045: https://attack.mitre.org/mitigations/T1045
+- T1045: https://attack.mitre.org/techniques/T1045
 - Template issued: 2026-10-27

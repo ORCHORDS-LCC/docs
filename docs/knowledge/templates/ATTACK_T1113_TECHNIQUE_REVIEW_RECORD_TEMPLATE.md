@@ -1,8 +1,8 @@
-# Screen Capture Mitigation Technique Review Record Template
+# Screen Capture Technique Review Record Template
 
 ## Subject
 
-**T1113 — Screen Capture Mitigation**
+**T1113 — Screen Capture**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1113: https://attack.mitre.org/mitigations/T1113
+- T1113: https://attack.mitre.org/techniques/T1113
 - Template issued: 2026-10-27

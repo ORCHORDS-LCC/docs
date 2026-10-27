@@ -1,8 +1,8 @@
-# Fallback Channels Mitigation Technique Review Record Template
+# Fallback Channels Technique Review Record Template
 
 ## Subject
 
-**T1008 — Fallback Channels Mitigation**
+**T1008 — Fallback Channels**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1008: https://attack.mitre.org/mitigations/T1008
+- T1008: https://attack.mitre.org/techniques/T1008
 - Template issued: 2026-10-27

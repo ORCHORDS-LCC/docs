@@ -1,8 +1,8 @@
-# Timestomp Mitigation Technique Review Record Template
+# Timestomp Technique Review Record Template
 
 ## Subject
 
-**T1099 — Timestomp Mitigation**
+**T1099 — Timestomp**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1099: https://attack.mitre.org/mitigations/T1099
+- T1099: https://attack.mitre.org/techniques/T1099
 - Template issued: 2026-10-27

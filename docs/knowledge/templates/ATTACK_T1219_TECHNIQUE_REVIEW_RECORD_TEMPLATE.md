@@ -1,8 +1,8 @@
-# Remote Access Tools Mitigation Technique Review Record Template
+# Remote Access Tools Technique Review Record Template
 
 ## Subject
 
-**T1219 — Remote Access Tools Mitigation**
+**T1219 — Remote Access Tools**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1219: https://attack.mitre.org/mitigations/T1219
+- T1219: https://attack.mitre.org/techniques/T1219
 - Template issued: 2026-10-27

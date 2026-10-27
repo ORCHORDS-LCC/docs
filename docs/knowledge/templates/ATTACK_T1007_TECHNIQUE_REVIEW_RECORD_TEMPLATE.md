@@ -1,8 +1,8 @@
-# System Service Discovery Mitigation Technique Review Record Template
+# System Service Discovery Technique Review Record Template
 
 ## Subject
 
-**T1007 — System Service Discovery Mitigation**
+**T1007 — System Service Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1007: https://attack.mitre.org/mitigations/T1007
+- T1007: https://attack.mitre.org/techniques/T1007
 - Template issued: 2026-10-27

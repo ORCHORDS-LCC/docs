@@ -1,8 +1,8 @@
-# Mshta Mitigation Technique Review Record Template
+# Mshta Technique Review Record Template
 
 ## Subject
 
-**T1170 — Mshta Mitigation**
+**T1170 — Mshta**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1170: https://attack.mitre.org/mitigations/T1170
+- T1170: https://attack.mitre.org/techniques/T1170
 - Template issued: 2026-10-27

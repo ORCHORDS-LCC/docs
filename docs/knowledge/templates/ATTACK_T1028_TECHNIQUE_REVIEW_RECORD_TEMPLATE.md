@@ -1,8 +1,8 @@
-# Windows Remote Management Mitigation Technique Review Record Template
+# Windows Remote Management Technique Review Record Template
 
 ## Subject
 
-**T1028 — Windows Remote Management Mitigation**
+**T1028 — Windows Remote Management**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1028: https://attack.mitre.org/mitigations/T1028
+- T1028: https://attack.mitre.org/techniques/T1028
 - Template issued: 2026-10-27

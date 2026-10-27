@@ -1,8 +1,8 @@
-# Spearphishing via Service Mitigation Technique Review Record Template
+# Spearphishing via Service Technique Review Record Template
 
 ## Subject
 
-**T1194 — Spearphishing via Service Mitigation**
+**T1194 — Spearphishing via Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1194: https://attack.mitre.org/mitigations/T1194
+- T1194: https://attack.mitre.org/techniques/T1194
 - Template issued: 2026-10-27

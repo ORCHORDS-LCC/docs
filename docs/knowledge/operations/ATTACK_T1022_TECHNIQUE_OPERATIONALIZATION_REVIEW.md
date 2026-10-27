@@ -1,10 +1,10 @@
-# Data Encrypted Mitigation Technique Operationalization Review
+# Data Encrypted Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1022 — Data Encrypted Mitigation**
+- Technique: **T1022 — Data Encrypted**
 
-Identify unnecessary system utilities, third-party tools, or potentially malicious software that may be used to encrypt files, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Data is encrypted before being exfiltrated in order to hide the information that is being exfiltrated from detection or to make the exfiltration less conspicuous upon inspection by a defender. The encryption is performed by a utility, programming library, or custom algorithm on the data itself and is considered separate from any encryption performed by the command and control or file transfer protocol. Common file archive formats that can encrypt files are RAR and zip. Other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over C2 Channel and Exfiltration Over Alternative Protocol.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1022: https://attack.mitre.org/mitigations/T1022
+- T1022: https://attack.mitre.org/techniques/T1022
 - Reviewed: 2026-10-27

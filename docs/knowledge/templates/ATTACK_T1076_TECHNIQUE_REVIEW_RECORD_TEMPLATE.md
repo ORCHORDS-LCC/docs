@@ -1,8 +1,8 @@
-# Remote Desktop Protocol Mitigation Technique Review Record Template
+# Remote Desktop Protocol Technique Review Record Template
 
 ## Subject
 
-**T1076 — Remote Desktop Protocol Mitigation**
+**T1076 — Remote Desktop Protocol**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1076: https://attack.mitre.org/mitigations/T1076
+- T1076: https://attack.mitre.org/techniques/T1076
 - Template issued: 2026-10-27

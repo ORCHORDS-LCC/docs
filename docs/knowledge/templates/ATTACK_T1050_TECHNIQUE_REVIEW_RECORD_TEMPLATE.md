@@ -1,8 +1,8 @@
-# New Service Mitigation Technique Review Record Template
+# New Service Technique Review Record Template
 
 ## Subject
 
-**T1050 — New Service Mitigation**
+**T1050 — New Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1050: https://attack.mitre.org/mitigations/T1050
+- T1050: https://attack.mitre.org/techniques/T1050
 - Template issued: 2026-10-27

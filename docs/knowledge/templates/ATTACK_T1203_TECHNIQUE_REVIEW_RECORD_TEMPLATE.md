@@ -1,8 +1,8 @@
-# Exploitation for Client Execution Mitigation Technique Review Record Template
+# Exploitation for Client Execution Technique Review Record Template
 
 ## Subject
 
-**T1203 — Exploitation for Client Execution Mitigation**
+**T1203 — Exploitation for Client Execution**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1203: https://attack.mitre.org/mitigations/T1203
+- T1203: https://attack.mitre.org/techniques/T1203
 - Template issued: 2026-10-27

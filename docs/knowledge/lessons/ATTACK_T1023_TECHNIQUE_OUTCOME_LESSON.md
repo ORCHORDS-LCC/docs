@@ -1,10 +1,12 @@
-# T1023 Shortcut Modification Mitigation Outcome Lesson
+# T1023 Shortcut Modification Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1023 — Shortcut Modification Mitigation**
+- Technique: **T1023 — Shortcut Modification**
+- Tactics: persistence
+- Platforms: Windows
 
-Limit permissions for who can create symbolic links in Windows to appropriate groups such as Administrators and necessary groups for virtualization. This can be done through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Create symbolic links. Identify and block unknown, potentially malicious software that may be executed through shortcut modification by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Shortcuts or symbolic links are ways of referencing other files or programs that will be opened or executed when the shortcut is clicked or executed by a system startup process. Adversaries could use shortcuts to execute their tools for persistence. They may create a new shortcut as a means of indirection that may use Masquerading to look like a legitimate program. Adversaries could also edit the target path or entirely replace an existing shortcut so their tools will be executed instead of the intended legitimate program.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1023: https://attack.mitre.org/mitigations/T1023
+- T1023: https://attack.mitre.org/techniques/T1023
 - Reviewed: 2026-10-27
 
 ## Boundary

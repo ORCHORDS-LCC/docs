@@ -1,8 +1,8 @@
-# Binary Padding Mitigation Technique Review Record Template
+# Binary Padding Technique Review Record Template
 
 ## Subject
 
-**T1009 — Binary Padding Mitigation**
+**T1009 — Binary Padding**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1009: https://attack.mitre.org/mitigations/T1009
+- T1009: https://attack.mitre.org/techniques/T1009
 - Template issued: 2026-10-27

@@ -1,10 +1,12 @@
-# T1141 Input Prompt Mitigation Outcome Lesson
+# T1141 Input Prompt Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1141 — Input Prompt Mitigation**
+- Technique: **T1141 — Input Prompt**
+- Tactics: credential-access
+- Platforms: macOS, Windows
 
-This technique exploits users' tendencies to always supply credentials when prompted, which makes it very difficult to mitigate. Use user training as a way to bring awareness and raise suspicion for potentially malicious events (ex: Office documents prompting for credentials).
+When programs are executed that need additional privileges than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: Bypass User Account Control). Adversaries may mimic this functionality to prompt users for credentials with a seemingly legitimate prompt for a number of reasons that mimic normal usage, such as a fake installer requiring additional access or a fake malware removal suite. This type of prompt can be used to collect credentials via various languages such as AppleScript and PowerShell.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1141: https://attack.mitre.org/mitigations/T1141
+- T1141: https://attack.mitre.org/techniques/T1141
 - Reviewed: 2026-10-27
 
 ## Boundary

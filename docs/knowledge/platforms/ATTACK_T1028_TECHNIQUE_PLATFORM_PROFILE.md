@@ -1,11 +1,11 @@
-# Windows Remote Management Mitigation Technique Platform Profile
+# Windows Remote Management Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1028 — Windows Remote Management Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1028 — Windows Remote Management**
+- Platforms named in the source: Windows
 
-Disable the WinRM service. If the service is necessary, lock down critical enclaves with separate WinRM infrastructure, accounts, and permissions. Follow WinRM best practices on configuration of authentication methods and use of host firewalls to restrict WinRM access to allow communication only to/from specific devices.
+Windows Remote Management (WinRM) is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services). It may be called with the winrm command or by any number of programs such as PowerShell.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1028: https://attack.mitre.org/mitigations/T1028
+- T1028: https://attack.mitre.org/techniques/T1028
 - Reviewed: 2026-10-27

@@ -1,11 +1,11 @@
-# AppCert DLLs Mitigation Technique Platform Profile
+# AppCert DLLs Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1182 — AppCert DLLs Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1182 — AppCert DLLs**
+- Platforms named in the source: Windows
 
-Identify and block potentially malicious software that may be executed through AppCert DLLs by using whitelisting tools, like AppLocker, that are capable of auditing and/or blocking unknown DLLs.
+Dynamic-link libraries (DLLs) that are specified in the AppCertDLLs Registry key under HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager are loaded into every process that calls the ubiquitously used application programming interface (API) functions CreateProcess, CreateProcessAsUser, CreateProcessWithLoginW, CreateProcessWithTokenW, or WinExec. Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious DLL to be loaded and run in the context of separate processes on the computer.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1182: https://attack.mitre.org/mitigations/T1182
+- T1182: https://attack.mitre.org/techniques/T1182
 - Reviewed: 2026-10-27

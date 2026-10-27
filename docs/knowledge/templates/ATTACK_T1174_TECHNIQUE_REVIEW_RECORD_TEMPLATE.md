@@ -1,8 +1,8 @@
-# Password Filter DLL Mitigation Technique Review Record Template
+# Password Filter DLL Technique Review Record Template
 
 ## Subject
 
-**T1174 — Password Filter DLL Mitigation**
+**T1174 — Password Filter DLL**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1174: https://attack.mitre.org/mitigations/T1174
+- T1174: https://attack.mitre.org/techniques/T1174
 - Template issued: 2026-10-27

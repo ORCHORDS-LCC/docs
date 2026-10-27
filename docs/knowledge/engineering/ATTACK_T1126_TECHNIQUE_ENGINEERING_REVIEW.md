@@ -1,10 +1,10 @@
-# Network Share Connection Removal Mitigation Technique Engineering Review
+# Network Share Connection Removal Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1126 — Network Share Connection Removal Mitigation**
+- Technique: **T1126 — Network Share Connection Removal**
 
-Follow best practices for mitigation of activity related to establishing Windows Admin Shares. Identify unnecessary system utilities or potentially malicious software that may be used to leverage network shares, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation. Windows shared drive and Windows Admin Shares connections can be removed when no longer needed. Net is an example utility that can be used to remove network share connections with the net use \\system\share /delete command.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1126: https://attack.mitre.org/mitigations/T1126
+- T1126: https://attack.mitre.org/techniques/T1126
 - Reviewed: 2026-10-27

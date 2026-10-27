@@ -1,10 +1,12 @@
-# T1162 Login Item Mitigation Outcome Lesson
+# T1162 Login Item Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1162 — Login Item Mitigation**
+- Technique: **T1162 — Login Item**
+- Tactics: persistence
+- Platforms: macOS
 
-Restrict users from being able to create their own login items. Additionally, holding the shift key during login prevents apps from opening automatically .
+MacOS provides the option to list specific applications to run when a user logs in. These applications run under the logged in user's context, and will be started every time the user logs in. Login items installed using the Service Management Framework are not visible in the System Preferences and can only be removed by the application that created them . Users have direct control over login items installed using a shared file list which are also visible in System Preferences . These login items are stored in the user's ~/Library/Preferences/ directory in a plist file called com.apple.loginitems.plist . Some of these applications can open visible dialogs to the user, but they don’t all have to since there is an option to ‘Hide’ the window. If an adversary can register their own login item or modified an existing one, then they can use it to execute their code for a persistence mechanism each time the user logs in . The API method SMLoginItemSetEnabled can be used to set Login Items, but scripting languages like AppleScript can do this as well .
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1162: https://attack.mitre.org/mitigations/T1162
+- T1162: https://attack.mitre.org/techniques/T1162
 - Reviewed: 2026-10-27
 
 ## Boundary

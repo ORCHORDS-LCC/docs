@@ -1,10 +1,10 @@
-# Modify Existing Service Mitigation Technique Operationalization Review
+# Modify Existing Service Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1031 — Modify Existing Service Mitigation**
+- Technique: **T1031 — Modify Existing Service**
 
-Use auditing tools capable of detecting privilege and service abuse opportunities on systems within an enterprise and correct them. Limit privileges of user accounts and groups so that only authorized administrators can interact with service changes and service configurations. Toolkits like the PowerSploit framework contain the PowerUp modules that can be used to explore systems for Privilege Escalation weaknesses. Identify and block potentially malicious software that may be executed through service abuse by using whitelisting tools like AppLocker that are capable of auditing and/or blocking unknown programs.
+Windows service configuration information, including the file path to the service's executable or recovery programs/commands, is stored in the Registry. Service configurations can be modified using utilities such as sc.exe and Reg. Adversaries can modify an existing service to persist malware on a system by using system utilities or by using custom tools to interact with the Windows API. Use of existing services is a type of Masquerading that may make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services that are disabled or otherwise not commonly used. Adversaries may also intentionally corrupt or kill services to execute malicious recovery programs/commands.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1031: https://attack.mitre.org/mitigations/T1031
+- T1031: https://attack.mitre.org/techniques/T1031
 - Reviewed: 2026-10-27

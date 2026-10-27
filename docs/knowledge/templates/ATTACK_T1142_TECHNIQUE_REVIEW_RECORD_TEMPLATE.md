@@ -1,8 +1,8 @@
-# Keychain Mitigation Technique Review Record Template
+# Keychain Technique Review Record Template
 
 ## Subject
 
-**T1142 — Keychain Mitigation**
+**T1142 — Keychain**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1142: https://attack.mitre.org/mitigations/T1142
+- T1142: https://attack.mitre.org/techniques/T1142
 - Template issued: 2026-10-27

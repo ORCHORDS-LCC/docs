@@ -1,8 +1,8 @@
-# Network Denial of Service Mitigation Technique Review Record Template
+# Network Denial of Service Technique Review Record Template
 
 ## Subject
 
-**T1498 — Network Denial of Service Mitigation**
+**T1498 — Network Denial of Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1498: https://attack.mitre.org/mitigations/T1498
+- T1498: https://attack.mitre.org/techniques/T1498
 - Template issued: 2026-10-27

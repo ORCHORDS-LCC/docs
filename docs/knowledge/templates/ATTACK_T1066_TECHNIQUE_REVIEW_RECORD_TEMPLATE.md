@@ -1,8 +1,8 @@
-# Indicator Removal from Tools Mitigation Technique Review Record Template
+# Indicator Removal from Tools Technique Review Record Template
 
 ## Subject
 
-**T1066 — Indicator Removal from Tools Mitigation**
+**T1066 — Indicator Removal from Tools**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1066: https://attack.mitre.org/mitigations/T1066
+- T1066: https://attack.mitre.org/techniques/T1066
 - Template issued: 2026-10-27

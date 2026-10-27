@@ -1,10 +1,10 @@
-# Data from Information Repositories Mitigation Technique Operationalization Review
+# Data from Information Repositories Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1213 — Data from Information Repositories Mitigation**
+- Technique: **T1213 — Data from Information Repositories**
 
-To mitigate adversary access to information repositories for collection: * Develop and publish policies that define acceptable information to be stored * Appropriate implementation of access control mechanisms that include both authentication and appropriate authorization * Enforce the principle of least-privilege * Periodic privilege review of accounts * Mitigate access to Valid Accounts that may be used to access repositories.
+Adversaries may leverage information repositories to mine valuable information. Information repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in further objectives, such as Credential Access, Lateral Movement, or Defense Evasion, or direct access to the target information. Adversaries may also abuse external sharing features to share sensitive documents with recipients outside of the organization (i.e., Transfer Data to Cloud Account). The following is a brief list of example information that may hold potential value to an adversary and may also be found on an information repository: * Policies, procedures, and standards * Physical / logical network diagrams * System architecture diagrams * Technical system documentation * Testing / development credentials (i.e., Unsecured Credentials) * Work / project schedules * Source code snippets * Links to network shares and other internal resources * Contact or other sensitive information about business partners and customers, including personally identifiable information (PII) Information stored in a repository may vary based on the specific instance or environment. Specific common information repositories include the following: * Storage services such as IaaS databases, enterprise databases, and more specialized platforms such as customer relationship management (CRM) databases * Collaboration platforms such as SharePoint, Confluence, and code repositories * Messaging platforms such as Slack and Microsoft Teams In some cases, information repositories have been improperly secured, typically by unintentionally allowing for overly-broad access by all users or even public access to unauthenticated users. This is particularly common with cloud-native or cloud-hosted services, such as AWS Relational Database Service (RDS), Redis, or ElasticSearch.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1213: https://attack.mitre.org/mitigations/T1213
+- T1213: https://attack.mitre.org/techniques/T1213
 - Reviewed: 2026-10-27

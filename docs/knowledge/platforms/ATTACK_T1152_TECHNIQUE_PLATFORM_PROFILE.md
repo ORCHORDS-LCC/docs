@@ -1,11 +1,11 @@
-# Launchctl Mitigation Technique Platform Profile
+# Launchctl Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1152 — Launchctl Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1152 — Launchctl**
+- Platforms named in the source: macOS
 
-Prevent users from installing their own launch agents or launch daemons and instead require them to be pushed out by group policy.
+Launchctl controls the macOS launchd process which handles things like launch agents and launch daemons, but can execute other commands or programs itself. Launchctl supports taking subcommands on the command-line, interactively, or even redirected from standard input. By loading or reloading launch agents or launch daemons, adversaries can install persistence or execute changes they made . Running a command from launchctl is as simple as launchctl submit -l <labelName> -- /Path/to/thing/to/execute "arg" "arg" "arg". Loading, unloading, or reloading launch agents or launch daemons can require elevated privileges. Adversaries can abuse this functionality to execute code or even bypass whitelisting if launchctl is an allowed process.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1152: https://attack.mitre.org/mitigations/T1152
+- T1152: https://attack.mitre.org/techniques/T1152
 - Reviewed: 2026-10-27

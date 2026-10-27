@@ -1,8 +1,8 @@
-# Security Support Provider Mitigation Technique Review Record Template
+# Security Support Provider Technique Review Record Template
 
 ## Subject
 
-**T1101 — Security Support Provider Mitigation**
+**T1101 — Security Support Provider**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1101: https://attack.mitre.org/mitigations/T1101
+- T1101: https://attack.mitre.org/techniques/T1101
 - Template issued: 2026-10-27

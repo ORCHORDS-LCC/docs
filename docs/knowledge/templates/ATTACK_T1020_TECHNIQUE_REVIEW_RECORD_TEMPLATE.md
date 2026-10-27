@@ -1,8 +1,8 @@
-# Automated Exfiltration Mitigation Technique Review Record Template
+# Automated Exfiltration Technique Review Record Template
 
 ## Subject
 
-**T1020 — Automated Exfiltration Mitigation**
+**T1020 — Automated Exfiltration**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1020: https://attack.mitre.org/mitigations/T1020
+- T1020: https://attack.mitre.org/techniques/T1020
 - Template issued: 2026-10-27

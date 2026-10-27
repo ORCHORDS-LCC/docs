@@ -1,8 +1,8 @@
-# Account Discovery Mitigation Technique Review Record Template
+# Account Discovery Technique Review Record Template
 
 ## Subject
 
-**T1087 — Account Discovery Mitigation**
+**T1087 — Account Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1087: https://attack.mitre.org/mitigations/T1087
+- T1087: https://attack.mitre.org/techniques/T1087
 - Template issued: 2026-10-27

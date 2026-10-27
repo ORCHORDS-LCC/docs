@@ -1,8 +1,8 @@
-# Disabling Security Tools Mitigation Technique Review Record Template
+# Disabling Security Tools Technique Review Record Template
 
 ## Subject
 
-**T1089 — Disabling Security Tools Mitigation**
+**T1089 — Disabling Security Tools**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1089: https://attack.mitre.org/mitigations/T1089
+- T1089: https://attack.mitre.org/techniques/T1089
 - Template issued: 2026-10-27

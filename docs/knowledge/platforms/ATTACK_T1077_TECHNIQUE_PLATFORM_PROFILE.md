@@ -1,11 +1,11 @@
-# Windows Admin Shares Mitigation Technique Platform Profile
+# Windows Admin Shares Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1077 — Windows Admin Shares Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1077 — Windows Admin Shares**
+- Platforms named in the source: Windows
 
-Do not reuse local administrator account passwords across systems. Ensure password complexity and uniqueness such that the passwords cannot be cracked or guessed. Deny remote use of local admin credentials to log into systems. Do not allow domain user accounts to be in the local Administrators group multiple systems. Identify unnecessary system utilities or potentially malicious software that may be used to leverage SMB and the Windows admin shares, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Windows systems have hidden network shares that are accessible only to administrators and provide the ability for remote file copy and other administrative functions. Example network shares include C$, ADMIN$, and IPC$. Adversaries may use this technique in conjunction with administrator-level Valid Accounts to remotely access a networked system over server message block (SMB) to interact with systems using remote procedure calls (RPCs), transfer files, and run transferred binaries through remote Execution. Example execution techniques that rely on authenticated sessions over SMB/RPC are Scheduled Task/Job, Service Execution, and Windows Management Instrumentation. Adversaries can also use NTLM hashes to access administrator shares on systems with Pass the Hash and certain configuration and patch levels. The Net utility can be used to connect to Windows admin shares on remote systems using net use commands with valid credentials.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1077: https://attack.mitre.org/mitigations/T1077
+- T1077: https://attack.mitre.org/techniques/T1077
 - Reviewed: 2026-10-27

@@ -1,8 +1,8 @@
-# Remote System Discovery Mitigation Technique Review Record Template
+# Remote System Discovery Technique Review Record Template
 
 ## Subject
 
-**T1018 — Remote System Discovery Mitigation**
+**T1018 — Remote System Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1018: https://attack.mitre.org/mitigations/T1018
+- T1018: https://attack.mitre.org/techniques/T1018
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Control Panel Items Mitigation Technique Review Record Template
+# Control Panel Items Technique Review Record Template
 
 ## Subject
 
-**T1196 — Control Panel Items Mitigation**
+**T1196 — Control Panel Items**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1196: https://attack.mitre.org/mitigations/T1196
+- T1196: https://attack.mitre.org/techniques/T1196
 - Template issued: 2026-10-27

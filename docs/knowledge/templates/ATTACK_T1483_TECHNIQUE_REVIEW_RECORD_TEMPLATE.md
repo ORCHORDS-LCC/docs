@@ -1,8 +1,8 @@
-# Domain Generation Algorithms Mitigation Technique Review Record Template
+# Domain Generation Algorithms Technique Review Record Template
 
 ## Subject
 
-**T1483 — Domain Generation Algorithms Mitigation**
+**T1483 — Domain Generation Algorithms**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1483: https://attack.mitre.org/mitigations/T1483
+- T1483: https://attack.mitre.org/techniques/T1483
 - Template issued: 2026-10-27

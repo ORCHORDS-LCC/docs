@@ -1,11 +1,13 @@
-# Indirect Command Execution Mitigation Technique Response Playbook
+# Indirect Command Execution Technique Response Playbook
 
 ## Target technique
 
-**T1202 — Indirect Command Execution Mitigation**
+**T1202 — Indirect Command Execution**
 
+- Tactics: stealth
+- Platforms: Windows
 
-Identify or block potentially malicious software that may contain abusive functionality by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate. . These mechanisms can also be used to disable and/or limit user access to Windows utilities and file types/locations used to invoke malicious execution.
+Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters. Various Windows utilities may be used to execute commands, possibly without invoking cmd. For example, Forfiles, the Program Compatibility Assistant (`pcalua.exe`), components of the Windows Subsystem for Linux (WSL), `Scriptrunner.exe`, as well as other utilities may invoke the execution of programs and commands from a Command and Scripting Interpreter, Run window, or via scripts. Adversaries may also abuse the `ssh.exe` binary to execute malicious commands via the `ProxyCommand` and `LocalCommand` options, which can be invoked via the `-o` flag or by modifying the SSH config file. Adversaries may abuse these features for Stealth, specifically to perform arbitrary execution while subverting detections and/or mitigation controls (such as Group Policy) that limit/prevent the usage of cmd or file extensions more commonly associated with malicious payloads.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1202: https://attack.mitre.org/mitigations/T1202
+- T1202: https://attack.mitre.org/techniques/T1202
 - Reviewed: 2026-10-27

@@ -1,11 +1,11 @@
-# Resource Hijacking Mitigation Technique Platform Profile
+# Resource Hijacking Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1496 — Resource Hijacking Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1496 — Resource Hijacking**
+- Platforms named in the source: Windows, IaaS, Linux, macOS, Containers, SaaS
 
-Identify potentially malicious software and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may leverage the resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability. Resource hijacking may take a number of different forms. For example, adversaries may: * Leverage compute resources in order to mine cryptocurrency * Sell network bandwidth to proxy networks * Generate SMS traffic for profit * Abuse cloud-based messaging services to send large quantities of spam messages In some cases, adversaries may leverage multiple types of Resource Hijacking at once.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1496: https://attack.mitre.org/mitigations/T1496
+- T1496: https://attack.mitre.org/techniques/T1496
 - Reviewed: 2026-10-27

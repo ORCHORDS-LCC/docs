@@ -1,11 +1,13 @@
-# Permission Groups Discovery Mitigation Technique Response Playbook
+# Permission Groups Discovery Technique Response Playbook
 
 ## Target technique
 
-**T1069 — Permission Groups Discovery Mitigation**
+**T1069 — Permission Groups Discovery**
 
+- Tactics: discovery
+- Platforms: Containers, IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about groups and permissions, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to discover group and permission settings. This information can help adversaries determine which user accounts and groups are available, the membership of users in particular groups, and which users and groups have elevated permissions. Adversaries may attempt to discover group permission settings in many different ways. This data may provide the adversary with information about the compromised environment that can be used in follow-on activity and targeting.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1069: https://attack.mitre.org/mitigations/T1069
+- T1069: https://attack.mitre.org/techniques/T1069
 - Reviewed: 2026-10-27

@@ -1,48 +1,39 @@
-# NIST SP 800-53 AU-6 Audit Record Review, Analysis, and Reporting Assessment Record Template
+# Audit Record Review, Analysis, and Reporting Control Assessment Record Template
 
-## Control reference
+## Subject
 
-- Control: **AU-6 — Audit Record Review, Analysis, and Reporting**
-- Family: Audit and Accountability
+**au-6 — Audit Record Review, Analysis, and Reporting**
+
+## Record fields
+
+| Field | Value |
+|-------|-------|
+| Subject identifier | au-6 |
+| Scope | the control in scope, its resolved parameters, and any inherited responsibilities |
+| Owner | _to be completed by the reviewer_ |
+| Source version | _to be completed from the source citation_ |
+| Review date | _to be completed_ |
+| Reviewer | _to be completed_ |
+
+## Assessment record
+
+1. **Applicability.** Record whether the subject applies, and the reason.
+2. **Evidence inventory.** List the evidence inspected, with its date and its location.
+3. **Assessment.** Record the result: satisfied, partially satisfied, not satisfied, or not applicable.
+4. **Gaps.** Record each gap, its owner, and the remediation date.
+5. **Exceptions.** Record each exception separately from the assessment result, with its compensating control and expiry.
+6. **Inherited evidence.** Record where responsibility is shared, and the supplier evidence relied upon.
+7. **Next trigger.** Record the next event-driven or periodic review date.
+
+## Record conventions
+
+- Record partial coverage explicitly rather than rounding it to a pass.
+- Do not record a result without the evidence that supports it.
+- Keep the source version with the record, so a later reviewer can tell what was assessed.
+- Reuse this record for the same subject and a new source version only after re-assessing it.
 
 ## Source
 
-- NIST SP 800-53 Rev. 5.2.0 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
-- Catalog version: 5.2.0
-- Catalog last modified: 2026-05-11
-
-## Assessment scope
-
-- System or process:
-- Owner:
-- Reviewer:
-- Assessment date:
-- Evidence period:
-- Applicable baseline or profile:
-- Tailoring decision:
-
-## Implementation evidence
-
-| Evidence | Reference | What it demonstrates | Current? | Result |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-
-## Assessment procedure
-
-1. Read the current control text and assessment objectives in the official catalog.
-2. Confirm the control is applicable to the defined scope and profile.
-3. Identify organization-defined parameters and assignments before testing.
-4. Inspect implementation and operating evidence.
-5. Execute the relevant assessment methods for the scoped implementation.
-6. Record findings, exceptions, and inherited or shared responsibility.
-7. Define the re-assessment trigger.
-
-## Findings
-
-| Finding | Impact | Owner | Action | Verification | Due or trigger |
-| --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |
-
-## Assurance boundary
-
-This template does not assert implementation or compliance. Assessment conclusions require the current control text, resolved parameters, and real evidence.
+- NIST SP 800-53 Rev. 5 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
+- Catalog: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+- Template issued: 2026-10-27

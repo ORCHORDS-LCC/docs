@@ -1,8 +1,8 @@
-# Systemd Service Mitigation Technique Review Record Template
+# Systemd Service Technique Review Record Template
 
 ## Subject
 
-**T1501 — Systemd Service Mitigation**
+**T1501 — Systemd Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1501: https://attack.mitre.org/mitigations/T1501
+- T1501: https://attack.mitre.org/techniques/T1501
 - Template issued: 2026-10-27

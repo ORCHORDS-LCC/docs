@@ -1,8 +1,8 @@
-# Stored Data Manipulation Mitigation Technique Review Record Template
+# Stored Data Manipulation Technique Review Record Template
 
 ## Subject
 
-**T1492 — Stored Data Manipulation Mitigation**
+**T1492 — Stored Data Manipulation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1492: https://attack.mitre.org/mitigations/T1492
+- T1492: https://attack.mitre.org/techniques/T1492
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Data Obfuscation Mitigation Technique Review Record Template
+# Data Obfuscation Technique Review Record Template
 
 ## Subject
 
-**T1001 — Data Obfuscation Mitigation**
+**T1001 — Data Obfuscation**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1001: https://attack.mitre.org/mitigations/T1001
+- T1001: https://attack.mitre.org/techniques/T1001
 - Template issued: 2026-10-27

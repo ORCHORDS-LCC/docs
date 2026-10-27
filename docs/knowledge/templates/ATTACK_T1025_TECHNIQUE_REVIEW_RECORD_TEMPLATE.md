@@ -1,8 +1,8 @@
-# Data from Removable Media Mitigation Technique Review Record Template
+# Data from Removable Media Technique Review Record Template
 
 ## Subject
 
-**T1025 — Data from Removable Media Mitigation**
+**T1025 — Data from Removable Media**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1025: https://attack.mitre.org/mitigations/T1025
+- T1025: https://attack.mitre.org/techniques/T1025
 - Template issued: 2026-10-27

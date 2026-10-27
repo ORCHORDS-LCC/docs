@@ -1,8 +1,8 @@
-# Data Encrypted for Impact Mitigation Technique Review Record Template
+# Data Encrypted for Impact Technique Review Record Template
 
 ## Subject
 
-**T1486 — Data Encrypted for Impact Mitigation**
+**T1486 — Data Encrypted for Impact**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1486: https://attack.mitre.org/mitigations/T1486
+- T1486: https://attack.mitre.org/techniques/T1486
 - Template issued: 2026-10-27

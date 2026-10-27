@@ -6,7 +6,7 @@
 - Tactics: discovery
 - Platforms: Linux, macOS, Windows
 
-Adversaries may attempt to find domain-level groups and permission settings. The knowledge of domain-level permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as domain administrators. Commands such as <code>net group /domain</code> of the Net utility, <code>dscacheutil -q group</code> on macOS, and <code>ldapsearch</code> on Linux can list domain-level groups.
+Adversaries may attempt to find domain-level groups and permission settings. The knowledge of domain-level permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as domain administrators. Commands such as net group /domain of the Net utility, dscacheutil -q group on macOS, and ldapsearch on Linux can list domain-level groups.
 
 ## Reusable lesson
 

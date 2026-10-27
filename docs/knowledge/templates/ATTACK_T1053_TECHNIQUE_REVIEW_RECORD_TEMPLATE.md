@@ -1,8 +1,8 @@
-# Scheduled Task Mitigation Technique Review Record Template
+# Scheduled Task/Job Technique Review Record Template
 
 ## Subject
 
-**T1053 — Scheduled Task Mitigation**
+**T1053 — Scheduled Task/Job**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1053: https://attack.mitre.org/mitigations/T1053
+- T1053: https://attack.mitre.org/techniques/T1053
 - Template issued: 2026-10-27

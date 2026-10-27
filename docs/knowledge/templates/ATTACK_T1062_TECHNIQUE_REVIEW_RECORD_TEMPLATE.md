@@ -1,8 +1,8 @@
-# Hypervisor Mitigation Technique Review Record Template
+# Hypervisor Technique Review Record Template
 
 ## Subject
 
-**T1062 — Hypervisor Mitigation**
+**T1062 — Hypervisor**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1062: https://attack.mitre.org/mitigations/T1062
+- T1062: https://attack.mitre.org/techniques/T1062
 - Template issued: 2026-10-27

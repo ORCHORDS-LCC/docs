@@ -1,11 +1,11 @@
-# Netsh Helper DLL Mitigation Technique Platform Profile
+# Netsh Helper DLL Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1128 — Netsh Helper DLL Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1128 — Netsh Helper DLL**
+- Platforms named in the source: Windows
 
-Identify and block potentially malicious software that may persist in this manner by using whitelisting tools capable of monitoring DLL loads by Windows utilities like AppLocker.
+Netsh.exe (also referred to as Netshell) is a command-line scripting utility used to interact with the network configuration of a system. It contains functionality to add helper DLLs for extending functionality of the utility. The paths to registered netsh.exe helper DLLs are entered into the Windows Registry at HKLM\SOFTWARE\Microsoft\Netsh. Adversaries can use netsh.exe with helper DLLs to proxy execution of arbitrary code in a persistent manner when netsh.exe is executed automatically with another Persistence technique or if other persistent software is present on the system that executes netsh.exe as part of its normal functionality. Examples include some VPN software that invoke netsh.exe. Proof of concept code exists to load Cobalt Strike's payload using netsh.exe helper DLLs.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1128: https://attack.mitre.org/mitigations/T1128
+- T1128: https://attack.mitre.org/techniques/T1128
 - Reviewed: 2026-10-27

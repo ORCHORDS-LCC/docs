@@ -1,8 +1,8 @@
-# Clear Command History Mitigation Technique Review Record Template
+# Clear Command History Technique Review Record Template
 
 ## Subject
 
-**T1146 — Clear Command History Mitigation**
+**T1146 — Clear Command History**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1146: https://attack.mitre.org/mitigations/T1146
+- T1146: https://attack.mitre.org/techniques/T1146
 - Template issued: 2026-10-27

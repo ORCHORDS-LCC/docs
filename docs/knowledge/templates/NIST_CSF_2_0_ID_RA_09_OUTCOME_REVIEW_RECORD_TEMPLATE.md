@@ -1,50 +1,39 @@
-# NIST CSF 2.0 ID.RA-09 Outcome Review Record Template
+# The authenticity and integrity of hardware and software are assessed prior to acquisition and use Outcome Review Record Template
 
-## Authoritative outcome
+## Subject
 
-**ID.RA-09:** The authenticity and integrity of hardware and software are assessed prior to acquisition and use
+**ID.RA-09** — The authenticity and integrity of hardware and software are assessed prior to acquisition and use
+
+## Record fields
+
+| Field | Value |
+|-------|-------|
+| Subject identifier | ID.RA-09 |
+| Scope | the outcome in scope, the systems and processes it covers, and the owner accountable for it |
+| Owner | _to be completed by the reviewer_ |
+| Source version | _to be completed from the source citation_ |
+| Review date | _to be completed_ |
+| Reviewer | _to be completed_ |
+
+## Assessment record
+
+1. **Applicability.** Record whether the subject applies, and the reason.
+2. **Evidence inventory.** List the evidence inspected, with its date and its location.
+3. **Assessment.** Record the result: satisfied, partially satisfied, not satisfied, or not applicable.
+4. **Gaps.** Record each gap, its owner, and the remediation date.
+5. **Exceptions.** Record each exception separately from the assessment result, with its compensating control and expiry.
+6. **Inherited evidence.** Record where responsibility is shared, and the supplier evidence relied upon.
+7. **Next trigger.** Record the next event-driven or periodic review date.
+
+## Record conventions
+
+- Record partial coverage explicitly rather than rounding it to a pass.
+- Do not record a result without the evidence that supports it.
+- Keep the source version with the record, so a later reviewer can tell what was assessed.
+- Reuse this record for the same subject and a new source version only after re-assessing it.
 
 ## Source
 
-- NIST Cybersecurity Framework 2.0: https://doi.org/10.6028/NIST.CSWP.29
-- NIST OSCAL CSF 2.0 catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/CSF/v2.0/json/NIST_CSF_v2.0_catalog.json
-- Catalog version reviewed: 1.2.0
-- Catalog published: 2026-05-13
-
-## Review metadata
-
-- System or process:
-- Owner:
-- Reviewer:
-- Review date:
-- Trigger:
-- Evidence period:
-
-## Outcome interpretation
-
-- What does this outcome mean for the actual scope?
-- Which assets, services, identities, data, suppliers, or processes are relevant?
-- What is explicitly out of scope, and why?
-
-## Evidence record
-
-| Evidence item | Location or reference | What it demonstrates | Freshness | Result |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-
-## Gap record
-
-| Gap | Risk or impact | Owner | Planned action | Verification method | Review trigger |
-| --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |
-
-## Outcome status
-
-- [ ] Verified for the defined scope
-- [ ] Partially verified; remediation remains
-- [ ] Not applicable with documented rationale
-- [ ] Not yet assessed
-
-## Assurance boundary
-
-Completing this record does not by itself prove the CSF outcome is achieved. The status must be supported by current implementation, process, or operational evidence.
+- NIST OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/CSF/v2.0/json/NIST_CSF_v2.0_catalog.json
+- Catalog: https://doi.org/10.6028/NIST.CSWP.29
+- Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Security Software Discovery Mitigation Technique Review Record Template
+# Security Software Discovery Technique Review Record Template
 
 ## Subject
 
-**T1063 — Security Software Discovery Mitigation**
+**T1063 — Security Software Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1063: https://attack.mitre.org/mitigations/T1063
+- T1063: https://attack.mitre.org/techniques/T1063
 - Template issued: 2026-10-27

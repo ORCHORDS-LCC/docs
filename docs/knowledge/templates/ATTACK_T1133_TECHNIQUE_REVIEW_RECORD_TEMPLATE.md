@@ -1,8 +1,8 @@
-# External Remote Services Mitigation Technique Review Record Template
+# External Remote Services Technique Review Record Template
 
 ## Subject
 
-**T1133 — External Remote Services Mitigation**
+**T1133 — External Remote Services**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1133: https://attack.mitre.org/mitigations/T1133
+- T1133: https://attack.mitre.org/techniques/T1133
 - Template issued: 2026-10-27

@@ -1,10 +1,10 @@
-# Source Mitigation Technique Operationalization Review
+# Source Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1153 — Source Mitigation**
+- Technique: **T1153 — Source**
 
-Due to potential legitimate uses of source commands, it's may be difficult to mitigate use of this technique.
+**This technique has been deprecated and should no longer be used.** The source command loads functions into the current shell or executes files in the current context. This built-in command can be run in two different ways source /path/to/filename [arguments] or .**This technique has been deprecated and should no longer be used.** /path/to/filename [arguments]. Take note of the space after the ".". Without a space, a new shell is created that runs the program instead of running the program within the current context. This is often used to make certain features or functions available to a shell or to update a specific shell's environment. Adversaries can abuse this functionality to execute programs. The file executed with this technique does not need to be marked executable beforehand.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1153: https://attack.mitre.org/mitigations/T1153
+- T1153: https://attack.mitre.org/techniques/T1153
 - Reviewed: 2026-10-27

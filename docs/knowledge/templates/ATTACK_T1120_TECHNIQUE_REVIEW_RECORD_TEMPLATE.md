@@ -1,8 +1,8 @@
-# Peripheral Device Discovery Mitigation Technique Review Record Template
+# Peripheral Device Discovery Technique Review Record Template
 
 ## Subject
 
-**T1120 — Peripheral Device Discovery Mitigation**
+**T1120 — Peripheral Device Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1120: https://attack.mitre.org/mitigations/T1120
+- T1120: https://attack.mitre.org/techniques/T1120
 - Template issued: 2026-10-27

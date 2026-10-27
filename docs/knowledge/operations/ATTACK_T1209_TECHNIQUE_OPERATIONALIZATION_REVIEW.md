@@ -1,10 +1,10 @@
-# Time Providers Mitigation Technique Operationalization Review
+# Time Providers Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1209 — Time Providers Mitigation**
+- Technique: **T1209 — Time Providers**
 
-Identify and block potentially malicious software that may be executed as a time provider by using whitelisting tools, like AppLocker, that are capable of auditing and/or blocking unknown DLLs. Consider using Group Policy to configure and block subsequent modifications to W32Time parameters.
+The Windows Time service (W32Time) enables time synchronization across and within domains. W32Time time providers are responsible for retrieving time stamps from hardware/network resources and outputting these values to other network clients. Time providers are implemented as dynamic-link libraries (DLLs) that are registered in the subkeys of HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W32Time\TimeProviders\. The time provider manager, directed by the service control manager, loads and starts time providers listed and enabled under this key at system startup and/or whenever parameters are changed. Adversaries may abuse this architecture to establish Persistence, specifically by registering and enabling a malicious DLL as a time provider. Administrator privileges are required for time provider registration, though execution will run in context of the Local Service account.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1209: https://attack.mitre.org/mitigations/T1209
+- T1209: https://attack.mitre.org/techniques/T1209
 - Reviewed: 2026-10-27

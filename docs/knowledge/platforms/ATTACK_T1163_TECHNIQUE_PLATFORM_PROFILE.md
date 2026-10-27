@@ -1,11 +1,11 @@
-# Rc.common Mitigation Technique Platform Profile
+# Rc.common Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1163 — Rc.common Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1163 — Rc.common**
+- Platforms named in the source: macOS
 
-Limit privileges of user accounts so only authorized users can edit the rc.common file.
+During the boot process, macOS executes source /etc/rc.common, which is a shell script containing various utility functions. This file also defines routines for processing command-line arguments and for gathering system settings, and is thus recommended to include in the start of Startup Item Scripts . In macOS and OS X, this is now a deprecated technique in favor of launch agents and launch daemons, but is currently still used. Adversaries can use the rc.common file as a way to hide code for persistence that will execute on each reboot as the root user .
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1163: https://attack.mitre.org/mitigations/T1163
+- T1163: https://attack.mitre.org/techniques/T1163
 - Reviewed: 2026-10-27

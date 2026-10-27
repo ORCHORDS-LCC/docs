@@ -1,10 +1,10 @@
-# Exfiltration Over Other Network Medium Mitigation Technique Engineering Review
+# Exfiltration Over Other Network Medium Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1011 — Exfiltration Over Other Network Medium Mitigation**
+- Technique: **T1011 — Exfiltration Over Other Network Medium**
 
-Ensure host-based sensors maintain visibility into usage of all network adapters and prevent the creation of new ones where possible.
+Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel. If the command and control network is a wired Internet connection, the exfiltration may occur, for example, over a WiFi connection, modem, cellular data connection, Bluetooth, or another radio frequency (RF) channel. Adversaries may choose to do this if they have sufficient access or proximity, and the connection might not be secured or defended as well as the primary Internet-connected channel because it is not routed through the same enterprise network.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1011: https://attack.mitre.org/mitigations/T1011
+- T1011: https://attack.mitre.org/techniques/T1011
 - Reviewed: 2026-10-27

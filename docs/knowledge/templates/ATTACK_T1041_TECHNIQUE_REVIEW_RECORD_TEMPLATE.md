@@ -1,8 +1,8 @@
-# Exfiltration Over Command and Control Channel Mitigation Technique Review Record Template
+# Exfiltration Over C2 Channel Technique Review Record Template
 
 ## Subject
 
-**T1041 — Exfiltration Over Command and Control Channel Mitigation**
+**T1041 — Exfiltration Over C2 Channel**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1041: https://attack.mitre.org/mitigations/T1041
+- T1041: https://attack.mitre.org/techniques/T1041
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Application Deployment Software Mitigation Technique Review Record Template
+# Application Deployment Software Technique Review Record Template
 
 ## Subject
 
-**T1017 — Application Deployment Software Mitigation**
+**T1017 — Application Deployment Software**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1017: https://attack.mitre.org/mitigations/T1017
+- T1017: https://attack.mitre.org/techniques/T1017
 - Template issued: 2026-10-27

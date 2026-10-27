@@ -1,10 +1,12 @@
-# T1073 DLL Side-Loading Mitigation Outcome Lesson
+# T1073 DLL Side-Loading Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1073 — DLL Side-Loading Mitigation**
+- Technique: **T1073 — DLL Side-Loading**
+- Tactics: stealth
+- Platforms: Windows
 
-Update software regularly. Install software in write-protected locations. Use the program sxstrace.exe that is included with Windows along with manual inspection to check manifest files for side-loading vulnerabilities in software.
+Programs may specify DLLs that are loaded at runtime. Programs that improperly or vaguely specify a required DLL may be open to a vulnerability in which an unintended DLL is loaded. Side-loading vulnerabilities specifically occur when Windows Side-by-Side (WinSxS) manifests are not explicit enough about characteristics of the DLL to be loaded. Adversaries may take advantage of a legitimate program that is vulnerable to side-loading to load a malicious DLL. Adversaries likely use this technique as a means of masking actions they perform under a legitimate, trusted system or software process.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1073: https://attack.mitre.org/mitigations/T1073
+- T1073: https://attack.mitre.org/techniques/T1073
 - Reviewed: 2026-10-27
 
 ## Boundary

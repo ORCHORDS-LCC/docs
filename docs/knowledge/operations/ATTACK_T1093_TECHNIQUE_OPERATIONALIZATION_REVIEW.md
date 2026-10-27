@@ -1,10 +1,10 @@
-# Process Hollowing Mitigation Technique Operationalization Review
+# Process Hollowing Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1093 — Process Hollowing Mitigation**
+- Technique: **T1093 — Process Hollowing**
 
-This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of operating system design features. For example, mitigating specific API calls will likely have unintended side effects, such as preventing legitimate software (i.e., security products) from operating properly. Efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identifying subsequent malicious behavior. Although process hollowing may be used to evade certain types of defenses, it is still good practice to identify potentially malicious software that may be used to perform adversarial actions and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Process hollowing occurs when a process is created in a suspended state then its memory is unmapped and replaced with malicious code. Similar to Process Injection, execution of the malicious code is masked under a legitimate process and may evade defenses and detection analysis.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1093: https://attack.mitre.org/mitigations/T1093
+- T1093: https://attack.mitre.org/techniques/T1093
 - Reviewed: 2026-10-27

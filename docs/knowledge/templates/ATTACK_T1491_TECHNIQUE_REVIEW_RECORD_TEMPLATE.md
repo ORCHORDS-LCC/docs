@@ -1,8 +1,8 @@
-# Defacement Mitigation Technique Review Record Template
+# Defacement Technique Review Record Template
 
 ## Subject
 
-**T1491 — Defacement Mitigation**
+**T1491 — Defacement**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1491: https://attack.mitre.org/mitigations/T1491
+- T1491: https://attack.mitre.org/techniques/T1491
 - Template issued: 2026-10-27

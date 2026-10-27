@@ -1,8 +1,8 @@
-# Data Encoding Mitigation Technique Review Record Template
+# Data Encoding Technique Review Record Template
 
 ## Subject
 
-**T1132 — Data Encoding Mitigation**
+**T1132 — Data Encoding**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1132: https://attack.mitre.org/mitigations/T1132
+- T1132: https://attack.mitre.org/techniques/T1132
 - Template issued: 2026-10-27

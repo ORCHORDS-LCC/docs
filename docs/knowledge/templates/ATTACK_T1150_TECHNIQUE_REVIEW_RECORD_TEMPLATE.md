@@ -1,8 +1,8 @@
-# Plist Modification Mitigation Technique Review Record Template
+# Plist Modification Technique Review Record Template
 
 ## Subject
 
-**T1150 — Plist Modification Mitigation**
+**T1150 — Plist Modification**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1150: https://attack.mitre.org/mitigations/T1150
+- T1150: https://attack.mitre.org/techniques/T1150
 - Template issued: 2026-10-27

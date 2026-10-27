@@ -1,8 +1,8 @@
-# Service Execution Mitigation Technique Review Record Template
+# Service Execution Technique Review Record Template
 
 ## Subject
 
-**T1035 — Service Execution Mitigation**
+**T1035 — Service Execution**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1035: https://attack.mitre.org/mitigations/T1035
+- T1035: https://attack.mitre.org/techniques/T1035
 - Template issued: 2026-10-27

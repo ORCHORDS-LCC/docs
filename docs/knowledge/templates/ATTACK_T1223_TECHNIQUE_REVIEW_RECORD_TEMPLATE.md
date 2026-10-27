@@ -1,8 +1,8 @@
-# Compiled HTML File Mitigation Technique Review Record Template
+# Compiled HTML File Technique Review Record Template
 
 ## Subject
 
-**T1223 — Compiled HTML File Mitigation**
+**T1223 — Compiled HTML File**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1223: https://attack.mitre.org/mitigations/T1223
+- T1223: https://attack.mitre.org/techniques/T1223
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Data Destruction Mitigation Technique Review Record Template
+# Disk Content Wipe Technique Review Record Template
 
 ## Subject
 
-**T1488 — Data Destruction Mitigation**
+**T1488 — Disk Content Wipe**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1488: https://attack.mitre.org/mitigations/T1488
+- T1488: https://attack.mitre.org/techniques/T1488
 - Template issued: 2026-10-27

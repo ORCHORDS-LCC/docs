@@ -1,8 +1,8 @@
-# Input Prompt Mitigation Technique Review Record Template
+# Input Prompt Technique Review Record Template
 
 ## Subject
 
-**T1141 — Input Prompt Mitigation**
+**T1141 — Input Prompt**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1141: https://attack.mitre.org/mitigations/T1141
+- T1141: https://attack.mitre.org/techniques/T1141
 - Template issued: 2026-10-27

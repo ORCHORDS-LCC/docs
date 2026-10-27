@@ -1,11 +1,11 @@
-# Port Monitors Mitigation Technique Platform Profile
+# Port Monitors Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1013 — Port Monitors Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1013 — Port Monitors**
+- Platforms named in the source: Windows
 
-Identify and block potentially malicious software that may persist in this manner by using whitelisting tools capable of monitoring DLL loads by processes running under SYSTEM permissions.
+A port monitor can be set through the API call to set a DLL to be loaded at startup. This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot. The spoolsv.exe process also runs under SYSTEM level permissions. Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors. The Registry key contains entries for the following: * Local Port * Standard TCP/IP Port * USB Monitor * WSD Port Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1013: https://attack.mitre.org/mitigations/T1013
+- T1013: https://attack.mitre.org/techniques/T1013
 - Reviewed: 2026-10-27

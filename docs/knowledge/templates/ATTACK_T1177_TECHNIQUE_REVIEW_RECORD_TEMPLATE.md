@@ -1,8 +1,8 @@
-# LSASS Driver Mitigation Technique Review Record Template
+# LSASS Driver Technique Review Record Template
 
 ## Subject
 
-**T1177 — LSASS Driver Mitigation**
+**T1177 — LSASS Driver**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1177: https://attack.mitre.org/mitigations/T1177
+- T1177: https://attack.mitre.org/techniques/T1177
 - Template issued: 2026-10-27

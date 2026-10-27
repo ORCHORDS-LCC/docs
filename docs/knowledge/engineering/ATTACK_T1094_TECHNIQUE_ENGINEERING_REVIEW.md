@@ -1,10 +1,10 @@
-# Custom Command and Control Protocol Mitigation Technique Engineering Review
+# Custom Command and Control Protocol Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1094 — Custom Command and Control Protocol Mitigation**
+- Technique: **T1094 — Custom Command and Control Protocol**
 
-Properly configure firewalls and proxies to limit outgoing traffic to only necessary ports and through proper network gateway systems. Also ensure hosts are only provisioned to communicate over authorized interfaces. Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools.
+Adversaries may communicate using a custom command and control protocol instead of encapsulating commands/data in an existing Application Layer Protocol. Implementations include mimicking well-known protocols or developing custom protocols (including raw sockets) on top of fundamental protocols provided by TCP/IP/another standard network stack.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1094: https://attack.mitre.org/mitigations/T1094
+- T1094: https://attack.mitre.org/techniques/T1094
 - Reviewed: 2026-10-27

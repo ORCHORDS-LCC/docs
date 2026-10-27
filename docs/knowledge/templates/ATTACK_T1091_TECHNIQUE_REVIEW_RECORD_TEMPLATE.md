@@ -1,8 +1,8 @@
-# Replication Through Removable Media Mitigation Technique Review Record Template
+# Replication Through Removable Media Technique Review Record Template
 
 ## Subject
 
-**T1091 — Replication Through Removable Media Mitigation**
+**T1091 — Replication Through Removable Media**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1091: https://attack.mitre.org/mitigations/T1091
+- T1091: https://attack.mitre.org/techniques/T1091
 - Template issued: 2026-10-27

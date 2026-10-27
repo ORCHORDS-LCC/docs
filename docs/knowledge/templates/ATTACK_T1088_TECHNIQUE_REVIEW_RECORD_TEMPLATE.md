@@ -1,8 +1,8 @@
-# Bypass User Account Control Mitigation Technique Review Record Template
+# Bypass User Account Control Technique Review Record Template
 
 ## Subject
 
-**T1088 — Bypass User Account Control Mitigation**
+**T1088 — Bypass User Account Control**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1088: https://attack.mitre.org/mitigations/T1088
+- T1088: https://attack.mitre.org/techniques/T1088
 - Template issued: 2026-10-27

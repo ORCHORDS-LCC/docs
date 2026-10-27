@@ -1,8 +1,8 @@
-# Video Capture Mitigation Technique Review Record Template
+# Video Capture Technique Review Record Template
 
 ## Subject
 
-**T1125 — Video Capture Mitigation**
+**T1125 — Video Capture**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1125: https://attack.mitre.org/mitigations/T1125
+- T1125: https://attack.mitre.org/techniques/T1125
 - Template issued: 2026-10-27

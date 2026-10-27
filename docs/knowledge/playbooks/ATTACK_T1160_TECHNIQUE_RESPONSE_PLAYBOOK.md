@@ -1,11 +1,13 @@
-# Launch Daemon Mitigation Technique Response Playbook
+# Launch Daemon Technique Response Playbook
 
 ## Target technique
 
-**T1160 — Launch Daemon Mitigation**
+**T1160 — Launch Daemon**
 
+- Tactics: persistence, privilege-escalation
+- Platforms: macOS
 
-Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create new Launch Daemons.
+Per Apple’s developer documentation, when macOS and OS X boot up, launchd is run to finish system initialization. This process loads the parameters for each launch-on-demand system-level daemon from the property list (plist) files found in /System/Library/LaunchDaemons and /Library/LaunchDaemons . These LaunchDaemons have property list files which point to the executables that will be launched . Adversaries may install a new launch daemon that can be configured to execute at startup by using launchd or launchctl to load a plist into the appropriate directories . The daemon name may be disguised by using a name from a related operating system or benign software . Launch Daemons may be created with administrator privileges, but are executed under root privileges, so an adversary may also use a service to escalate privileges from administrator to root. The plist file permissions must be root:wheel, but the script or program that it points to has no such requirement. So, it is possible for poor configurations to allow an adversary to modify a current Launch Daemon’s executable and gain persistence or Privilege Escalation.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1160: https://attack.mitre.org/mitigations/T1160
+- T1160: https://attack.mitre.org/techniques/T1160
 - Reviewed: 2026-10-27

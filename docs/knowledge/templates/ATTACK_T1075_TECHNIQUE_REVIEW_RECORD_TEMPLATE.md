@@ -1,8 +1,8 @@
-# Pass the Hash Mitigation Technique Review Record Template
+# Pass the Hash Technique Review Record Template
 
 ## Subject
 
-**T1075 — Pass the Hash Mitigation**
+**T1075 — Pass the Hash**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1075: https://attack.mitre.org/mitigations/T1075
+- T1075: https://attack.mitre.org/techniques/T1075
 - Template issued: 2026-10-27

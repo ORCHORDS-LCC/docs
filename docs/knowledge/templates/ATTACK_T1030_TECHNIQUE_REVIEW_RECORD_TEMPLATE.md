@@ -1,8 +1,8 @@
-# Data Transfer Size Limits Mitigation Technique Review Record Template
+# Data Transfer Size Limits Technique Review Record Template
 
 ## Subject
 
-**T1030 — Data Transfer Size Limits Mitigation**
+**T1030 — Data Transfer Size Limits**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1030: https://attack.mitre.org/mitigations/T1030
+- T1030: https://attack.mitre.org/techniques/T1030
 - Template issued: 2026-10-27

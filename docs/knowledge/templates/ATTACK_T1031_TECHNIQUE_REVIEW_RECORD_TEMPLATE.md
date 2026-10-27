@@ -1,8 +1,8 @@
-# Modify Existing Service Mitigation Technique Review Record Template
+# Modify Existing Service Technique Review Record Template
 
 ## Subject
 
-**T1031 — Modify Existing Service Mitigation**
+**T1031 — Modify Existing Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1031: https://attack.mitre.org/mitigations/T1031
+- T1031: https://attack.mitre.org/techniques/T1031
 - Template issued: 2026-10-27

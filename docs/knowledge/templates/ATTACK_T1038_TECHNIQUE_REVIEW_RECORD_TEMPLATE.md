@@ -1,8 +1,8 @@
-# DLL Search Order Hijacking Mitigation Technique Review Record Template
+# DLL Search Order Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1038 — DLL Search Order Hijacking Mitigation**
+**T1038 — DLL Search Order Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1038: https://attack.mitre.org/mitigations/T1038
+- T1038: https://attack.mitre.org/techniques/T1038
 - Template issued: 2026-10-27

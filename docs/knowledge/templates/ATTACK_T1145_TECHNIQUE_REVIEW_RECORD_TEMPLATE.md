@@ -1,8 +1,8 @@
-# Private Keys Mitigation Technique Review Record Template
+# Private Keys Technique Review Record Template
 
 ## Subject
 
-**T1145 — Private Keys Mitigation**
+**T1145 — Private Keys**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1145: https://attack.mitre.org/mitigations/T1145
+- T1145: https://attack.mitre.org/techniques/T1145
 - Template issued: 2026-10-27

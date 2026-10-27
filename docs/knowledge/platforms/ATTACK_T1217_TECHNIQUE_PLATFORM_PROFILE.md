@@ -1,11 +1,11 @@
-# Browser Bookmark Discovery Mitigation Technique Platform Profile
+# Browser Information Discovery Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1217 — Browser Bookmark Discovery Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1217 — Browser Information Discovery**
+- Platforms named in the source: Linux, macOS, Windows
 
-File system activity is a common part of an operating system, so it is unlikely that mitigation would be appropriate for this technique. For example, mitigating accesses to browser bookmark files will likely have unintended side effects such as preventing legitimate software from operating properly. Efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identification of subsequent malicious behavior. It may still be beneficial to identify and block unnecessary system utilities or potentially malicious software by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may enumerate information about browsers to learn more about compromised environments. Data saved by browsers (such as bookmarks, accounts, and browsing history) may reveal a variety of personal information about users (e.g., banking sites, relationships/interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure. Browser information may also highlight additional targets after an adversary has access to valid credentials, especially Credentials In Files associated with logins cached by a browser. Specific storage locations vary based on platform and/or application, but browser information is typically stored in local files and databases (e.g., `%APPDATA%/Google/Chrome`).
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1217: https://attack.mitre.org/mitigations/T1217
+- T1217: https://attack.mitre.org/techniques/T1217
 - Reviewed: 2026-10-27

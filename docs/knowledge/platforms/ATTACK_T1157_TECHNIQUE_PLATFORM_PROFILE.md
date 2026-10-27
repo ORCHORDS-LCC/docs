@@ -1,11 +1,11 @@
-# Dylib Hijacking Mitigation Technique Platform Profile
+# Dylib Hijacking Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1157 — Dylib Hijacking Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1157 — Dylib Hijacking**
+- Platforms named in the source: macOS
 
-Prevent users from being able to write files to the search paths for applications, both in the folders where applications are run from and the standard dylib folders. If users can't write to these directories, then they can't intercept the search path.
+MacOS and OS X use a common method to look for required dynamic libraries (dylib) to load into a program based on search paths. Adversaries can take advantage of ambiguous paths to plant dylibs to gain privilege escalation or persistence. A common method is to see what dylibs an application uses, then plant a malicious version with the same name higher up in the search path. This typically results in the dylib being in the same folder as the application itself. If the program is configured to run at a higher privilege level than the current user, then when the dylib is loaded into the application, the dylib will also run at that elevated level. This can be used by adversaries as a privilege escalation technique.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1157: https://attack.mitre.org/mitigations/T1157
+- T1157: https://attack.mitre.org/techniques/T1157
 - Reviewed: 2026-10-27

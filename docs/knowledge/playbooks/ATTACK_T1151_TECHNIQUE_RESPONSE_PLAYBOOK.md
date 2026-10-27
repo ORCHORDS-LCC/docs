@@ -1,11 +1,13 @@
-# Space after Filename Mitigation Technique Response Playbook
+# Space after Filename Technique Response Playbook
 
 ## Target technique
 
-**T1151 — Space after Filename Mitigation**
+**T1151 — Space after Filename**
 
+- Tactics: stealth, execution
+- Platforms: Linux, macOS
 
-Prevent files from having a trailing space after the extension.
+Adversaries can hide a program's true filetype by changing the extension of a file. With certain file types (specifically this does not work with .app extensions), appending a space to the end of a filename will change how the file is processed by the operating system. For example, if there is a Mach-O executable file called evil.bin, when it is double clicked by a user, it will launch Terminal.app and execute. If this file is renamed to evil.txt, then when double clicked by a user, it will launch with the default text editing application (not executing the binary). However, if the file is renamed to "evil.txt " (note the space at the end), then when double clicked by a user, the true file type is determined by the OS and handled appropriately and the binary will be executed . Adversaries can use this feature to trick users into double clicking benign-looking files of any format and ultimately executing something malicious.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1151: https://attack.mitre.org/mitigations/T1151
+- T1151: https://attack.mitre.org/techniques/T1151
 - Reviewed: 2026-10-27

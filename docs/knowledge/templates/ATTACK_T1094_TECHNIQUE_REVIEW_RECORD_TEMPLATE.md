@@ -1,8 +1,8 @@
-# Custom Command and Control Protocol Mitigation Technique Review Record Template
+# Custom Command and Control Protocol Technique Review Record Template
 
 ## Subject
 
-**T1094 — Custom Command and Control Protocol Mitigation**
+**T1094 — Custom Command and Control Protocol**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1094: https://attack.mitre.org/mitigations/T1094
+- T1094: https://attack.mitre.org/techniques/T1094
 - Template issued: 2026-10-27

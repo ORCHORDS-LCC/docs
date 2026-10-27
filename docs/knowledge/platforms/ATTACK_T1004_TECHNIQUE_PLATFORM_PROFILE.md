@@ -1,11 +1,11 @@
-# Winlogon Helper DLL Mitigation Technique Platform Profile
+# Winlogon Helper DLL Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1004 — Winlogon Helper DLL Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1004 — Winlogon Helper DLL**
+- Platforms named in the source: Windows
 
-Limit the privileges of user accounts so that only authorized administrators can perform Winlogon helper changes. Identify and block potentially malicious software that may be executed through the Winlogon helper process by using whitelisting tools like AppLocker that are capable of auditing and/or blocking unknown DLLs.
+Winlogon.exe is a Windows component responsible for actions at logon/logoff as well as the secure attention sequence (SAS) triggered by Ctrl-Alt-Delete. Registry entries in HKLM\Software\[Wow6432Node\]Microsoft\Windows NT\CurrentVersion\Winlogon\ and HKCU\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ are used to manage additional helper programs and functionalities that support Winlogon. Malicious modifications to these Registry keys may cause Winlogon to load and execute malicious DLLs and/or executables. Specifically, the following subkeys have been known to be possibly vulnerable to abuse: * Winlogon\Notify - points to notification package DLLs that handle Winlogon events * Winlogon\Userinit - points to userinit.exe, the user initialization program executed when a user logs on * Winlogon\Shell - points to explorer.exe, the system shell executed when a user logs on Adversaries may take advantage of these features to repeatedly execute malicious code and establish Persistence.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1004: https://attack.mitre.org/mitigations/T1004
+- T1004: https://attack.mitre.org/techniques/T1004
 - Reviewed: 2026-10-27

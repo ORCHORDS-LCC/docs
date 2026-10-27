@@ -1,8 +1,8 @@
-# Data from Local System Mitigation Technique Review Record Template
+# Data from Local System Technique Review Record Template
 
 ## Subject
 
-**T1005 — Data from Local System Mitigation**
+**T1005 — Data from Local System**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1005: https://attack.mitre.org/mitigations/T1005
+- T1005: https://attack.mitre.org/techniques/T1005
 - Template issued: 2026-10-27

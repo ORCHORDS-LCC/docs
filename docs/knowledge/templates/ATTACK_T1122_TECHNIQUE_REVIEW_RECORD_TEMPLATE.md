@@ -1,8 +1,8 @@
-# Component Object Model Hijacking Mitigation Technique Review Record Template
+# Component Object Model Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1122 — Component Object Model Hijacking Mitigation**
+**T1122 — Component Object Model Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1122: https://attack.mitre.org/mitigations/T1122
+- T1122: https://attack.mitre.org/techniques/T1122
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Code Signing Mitigation Technique Review Record Template
+# Code Signing Technique Review Record Template
 
 ## Subject
 
-**T1116 — Code Signing Mitigation**
+**T1116 — Code Signing**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1116: https://attack.mitre.org/mitigations/T1116
+- T1116: https://attack.mitre.org/techniques/T1116
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# SIP and Trust Provider Hijacking Mitigation Technique Review Record Template
+# SIP and Trust Provider Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1198 — SIP and Trust Provider Hijacking Mitigation**
+**T1198 — SIP and Trust Provider Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1198: https://attack.mitre.org/mitigations/T1198
+- T1198: https://attack.mitre.org/techniques/T1198
 - Template issued: 2026-10-27

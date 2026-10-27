@@ -1,10 +1,10 @@
-# LSASS Driver Mitigation Technique Engineering Review
+# LSASS Driver Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1177 — LSASS Driver Mitigation**
+- Technique: **T1177 — LSASS Driver**
 
-On Windows 8.1 and Server 2012 R2, enable LSA Protection by setting the Registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\RunAsPPL to dword:00000001. LSA Protection ensures that LSA plug-ins and drivers are only loaded if they are digitally signed with a Microsoft signature and adhere to the Microsoft Security Development Lifecycle (SDL) process guidance. On Windows 10 and Server 2016, enable Windows Defender Credential Guard to run lsass.exe in an isolated virtualized environment without any device drivers. Ensure safe DLL search mode is enabled HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\SafeDllSearchMode to mitigate risk that lsass.exe loads a malicious code library.
+The Windows security subsystem is a set of components that manage and enforce the security policy for a computer or domain. The Local Security Authority (LSA) is the main component responsible for local security policy and user authentication. The LSA includes multiple dynamic link libraries (DLLs) associated with various other security functions, all of which run in the context of the LSA Subsystem Service (LSASS) lsass.exe process. Adversaries may target lsass.exe drivers to obtain execution and/or persistence. By either replacing or adding illegitimate drivers (e.g., DLL Side-Loading or DLL Search Order Hijacking), an adversary can achieve arbitrary code execution triggered by continuous LSA operations.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1177: https://attack.mitre.org/mitigations/T1177
+- T1177: https://attack.mitre.org/techniques/T1177
 - Reviewed: 2026-10-27

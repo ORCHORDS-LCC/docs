@@ -1,8 +1,8 @@
-# Automated Collection Mitigation Technique Review Record Template
+# Automated Collection Technique Review Record Template
 
 ## Subject
 
-**T1119 — Automated Collection Mitigation**
+**T1119 — Automated Collection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1119: https://attack.mitre.org/mitigations/T1119
+- T1119: https://attack.mitre.org/techniques/T1119
 - Template issued: 2026-10-27

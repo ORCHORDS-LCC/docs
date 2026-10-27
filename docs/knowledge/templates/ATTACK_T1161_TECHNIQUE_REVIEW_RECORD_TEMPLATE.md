@@ -1,8 +1,8 @@
-# LC_LOAD_DYLIB Addition Mitigation Technique Review Record Template
+# LC_LOAD_DYLIB Addition Technique Review Record Template
 
 ## Subject
 
-**T1161 — LC_LOAD_DYLIB Addition Mitigation**
+**T1161 — LC_LOAD_DYLIB Addition**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1161: https://attack.mitre.org/mitigations/T1161
+- T1161: https://attack.mitre.org/techniques/T1161
 - Template issued: 2026-10-27

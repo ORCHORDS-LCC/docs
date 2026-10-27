@@ -1,8 +1,8 @@
-# Hardware Additions Mitigation Technique Review Record Template
+# Hardware Additions Technique Review Record Template
 
 ## Subject
 
-**T1200 — Hardware Additions Mitigation**
+**T1200 — Hardware Additions**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1200: https://attack.mitre.org/mitigations/T1200
+- T1200: https://attack.mitre.org/techniques/T1200
 - Template issued: 2026-10-27

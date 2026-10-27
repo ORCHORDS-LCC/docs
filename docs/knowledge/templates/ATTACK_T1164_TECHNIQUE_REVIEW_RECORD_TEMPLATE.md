@@ -1,8 +1,8 @@
-# Re-opened Applications Mitigation Technique Review Record Template
+# Re-opened Applications Technique Review Record Template
 
 ## Subject
 
-**T1164 — Re-opened Applications Mitigation**
+**T1164 — Re-opened Applications**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1164: https://attack.mitre.org/mitigations/T1164
+- T1164: https://attack.mitre.org/techniques/T1164
 - Template issued: 2026-10-27

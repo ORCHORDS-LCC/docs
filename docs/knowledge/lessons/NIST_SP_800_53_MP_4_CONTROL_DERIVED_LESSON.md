@@ -1,29 +1,29 @@
-# NIST SP 800-53 MP-4 — Media Storage: Make the Control Verifiable
+# Media Storage Control Derived Lesson
 
-## Control context
+## Authoritative control statement
 
-- Family: Media Protection
-- Control: **MP-4 — Media Storage**
+**mp-4 — Media Storage**
+
+
 
 ## Reusable lesson
 
-A security or privacy control is useful only when its applicability, parameters, implementation, and evidence are explicit. Do not treat the control identifier or policy wording as proof that the underlying behavior exists.
+This control should be treated as an explicit review question when it is relevant to the system or organisation, rather than assumed to be satisfied by a policy reference or by a related control's evidence.
 
-## Apply it
+## Apply the lesson
 
-1. Read the current official control and assessment content.
-2. Resolve any organization-defined parameters for the real scope.
-3. Separate inherited, shared, and directly implemented responsibility.
-4. Verify implementation with technical, procedural, or operational evidence.
-5. Record exceptions and incomplete coverage.
-6. Reassess after material changes or evidence staleness.
+1. Define the real scope before judging the control.
+2. Inspect current technical, process, governance, or operational evidence.
+3. Separate documented intent from verified behaviour.
+4. Record partial coverage and unresolved gaps instead of converting them into a pass.
+5. Revisit the control when the catalog is revised or when the system changes materially.
 
 ## Source
 
-- NIST SP 800-53 Rev. 5.2.0 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
-- Catalog version: 5.2.0
-- Catalog last modified: 2026-05-11
+- NIST SP 800-53 Rev. 5 OSCAL catalog: https://github.com/usnistgov/oscal-content/blob/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
+- Catalog: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+- Reviewed: 2026-10-27
 
 ## Boundary
 
-This is a project-neutral lesson derived from the control topic. It does not invent a past incident and does not claim the control is required for every system.
+This lesson is derived from the stated control. It does not invent an incident, prescribe one implementation, or claim the control has been achieved.

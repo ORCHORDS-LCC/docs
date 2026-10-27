@@ -1,8 +1,8 @@
-# Regsvr32 Mitigation Technique Review Record Template
+# Regsvr32 Technique Review Record Template
 
 ## Subject
 
-**T1117 — Regsvr32 Mitigation**
+**T1117 — Regsvr32**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1117: https://attack.mitre.org/mitigations/T1117
+- T1117: https://attack.mitre.org/techniques/T1117
 - Template issued: 2026-10-27

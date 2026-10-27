@@ -1,11 +1,13 @@
-# AppleScript Mitigation Technique Response Playbook
+# AppleScript Technique Response Playbook
 
 ## Target technique
 
-**T1155 — AppleScript Mitigation**
+**T1155 — AppleScript**
 
+- Tactics: execution
+- Platforms: macOS
 
-Require that all AppleScript be signed by a trusted developer ID before being executed - this will prevent random AppleScript code from executing . This subjects AppleScript code to the same scrutiny as other .app files passing through Gatekeeper.
+MacOS and OS X applications send AppleEvent messages to each other for interprocess communications (IPC). These messages can be easily scripted with AppleScript for local or remote IPC. Osascript executes AppleScript and any other Open Scripting Architecture (OSA) language scripts. A list of OSA languages installed on a system can be found by using the osalang program. AppleEvent messages can be sent independently or as part of a script. These events can locate open windows, send keystrokes, and interact with almost any open application locally or remotely. Adversaries can use this to interact with open SSH connection, move to remote machines, and even present users with fake dialog boxes. These events cannot start applications remotely (they can start them locally though), but can interact with applications if they're already running remotely. Since this is a scripting language, it can be used to launch more common techniques as well such as a reverse shell via python . Scripts can be run from the command-line via osascript /path/to/script or osascript -e "script here".
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1155: https://attack.mitre.org/mitigations/T1155
+- T1155: https://attack.mitre.org/techniques/T1155
 - Reviewed: 2026-10-27

@@ -1,10 +1,10 @@
-# Application Window Discovery Mitigation Technique Engineering Review
+# Application Window Discovery Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1010 — Application Window Discovery Mitigation**
+- Technique: **T1010 — Application Window Discovery**
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used. For example, information about application windows could be used identify potential data to collect as well as identifying security tooling (Security Software Discovery) to evade. Adversaries typically abuse system features for this type of enumeration. For example, they may gather information through native system features such as Command and Scripting Interpreter commands and Native API functions.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1010: https://attack.mitre.org/mitigations/T1010
+- T1010: https://attack.mitre.org/techniques/T1010
 - Reviewed: 2026-10-27

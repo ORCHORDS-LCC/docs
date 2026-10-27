@@ -1,8 +1,8 @@
-# Forced Authentication Mitigation Technique Review Record Template
+# Forced Authentication Technique Review Record Template
 
 ## Subject
 
-**T1187 — Forced Authentication Mitigation**
+**T1187 — Forced Authentication**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1187: https://attack.mitre.org/mitigations/T1187
+- T1187: https://attack.mitre.org/techniques/T1187
 - Template issued: 2026-10-27

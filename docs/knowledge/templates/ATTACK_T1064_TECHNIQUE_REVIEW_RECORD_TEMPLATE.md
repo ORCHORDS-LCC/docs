@@ -1,8 +1,8 @@
-# Scripting Mitigation Technique Review Record Template
+# Scripting Technique Review Record Template
 
 ## Subject
 
-**T1064 — Scripting Mitigation**
+**T1064 — Scripting**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1064: https://attack.mitre.org/mitigations/T1064
+- T1064: https://attack.mitre.org/techniques/T1064
 - Template issued: 2026-10-27

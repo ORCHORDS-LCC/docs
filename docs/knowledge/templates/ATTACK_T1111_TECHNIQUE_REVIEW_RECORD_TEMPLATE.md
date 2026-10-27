@@ -1,8 +1,8 @@
-# Two-Factor Authentication Interception Mitigation Technique Review Record Template
+# Multi-Factor Authentication Interception Technique Review Record Template
 
 ## Subject
 
-**T1111 — Two-Factor Authentication Interception Mitigation**
+**T1111 — Multi-Factor Authentication Interception**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1111: https://attack.mitre.org/mitigations/T1111
+- T1111: https://attack.mitre.org/techniques/T1111
 - Template issued: 2026-10-27

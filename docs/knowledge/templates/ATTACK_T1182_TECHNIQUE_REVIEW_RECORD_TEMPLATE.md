@@ -1,8 +1,8 @@
-# AppCert DLLs Mitigation Technique Review Record Template
+# AppCert DLLs Technique Review Record Template
 
 ## Subject
 
-**T1182 — AppCert DLLs Mitigation**
+**T1182 — AppCert DLLs**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1182: https://attack.mitre.org/mitigations/T1182
+- T1182: https://attack.mitre.org/techniques/T1182
 - Template issued: 2026-10-27

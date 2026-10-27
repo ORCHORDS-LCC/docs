@@ -1,8 +1,8 @@
-# Accessibility Features Mitigation Technique Review Record Template
+# Accessibility Features Technique Review Record Template
 
 ## Subject
 
-**T1015 — Accessibility Features Mitigation**
+**T1015 — Accessibility Features**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1015: https://attack.mitre.org/mitigations/T1015
+- T1015: https://attack.mitre.org/techniques/T1015
 - Template issued: 2026-10-27

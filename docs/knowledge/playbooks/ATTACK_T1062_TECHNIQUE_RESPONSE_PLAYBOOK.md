@@ -1,11 +1,13 @@
-# Hypervisor Mitigation Technique Response Playbook
+# Hypervisor Technique Response Playbook
 
 ## Target technique
 
-**T1062 — Hypervisor Mitigation**
+**T1062 — Hypervisor**
 
+- Tactics: persistence
+- Platforms: Windows
 
-Prevent adversary access to privileged accounts necessary to install a hypervisor.
+**This technique has been deprecated and should no longer be used.** A type-1 hypervisor is a software layer that sits between the guest operating systems and system's hardware. It presents a virtual running environment to an operating system. An example of a common hypervisor is Xen. A type-1 hypervisor operates at a level below the operating system and could be designed with Rootkit functionality to hide its existence from the guest operating system. A malicious hypervisor of this nature could be used to persist on systems through interruption.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1062: https://attack.mitre.org/mitigations/T1062
+- T1062: https://attack.mitre.org/techniques/T1062
 - Reviewed: 2026-10-27

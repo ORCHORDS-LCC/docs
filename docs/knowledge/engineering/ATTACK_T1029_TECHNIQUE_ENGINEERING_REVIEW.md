@@ -1,10 +1,10 @@
-# Scheduled Transfer Mitigation Technique Engineering Review
+# Scheduled Transfer Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1029 — Scheduled Transfer Mitigation**
+- Technique: **T1029 — Scheduled Transfer**
 
-Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool command and control signatures over time or construct protocols in such a way to avoid detection by common defensive tools.
+Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability. When scheduled exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over C2 Channel or Exfiltration Over Alternative Protocol.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1029: https://attack.mitre.org/mitigations/T1029
+- T1029: https://attack.mitre.org/techniques/T1029
 - Reviewed: 2026-10-27

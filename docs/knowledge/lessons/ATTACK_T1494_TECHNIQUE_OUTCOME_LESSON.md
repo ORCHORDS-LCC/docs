@@ -1,10 +1,12 @@
-# T1494 Runtime Data Manipulation Mitigation Outcome Lesson
+# T1494 Runtime Data Manipulation Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1494 — Runtime Data Manipulation Mitigation**
+- Technique: **T1494 — Runtime Data Manipulation**
+- Tactics: impact
+- Platforms: Linux, macOS, Windows
 
-Identify critical business and system processes that may be targeted by adversaries and work to secure those systems against tampering. Prevent critical business and system processes from being replaced, overwritten, or reconfigured to load potentially malicious code. Identify potentially malicious software and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may modify systems in order to manipulate the data as it is accessed and displayed to an end user. By manipulating runtime data, adversaries may attempt to affect a business process, organizational understanding, and decision making. Adversaries may alter application binaries used to display data in order to cause runtime manipulations. Adversaries may also conduct Change Default File Association and Masquerading to cause a similar effect. The type of modification and the impact it will have depends on the target application and process as well as the goals and objectives of the adversary. For complex systems, an adversary would likely need special expertise and possibly access to specialized software related to the system that would typically be gained through a prolonged information gathering campaign in order to have the desired impact.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1494: https://attack.mitre.org/mitigations/T1494
+- T1494: https://attack.mitre.org/techniques/T1494
 - Reviewed: 2026-10-27
 
 ## Boundary

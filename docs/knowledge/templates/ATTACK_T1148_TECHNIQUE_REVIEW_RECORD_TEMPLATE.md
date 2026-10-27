@@ -1,8 +1,8 @@
-# HISTCONTROL Mitigation Technique Review Record Template
+# HISTCONTROL Technique Review Record Template
 
 ## Subject
 
-**T1148 — HISTCONTROL Mitigation**
+**T1148 — HISTCONTROL**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1148: https://attack.mitre.org/mitigations/T1148
+- T1148: https://attack.mitre.org/techniques/T1148
 - Template issued: 2026-10-27

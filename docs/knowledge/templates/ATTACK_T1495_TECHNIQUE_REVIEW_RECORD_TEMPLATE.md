@@ -1,8 +1,8 @@
-# Firmware Corruption Mitigation Technique Review Record Template
+# Firmware Corruption Technique Review Record Template
 
 ## Subject
 
-**T1495 — Firmware Corruption Mitigation**
+**T1495 — Firmware Corruption**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1495: https://attack.mitre.org/mitigations/T1495
+- T1495: https://attack.mitre.org/techniques/T1495
 - Template issued: 2026-10-27

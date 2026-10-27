@@ -1,8 +1,8 @@
-# Scheduled Transfer Mitigation Technique Review Record Template
+# Scheduled Transfer Technique Review Record Template
 
 ## Subject
 
-**T1029 — Scheduled Transfer Mitigation**
+**T1029 — Scheduled Transfer**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1029: https://attack.mitre.org/mitigations/T1029
+- T1029: https://attack.mitre.org/techniques/T1029
 - Template issued: 2026-10-27

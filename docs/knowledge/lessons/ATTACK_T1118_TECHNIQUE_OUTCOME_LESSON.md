@@ -1,10 +1,12 @@
-# T1118 InstallUtil Mitigation Outcome Lesson
+# T1118 InstallUtil Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1118 — InstallUtil Mitigation**
+- Technique: **T1118 — InstallUtil**
+- Tactics: stealth, execution
+- Platforms: Windows
 
-InstallUtil may not be necessary within a given environment. Use application whitelisting configured to block execution of InstallUtil.exe if it is not required for a given system or network to prevent potential misuse by adversaries.
+InstallUtil is a command-line utility that allows for installation and uninstallation of resources by executing specific installer components specified in .NET binaries. InstallUtil is located in the .NET directories on a Windows system: C:\Windows\Microsoft.NET\Framework\v<version>\InstallUtil.exe and C:\Windows\Microsoft.NET\Framework64\v<version>\InstallUtil.exe. InstallUtil.exe is digitally signed by Microsoft. Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility. InstallUtil may also be used to bypass process whitelisting through use of attributes within the binary that execute the class decorated with the attribute [System.ComponentModel.RunInstaller(true)].
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1118: https://attack.mitre.org/mitigations/T1118
+- T1118: https://attack.mitre.org/techniques/T1118
 - Reviewed: 2026-10-27
 
 ## Boundary

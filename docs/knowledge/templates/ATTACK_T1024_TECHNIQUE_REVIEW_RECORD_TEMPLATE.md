@@ -1,8 +1,8 @@
-# Custom Cryptographic Protocol Mitigation Technique Review Record Template
+# Custom Cryptographic Protocol Technique Review Record Template
 
 ## Subject
 
-**T1024 — Custom Cryptographic Protocol Mitigation**
+**T1024 — Custom Cryptographic Protocol**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1024: https://attack.mitre.org/mitigations/T1024
+- T1024: https://attack.mitre.org/techniques/T1024
 - Template issued: 2026-10-27

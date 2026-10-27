@@ -1,8 +1,8 @@
-# Kernel Modules and Extensions Mitigation Technique Review Record Template
+# Kernel Modules and Extensions Technique Review Record Template
 
 ## Subject
 
-**T1215 — Kernel Modules and Extensions Mitigation**
+**T1215 — Kernel Modules and Extensions**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1215: https://attack.mitre.org/mitigations/T1215
+- T1215: https://attack.mitre.org/techniques/T1215
 - Template issued: 2026-10-27

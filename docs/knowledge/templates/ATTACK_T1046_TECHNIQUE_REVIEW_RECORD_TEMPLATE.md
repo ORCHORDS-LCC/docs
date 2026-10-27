@@ -1,8 +1,8 @@
-# Network Service Scanning Mitigation Technique Review Record Template
+# Network Service Discovery Technique Review Record Template
 
 ## Subject
 
-**T1046 — Network Service Scanning Mitigation**
+**T1046 — Network Service Discovery**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1046: https://attack.mitre.org/mitigations/T1046
+- T1046: https://attack.mitre.org/techniques/T1046
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Hidden Users Mitigation Technique Review Record Template
+# Hidden Users Technique Review Record Template
 
 ## Subject
 
-**T1147 — Hidden Users Mitigation**
+**T1147 — Hidden Users**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1147: https://attack.mitre.org/mitigations/T1147
+- T1147: https://attack.mitre.org/techniques/T1147
 - Template issued: 2026-10-27

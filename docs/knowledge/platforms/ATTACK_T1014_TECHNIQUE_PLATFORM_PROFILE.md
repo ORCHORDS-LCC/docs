@@ -1,11 +1,11 @@
-# Rootkit Mitigation Technique Platform Profile
+# Rootkit Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1014 — Rootkit Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1014 — Rootkit**
+- Platforms named in the source: Linux, macOS, Windows
 
-Identify potentially malicious software that may contain rootkit functionality, and audit and/or block it by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components. Rootkits are programs that hide the existence of malware by intercepting/hooking and modifying operating system API calls that supply system information. Rootkits or rootkit enabling functionality may reside at the user or kernel level in the operating system or lower, to include a hypervisor or System Firmware. Rootkits have been seen for Windows, Linux, and Mac OS X systems. Rootkits that reside or modify boot sectors are known as Bootkits and specifically target the boot process of the operating system.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1014: https://attack.mitre.org/mitigations/T1014
+- T1014: https://attack.mitre.org/techniques/T1014
 - Reviewed: 2026-10-27

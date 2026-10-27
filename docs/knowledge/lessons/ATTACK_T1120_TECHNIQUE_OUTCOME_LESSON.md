@@ -1,10 +1,12 @@
-# T1120 Peripheral Device Discovery Mitigation Outcome Lesson
+# T1120 Peripheral Device Discovery Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1120 — Peripheral Device Discovery Mitigation**
+- Technique: **T1120 — Peripheral Device Discovery**
+- Tactics: discovery
+- Platforms: Linux, macOS, Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about peripheral devices, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. Peripheral devices could include auxiliary resources that support a variety of functionalities such as keyboards, printers, cameras, smart card readers, or removable storage. The information may be used to enhance their awareness of the system and network environment or may be used for further actions.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1120: https://attack.mitre.org/mitigations/T1120
+- T1120: https://attack.mitre.org/techniques/T1120
 - Reviewed: 2026-10-27
 
 ## Boundary

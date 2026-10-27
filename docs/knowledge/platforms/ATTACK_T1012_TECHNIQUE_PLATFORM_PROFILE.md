@@ -1,11 +1,11 @@
-# Query Registry Mitigation Technique Platform Profile
+# Query Registry Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1012 — Query Registry Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1012 — Query Registry**
+- Platforms named in the source: Windows
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information within the Registry, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software. The Registry contains a significant amount of information about the operating system, configuration, software, and security. Information can easily be queried using the Reg utility, though other means to access the Registry exist. Some of the information may help adversaries to further their operation within a network. Adversaries may use the information from Query Registry during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1012: https://attack.mitre.org/mitigations/T1012
+- T1012: https://attack.mitre.org/techniques/T1012
 - Reviewed: 2026-10-27

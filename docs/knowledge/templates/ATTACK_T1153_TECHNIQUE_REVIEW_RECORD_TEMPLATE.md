@@ -1,8 +1,8 @@
-# Source Mitigation Technique Review Record Template
+# Source Technique Review Record Template
 
 ## Subject
 
-**T1153 — Source Mitigation**
+**T1153 — Source**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1153: https://attack.mitre.org/mitigations/T1153
+- T1153: https://attack.mitre.org/techniques/T1153
 - Template issued: 2026-10-27

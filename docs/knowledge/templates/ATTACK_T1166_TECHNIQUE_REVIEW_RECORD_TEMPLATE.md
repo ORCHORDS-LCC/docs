@@ -1,8 +1,8 @@
-# Setuid and Setgid Mitigation Technique Review Record Template
+# Setuid and Setgid Technique Review Record Template
 
 ## Subject
 
-**T1166 — Setuid and Setgid Mitigation**
+**T1166 — Setuid and Setgid**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1166: https://attack.mitre.org/mitigations/T1166
+- T1166: https://attack.mitre.org/techniques/T1166
 - Template issued: 2026-10-27

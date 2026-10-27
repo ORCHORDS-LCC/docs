@@ -1,11 +1,13 @@
-# Control Panel Items Mitigation Technique Response Playbook
+# Control Panel Items Technique Response Playbook
 
 ## Target technique
 
-**T1196 — Control Panel Items Mitigation**
+**T1196 — Control Panel Items**
 
+- Tactics: stealth, execution
+- Platforms: Windows
 
-This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of operating system design features. For example, mitigating specific Windows API calls and/or execution of particular file extensions will likely have unintended side effects, such as preventing legitimate software (i.e., drivers and configuration tools) from operating properly. Efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identification of subsequent malicious behavior. Restrict storage and execution of Control Panel items to protected directories, such as <code>C:\Windows</code>, rather than user directories. Index known safe Control Panel items and block potentially malicious software using whitelisting tools like AppLocker that are capable of auditing and/or blocking unknown executable files. Consider fully enabling User Account Control (UAC) to impede system-wide changes from illegitimate administrators.
+Windows Control Panel items are utilities that allow users to view and adjust computer settings. Control Panel items are registered executable (.exe) or Control Panel (.cpl) files, the latter are actually renamed dynamic-link library (.dll) files that export a CPlApplet function. Control Panel items can be executed directly from the command line, programmatically via an application programming interface (API) call, or by simply double-clicking the file. For ease of use, Control Panel items typically include graphical menus available to users after being registered and loaded into the Control Panel. Adversaries can use Control Panel items as execution payloads to execute arbitrary commands. Malicious Control Panel items can be delivered via Spearphishing Attachment campaigns or executed as part of multi-stage malware. Control Panel items, specifically CPL files, may also bypass application and/or file extension whitelisting.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1196: https://attack.mitre.org/mitigations/T1196
+- T1196: https://attack.mitre.org/techniques/T1196
 - Reviewed: 2026-10-27

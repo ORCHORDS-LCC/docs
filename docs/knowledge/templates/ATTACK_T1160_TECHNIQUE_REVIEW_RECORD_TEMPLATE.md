@@ -1,8 +1,8 @@
-# Launch Daemon Mitigation Technique Review Record Template
+# Launch Daemon Technique Review Record Template
 
 ## Subject
 
-**T1160 — Launch Daemon Mitigation**
+**T1160 — Launch Daemon**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1160: https://attack.mitre.org/mitigations/T1160
+- T1160: https://attack.mitre.org/techniques/T1160
 - Template issued: 2026-10-27

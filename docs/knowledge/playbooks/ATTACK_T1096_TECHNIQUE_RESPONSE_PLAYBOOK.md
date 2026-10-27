@@ -1,11 +1,13 @@
-# NTFS File Attributes Mitigation Technique Response Playbook
+# NTFS File Attributes Technique Response Playbook
 
 ## Target technique
 
-**T1096 — NTFS File Attributes Mitigation**
+**T1096 — NTFS File Attributes**
 
+- Tactics: stealth
+- Platforms: Windows
 
-It may be difficult or inadvisable to block access to EA and ADSs. Efforts should be focused on preventing potentially malicious software from running. Identify and block potentially malicious software that may contain functionality to hide information in EA and ADSs by using whitelisting tools like AppLocker or Software Restriction Policies where appropriate. Consider adjusting read and write permissions for NTFS EA, though this should be tested to ensure routine OS operations are not impeded.
+Every New Technology File System (NTFS) formatted partition contains a Master File Table (MFT) that maintains a record for every file/directory on the partition. Within MFT entries are file attributes, such as Extended Attributes (EA) and Data [known as Alternate Data Streams (ADSs) when more than one Data attribute is present], that can be used to store arbitrary data (and even complete files). Adversaries may store malicious data or binaries in file attribute metadata instead of directly in files. This may be done to evade some defenses, such as static indicator scanning tools and anti-virus.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1096: https://attack.mitre.org/mitigations/T1096
+- T1096: https://attack.mitre.org/techniques/T1096
 - Reviewed: 2026-10-27

@@ -1,11 +1,11 @@
-# Firmware Corruption Mitigation Technique Platform Profile
+# Firmware Corruption Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1495 — Firmware Corruption Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1495 — Firmware Corruption**
+- Platforms named in the source: Linux, macOS, Network Devices, Windows
 
-Prevent adversary access to privileged accounts or access necessary to perform this technique. Check the integrity of the existing BIOS and device firmware to determine if it is vulnerable to modification. Patch the BIOS and other firmware as necessary to prevent successful use of known vulnerabilities.
+Adversaries may overwrite or corrupt the flash memory contents of system BIOS or other firmware in devices attached to a system in order to render them inoperable or unable to boot, thus denying the availability to use the devices and/or the system. Firmware is software that is loaded and executed from non-volatile memory on hardware devices in order to initialize and manage device functionality. These devices may include the motherboard, hard drive, or video cards. In general, adversaries may manipulate, overwrite, or corrupt firmware in order to deny the use of the system or devices. For example, corruption of firmware responsible for loading the operating system for network devices may render the network devices inoperable. Depending on the device, this attack may also result in Data Destruction.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1495: https://attack.mitre.org/mitigations/T1495
+- T1495: https://attack.mitre.org/techniques/T1495
 - Reviewed: 2026-10-27

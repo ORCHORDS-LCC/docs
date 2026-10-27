@@ -1,11 +1,11 @@
-# Credentials in Registry Mitigation Technique Platform Profile
+# Credentials in Registry Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1214 — Credentials in Registry Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1214 — Credentials in Registry**
+- Platforms named in the source: Windows
 
-Do not store credentials within the Registry. Proactively search for credentials within Registry keys and attempt to remediate the risk. If necessary software must store credentials, then ensure those accounts have limited permissions so they cannot be abused if obtained by an adversary.
+The Windows Registry stores configuration information that can be used by the system or other programs. Adversaries may query the Registry looking for credentials and passwords that have been stored for use by other programs or services. Sometimes these credentials are used for automatic logons. Example commands to find Registry keys related to password information: * Local Machine Hive: reg query HKLM /f password /t REG_SZ /s * Current User Hive: reg query HKCU /f password /t REG_SZ /s.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1214: https://attack.mitre.org/mitigations/T1214
+- T1214: https://attack.mitre.org/techniques/T1214
 - Reviewed: 2026-10-27

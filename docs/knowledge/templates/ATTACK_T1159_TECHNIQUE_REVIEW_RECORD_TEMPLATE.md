@@ -1,8 +1,8 @@
-# Launch Agent Mitigation Technique Review Record Template
+# Launch Agent Technique Review Record Template
 
 ## Subject
 
-**T1159 — Launch Agent Mitigation**
+**T1159 — Launch Agent**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1159: https://attack.mitre.org/mitigations/T1159
+- T1159: https://attack.mitre.org/techniques/T1159
 - Template issued: 2026-10-27

@@ -1,8 +1,8 @@
-# Resource Hijacking Mitigation Technique Review Record Template
+# Resource Hijacking Technique Review Record Template
 
 ## Subject
 
-**T1496 — Resource Hijacking Mitigation**
+**T1496 — Resource Hijacking**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1496: https://attack.mitre.org/mitigations/T1496
+- T1496: https://attack.mitre.org/techniques/T1496
 - Template issued: 2026-10-27

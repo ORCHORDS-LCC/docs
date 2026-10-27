@@ -1,10 +1,12 @@
-# T1491 Defacement Mitigation Outcome Lesson
+# T1491 Defacement Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1491 — Defacement Mitigation**
+- Technique: **T1491 — Defacement**
+- Tactics: impact
+- Platforms: Windows, IaaS, Linux, macOS, ESXi
 
-Implementing best practices for websites such as defending against Exploit Public-Facing Application . Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data. (Ready.gov IT DRP) Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery.
+Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content. Reasons for Defacement include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. Disturbing or offensive images may be used as a part of Defacement in order to cause user discomfort, or to pressure compliance with accompanying messages.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1491: https://attack.mitre.org/mitigations/T1491
+- T1491: https://attack.mitre.org/techniques/T1491
 - Reviewed: 2026-10-27
 
 ## Boundary

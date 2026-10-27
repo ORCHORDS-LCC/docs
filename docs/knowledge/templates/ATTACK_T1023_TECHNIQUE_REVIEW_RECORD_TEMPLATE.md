@@ -1,8 +1,8 @@
-# Shortcut Modification Mitigation Technique Review Record Template
+# Shortcut Modification Technique Review Record Template
 
 ## Subject
 
-**T1023 — Shortcut Modification Mitigation**
+**T1023 — Shortcut Modification**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1023: https://attack.mitre.org/mitigations/T1023
+- T1023: https://attack.mitre.org/techniques/T1023
 - Template issued: 2026-10-27

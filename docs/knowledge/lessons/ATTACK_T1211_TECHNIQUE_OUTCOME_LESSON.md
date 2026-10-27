@@ -1,10 +1,12 @@
-# T1211 Exploitation for Defense Evasion Mitigation Outcome Lesson
+# T1211 Exploitation for Stealth Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1211 — Exploitation for Defense Evasion Mitigation**
+- Technique: **T1211 — Exploitation for Stealth**
+- Tactics: stealth
+- Platforms: Linux, Windows, macOS, SaaS, IaaS
 
-Update software regularly by employing patch management for internal enterprise endpoints and servers. Develop a robust cyber threat intelligence capability to determine what types and levels of threat may use software exploits and 0-days against a particular organization. Make it difficult for adversaries to advance their operation through exploitation of undiscovered or unpatched vulnerabilities by using sandboxing, if available. Other types of virtualization and application microsegmentation may also mitigate the impact of some types of exploitation. The risks of additional exploits and weaknesses in implementation may still exist. Security applications that look for behavior used during exploitation such as Windows Defender Exploit Guard (WDEG) and the Enhanced Mitigation Experience Toolkit (EMET) can be used to mitigate some exploitation behavior. Control flow integrity checking is another way to potentially identify and stop a software exploit from occurring. Many of these protections depend on the architecture and target application binary for compatibility and may not work for software targeted for defense evasion.
+Adversaries may exploit vulnerabilities to evade detection by hiding activity, suppressing logging, or operating within trusted or unmonitored components. Adversaries may exploit a system or application vulnerability to avoid detection while maintaining access within an environment. Exploitation occurs when an adversary leverages a programming flaw to execute code in a manner that minimizes visibility or blends in with legitimate activity. Rather than directly disabling defenses, adversaries may use exploitation to circumvent monitoring and logging mechanisms. This can include abusing vulnerabilities in logging pipelines, security tools, or cloud infrastructure to evade audit trails, suppress alerts, or operate without generating telemetry. Adversaries may identify these opportunities through prior reconnaissance or by performing discovery of security controls after initial access. In some cases, vulnerabilities in SaaS or public cloud environments may be exploited to evade logging, obscure activity, or deploy infrastructure that remains hidden from standard monitoring tools.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1211: https://attack.mitre.org/mitigations/T1211
+- T1211: https://attack.mitre.org/techniques/T1211
 - Reviewed: 2026-10-27
 
 ## Boundary

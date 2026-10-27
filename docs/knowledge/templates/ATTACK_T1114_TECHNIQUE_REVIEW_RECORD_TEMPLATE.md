@@ -1,8 +1,8 @@
-# Email Collection Mitigation Technique Review Record Template
+# Email Collection Technique Review Record Template
 
 ## Subject
 
-**T1114 — Email Collection Mitigation**
+**T1114 — Email Collection**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1114: https://attack.mitre.org/mitigations/T1114
+- T1114: https://attack.mitre.org/techniques/T1114
 - Template issued: 2026-10-27

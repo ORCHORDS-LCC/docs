@@ -1,8 +1,8 @@
-# Multilayer Encryption Mitigation Technique Review Record Template
+# Multilayer Encryption Technique Review Record Template
 
 ## Subject
 
-**T1079 — Multilayer Encryption Mitigation**
+**T1079 — Multilayer Encryption**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1079: https://attack.mitre.org/mitigations/T1079
+- T1079: https://attack.mitre.org/techniques/T1079
 - Template issued: 2026-10-27

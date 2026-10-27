@@ -1,8 +1,8 @@
-# Bootkit Mitigation Technique Review Record Template
+# Bootkit Technique Review Record Template
 
 ## Subject
 
-**T1067 — Bootkit Mitigation**
+**T1067 — Bootkit**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1067: https://attack.mitre.org/mitigations/T1067
+- T1067: https://attack.mitre.org/techniques/T1067
 - Template issued: 2026-10-27

@@ -1,11 +1,13 @@
-# Re-opened Applications Mitigation Technique Response Playbook
+# Re-opened Applications Technique Response Playbook
 
 ## Target technique
 
-**T1164 — Re-opened Applications Mitigation**
+**T1164 — Re-opened Applications**
 
+- Tactics: persistence
+- Platforms: macOS
 
-Holding the Shift key while logging in prevents apps from opening automatically . This feature can be disabled entirely with the following terminal command: <code>defaults write -g ApplePersistence -bool no</code>.
+Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened when a user reboots their machine. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information as well located at ~/Library/Preferences/com.apple.loginwindow.plist and ~/Library/Preferences/ByHost/com.apple.loginwindow.* .plist. An adversary can modify one of these files directly to include a link to their malicious executable to provide a persistence mechanism each time the user reboots their machine .
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1164: https://attack.mitre.org/mitigations/T1164
+- T1164: https://attack.mitre.org/techniques/T1164
 - Reviewed: 2026-10-27

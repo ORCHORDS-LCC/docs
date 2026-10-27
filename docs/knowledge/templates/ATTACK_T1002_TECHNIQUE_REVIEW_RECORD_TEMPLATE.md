@@ -1,8 +1,8 @@
-# Data Compressed Mitigation Technique Review Record Template
+# Data Compressed Technique Review Record Template
 
 ## Subject
 
-**T1002 — Data Compressed Mitigation**
+**T1002 — Data Compressed**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1002: https://attack.mitre.org/mitigations/T1002
+- T1002: https://attack.mitre.org/techniques/T1002
 - Template issued: 2026-10-27

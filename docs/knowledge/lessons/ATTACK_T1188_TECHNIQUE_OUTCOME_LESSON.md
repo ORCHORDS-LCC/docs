@@ -1,10 +1,12 @@
-# T1188 Multi-hop Proxy Mitigation Outcome Lesson
+# T1188 Multi-hop Proxy Outcome Lesson
 
 ## Authoritative description
 
-- Technique: **T1188 — Multi-hop Proxy Mitigation**
+- Technique: **T1188 — Multi-hop Proxy**
+- Tactics: command-and-control
+- Platforms: Linux, macOS, Windows
 
-Traffic to known anonymity networks and C2 infrastructure can be blocked through the use of network black and white lists. It should be noted that this kind of blocking may be circumvented by other techniques like Domain Fronting.
+To disguise the source of malicious traffic, adversaries may chain together multiple proxies. Typically, a defender will be able to identify the last proxy traffic traversed before it enters their network; the defender may or may not be able to identify any previous proxies before the last-hop proxy. This technique makes identifying the original source of the malicious traffic even more difficult by requiring the defender to trace malicious traffic through several proxies to identify its source.
 
 ## Reusable lesson
 
@@ -21,7 +23,7 @@ This technique should be treated as an explicit review question when it is relev
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1188: https://attack.mitre.org/mitigations/T1188
+- T1188: https://attack.mitre.org/techniques/T1188
 - Reviewed: 2026-10-27
 
 ## Boundary

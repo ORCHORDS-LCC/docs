@@ -31,8 +31,8 @@ SOURCE_PATH_RE = re.compile(r"(?i)(?:^|[\\/])(?:knowledge_base|\.fleet)[\\/]")
 # home directory and must not be reported as one.
 ABSOLUTE_PRIVATE_PATH_RE = re.compile(
     r"(?i)(?:"
-    r"(?<![A-Za-z0-9_./~-])(?:/home|/Users)/[^/\s]+/|"
-    r"(?<=://)(?:/home|/Users)/[^/\s]+/|"
+    r"(?<![A-Za-z0-9_./~-])(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/|"
+    r"(?<=://)(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/|"
     r"/_work/[^/\s]+/[^/\s]+|"
     r"/mnt/data/[^\s)]+|"
     r"[A-Z]:\\Users\\[^\\\s]+\\"

@@ -1,11 +1,13 @@
-# File and Directory Discovery Mitigation Technique Response Playbook
+# File and Directory Discovery Technique Response Playbook
 
 ## Target technique
 
-**T1083 — File and Directory Discovery Mitigation**
+**T1083 — File and Directory Discovery**
 
+- Tactics: discovery
+- Platforms: ESXi, Linux, macOS, Network Devices, Windows
 
-File system activity is a common part of an operating system, so it is unlikely that mitigation would be appropriate for this technique. It may still be beneficial to identify and block unnecessary system utilities or potentially malicious software by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from File and Directory Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions. Many command shell utilities can be used to obtain this information. Examples include dir, tree, ls, find, and locate. Custom tools may also be used to gather file and directory information and interact with the Native API. Adversaries may also leverage a Network Device CLI on network devices to gather file and directory information (e.g. dir, show flash, and/or nvram). Some files and directories may require elevated or specific user permissions to access.
 
 ## Preconditions
 
@@ -36,5 +38,5 @@ Scope, owner, source version, telemetry inspected, tests performed, findings, ex
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1083: https://attack.mitre.org/mitigations/T1083
+- T1083: https://attack.mitre.org/techniques/T1083
 - Reviewed: 2026-10-27

@@ -1,8 +1,8 @@
-# AppInit DLLs Mitigation Technique Review Record Template
+# AppInit DLLs Technique Review Record Template
 
 ## Subject
 
-**T1103 — AppInit DLLs Mitigation**
+**T1103 — AppInit DLLs**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1103: https://attack.mitre.org/mitigations/T1103
+- T1103: https://attack.mitre.org/techniques/T1103
 - Template issued: 2026-10-27

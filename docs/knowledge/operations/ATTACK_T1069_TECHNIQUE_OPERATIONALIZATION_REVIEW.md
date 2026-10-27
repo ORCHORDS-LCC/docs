@@ -1,10 +1,10 @@
-# Permission Groups Discovery Mitigation Technique Operationalization Review
+# Permission Groups Discovery Technique Operationalization Review
 
 ## Reference
 
-- Technique: **T1069 — Permission Groups Discovery Mitigation**
+- Technique: **T1069 — Permission Groups Discovery**
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about groups and permissions, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may attempt to discover group and permission settings. This information can help adversaries determine which user accounts and groups are available, the membership of users in particular groups, and which users and groups have elevated permissions. Adversaries may attempt to discover group permission settings in many different ways. This data may provide the adversary with information about the compromised environment that can be used in follow-on activity and targeting.
 
 ## Operationalization review
 
@@ -29,5 +29,5 @@ An operationalization review describes the runbook and the evidence around it. I
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1069: https://attack.mitre.org/mitigations/T1069
+- T1069: https://attack.mitre.org/techniques/T1069
 - Reviewed: 2026-10-27

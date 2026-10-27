@@ -1,8 +1,8 @@
-# Windows Management Instrumentation Event Subscription Mitigation Technique Review Record Template
+# Windows Management Instrumentation Event Subscription Technique Review Record Template
 
 ## Subject
 
-**T1084 — Windows Management Instrumentation Event Subscription Mitigation**
+**T1084 — Windows Management Instrumentation Event Subscription**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1084: https://attack.mitre.org/mitigations/T1084
+- T1084: https://attack.mitre.org/techniques/T1084
 - Template issued: 2026-10-27

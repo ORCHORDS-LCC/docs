@@ -1,8 +1,8 @@
-# Path Interception Mitigation Technique Review Record Template
+# Path Interception Technique Review Record Template
 
 ## Subject
 
-**T1034 — Path Interception Mitigation**
+**T1034 — Path Interception**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1034: https://attack.mitre.org/mitigations/T1034
+- T1034: https://attack.mitre.org/techniques/T1034
 - Template issued: 2026-10-27

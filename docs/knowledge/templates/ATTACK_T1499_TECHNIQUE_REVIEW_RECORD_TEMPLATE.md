@@ -1,8 +1,8 @@
-# Endpoint Denial of Service Mitigation Technique Review Record Template
+# Endpoint Denial of Service Technique Review Record Template
 
 ## Subject
 
-**T1499 — Endpoint Denial of Service Mitigation**
+**T1499 — Endpoint Denial of Service**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1499: https://attack.mitre.org/mitigations/T1499
+- T1499: https://attack.mitre.org/techniques/T1499
 - Template issued: 2026-10-27

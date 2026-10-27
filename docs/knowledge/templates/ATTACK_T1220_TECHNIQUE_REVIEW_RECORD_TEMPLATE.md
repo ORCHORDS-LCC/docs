@@ -1,8 +1,8 @@
-# XSL Script Processing Mitigation Technique Review Record Template
+# XSL Script Processing Technique Review Record Template
 
 ## Subject
 
-**T1220 — XSL Script Processing Mitigation**
+**T1220 — XSL Script Processing**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1220: https://attack.mitre.org/mitigations/T1220
+- T1220: https://attack.mitre.org/techniques/T1220
 - Template issued: 2026-10-27

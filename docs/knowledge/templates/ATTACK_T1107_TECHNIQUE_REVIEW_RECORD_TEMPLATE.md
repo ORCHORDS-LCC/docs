@@ -1,8 +1,8 @@
-# File Deletion Mitigation Technique Review Record Template
+# File Deletion Technique Review Record Template
 
 ## Subject
 
-**T1107 — File Deletion Mitigation**
+**T1107 — File Deletion**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1107: https://attack.mitre.org/mitigations/T1107
+- T1107: https://attack.mitre.org/techniques/T1107
 - Template issued: 2026-10-27

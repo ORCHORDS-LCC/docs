@@ -1,8 +1,8 @@
-# NTFS File Attributes Mitigation Technique Review Record Template
+# NTFS File Attributes Technique Review Record Template
 
 ## Subject
 
-**T1096 — NTFS File Attributes Mitigation**
+**T1096 — NTFS File Attributes**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1096: https://attack.mitre.org/mitigations/T1096
+- T1096: https://attack.mitre.org/techniques/T1096
 - Template issued: 2026-10-27

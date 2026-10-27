@@ -1,8 +1,8 @@
-# Exploit Public-Facing Application Mitigation Technique Review Record Template
+# Exploit Public-Facing Application Technique Review Record Template
 
 ## Subject
 
-**T1190 — Exploit Public-Facing Application Mitigation**
+**T1190 — Exploit Public-Facing Application**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1190: https://attack.mitre.org/mitigations/T1190
+- T1190: https://attack.mitre.org/techniques/T1190
 - Template issued: 2026-10-27

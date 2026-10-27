@@ -1,8 +1,8 @@
-# Query Registry Mitigation Technique Review Record Template
+# Query Registry Technique Review Record Template
 
 ## Subject
 
-**T1012 — Query Registry Mitigation**
+**T1012 — Query Registry**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1012: https://attack.mitre.org/mitigations/T1012
+- T1012: https://attack.mitre.org/techniques/T1012
 - Template issued: 2026-10-27

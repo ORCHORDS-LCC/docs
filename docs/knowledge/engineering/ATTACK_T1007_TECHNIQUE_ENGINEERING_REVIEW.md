@@ -1,10 +1,10 @@
-# System Service Discovery Mitigation Technique Engineering Review
+# System Service Discovery Technique Engineering Review
 
 ## Reference
 
-- Technique: **T1007 — System Service Discovery Mitigation**
+- Technique: **T1007 — System Service Discovery**
 
-Identify unnecessary system utilities or potentially malicious software that may be used to acquire information about services, and audit and/or block them by using whitelisting tools, like AppLocker, or Software Restriction Policies where appropriate.
+Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as sc query, tasklist /svc, systemctl --type=service, and net start. Adversaries may also gather information about schedule tasks via commands such as `schtasks` on Windows or `crontab -l` on Linux and macOS. Adversaries may use the information from System Service Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
 
 ## Engineering review
 
@@ -29,5 +29,5 @@ An engineering review describes what the design and the implementation evidence 
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1007: https://attack.mitre.org/mitigations/T1007
+- T1007: https://attack.mitre.org/techniques/T1007
 - Reviewed: 2026-10-27

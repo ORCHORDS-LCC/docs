@@ -1,8 +1,8 @@
-# Indirect Command Execution Mitigation Technique Review Record Template
+# Indirect Command Execution Technique Review Record Template
 
 ## Subject
 
-**T1202 — Indirect Command Execution Mitigation**
+**T1202 — Indirect Command Execution**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1202: https://attack.mitre.org/mitigations/T1202
+- T1202: https://attack.mitre.org/techniques/T1202
 - Template issued: 2026-10-27

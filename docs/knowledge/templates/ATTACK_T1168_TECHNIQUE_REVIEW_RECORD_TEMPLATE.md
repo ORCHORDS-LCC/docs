@@ -1,8 +1,8 @@
-# Local Job Scheduling Mitigation Technique Review Record Template
+# Local Job Scheduling Technique Review Record Template
 
 ## Subject
 
-**T1168 — Local Job Scheduling Mitigation**
+**T1168 — Local Job Scheduling**
 
 ## Record fields
 
@@ -35,5 +35,5 @@
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1168: https://attack.mitre.org/mitigations/T1168
+- T1168: https://attack.mitre.org/techniques/T1168
 - Template issued: 2026-10-27

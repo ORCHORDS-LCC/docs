@@ -288,7 +288,15 @@ class ForbiddenReferenceTests(unittest.TestCase):
             "admin/users/add/user/do/",
             "/data/system/users/0/settings_secure.xml",
             "the /users/ directory in the image",
+            "the /users/2/1 page",
         ):
+            with self.subTest(text=text):
+                self.assertIsNone(self.pattern.search(text))
+
+    def test_does_not_match_an_empty_string(self) -> None:
+        # A rule that can match nothing at all reports every document as
+        # a violation, so the rule must never match empty text.
+        for text in ("", "plain prose", "a sentence with no path in it."):
             with self.subTest(text=text):
                 self.assertIsNone(self.pattern.search(text))
 

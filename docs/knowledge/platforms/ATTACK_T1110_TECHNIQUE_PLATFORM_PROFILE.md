@@ -1,11 +1,11 @@
-# Brute Force Mitigation Technique Platform Profile
+# Brute Force Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1110 — Brute Force Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1110 — Brute Force**
+- Platforms named in the source: Containers, ESXi, IaaS, Identity Provider, Linux, macOS, Network Devices, Office Suite, SaaS, Windows
 
-Set account lockout policies after a certain number of failed login attempts to prevent passwords from being guessed. Too strict a policy can create a denial of service condition and render environments un-usable, with all accounts being locked-out permanently. Use multifactor authentication. Follow best practices for mitigating access to Valid Accounts Refer to NIST guidelines when creating passwords. Where possible, also enable multi factor authentication on external facing services.
+Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained. Without knowledge of the password for an account or set of accounts, an adversary may systematically guess the password using a repetitive or iterative mechanism. Brute forcing passwords can take place via interaction with a service that will check the validity of those credentials or offline against previously acquired credential data, such as password hashes. Brute forcing credentials may take place at various points during a breach. For example, adversaries may attempt to brute force access to Valid Accounts within a victim environment leveraging knowledge gathered from other post-compromise behaviors such as OS Credential Dumping, Account Discovery, or Password Policy Discovery. Adversaries may also combine brute forcing activity with behaviors such as External Remote Services as part of Initial Access. If an adversary guesses the correct password but fails to login to a compromised account due to location-based conditional access policies, they may change their infrastructure until they match the victim’s location and therefore bypass those policies.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1110: https://attack.mitre.org/mitigations/T1110
+- T1110: https://attack.mitre.org/techniques/T1110
 - Reviewed: 2026-10-27

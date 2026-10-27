@@ -1,11 +1,11 @@
-# Authentication Package Mitigation Technique Platform Profile
+# Authentication Package Technique Platform Profile
 
 ## Reference
 
-- Technique: **T1131 — Authentication Package Mitigation**
-- Platforms named in the source: not stated
+- Technique: **T1131 — Authentication Package**
+- Platforms named in the source: Windows
 
-Windows 8.1, Windows Server 2012 R2, and later versions, may make LSA run as a Protected Process Light (PPL) by setting the Registry key <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\RunAsPPL</code>, which requires all DLLs loaded by LSA to be signed by Microsoft.
+Windows Authentication Package DLLs are loaded by the Local Security Authority (LSA) process at system start. They provide support for multiple logon processes and multiple security protocols to the operating system. Adversaries can use the autostart mechanism provided by LSA Authentication Packages for persistence by placing a reference to a binary in the Windows Registry location HKLM\SYSTEM\CurrentControlSet\Control\Lsa\ with the key value of "Authentication Packages"=<target binary>. The binary will then be executed by the system when the authentication packages are loaded.
 
 ## Platform profile
 
@@ -29,5 +29,5 @@ A technique entry describes a class of abuse across platforms. The platform-spec
 ## Source
 
 - MITRE ATT&CK: https://attack.mitre.org/
-- T1131: https://attack.mitre.org/mitigations/T1131
+- T1131: https://attack.mitre.org/techniques/T1131
 - Reviewed: 2026-10-27
