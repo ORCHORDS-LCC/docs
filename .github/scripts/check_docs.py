@@ -46,13 +46,24 @@ FORBIDDEN_PATTERNS = {
     "private repository shorthand": re.compile(r"\b(?:ORCHORDS|sapperskills)/(?!docs\b)[A-Za-z0-9_.-]+\b", re.I),
     "private knowledge-base path": re.compile(r"(?:^|[\\/])knowledge_base[\\/]", re.I | re.M),
     "private fleet path": re.compile(r"(?:^|[\\/])\.fleet[\\/]", re.I | re.M),
+    # The POSIX home directory names are literally "/home" and "/Users".
+    # A lowercase "/users/..." is a URL path segment, so the POSIX
+    # branches are case-sensitive; the Windows form is not.
     "absolute user-home path": re.compile(
-        r"(?:(?<![A-Za-z0-9_./~-])(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/"
-        r"|(?<=://)(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/"
-        r"|[A-Z]:\\Users\\[^\\\s]+\\)",
-        re.I,
+        r"(?:(?<![A-Za-z0-9_./~-])/home/[^/\s]+/"
+        r"|(?<![A-Za-z0-9_./~-])/Users/[^/\s]+/"
+        r"|(?<=://)/home/[^/\s]+/"
+        r"|(?<=://)/Users/[^/\s]+/"
+        r"|[A-Z]:\\Users\\[^\\\s]+\\)"
     ),
     "conversation sandbox path": re.compile(r"/mnt/data/[^\s)]+", re.I),
+}
+
+# The private terms are identifiers, so each must stand as a whole word.
+# A substring match would read "SecretMode" as the identifier "retmo".
+PRIVATE_FORBIDDEN_PATTERNS = {
+    term: re.compile(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", re.I)
+    for term in PRIVATE_FORBIDDEN
 }
 
 SECRET_PATTERNS = {
@@ -378,8 +389,8 @@ def main() -> int:
             if line.rstrip() != line:
                 errors.append(f"{rel}:{no}: trailing whitespace")
 
-        for term in PRIVATE_FORBIDDEN:
-            if term in lower:
+        for term, pattern in PRIVATE_FORBIDDEN_PATTERNS.items():
+            if pattern.search(text):
                 errors.append(f"{rel}: forbidden project/private term: {term}")
         for label, pattern in FORBIDDEN_PATTERNS.items():
             if pattern.search(text):

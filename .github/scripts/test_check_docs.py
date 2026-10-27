@@ -300,6 +300,49 @@ class ForbiddenReferenceTests(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertIsNone(self.pattern.search(text))
 
+    def test_ignores_a_lowercase_url_path_segment(self) -> None:
+        # The POSIX home directory names are literally "/home" and
+        # "/Users". A lowercase "/users/..." is a URL path segment.
+        for text in (
+            "via the /users/admin/permissions.php URI",
+            "run arbitrary code via post ID to /users/delete/2",
+            "the /users/2/1 page",
+        ):
+            with self.subTest(text=text):
+                self.assertIsNone(self.pattern.search(text))
+
+    def test_ignores_a_relative_workspace_segment(self) -> None:
+        # The rule targets an absolute workspace path. A relative
+        # segment, as the runner uses for its temporary directory, is
+        # not one.
+        for text in ("`_work/_temp/`", "the _work/ subdirectory"):
+            with self.subTest(text=text):
+                self.assertIsNone(self.pattern.search(text))
+
+
+class PrivateTermTests(unittest.TestCase):
+    """A private identifier must be read as a whole word.
+
+    A substring match would read the product name "SecretMode" as the
+    identifier "retmo".
+    """
+
+    def test_ignores_a_term_inside_a_longer_word(self) -> None:
+        patterns = check_docs.PRIVATE_FORBIDDEN_PATTERNS
+        for text in ("SecretMode in Samsung Internet", "a pretreatment step"):
+            with self.subTest(text=text):
+                for term, pattern in patterns.items():
+                    self.assertIsNone(
+                        pattern.search(text),
+                        f"{term!r} matched inside {text!r}",
+                    )
+
+    def test_rejects_a_private_identifier_as_a_whole_word(self) -> None:
+        patterns = check_docs.PRIVATE_FORBIDDEN_PATTERNS
+        for term, pattern in patterns.items():
+            with self.subTest(term=term):
+                self.assertIsNotNone(pattern.search(term.upper()))
+
 
 if __name__ == "__main__":
     unittest.main()

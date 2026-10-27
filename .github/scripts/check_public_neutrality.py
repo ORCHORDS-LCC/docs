@@ -26,16 +26,18 @@ PRIVATE_REPO_RE = re.compile(
     r")"
 )
 SOURCE_PATH_RE = re.compile(r"(?i)(?:^|[\\/])(?:knowledge_base|\.fleet)[\\/]")
-# A home directory must start the path it appears in. A URL path segment
-# that happens to be named "users", as in "admin/users/add/", is not a
-# home directory and must not be reported as one.
+# A home directory must start the path it appears in, and the POSIX home
+# directory names are literally "/home" and "/Users". A lowercase
+# "/users/..." is a URL path segment, not a home directory.
 ABSOLUTE_PRIVATE_PATH_RE = re.compile(
-    r"(?i)(?:"
-    r"(?<![A-Za-z0-9_./~-])(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/|"
-    r"(?<=://)(?:/home|/Users)/(?=[^/\s]*[A-Za-z])[^/\s]+/|"
-    r"/_work/[^/\s]+/[^/\s]+|"
-    r"/mnt/data/[^\s)]+|"
-    r"[A-Z]:\\Users\\[^\\\s]+\\"
+    r"(?:"
+    r"(?<![A-Za-z0-9_./~-])/home/[^/\s]+/|"
+    r"(?<![A-Za-z0-9_./~-])/Users/[^/\s]+/|"
+    r"(?<=://)/home/[^/\s]+/|"
+    r"(?<=://)/Users/[^/\s]+/|"
+    r"(?<![A-Za-z0-9_./~-])/_work/[^/\s]+/[^/\s]+|"
+    r"(?i:/mnt/data/[^\s)]+)|"
+    r"(?i:[A-Z]:\\Users\\[^\\\s]+\\)"
     r")"
 )
 
