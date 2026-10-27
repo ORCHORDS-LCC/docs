@@ -1,10 +1,10 @@
-# Adobe Commerce and Magento Improper Input Validation Vulnerability Emergency Patch Playbook
+# Adobe Commerce and Magento Improper Input Validation Vulnerability Emergency Patch Playbook
 
 ## Reference
 
 - Vulnerability: **CVE-2025-54236**
 - Vendor project: Adobe
-- Product: Commerce and Magento
+- Product: Commerce and Magento
 - Date added: 2025-10-24
 - Remediation due: 2025-11-14
 
