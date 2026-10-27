@@ -3,9 +3,9 @@ title: "Platform Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-10-27"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2027-01-25"
 ---
 
 # Platform Documentation
@@ -199,3 +199,13 @@ One hundred catalog-verified product source profiles selected after an obvious-n
 - [Google Cloud Mainframe Assessment Tool Platform Source Profile](GOOGLE_CLOUD_MAINFRAME_ASSESSMENT_TOOL_PLATFORM_SOURCE_PROFILE.md)
 - [Google Cloud Mainframe Connector Platform Source Profile](GOOGLE_CLOUD_MAINFRAME_CONNECTOR_PLATFORM_SOURCE_PROFILE.md)
 - [Google Cloud Migrate to Containers Platform Source Profile](GOOGLE_CLOUD_MIGRATE_TO_CONTAINERS_PLATFORM_SOURCE_PROFILE.md)
+
+## 2026-10-27 reusable platform security guidance
+
+Platform and infrastructure security guidance covering API, cloud posture, containers, infrastructure-as-code, and zero trust.
+
+- [API Security](API_SECURITY.md)
+- [Cloud Security Posture Management](CLOUD_SECURITY_POSTURE_MANAGEMENT.md)
+- [Container Security](CONTAINER_SECURITY.md)
+- [Infrastructure as Code Security](INFRASTRUCTURE_AS_CODE_SECURITY.md)
+- [Zero Trust Cloud Implementation](ZERO_TRUST_CLOUD_IMPLEMENTATION.md)

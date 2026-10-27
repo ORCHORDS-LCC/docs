@@ -3,9 +3,9 @@ title: "Data and AI Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-10-27"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2027-01-25"
 ---
 
 # Data and AI Documentation
@@ -314,3 +314,9 @@ Balanced SP 800-53 control applicability profiles for data and AI systems, added
 - [NIST SP 800-53 PT-2.2 Automation Data and AI Control Applicability Profile](NIST_SP_800_53_PT_2_2_DATA_AI_CONTROL_APPLICABILITY_PROFILE.md)
 - [NIST SP 800-53 RA-3 Risk Assessment Data and AI Control Applicability Profile](NIST_SP_800_53_RA_3_DATA_AI_CONTROL_APPLICABILITY_PROFILE.md)
 - [NIST SP 800-53 SA-3.1 Manage Preproduction Environment Data and AI Control Applicability Profile](NIST_SP_800_53_SA_3_1_DATA_AI_CONTROL_APPLICABILITY_PROFILE.md)
+
+## 2026-10-27 reusable data and AI governance guidance
+
+Data governance, AI ethics, and responsible-AI operating guidance.
+
+- [Data Governance and AI Ethics](DATA_GOVERNANCE_AND_AI_ETHICS.md)

@@ -3,9 +3,9 @@ title: "Engineering Lessons"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-10-27"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2027-01-25"
 ---
 
 # Engineering Lessons
@@ -547,3 +547,9 @@ Reusable lessons derived from current NIST SP 800-53 control topics without inve
 - [NIST SP 800-53 SI-4.2 Automated Tools and Mechanisms for Real-time Analysis Control-Derived Lesson](NIST_SP_800_53_SI_4_2_CONTROL_DERIVED_LESSON.md)
 - [NIST SP 800-53 SR-6 Supplier Assessments and Reviews Control-Derived Lesson](NIST_SP_800_53_SR_6_CONTROL_DERIVED_LESSON.md)
 - [NIST SP 800-53 AC-3.3 Mandatory Access Control Control-Derived Lesson](NIST_SP_800_53_AC_3_3_CONTROL_DERIVED_LESSON.md)
+
+## 2026-10-27 reusable lessons framework guidance
+
+A framework for capturing, analysing, and disseminating lessons from security events.
+
+- [Security Lessons Learned Framework](SECURITY_LESSONS_LEARNED_FRAMEWORK.md)

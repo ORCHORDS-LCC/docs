@@ -3,9 +3,9 @@ title: "Documentation Archive"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-10-27"
 review-cycle: "180 days"
-next-review: "2027-02-22"
+next-review: "2027-04-25"
 ---
 
 # Documentation Archive
@@ -116,3 +116,9 @@ These records are historical pointers only. The RFC Editor index remains authori
 - [RFC 98 Historical Index Record](RFC_0098_HISTORICAL_INDEX_RECORD.md)
 - [RFC 99 Historical Index Record](RFC_0099_HISTORICAL_INDEX_RECORD.md)
 - [RFC 100 Historical Index Record](RFC_0100_HISTORICAL_INDEX_RECORD.md)
+
+## 2026-10-27 knowledge base integration record
+
+Record of the knowledge base integration performed on 2026-10-27, cataloguing the tracked file counts per family.
+
+- [Knowledge Base Integration Report](KNOWLEDGE_BASE_INTEGRATION_REPORT.md)

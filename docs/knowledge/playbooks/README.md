@@ -3,9 +3,9 @@ title: "Playbooks"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-09-05"
+last-reviewed: "2026-10-27"
 review-cycle: "90 days"
-next-review: "2026-12-04"
+next-review: "2027-01-25"
 ---
 
 # Playbooks
@@ -870,3 +870,9 @@ Repeatable assessment playbooks selected across SP 800-53 control families to ex
 - [NIST SP 800-53 PL-10 Baseline Selection Control Verification Playbook](NIST_SP_800_53_PL_10_CONTROL_VERIFICATION_PLAYBOOK.md)
 - [NIST SP 800-53 PM-8 Critical Infrastructure Plan Control Verification Playbook](NIST_SP_800_53_PM_8_CONTROL_VERIFICATION_PLAYBOOK.md)
 - [NIST SP 800-53 PS-4.2 Automated Actions Control Verification Playbook](NIST_SP_800_53_PS_4_2_CONTROL_VERIFICATION_PLAYBOOK.md)
+
+## 2026-10-27 reusable incident response guidance
+
+Step-by-step procedures for responding to common security incidents.
+
+- [Incident Response Playbook](INCIDENT_RESPONSE_PLAYBOOK.md)

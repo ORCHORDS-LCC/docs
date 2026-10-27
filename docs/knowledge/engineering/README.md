@@ -3,9 +3,9 @@ title: "Engineering Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-10-27"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2027-01-25"
 ---
 
 # Engineering Documentation
@@ -434,3 +434,9 @@ This family contains reusable software-engineering knowledge, including architec
 - [OWASP Serverless FaaS Security Engineering Implementation Review](OWASP_SERVERLESS_FAAS_SECURITY_ENGINEERING_IMPLEMENTATION_REVIEW.md)
 - [OWASP Session Management Engineering Implementation Review](OWASP_SESSION_MANAGEMENT_ENGINEERING_IMPLEMENTATION_REVIEW.md)
 - [OWASP Software Supply Chain Security Engineering Implementation Review](OWASP_SOFTWARE_SUPPLY_CHAIN_SECURITY_ENGINEERING_IMPLEMENTATION_REVIEW.md)
+
+## 2026-10-27 reusable secure development lifecycle guidance
+
+Security practice integrated into each phase of the software development lifecycle.
+
+- [Secure Software Development Lifecycle (SSDLC)](SECURE_SOFTWARE_DEVELOPMENT_LIFECYCLE.md)
