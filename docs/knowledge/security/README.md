@@ -637,6 +637,14 @@ Verification profiles for a balanced set of current SP 800-53 controls and enhan
 ## 2026-10-27 security assurance and vulnerability guidance
 
 Security assurance, vulnerability, and control-verification guidance.
+## 2026-10-29 OWASP API Security Top 10, ASVS 5.0, MASVS and the cheat sheet series (Batch 143)
+
+- [OWASP API Security Top 10 (2023) — Detailed Risk Categories](engineering/owasp-api-security-top-10-2023-detailed-risks.md)
+- [OWASP API Security Top 10 (2023) — Overview and Applicability](engineering/owasp-api-security-top-10-2023-overview.md)
+- [OWASP ASVS 5.0 — Application Security Verification Standard](engineering/owasp-asvs-5-0-application-security-verification-standard.md)
+- [OWASP Cheat Sheet Series — Index and Applicability](engineering/owasp-cheat-sheet-series-index.md)
+- [OWASP MASVS — Mobile Application Security Verification Standard](engineering/owasp-masvs-mobile-application-security-verification-standard.md)
+
 
 ### Assurance profiles for the attack-pattern classes in the catalog
 

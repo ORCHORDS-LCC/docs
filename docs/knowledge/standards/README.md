@@ -2405,6 +2405,29 @@ Standards-conformance and governance guidance for published frameworks and catal
 - [ISO/IEC 42001:2023 — AI Management System Overview](compliance/iso-42001-ai-management-system-overview.md)
 - [CIS Critical Security Controls v8 — Safeguards and Implementation Groups Overview](compliance/cis-controls-v8-overview.md)
 
+## 2026-10-28 ISO/IEC 27000-family supplements, NIST SP 800-171 Rev. 3, SP 800-53 Rev. 5 and CIS safeguard guidance (Batch 146)
+
+- [CIS Controls v8.1 — Current Version Overview](compliance/cis-controls-v8-1-overview.md)
+- [CIS Controls v8 — Safeguard Sets and Implementation Guidance](compliance/cis-controls-v8-safeguard-sets.md)
+- [CIS Microsoft Baselines — Security Configuration Guidelines](compliance/cis-microsoft-baselines-overview.md)
+- [ISO/IEC 24760-1:2019 — Identity Management Terms and Concepts](compliance/iso-iec-24760-1-identity-management-terms.md)
+- [ISO/IEC 24760-2:2015 — Identity Management Implementation Guidelines](compliance/iso-iec-24760-2-identity-management-implementation.md)
+- [ISO/IEC 24760-3:2016 — Identity Management Conformance Guidance](compliance/iso-iec-24760-3-identity-management-conformance.md)
+- [ISO/IEC 27000 Family — Overview and Structure](compliance/iso-iec-27000-family-overview.md)
+- [ISO/IEC 27014:2020 — Information Security Governance Guidance](compliance/iso-iec-27014-information-security-governance.md)
+- [ISO/IEC 27017 — Cloud Security Controls](compliance/iso-iec-27017-cloud-security-controls.md)
+- [ISO/IEC 27018 — Cloud Privacy Controls](compliance/iso-iec-27018-cloud-privacy-controls.md)
+- [ISO/IEC 27035 — Information Security Incident Management Overview](compliance/iso-iec-27035-incident-management-overview.md)
+- [ISO/IEC 27036 — Information Security for Cloud Services](compliance/iso-iec-27036-cloud-service-security.md)
+- [ISO/IEC 27037:2012 — Digital Evidence Guidelines](compliance/iso-iec-27037-digital-evidence-guidelines-overview.md)
+- [ISO/IEC 27039:2015 — IDPS Deployment Guidelines](compliance/iso-iec-27039-idps-guidelines-overview.md)
+- [ISO/IEC 27040 — Storage Security Guidelines](compliance/iso-iec-27040-storage-security.md)
+- [ISO/IEC/IEEE 29119-1:2022 — Software Testing General Concepts](compliance/iso-iec-ieee-29119-1-software-testing-general-concepts.md)
+- [NIST SP 800-171 Rev. 2 — Protecting CUI (Historical Reference)](compliance/nist-sp-800-171-rev-2-historical-reference.md)
+- [NIST SP 800-171 Rev. 3 — Protecting Controlled Unclassified Information](compliance/nist-sp-800-171-rev-3-protecting-cui.md)
+- [NIST SP 800-53 Rev. 5 — Release Announcement and Significance](compliance/nist-sp-800-53-rev-5-release-announcement.md)
+- [NIST SP 800-53 Rev. 5 — Security and Privacy Controls](compliance/nist-sp-800-53-rev-5-security-and-privacy-controls.md)
+
 ### Standards-track positions, requirements, and conformance considerations
 
 10000 documents.
