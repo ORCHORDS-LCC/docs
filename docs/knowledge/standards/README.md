@@ -12432,3 +12432,13 @@ Standards-conformance and governance guidance for published frameworks and catal
 - [10004](RFC_10004_STANDARDS_TRACK_PROFILE.md)
 - [10005](RFC_10005_STANDARDS_TRACK_PROFILE.md)
 - [10006](RFC_10006_STANDARDS_TRACK_PROFILE.md)
+
+## 2026-10-29 business continuity, risk management, AI risk and energy utility standards governance (Batch 147)
+
+- [ISO 22301:2019 — Security and resilience — Business continuity management systems — Requirements](compliance/iso-22301-2019.md)
+- [ISO 31000:2018 — Risk management — Guidelines](compliance/iso-31000-2018.md)
+- [ISO/IEC 23894:2023 — Information technology — Artificial intelligence — Guidance on risk management](compliance/iso-iec-23894-2023.md)
+- [ISO/IEC 27010:2015 — Information technology — Security techniques — Information security management for inter-sector and inter-organizational communications](compliance/iso-iec-27010-2015.md)
+- [ISO/IEC 27014:2020 — Information security, cybersecurity and privacy protection — Governance of information security](compliance/iso-iec-27014-2020.md)
+- [ISO/IEC 27019:2024 — Information security, cybersecurity and privacy protection — Information security controls for the energy utility industry](compliance/iso-iec-27019-2024.md)
+- [ISO/IEC 27031:2025 — Cybersecurity — Information and communication technology readiness for business continuity](compliance/iso-iec-27031-2025.md)
