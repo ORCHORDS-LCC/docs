@@ -12442,3 +12442,10 @@ Standards-conformance and governance guidance for published frameworks and catal
 - [ISO/IEC 27014:2020 — Information security, cybersecurity and privacy protection — Governance of information security](compliance/iso-iec-27014-2020.md)
 - [ISO/IEC 27019:2024 — Information security, cybersecurity and privacy protection — Information security controls for the energy utility industry](compliance/iso-iec-27019-2024.md)
 - [ISO/IEC 27031:2025 — Cybersecurity — Information and communication technology readiness for business continuity](compliance/iso-iec-27031-2025.md)
+
+## 2026-10-29 occupational health and safety, asset management and IT governance standards governance (Batch 148)
+
+- [ISO 45001:2018 — Occupational health and safety management systems — Requirements with guidance for use](compliance/iso-45001-2018.md)
+- [ISO 55001:2024 — Asset management — Asset management system — Requirements](compliance/iso-55001-2024.md)
+- [ISO 55002:2018 — Asset management — Management systems — Guidelines](compliance/iso-55002-2018.md)
+- [ISO/IEC 38500:2024 — Information technology — Governance of IT for the organization](compliance/iso-iec-38500-2024.md)
