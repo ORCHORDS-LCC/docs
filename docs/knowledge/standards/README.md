@@ -2373,6 +2373,38 @@ Standards-conformance and governance guidance for published frameworks and catal
 - [RS MI 01](NIST_CSF_2_0_RS_MI_01_OUTCOME_GOVERNANCE_PROFILE.md)
 - [RS MI 02](NIST_CSF_2_0_RS_MI_02_OUTCOME_GOVERNANCE_PROFILE.md)
 
+## 2026-10-28 ISO/IEC 42005 impact assessment, IEEE 7000-series ethics and transparency, and CSA CCM v4.1 standards governance (Batch 145)
+
+- [CSA Cloud Controls Matrix (CCM) v4.1 — Control Objectives Overview](compliance/csa-ccm-v41-control-objectives-overview.md)
+- [CSA Cloud Controls Matrix (CCM) v4.1 — Overview](compliance/csa-ccm-v41-overview.md)
+- [CSA Cloud Controls Matrix (CCM) v4.1 — Shared Responsibility Model](compliance/csa-ccm-v41-shared-responsibility-model.md)
+- [IEEE 7000-2021 — IEEE Standard Model Process for Addressing Ethical Concerns during System Design](compliance/ieee-7000-model-process-ethical-concerns-system-design.md)
+- [IEEE 7000 Series — AI Ethics, Transparency, and Bias Standards Overview](compliance/ieee-7000-series-ai-ethics-transparency-and-bias-standards-overview.md)
+- [IEEE 7001-2021 — IEEE Standard for Transparency of Autonomous Systems](compliance/ieee-7001-transparency-of-autonomous-systems.md)
+- [IEEE 7002-2022 — IEEE Standard for Data Privacy Process](compliance/ieee-7002-data-privacy-process.md)
+- [IEEE 7003-2024 — IEEE Standard for Algorithmic Bias Considerations](compliance/ieee-7003-algorithmic-bias-considerations.md)
+- [IEEE 7005-2021 — IEEE Standard for Transparent Employer Data Governance](compliance/ieee-7005-transparent-employer-data-governance.md)
+- [IEEE 7007-2021 — IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems](compliance/ieee-7007-ethical-robotics-automation-ontologies.md)
+- [IEEE 7009-2024 — IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems](compliance/ieee-7009-fail-safe-design-autonomous-systems.md)
+- [IEEE 7010-2020 — IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being](compliance/ieee-7010-impacts-on-human-well-being.md)
+- [IEEE 7011 — Standard for the Process of Identifying and Rating the Trustworthiness of News Sources](compliance/ieee-7011-trustworthiness-of-news-sources.md)
+- [IEEE 7012-2025 — Standard for Machine Readable Personal Privacy Terms](compliance/ieee-7012-machine-readable-personal-privacy-terms.md)
+- [IEEE 7014-2024 — IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems](compliance/ieee-7014-ethical-considerations-emulated-empathy.md)
+- [IEEE P7008 — Standard for Ethically Driven Nudging for Robotic, Intelligent and Autonomous Systems](compliance/ieee-p7008-ethically-driven-nudging.md)
+- [IEEE P7015 — Standard for Data and Artificial Intelligence (AI) Literacy, Skills, and Readiness](compliance/ieee-p7015-data-and-ai-literacy.md)
+- [IEEE P7018 — Standard for Security and Trustworthiness Requirements in Generative Pretrained Artificial Intelligence (AI) Models](compliance/ieee-p7018-security-and-trustworthiness-generative-ai-models.md)
+- [IEEE P7021 — Recommended Practice for Implementing Ethical Artificial Intelligence (AI) in Long-Term Climate Projections Towards Net Zero](compliance/ieee-p7021-ethical-ai-climate-projections.md)
+- [IEEE P7022 — Standard for Requirements and Evaluation Criteria for Trustworthy Generative and Agentic Artificial Intelligence (AI)](compliance/ieee-p7022-trustworthy-generative-and-agentic-ai.md)
+- [IEEE P7023 — Standard for Assessing Organizational Readiness for Human-Artificial Intelligence (AI) Identity Resilience and Interaction](compliance/ieee-p7023-ai-identity-resilience-readiness.md)
+- [IEEE P7100 — Standard for Measurement of Environmental Impacts of Artificial Intelligence Systems](compliance/ieee-p7100-environmental-impacts-of-ai-systems.md)
+- [IEEE P8000 — Standard for Characterization and Specification of Ethical Properties in Autonomous Intelligent Systems](compliance/ieee-p8000-characterization-ethical-properties.md)
+- [ISO/IEC 42003 — Lifecycle and Revision Status](compliance/iso-42003-ai-management-system-implementation-guidance-status.md)
+- [ISO/IEC 42003 — AI Management System Implementation Guidance](compliance/iso-42003-ai-management-system-implementation-guidance.md)
+- [ISO/IEC 42005:2025 — AI System Impact Assessment Overview](compliance/iso-42005-ai-system-impact-assessment-overview.md)
+- [ISO/IEC 42005:2025 — Scope and Applicability](compliance/iso-42005-ai-system-impact-assessment-scope.md)
+- [ISO/IEC 42001:2023 — AI Management System Overview](compliance/iso-42001-ai-management-system-overview.md)
+- [CIS Critical Security Controls v8 — Safeguards and Implementation Groups Overview](compliance/cis-controls-v8-overview.md)
+
 ### Standards-track positions, requirements, and conformance considerations
 
 10000 documents.
