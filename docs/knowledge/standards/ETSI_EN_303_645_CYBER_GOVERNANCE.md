@@ -6,7 +6,7 @@ classification: public
 last-reviewed: 2026-09-05
 review-cycle: 180 days
 next-review: 2027-03-04
-source: ETSI EN 303 645 V2.1.1 (2020-12) — "Cyber Security for Consumer Internet of Things: Baseline Requirements"; https://www.etsi.org/deliver/etsi_en/303600_303699/303645/
+source: "ETSI EN 303 645 V2.1.1 (2020-12) - Cyber Security for Consumer Internet of Things: Baseline Requirements; https://www.etsi.org/deliver/etsi_en/303600_303699/303645/"
 ---
 
 # ETSI EN 303 645 Consumer IoT Cybersecurity Governance

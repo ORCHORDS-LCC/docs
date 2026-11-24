@@ -3,9 +3,9 @@ title: "Cloudflare Platform Knowledge"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-09-02"
+last-reviewed: "2026-11-24"
 review-cycle: "90 days"
-next-review: "2026-12-01"
+next-review: "2027-02-22"
 ---
 
 # Cloudflare Platform Knowledge
@@ -28,6 +28,7 @@ Reusable operational guidance for Cloudflare Workers, Durable Objects, D1, R2, H
 
 - [D1 Backup and Time Travel Restore Drills](d1-backups-time-travel-restore-drill.md)
 - [D1 Read Replication Consistency Models](d1-read-replication-consistency.md)
+- [D1 Query Result Size Limit](cloudflare-d1-query-result-size-limit.md)
 - [R2 Lifecycle Rules and Storage Tiers](r2-lifecycle-rules-storage-tiers.md)
 - [Hyperdrive Connection Pooling Savings Analysis](hyperdrive-connection-pool-savings.md)
 

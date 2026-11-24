@@ -3,9 +3,9 @@ title: "Operations Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-10-27"
+last-reviewed: "2026-11-24"
 review-cycle: "90 days"
-next-review: "2027-01-25"
+next-review: "2027-02-22"
 ---
 
 # Operations Documentation
@@ -22,6 +22,7 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [GitHub Reusable Workflow Secret Boundaries](GITHUB_REUSABLE_WORKFLOW_SECRET_BOUNDARIES.md)
 - [GitHub Dependency Review and Submission Ordering](GITHUB_DEPENDENCY_REVIEW_SUBMISSION_ORDERING.md)
 - [GitHub Actions Cache Trust Boundaries](GITHUB_ACTIONS_CACHE_TRUST_BOUNDARIES.md)
+- [GitHub Actions Workflow Hardening](../engineering/devtools/github-actions-workflow-hardening.md)
 - [BGP Roles and RFC 9234 Route-Leak Prevention](infra/bgp-roles-rfc-9234-route-leak-prevention.md)
 
 ## 2026-09-01 standards and implementation guidance

@@ -2,6 +2,10 @@
 
 Reusable project-neutral guidance for agentic systems.
 
+## Risk framework indexes
+
+- [OWASP Top 10 for Agentic Applications 2026 Knowledge Index](OWASP_TOP_10_FOR_AGENTIC_APPLICATIONS_2026_INDEX.md)
+
 ## Core articles
 
 - [Agent Architecture Patterns](AGENT_ARCHITECTURE_PATTERNS.md)

@@ -6,7 +6,7 @@ classification: public
 last-reviewed: 2026-09-05
 review-cycle: 180 days
 next-review: 2027-03-04
-source: NIST SP 800-57 Pt. 1 Rev. 5 (May 2020) — Recommendation for Key Management: General; Pt. 2 (2019) — Best Practices; Pt. 3 Rev. 1 (2015) — Application-Specific Key Management; https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final
+source: "NIST SP 800-57 Pt. 1 Rev. 5 (May 2020) - Recommendation for Key Management: General; Pt. 2 (2019) - Best Practices; Pt. 3 Rev. 1 (2015) - Application-Specific Key Management; https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final"
 ---
 
 # NIST SP 800-57 Key Management Governance

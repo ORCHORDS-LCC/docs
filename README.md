@@ -15,10 +15,12 @@
 
 **Independent software studio founded in 2025.**
 
-This repository publishes ORCHORDS company-wide documentation — currently
-318,289 tracked Markdown files (verified 2026-11-24; regenerate with `git ls-files '*.md' | wc -l`) covering governance, security, privacy, engineering,
-compliance, standards, reusable technical knowledge, and related policy areas.
-It is useful for customers and partners conducting due diligence, engineers and
+This repository publishes ORCHORDS company-wide documentation — a Git-tracked
+Markdown corpus covering governance, security, privacy, engineering, compliance,
+standards, reusable technical knowledge, and related policy areas. File counts
+are intentionally not hard-coded here; regenerate a snapshot with
+`git ls-files '*.md' | wc -l` when a dated metric is actually needed. The corpus
+is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
 small independent studio documents security and governance expectations.
 
