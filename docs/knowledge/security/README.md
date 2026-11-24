@@ -3,9 +3,9 @@ title: "Security Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-10-27"
+last-reviewed: "2026-11-25"
 review-cycle: "90 days"
-next-review: "2027-01-25"
+next-review: "2027-02-23"
 ---
 
 # Security Documentation
@@ -62,6 +62,7 @@ This family contains reusable security engineering and assurance guidance. It co
 - [SAML 2.0 Bearer Assertions for OAuth (RFC 7522)](engineering/oauth-saml2-bearer-assertion-rfc-7522.md)
 - [OAuth Token Revocation (RFC 7009)](engineering/oauth-token-revocation-rfc-7009.md)
 - [Online Certificate Status Protocol (OCSP) Nonce Extension: Engineering and Governance](engineering/ocsp-nonce-extension-rfc8954.md)
+- [Secrets Exposure Detection and Response](engineering/secrets-exposure-detection-and-response.md)
 - [X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP: Engineering and Governance](engineering/ocsp-status-protocol-rfc6960.md)
 - [OpenID Connect CIBA Core 1.0](engineering/openid-connect-ciba-core-1-0.md)
 - [OpenID Connect Discovery 1.0](engineering/openid-connect-discovery-1-0.md)

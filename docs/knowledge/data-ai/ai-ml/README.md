@@ -3,9 +3,9 @@ title: "AI/ML Knowledge"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-09-02"
+last-reviewed: "2026-11-25"
 review-cycle: "90 days"
-next-review: "2026-12-01"
+next-review: "2027-02-23"
 ---
 
 # AI/ML Knowledge
@@ -36,6 +36,7 @@ Reusable guidance for large language model serving, retrieval-augmented generati
 - [RAG Contextual Retrieval and Pseudo-Parents](rag-contextual-retrieval-pseudo-parents.md)
 - [RAG Ingestion Pipeline Idempotency](rag-ingestion-pipeline-idempotency.md)
 - [RAG Grounding Citation Alignment](rag-grounding-citation-alignment.md)
+- [Vector Embedding Security Controls](vector-embedding-security-controls.md)
 
 ### ML lifecycle governance (Batch 63 additions — 2026-09-05)
 
