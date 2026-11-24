@@ -2,7 +2,7 @@
 
 **Issue:** `wrangler tail` CI assertion pattern — current flag set (no `--once`); correct exit semantics via `timeout` + `jq -e` + `set -o pipefail`; correct binding key (`tail_consumers`, not `tail_workers`); structured `console.log({...})` field extraction
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

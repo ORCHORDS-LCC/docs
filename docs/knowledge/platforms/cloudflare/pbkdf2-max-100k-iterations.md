@@ -2,7 +2,7 @@
 
 **Issue:** `crypto.subtle.deriveBits` with PBKDF2 silently fails at > 100k iterations
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** documented (Web Crypto spec quirk)
 

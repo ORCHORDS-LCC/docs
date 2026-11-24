@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-207A Zero Trust Architecture for Multi-Cloud Environments Reference Card"
+owner: Knowledge Engineering
 standard: "NIST SP 800-207A"
 publisher: "National Institute of Standards and Technology (NIST)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Security architects, cloud platform engineers, identity engineers"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-207A Zero Trust Architecture for Multi-Cloud Environments Reference Card

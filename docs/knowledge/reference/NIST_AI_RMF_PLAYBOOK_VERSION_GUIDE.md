@@ -1,5 +1,6 @@
 ---
 title: "NIST AI RMF Playbook Version Guide"
+owner: Knowledge Engineering
 standard: NIST AI RMF Playbook (cross-reference)
 publisher: NIST
 category: reference
@@ -11,6 +12,7 @@ audience: ai-governance, model-development, security-engineering
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

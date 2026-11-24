@@ -126,10 +126,10 @@ git log --graph --oneline --all $(git fsck --no-reflogs 2>/dev/null \
   | grep "dangling commit" | cut -d' ' -f3)
 
 # Inspect a found commit
-git show <commit-hash>
+git show <verified-commit>
 
 # Re-apply a found stash commit
-git stash apply <commit-hash>
+git stash apply <verified-commit>
 
 # Recovery window:
 # Active repos: hours to days (before gc runs)

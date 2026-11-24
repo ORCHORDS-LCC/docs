@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-40 Guide to Enterprise Patch Management Planning Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-40 Rev 4 (Guide to Enterprise Patch Management Planning)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security-engineering, IT operations, vulnerability management"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-40 Rev 4 — Enterprise Patch Management Planning Template Governance

@@ -1,5 +1,6 @@
 ---
 title: "AI Provider Outage Response Playbook"
+owner: Security Operations
 standard: "Google SRE Book (Chapter on Incident Management), NIST SP 800-61 Rev 3"
 publisher: "Google / NIST"
 category: "response-playbook"
@@ -11,6 +12,7 @@ audience: "SRE, AI engineering, customer success"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # AI Provider Outage Response Playbook

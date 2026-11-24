@@ -2,9 +2,9 @@
 
 **Issue:** Per-tenant audit log race condition causing fork in Merkle chain
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
-**Status:** fixed (a sibling repo a recent PR; this repo equivalent TBD)
+**Status:** fixed (a sibling repo a recent PR; this repository equivalent not yet verified)
 
 ## Symptom
 Two concurrent POSTs to `/api/mc/<write>` for the same tenant produce
@@ -73,8 +73,8 @@ verification re-reads D1, recomputes the chain, flags mismatches.
   data.
 
 ## Related
-- Issue #<number> (a sibling repo)
-- Issue #<number> (a sibling repo): audit-log repair + Merkle CRON
+- Issue (a sibling repo)
+- Issue (a sibling repo): audit-log repair + Merkle CRON
 - Cloudflare Durable Objects docs: https://developers.cloudflare.com/durable-objects/
 - Pattern: same shape applies to rate limiter DO, session store DO,
   webhook delivery DO. Per-tenant single-writer is a recurring need.

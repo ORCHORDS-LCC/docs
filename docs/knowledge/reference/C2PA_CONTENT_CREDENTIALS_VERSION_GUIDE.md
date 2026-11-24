@@ -1,5 +1,6 @@
 ---
 title: "C2PA Content Credentials Version Guide"
+owner: Knowledge Engineering
 standard: "C2PA Technical Specification (current published version)"
 publisher: "Coalition for Content Provenance and Authenticity (C2PA)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Content platform engineers, media integrity researchers, AI-content g
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # C2PA Content Credentials Version Guide

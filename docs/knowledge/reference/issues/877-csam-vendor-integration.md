@@ -2,7 +2,7 @@
 
 **Issue:** the platform must integrate with a vendor for CSAM/NCII detection and NCMEC reporting
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** open (genuinely blocked on vendor process)
 

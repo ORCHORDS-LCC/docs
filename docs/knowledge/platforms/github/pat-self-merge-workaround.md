@@ -2,7 +2,7 @@
 
 **Issue:** PR opened, no workflow runs after 3+ minutes (CI stuck "queued")
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** documented (workaround, not root-cause fix)
 
@@ -35,7 +35,7 @@ scopes), use the **merge API to trigger CI on main**:
 curl -X PUT \
   -H "Authorization: token ghp_<your-pat>" \
   -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/<your-org>/<your-repo>/pulls/<N>/merge" \
+  "https://api.github.com/repos/<project-repository>/pulls/<N>/merge" \
   -d '{"merge_method": "squash"}'
 ```
 
@@ -45,10 +45,10 @@ to merge yet, use the alternative:
 ### Alternative: Re-run the workflow manually
 ```bash
 # Get the workflow file's ID
-gh api repos/<your-org>/<your-repo>/actions/workflows/ci.yml
+gh api repos/<project-repository>/actions/workflows/ci.yml
 
 # Re-run a specific run (after the eventual queue clears)
-gh run rerun <run-id> --repo <your-org>/<your-repo>
+gh run rerun <run-id> --repo <project-repository>
 ```
 
 But this requires the run to exist in the first place, which is

@@ -1,5 +1,6 @@
 ---
 title: "NIST AI 100-2 Adversarial Machine Learning Taxonomy Version Guide"
+owner: Knowledge Engineering
 standard: "NIST AI 100-2"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "AI/ML security engineers, ML platform owners, red team leads"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST AI 100-2 Adversarial Machine Learning Taxonomy Version Guide

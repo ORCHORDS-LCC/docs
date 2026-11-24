@@ -198,7 +198,7 @@ async function exportMarkdown(env: Env, id: string): Promise<Response> {
   const md = [
     `# Post-mortem: ${row.slug} — ${row.title}`,
     ``,
-    `**Severity:** ${row.severity}  **Status:** ${row.status}  **Owner:** ${row.owner ?? 'TBD'}`,
+    `**Severity:** ${row.severity}  **Status:** ${row.status}  **Owner:** ${row.owner ?? 'Not assigned'}`,
     `**Started:** ${row.started_at}  **Resolved:** ${row.resolved_at ?? 'N/A'}`,
     ``,
     `## Summary`,

@@ -40,3 +40,64 @@ related:
   - "PUBLIC_KEY_INFRASTRUCTURE_REVIEW.md"
   - "INCIDENT_COMMUNICATIONS_REVIEW.md"
   - "CHANGE_CONTROL.md"
+---
+
+# TLS Certificate Revocation Response
+
+## Trigger
+
+Private key compromise, CA compromise, certificate mis-issuance, or discovery of a certificate used outside documented policy.
+
+## Scope
+
+All TLS certificates issued by ORCHORDS-controlled or partner CAs for internal and customer-facing services.
+
+## Inputs
+
+- Certificate inventory and revocation infrastructure
+- Compromise evidence or scope of mis-issuance
+- Service map showing certificate deployment
+- CRL and OCSP responder configuration
+
+## Procedure
+
+- Step 1: Receive the revocation trigger and capture certificate identifier, scope, and rationale.
+- Step 2: Confirm the scope of compromise and identify every service and consumer affected.
+- Step 3: Issue a CRL update and refresh the OCSP responder within the documented SLA.
+- Step 4: Replace the certificate on every affected endpoint and roll out through the standard change control process.
+- Step 5: Force re-issuance from a controlled source with a new key pair; do not re-use the compromised key.
+- Step 6: Communicate to consumers with the documented notice and the new certificate details.
+- Step 7: Capture residual actions and feed the incident into the post-incident review pipeline.
+
+## Evidence
+
+- Revocation record with timestamps and rationale
+- Service map of affected endpoints
+- CRL and OCSP refresh log
+- Replacement certificate deployment records
+- Consumer communication record
+
+## Escalation
+
+- Compromise of CA root or sub-CA — escalate to Information Security Officer within 30 minutes.
+- Customer-facing certificate with active exploitation — escalate to Security on-call and Service Owner.
+
+## Completion criteria
+
+- Compromised certificate revoked in CRL and OCSP within SLA.
+- Replacement deployed to every affected endpoint.
+- Consumer communication sent.
+
+## Exceptions
+
+- Certificates with planned expiry within the documented grace window; coordinated replacement within 24 hours.
+
+## Related documents
+
+- PUBLIC_KEY_INFRASTRUCTURE_REVIEW.md
+- INCIDENT_COMMUNICATIONS_REVIEW.md
+- CHANGE_CONTROL.md
+
+## Source
+
+This playbook is maintained as public operational guidance in the ORCHORDS knowledge base. Validate environment-specific commands, identities, and endpoints before execution.

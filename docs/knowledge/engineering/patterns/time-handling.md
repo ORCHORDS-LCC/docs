@@ -225,7 +225,7 @@ for new code).
 | **luxon** | 70k | ✅ | Immutable | Full-featured |
 | **date-fns** | tree-shakeable | Limited | Immutable | Simple + modular |
 | **dayjs** | 7k | Plugin | Immutable | Minimal |
-| **Temporal** (proposal) | TBD | ✅ | Immutable | Future |
+| **Temporal** (proposal) | not specified | ✅ | Immutable | Future |
 
 For most apps, **luxon** or **date-fns**.
 

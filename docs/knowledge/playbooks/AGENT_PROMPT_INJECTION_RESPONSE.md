@@ -1,5 +1,6 @@
 ---
 title: "Agent Prompt Injection Response Playbook"
+owner: Security Operations
 standard: "OWASP Top 10 for LLM Applications (LLM01: Prompt Injection), NIST AI 100-2 Adversarial Machine Learning Taxonomy"
 publisher: "OWASP / NIST"
 category: "response-playbook"
@@ -11,6 +12,7 @@ audience: "AI engineering, security operations, agent platform"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # Agent Prompt Injection Response Playbook

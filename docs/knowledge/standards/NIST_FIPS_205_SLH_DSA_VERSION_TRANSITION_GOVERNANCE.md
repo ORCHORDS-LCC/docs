@@ -1,5 +1,6 @@
 ---
 title: "NIST FIPS 205 Stateless Hash-Based Digital Signature Standard (SLH-DSA) Version Transition Governance"
+owner: Standards Governance
 standard: "NIST FIPS 205"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "Cryptographic architects, firmware signing, long-life signature opera
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST FIPS 205 SLH-DSA Version Transition Governance

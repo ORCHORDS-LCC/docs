@@ -1,5 +1,6 @@
 ---
 title: "EU AI Act — General Purpose AI (GPAI) Obligations Version Guide"
+owner: Knowledge Engineering
 standard: EU Regulation 2024/1689 Articles 51–56
 publisher: European Parliament and Council
 category: reference
@@ -11,6 +12,7 @@ audience: ai-governance, legal, platform-engineering, model-providers
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

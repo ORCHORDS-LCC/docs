@@ -55,8 +55,8 @@ advancing bills.
 | Maryland | 2024 | 2025 | Under 18 |
 | Nebraska | 2025 | 2026 | Under 13 (COPPA) |
 | Vermont | 2025 | January 2027 | Under 18 |
-| New Jersey | 2026 | TBD | Under 18 |
-| South Carolina | 2026 | TBD | Under 13 (COPPA) |
+| New Jersey | 2026 | Not specified | Under 18 |
+| South Carolina | 2026 | Not specified | Under 13 (COPPA) |
 
 ### EPIC 2026 Model Bill
 

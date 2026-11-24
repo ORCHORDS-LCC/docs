@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 24760-1:2022 Identity and Authentication — Framework Version Transition Governance"
+owner: Standards Governance
 standard: "ISO/IEC 24760-1:2022"
 publisher: "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "IAM architects, identity governance leads, identity assurance auditor
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # ISO/IEC 24760-1:2022 Identity Framework Version Transition Governance

@@ -92,7 +92,7 @@ For third-party assurance:
 - **Phase 1:** Limited assurance (reasonable effort
   to conclude nothing is materially misstated)
 - **Phase 2 (later):** Reasonable assurance (full audit
-  standard) — date TBD by Commission
+  standard) — date to be set by the Commission
 
 ## The "taxonomy alignment" pattern
 

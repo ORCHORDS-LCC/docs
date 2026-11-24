@@ -41,3 +41,65 @@ related:
   - "ACCESS_REVIEW.md"
   - "CRYPTO_MODULE_INVENTORY_REVIEW.md"
   - "INCIDENT_COMMUNICATIONS_REVIEW.md"
+---
+
+# Public Key Infrastructure Review
+
+## Trigger
+
+Six-monthly review, new certificate authority onboarding, key ceremony event, or PKI-related incident.
+
+## Scope
+
+All public and private certificate authorities used for internal services, customer-facing services, code signing, document signing, and mutual TLS.
+
+## Inputs
+
+- CA inventory and hierarchy
+- Certificate inventory by issuer and use case
+- Key ceremony logs and HSM inventory
+- CRL and OCSP responder configuration
+- Policy and CPS documents
+
+## Procedure
+
+- Step 1: Confirm scope and CA hierarchy; verify offline root CA is air-gapped and documented.
+- Step 2: Verify certificate inventory: count, issuer, subject, validity, key type, and intended use.
+- Step 3: Verify revocation infrastructure: CRL freshness, OCSP responder health, and revocation status for known-compromised certificates.
+- Step 4: Verify HSM inventory: location, firmware, access list, and tamper evidence; confirm key ceremonies are logged and dual-control attested.
+- Step 5: Verify policy documents and CPS against the latest baseline; record deviations for risk acceptance.
+- Step 6: Verify certificate issuance automation: ACME or internal SCEP enrollment, short-lived certificates, and documented exception process.
+- Step 7: Capture residual actions and report metrics to governance.
+
+## Evidence
+
+- CA and certificate inventory snapshots
+- Revocation infrastructure health report
+- HSM inventory and ceremony logs
+- Policy and CPS review report
+- Metrics dashboard export
+
+## Escalation
+
+- Offline root CA air-gap failure — escalate to Information Security Officer.
+- Compromised private key with no revocation within SLA — escalate to Security on-call.
+
+## Completion criteria
+
+- All CAs reviewed and attested.
+- Revocation infrastructure verified.
+- HSM inventory and ceremonies verified.
+
+## Exceptions
+
+- Public CAs operated by external providers reviewed annually through their published audit reports.
+
+## Related documents
+
+- ACCESS_REVIEW.md
+- CRYPTO_MODULE_INVENTORY_REVIEW.md
+- INCIDENT_COMMUNICATIONS_REVIEW.md
+
+## Source
+
+This playbook is maintained as public operational guidance in the ORCHORDS knowledge base. Validate environment-specific commands, identities, and endpoints before execution.

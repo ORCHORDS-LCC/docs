@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-92 Guide to Computer Security Log Management Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-92 (Guide to Computer Security Log Management)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security operations, platform engineering, audit"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-92 — Computer Security Log Management Template Governance

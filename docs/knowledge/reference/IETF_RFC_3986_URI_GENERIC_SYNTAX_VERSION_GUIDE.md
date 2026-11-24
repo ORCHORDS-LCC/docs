@@ -1,5 +1,6 @@
 ---
 title: "IETF RFC 3986 URI Generic Syntax Version Guide"
+owner: Knowledge Engineering
 standard: "RFC 3986"
 standard_status: "Internet Standard (STD 66)"
 publisher: "Internet Engineering Task Force (IETF)"
@@ -12,7 +13,10 @@ category_iana: "standards"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # IETF RFC 3986 URI Generic Syntax Version Guide

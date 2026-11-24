@@ -1,5 +1,6 @@
 ---
 title: "NIST FIPS 204 Module-Lattice-Based Digital Signature Standard (ML-DSA) Version Transition Governance"
+owner: Standards Governance
 standard: "NIST FIPS 204"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "Cryptographic architects, PKI operators, code-signing operators"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST FIPS 204 ML-DSA Version Transition Governance

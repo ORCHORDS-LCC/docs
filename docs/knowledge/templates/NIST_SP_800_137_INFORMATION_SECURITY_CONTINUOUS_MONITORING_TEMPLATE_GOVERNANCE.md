@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-137 Information Security Continuous Monitoring Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-137 (Information Security Continuous Monitoring for Federal Information Systems and Organizations)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security operations, GRC, federal systems integrators"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-137 — Information Security Continuous Monitoring Template Governance

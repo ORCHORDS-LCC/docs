@@ -2,7 +2,7 @@
 
 **Issue:** Gitleaks misses CF Workers webhook URL pattern
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (gitleaks v8.25.0+)
+**Repo:** <project-repository> at main (gitleaks v8.25.0+)
 **Author:** the platform team
 **Status:** fixed (PR #open-issue-gitleaks a sibling repo, mirrored to the platform)
 
@@ -59,7 +59,7 @@ The allowlist ensures the baseline file is not self-flagged.
   on a sample repo with a known webhook URL → 1 finding
 - **CI:** PR #open-issue-gitleaks — workflow `gitleaks.yml` runs on push, PR, and
   Mon 03:00 UTC cron; 0 false positives over 7-day window
-- **Live:** Cron at https://github.com/<your-org>/<your-repo>/actions/workflows/gitleaks.yml
+- **Live:** Cron at https://github.com/<project-repository>/actions/workflows/gitleaks.yml
 
 ## Gotchas
 - **Rotate the secret AFTER removing it from git history.** `git log -p`

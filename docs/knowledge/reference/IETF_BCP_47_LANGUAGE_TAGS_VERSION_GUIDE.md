@@ -1,5 +1,6 @@
 ---
 title: "IETF BCP 47 Language Tags Version Guide"
+owner: Knowledge Engineering
 standard: "BCP 47"
 standard_status: "Best Current Practice"
 publisher: "Internet Engineering Task Force (IETF)"
@@ -13,7 +14,10 @@ canonical_url: "https://datatracker.ietf.org/doc/bcp/bcp47/"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # IETF BCP 47 Language Tags Version Guide

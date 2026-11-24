@@ -2,7 +2,7 @@
 
 **Issue:** R2 object lifecycles — canonical current path, Wrangler command set, rule budget, default multipart abort, and storage-class transition target
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

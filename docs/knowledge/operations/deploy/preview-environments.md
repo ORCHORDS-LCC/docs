@@ -23,7 +23,7 @@ https://developers.cloudflare.com/pages/configuration/preview-deployments/
 
 ## Fix
 CF Pages auto-creates preview URLs for every branch push. The
-URL is `https://<commit-hash>.<project>.pages.dev`. Configure
+URL is `https://<verified-commit>.<project>.pages.dev`. Configure
 in the dashboard → Pages → project → Settings → Builds & deployments.
 
 ### Branch preview controls

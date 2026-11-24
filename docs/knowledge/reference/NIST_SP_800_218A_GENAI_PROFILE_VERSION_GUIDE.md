@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-218A Secure Software Development for AI Systems (GenAI Profile) Version Guide"
+owner: Knowledge Engineering
 standard: "NIST SP 800-218A (Draft)"
 publisher: "National Institute of Standards and Technology (NIST)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "AI engineers, ML platform teams, secure software development lifecycl
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-218A Secure Software Development for AI Systems (GenAI Profile) Version Guide

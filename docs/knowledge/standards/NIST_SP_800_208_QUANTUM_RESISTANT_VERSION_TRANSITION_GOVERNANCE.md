@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-208 LMS / XMSS Stateful Hash-Based Signature Version Transition Governance"
+owner: Standards Governance
 standard: "NIST SP 800-208"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "Firmware signing teams, constrained-device cryptography, long-life si
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST SP 800-208 LMS / XMSS Version Transition Governance

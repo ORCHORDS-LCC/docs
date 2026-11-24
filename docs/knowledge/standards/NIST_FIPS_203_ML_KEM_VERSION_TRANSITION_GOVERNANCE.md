@@ -1,5 +1,6 @@
 ---
 title: "NIST FIPS 203 Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) Version Transition Governance"
+owner: Standards Governance
 standard: "NIST FIPS 203"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "Cryptographic architects, security engineers, PKI operators, applicat
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST FIPS 203 ML-KEM Version Transition Governance

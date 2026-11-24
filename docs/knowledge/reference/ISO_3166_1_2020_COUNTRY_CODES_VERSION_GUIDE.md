@@ -1,5 +1,6 @@
 ---
 title: "ISO 3166-1:2020 Country Codes Version Guide"
+owner: Knowledge Engineering
 standard: "ISO 3166-1"
 standard_edition: "2020-08 (5th edition)"
 publisher: "International Organization for Standardization (ISO)"
@@ -10,7 +11,10 @@ canonical_url: "https://www.iso.org/iso-3166-country-codes.html"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # ISO 3166-1:2020 Country Codes Version Guide

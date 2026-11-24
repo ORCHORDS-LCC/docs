@@ -2,7 +2,7 @@
 
 **Issue:** Pages + Workers D1 + R2 + Durable Objects — coordinated binding/migration pipeline, versioned D1 migrations, R2 lifecycle rules, and DO class export gates
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

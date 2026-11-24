@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-128 Guide for Security-Focused Configuration Management Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-128 (Guide for Security-Focused Configuration Management of Information Systems)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security engineering, IT operations, configuration management"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-128 — Security-Focused Configuration Management Template Governance

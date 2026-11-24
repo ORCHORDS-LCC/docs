@@ -94,8 +94,8 @@ For SB 53 (frontier framework):
 | Bill | Penalty | Enforcer |
 |---|---|---|
 | SB 53 | up to $1M per violation | California Attorney General |
-| AB 2013 | civil penalty (specific amount TBD) | California Attorney General |
-| SB 942 | civil penalty (specific amount TBD) | California Attorney General |
+| AB 2013 | civil penalty (specific amount not specified in the cited source) | California Attorney General |
+| SB 942 | civil penalty (specific amount not specified in the cited source) | California Attorney General |
 | SB 1047 | n/a (vetoed) | n/a |
 
 The $1M SB 53 cap is the most concrete. AB 2013 and SB 942 penalties are being clarified through AG regulations.

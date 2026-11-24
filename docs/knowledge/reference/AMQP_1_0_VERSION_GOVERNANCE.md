@@ -26,7 +26,7 @@ AMQP 1.0 is structurally different from AMQP 0-9-1: it is a framed, peer-to-peer
 | AMQP 1.0 (base) | OASIS Standard 2012-10 | ISO/IEC 19464:2014 | Azure Service Bus, ActiveMQ Artemis, Qpid Broker-J 9.x, Qpid C++ 1.40+, Solace PubSub+ 9.x+ | core frame layout, performatives, transfer |
 | AMQP 1.0 Part 3 (Messaging) | OASIS Standard 2012-10 | ISO/IEC 19464:2014 | same set as base | addressing, message format |
 | AMQP 1.0 Errata 01 | OASIS 2014-10 | n/a | supported by qpid-proton 0.18+, Artemis 2.x | header / properties clarifications |
-| AMQP 1.0 + (TBD) | working draft | n/a | experimental only in qpid-proton | not yet ratified — do not deploy |
+| AMQP 1.0 (future extension drafts) | working draft | n/a | experimental only in qpid-proton | not ratified; do not deploy until OASIS ratification and broker support are verified |
 
 References: `https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html`, `https://docs.oasis-open.org/amqp/core/v1.0/errata01/os/amqp-core-errata01-v1.0-os.html`.
 

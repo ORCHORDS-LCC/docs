@@ -2,7 +2,7 @@
 
 **Issue:** release.yml — local.properties as the sole source of release signing material; apksigner verification gate before artifact upload
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

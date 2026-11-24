@@ -1,5 +1,6 @@
 ---
 title: "Agent Tool Invocation Validation Playbook"
+owner: Security Operations
 standard: "NIST AI 100-1 AI Risk Management Framework, OWASP Top 10 for LLM Applications (LLM06 Excessive Agency)"
 publisher: "NIST / OWASP"
 category: "validation-playbook"
@@ -11,6 +12,7 @@ audience: "AI engineering, platform security"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # Agent Tool Invocation Validation Playbook

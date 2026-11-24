@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-18 Rev 1 Guide for Developing Security Plans for Federal Information Systems Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-18 Rev 1 (Guide for Developing Security Plans for Federal Information Systems)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "system owners, security engineering, GRC, federal systems integrators
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-18 Rev 1 — System Security Plan Template Governance

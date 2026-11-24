@@ -1,5 +1,6 @@
 ---
 title: "ISO 639-3:2007 Language Codes Version Guide"
+owner: Knowledge Engineering
 standard: "ISO 639-3"
 standard_edition: "2007-07 (1st edition)"
 publisher: "International Organization for Standardization (ISO)"
@@ -10,7 +11,10 @@ canonical_url: "https://iso639-3.sil.org/"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # ISO 639-3:2007 Language Codes Version Guide

@@ -45,3 +45,69 @@ related:
   - "SECURITY_INCIDENT_RESPONSE.md"
   - "ASSET_INVENTORY_REVIEW.md"
   - "ACCESS_REVIEW.md"
+---
+
+# Cloud Billing Anomaly Review
+
+## Trigger
+
+Daily automated billing anomaly alert, monthly close, or manual flag from engineering on unexpected spend.
+
+## Scope
+
+All production and non-production cloud accounts, including shared services, sandbox, and data science environments.
+
+## Inputs
+
+- Daily and month-to-date spend by account and service
+- Budget and forecast for the period
+- Anomaly alert from FinOps dashboard (z-score or absolute threshold breach)
+- Active change tickets and resource provisioning events
+- Reserved instance and savings plan commitments and utilization
+
+## Procedure
+
+- Step 1: Receive alert — capture account, service, region, time window, delta versus forecast, and z-score.
+- Step 2: Triage the anomaly into cost driver, security signal, or data error using tags, change tickets, and provider console.
+- Step 3: Cost driver — trace to a specific workload or experiment; assign owner; require a remediation plan with target date.
+- Step 4: Security signal — quarantine affected resources, check for compromised credentials, exfiltration, or crypto-mining; preserve evidence and escalate to Security.
+- Step 5: Data error — confirm against provider billing detail; file a support case if invoice is incorrect.
+- Step 6: Apply immediate mitigations (scale down non-prod, stop orphan resources, revoke unused credentials) where authorized.
+- Step 7: Update forecast and report variance to Finance.
+- Step 8: Capture root cause and feed back into FinOps policies and tagging standards.
+
+## Evidence
+
+- Anomaly record with account, service, delta, and classification
+- Triage notes and supporting ticket links
+- Mitigation actions taken, with timestamps
+- Updated forecast and variance commentary
+- Root cause and follow-up actions
+
+## Escalation
+
+- Security signal — page Security on-call within 30 minutes.
+- Variance > 20 percent of monthly forecast — escalate to Director of Engineering and CFO delegate.
+- Recurring anomaly from same workload in 60 days — escalate to workload owner for mandatory optimization plan.
+
+## Completion criteria
+
+- Anomaly classified and assigned.
+- Mitigation applied or formally accepted as risk.
+- Forecast and budget updated.
+- Root cause recorded.
+
+## Exceptions
+
+- Approved seasonal or marketing-driven spend spikes with documented justification.
+
+## Related documents
+
+- FINOPS_BUDGET_REVIEW.md
+- SECURITY_INCIDENT_RESPONSE.md
+- ASSET_INVENTORY_REVIEW.md
+- ACCESS_REVIEW.md
+
+## Source
+
+This playbook is maintained as public operational guidance in the ORCHORDS knowledge base. Validate environment-specific commands, identities, and endpoints before execution.

@@ -2,7 +2,7 @@
 
 **Issue:** `jsonOk({ id }, 201)` silently returns 200 with `x-request-id: "201"`
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (also affects a sibling repo, fixed in PR da55e47)
+**Repo:** <project-repository> at main (also affects a sibling repo, fixed in the linked fix commit)
 **Author:** the platform team
 **Status:** documented (the bug pattern, not yet fixed in the platform)
 
@@ -64,7 +64,7 @@ grep -rn "jsonOk(.*, 20[012])" functions/ --include="*.ts"
 ```
 
 76 calls across 28 compliance-critical handlers were refactored in
-a sibling repo PR da55e47. The same audit needs to run on the platform
+a sibling repo the linked fix commit. The same audit needs to run on the platform
 
 ### Layer 3: Document the trap in jsonOk's docstring
 ```ts
@@ -82,7 +82,7 @@ export function jsonOk(...) { ... }
 - **Test:** `test/jsonok-201.test.ts > jsonOk({ id }, 201) returns 200`
   — documents the old bug behavior
 - **Test:** `test/jsonok-201.test.ts > jsonCreated({ id }) returns 201` — confirms the fix
-- **a sibling repo:** PR da55e47 — 78/78 tests pass, 0 lint errors
+- **a sibling repo:** the linked fix commit — 78/78 tests pass, 0 lint errors
 
 ## Gotchas
 - **The bug is silent.** No error, no warning, no log. The only
@@ -98,6 +98,6 @@ export function jsonOk(...) { ... }
   anti-pattern. `jsonCreated` is the only high-frequency case.
 
 ## Related
-- a sibling repo PR da55e47 (76-call refactor)
+- a sibling repo the linked fix commit (76-call refactor)
 - Pattern: any helper that takes a positional `string|number`
   arg in TS is a footgun. Use named args or overload signatures.

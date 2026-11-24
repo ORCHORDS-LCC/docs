@@ -1,6 +1,6 @@
 # trunk-based-development-with-feature-flags
 
-**Issue:** TBD + flags + merge queue
+**Issue:** Trunk-based development with feature flags and a merge queue
 **Date:** 2026-08-09
 **Status:** documented
 

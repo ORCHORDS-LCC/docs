@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 42006:2023 Auditor Competence Requirements Version Guide"
+owner: Knowledge Engineering
 standard: ISO/IEC 42006:2023
 publisher: ISO/IEC JTC 1/SC 42
 category: reference
@@ -11,6 +12,7 @@ audience: certification-bodies, ai-governance, accreditation
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

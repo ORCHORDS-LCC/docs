@@ -2,7 +2,7 @@
 
 **Issue:** `functions/api/foo.ts` does NOT match `/api/foo/bar`
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** documented (Cloudflare behavior, not a bug)
 

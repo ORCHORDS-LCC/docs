@@ -23,7 +23,7 @@ China governs AI through 5 layered measures, each binding, each enforced by the 
 | Deep Synthesis Provisions | January 2023 | deep synthesis, synthetic media | rectification, suspension, criminal referral |
 | Generative AI Interim Measures | August 2023 | public-facing generative AI | rectification, suspension, criminal referral, 10% revenue |
 | AI-Labelling Measures | September 2025 | AI-generated content (text, image, audio, video) | CAC administrative penalties |
-| Anthropomorphic AI Measures | July 15, 2026 | AI simulating human personality, emotional interaction | TBD |
+| Anthropomorphic AI Measures | July 15, 2026 | AI simulating human personality, emotional interaction | Not specified |
 
 The 2026 Anthropomorphic AI Measures are the newest, targeting chatbots that simulate human personality for emotional engagement.
 

@@ -2,7 +2,7 @@
 
 **Issue:** Cloudflare AI Gateway — current `/features/*` URL surface (post `/configuration/*` migration), current rate-limit API field set (`rate_limiting_interval` / `rate_limiting_limit` / `rate_limiting_technique`), and the verbatim caching restriction phrase
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

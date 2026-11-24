@@ -250,7 +250,7 @@ Low. New feature, doesn't change existing behavior.
 - 100% if no issues
 
 ## References
-- Issue #<number>
+- Issue
 - Design doc: <link>
 ```
 

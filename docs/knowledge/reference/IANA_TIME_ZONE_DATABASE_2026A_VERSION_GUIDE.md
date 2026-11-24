@@ -1,5 +1,6 @@
 ---
 title: "IANA Time Zone Database (tzdb) 2026a Version Guide"
+owner: Knowledge Engineering
 standard: "IANA tzdata"
 standard_release: "2026a"
 publisher: "Internet Assigned Numbers Authority (IANA)"
@@ -11,7 +12,10 @@ data_repository: "https://github.com/eggert/tz"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # IANA Time Zone Database (tzdb) 2026a Version Guide

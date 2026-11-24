@@ -1,5 +1,6 @@
 ---
 title: "ISO 8601:2019 Date and Time Format Version Guide"
+owner: Knowledge Engineering
 standard: "ISO 8601"
 standard_edition: "2019-12 (4th edition)"
 publisher: "International Organization for Standardization (ISO)"
@@ -9,7 +10,10 @@ canonical_url: "https://www.iso.org/iso-8601-date-and-time-format.html"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # ISO 8601:2019 Date and Time Format Version Guide

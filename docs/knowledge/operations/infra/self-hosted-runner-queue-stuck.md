@@ -2,7 +2,7 @@
 
 **Issue:** GitHub Actions self-hosted runner shows 8+ jobs queued + 0 in_progress for hours
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** documented (workaround: cancel queued + force-push to retrigger)
 
@@ -34,7 +34,7 @@ Three options:
 ### Option 1: Cancel + re-trigger (fast, dirty)
 ```bash
 # Cancel all queued jobs
-gh run list --repo <your-org>/<your-repo> --status queued --json databaseId -q '.[] | .databaseId' | \
+gh run list --repo <project-repository> --status queued --json databaseId -q '.[] | .databaseId' | \
   xargs -I {} gh run cancel {}
 
 # Force-push the branch to re-trigger

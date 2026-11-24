@@ -1,5 +1,6 @@
 ---
 title: "EU AI Act — Regulation 2024/1689 Version Guide"
+owner: Knowledge Engineering
 standard: "Regulation (EU) 2024/1689"
 publisher: "European Union"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Legal, AI governance leads, AI deployers in EU markets, product leads
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # EU AI Act — Regulation (EU) 2024/1689 Version Guide

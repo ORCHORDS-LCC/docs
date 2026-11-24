@@ -2,7 +2,7 @@
 
 **Issue:** Some i18n keys in `en.json` are flat-dotted (literal key with dots) vs nested (object tree)
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** fixed (PR #i18n-getnested)
 

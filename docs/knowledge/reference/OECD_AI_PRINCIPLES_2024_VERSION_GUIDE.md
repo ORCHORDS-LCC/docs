@@ -1,5 +1,6 @@
 ---
 title: "OECD AI Principles Version Guide"
+owner: Knowledge Engineering
 standard: "OECD AI Principles (2019, updated May 2024)"
 publisher: "Organisation for Economic Co-operation and Development (OECD)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Policy leads, AI governance leads, international compliance officers"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # OECD AI Principles Version Guide

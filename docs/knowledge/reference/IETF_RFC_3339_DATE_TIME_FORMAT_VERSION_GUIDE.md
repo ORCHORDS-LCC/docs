@@ -1,5 +1,6 @@
 ---
 title: "IETF RFC 3339 Date and Time on the Internet Version Guide"
+owner: Knowledge Engineering
 standard: "RFC 3339"
 standard_status: "Proposed Standard"
 publisher: "Internet Engineering Task Force (IETF)"
@@ -11,7 +12,10 @@ obsoletes: "RFC 2616, RFC 2822 (date format sections)"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # IETF RFC 3339 Date and Time on the Internet Version Guide

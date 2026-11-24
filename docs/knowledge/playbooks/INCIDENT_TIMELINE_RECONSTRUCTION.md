@@ -40,3 +40,64 @@ related:
   - "INCIDENT_COMMUNICATIONS_REVIEW.md"
   - "CYBERSECURITY_INCIDENT_RESPONSE.md"
   - "CLOUDTRAIL_INVESTIGATION_PLAYBOOK.md"
+---
+
+# Incident Timeline Reconstruction
+
+## Trigger
+
+Security incident of medium severity or higher, regulatory investigation, or scheduled reconstruction exercise.
+
+## Scope
+
+All confirmed security incidents in ORCHORDS environments.
+
+## Inputs
+
+- Incident ticket and severity classification
+- Log sources: identity, network, application, cloud audit, endpoint detection
+- Affected systems inventory and configuration
+- Witness and responder statements
+
+## Procedure
+
+- Step 1: Open a reconstruction workspace and assign a reconstruction lead from Security Operations.
+- Step 2: Identify all in-scope log sources for the affected systems and time window.
+- Step 3: Validate log integrity: ensure logs are immutable, signed, and within retention.
+- Step 4: Anchor the timeline using external indicators: first alert, first responder action, containment timestamp, eradication timestamp.
+- Step 5: Walk each log source in time order; record actor, action, target, source, and result.
+- Step 6: Cross-reference between log sources to validate sequence and detect gaps.
+- Step 7: Identify root cause and contributing factors; record evidence for each factor.
+- Step 8: Publish the reconstruction report with timeline, root cause, contributing factors, and improvement actions.
+
+## Evidence
+
+- Reconstruction report with annotated timeline
+- Log extracts anchored to the timeline
+- Cross-reference matrix between log sources
+- Root cause and contributing factor analysis
+- Improvement actions with owners and deadlines
+
+## Escalation
+
+- Gap in log integrity — escalate to Security leadership and Compliance.
+- Discrepancy between log sources that cannot be reconciled — escalate to incident commander.
+
+## Completion criteria
+
+- Reconstruction report signed off by Security Operations and incident commander.
+- Improvement actions logged with owners and deadlines.
+
+## Exceptions
+
+- Low-severity incidents reconstructed within the standard post-incident review process.
+
+## Related documents
+
+- INCIDENT_COMMUNICATIONS_REVIEW.md
+- CYBERSECURITY_INCIDENT_RESPONSE.md
+- CLOUDTRAIL_INVESTIGATION_PLAYBOOK.md
+
+## Source
+
+This playbook is maintained as public operational guidance in the ORCHORDS knowledge base. Validate environment-specific commands, identities, and endpoints before execution.

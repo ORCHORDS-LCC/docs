@@ -2,7 +2,7 @@
 
 **Issue:** Silent acceptance of unverified work
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (also applies to a sibling repo)
+**Repo:** <project-repository> at main (also applies to a sibling repo)
 **Author:** the platform team
 **Status:** documented (rule, not bug)
 

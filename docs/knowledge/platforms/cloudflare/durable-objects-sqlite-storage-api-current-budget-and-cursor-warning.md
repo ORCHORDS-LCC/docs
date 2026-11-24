@@ -2,7 +2,7 @@
 
 **Issue:** Durable Objects SQLite storage — canonical current path, per-DO storage-budget billing target, full API surface (SQL / PITR / sync KV / async KV / alarms), the verbatim cursor-snapshot warning, and the `transactionSync()` requirement for SQL transactions
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

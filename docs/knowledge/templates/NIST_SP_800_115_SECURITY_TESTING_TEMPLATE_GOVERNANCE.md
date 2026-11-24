@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-115 Technical Guide to Information Security Testing Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-115 (Technical Guide to Information Security Testing and Assessment)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security testing, red team, blue team, GRC"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-115 — Technical Guide to Information Security Testing Template Governance

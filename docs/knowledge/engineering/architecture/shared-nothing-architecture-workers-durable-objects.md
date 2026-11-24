@@ -191,7 +191,7 @@ const SLUR_PATTERN = /\b(badword1|badword2)\b/i;
 
 1. Deploy two concurrent Worker instances (simulate with Miniflare's multi-worker mode). Write a
    value to module-level state in instance A. Assert instance B does not observe it.
-2. Issue #<number>,000 concurrent `POST /view` requests for the same post. Assert the DO counter reaches
+2. Issue,000 concurrent `POST /view` requests for the same post. Assert the DO counter reaches
    exactly 1,000 (no lost increments due to races).
 3. Restart the DO (evict via Miniflare API). Assert counter value persists from storage.
 4. Search the codebase for module-level `let`/`const` declarations that mutate after module

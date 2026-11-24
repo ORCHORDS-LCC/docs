@@ -2,7 +2,7 @@
 
 **Issue:** Cloudflare Access JWT validation — canonical current path (verifies the missing `access-controls/` + `http-apps/` segments), JWKS endpoint shape, default 6-week rotation with 7-day grace, and the recommended `createRemoteJWKSet` pattern
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

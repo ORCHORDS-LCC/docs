@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 27035-2:2023 Incident Response Guidelines Version Transition Governance"
+owner: Standards Governance
 standard: "ISO/IEC 27035-2:2023"
 publisher: "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
 category: "standards"
@@ -11,6 +12,7 @@ audience: "Incident response leads, security operations, governance and audit"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # ISO/IEC 27035-2:2023 Incident Response Guidelines Version Transition Governance

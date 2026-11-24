@@ -1,5 +1,6 @@
 ---
 title: "EU AI Act — Article 5 Prohibited Practices Version Guide"
+owner: Knowledge Engineering
 standard: EU Regulation 2024/1689 Article 5
 publisher: European Parliament and Council
 category: reference
@@ -11,6 +12,7 @@ audience: ai-governance, legal, security-engineering, product
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

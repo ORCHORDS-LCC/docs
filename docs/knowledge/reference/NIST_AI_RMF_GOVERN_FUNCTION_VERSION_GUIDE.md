@@ -1,5 +1,6 @@
 ---
 title: "NIST AI RMF — Govern Function Version Guide"
+owner: Knowledge Engineering
 standard: NIST AI 100-1 — Govern
 publisher: NIST
 category: reference
@@ -11,6 +12,7 @@ audience: ai-governance, executive-leadership, legal
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

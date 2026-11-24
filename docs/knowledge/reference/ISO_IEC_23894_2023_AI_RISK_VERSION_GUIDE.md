@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 23894:2023 AI Risk Management Version Guide"
+owner: Knowledge Engineering
 standard: "ISO/IEC 23894:2023"
 publisher: "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "AI risk managers, AI developers, deployers, auditors"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # ISO/IEC 23894:2023 AI Risk Management Version Guide

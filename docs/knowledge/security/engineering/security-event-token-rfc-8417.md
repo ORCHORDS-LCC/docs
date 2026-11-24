@@ -6,6 +6,8 @@ visibility: public
 last-reviewed: 2026-09-01
 review-cycle: 90 days
 next-review: 2026-11-30
+classification: public
+
 ---
 
 # Security Event Token (RFC 8417)

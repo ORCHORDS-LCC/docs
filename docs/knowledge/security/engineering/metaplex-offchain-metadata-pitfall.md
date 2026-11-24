@@ -2,7 +2,7 @@
 
 **Issue:** NFT metadata silently corrupted when off-chain JSON 404s
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (PR #nft-metadata, issue #open-issue-nft)
+**Repo:** <project-repository> at main (PR #nft-metadata, issue #open-issue-nft)
 **Author:** the platform team
 **Status:** fixed (a sibling repo + the platform)
 

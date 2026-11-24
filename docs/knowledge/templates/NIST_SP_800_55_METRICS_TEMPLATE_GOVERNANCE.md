@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-55 Performance Measurement Guide for Information Security Template Governance"
+owner: Documentation Maintainer
 standard: "NIST SP 800-55 Rev 1 (Performance Measurement Guide for Information Security)"
 publisher: "National Institute of Standards and Technology"
 category: "governance-template"
@@ -11,6 +12,7 @@ audience: "security leadership, GRC, program managers"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-55 Rev 1 — Information Security Performance Measurement Template Governance

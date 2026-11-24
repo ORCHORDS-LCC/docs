@@ -1,5 +1,6 @@
 ---
 title: "EU AI Act — Annex III High-Risk Use Cases Version Guide"
+owner: Knowledge Engineering
 standard: EU Regulation 2024/1689 Annex III
 publisher: European Parliament and Council
 category: reference
@@ -11,6 +12,7 @@ audience: ai-governance, legal, product, security-engineering
 last-reviewed: 2026-09-05
 review-cycle: 12 months
 next-review: 2027-09-05
+
 ---
 
 ## Scope

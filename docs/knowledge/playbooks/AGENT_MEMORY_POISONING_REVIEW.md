@@ -1,5 +1,6 @@
 ---
 title: "Agent Memory Poisoning Review Playbook"
+owner: Security Operations
 standard: "NIST AI 100-2 Adversarial Machine Learning Taxonomy, OWASP Top 10 for LLM Applications (LLM04 Data and Model Poisoning)"
 publisher: "NIST / OWASP"
 category: "review-playbook"
@@ -11,6 +12,7 @@ audience: "AI engineering, agent platform, security"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # Agent Memory Poisoning Review Playbook

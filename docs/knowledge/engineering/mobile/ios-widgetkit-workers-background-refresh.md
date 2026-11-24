@@ -214,7 +214,7 @@ app.post('/auth/widget-token', async (c) => {
   const session = await verifyMainToken(mainToken, c.env.JWT_SECRET)
   if (!session) return c.json({ error: 'unauthorized' }, 401)
 
-  // Issue #<number>-hour read-only widget token
+  // Issue-hour read-only widget token
   const widgetToken = await sign(
     { sub: session.userId, scope: 'widget:read', exp: Math.floor(Date.now() / 1000) + 86400 },
     c.env.JWT_SECRET

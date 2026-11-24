@@ -1,5 +1,6 @@
 ---
 title: "AI Output Content Validation Playbook"
+owner: Security Operations
 standard: "NIST AI 100-1 AI Risk Management Framework, NIST AI 600-1 Generative AI Profile, OWASP Top 10 for LLM Applications (LLM05 Improper Output Handling)"
 publisher: "NIST / OWASP"
 category: "validation-playbook"
@@ -11,6 +12,7 @@ audience: "AI engineering, content safety, security operations"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # AI Output Content Validation Playbook

@@ -1,5 +1,6 @@
 ---
 title: "AI Model Drift Detection Playbook"
+owner: Security Operations
 standard: "NIST AI 100-1 AI Risk Management Framework, NIST SP 800-39 Risk Management"
 publisher: "NIST"
 category: "detection-playbook"
@@ -11,6 +12,7 @@ audience: "AI engineering, MLOps, model governance"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # AI Model Drift Detection Playbook

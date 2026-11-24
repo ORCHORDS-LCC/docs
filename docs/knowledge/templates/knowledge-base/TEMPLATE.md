@@ -2,7 +2,7 @@
 
 **Issue:** <id-or-keyword>
 **Date:** YYYY-MM-DD
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** open | fixed (<commit>) | verified-live (<URL>) | non-actionable
 
@@ -25,4 +25,4 @@
 - <adjacent pitfall 2>
 
 ## Related
-- <issue-id>, <commit-hash>, <doc name>
+- <issue-id>, <verified-commit>, <doc name>

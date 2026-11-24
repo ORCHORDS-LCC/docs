@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 42005 AI Impact Assessment Version Guide"
+owner: Knowledge Engineering
 standard: "ISO/IEC 42005 (under development, ISO/IEC AWI 42005)"
 publisher: "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "AI governance leads, ethics reviewers, AI risk and impact officers"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # ISO/IEC 42005 AI Impact Assessment Version Guide

@@ -2,7 +2,7 @@
 
 **Issue:** Translating brand literals breaks trust + RTL layout
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main
+**Repo:** <project-repository> at main
 **Author:** the platform team
 **Status:** documented (intentional design choice)
 

@@ -1,5 +1,6 @@
 ---
 title: "ISO/IEC 27701 Privacy Information Management Reference Card"
+owner: Knowledge Engineering
 standard: "ISO/IEC 27701:2019"
 publisher: "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Privacy officers, PII controllers, PII processors, auditors"
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # ISO/IEC 27701 Privacy Information Management Reference Card

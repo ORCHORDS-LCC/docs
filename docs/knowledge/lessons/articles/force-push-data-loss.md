@@ -16,7 +16,7 @@ The damage is particularly severe because Git's default behavior doesn't warn yo
 If you're lucky and the branch was recently modified, use `git reflog` to find the lost commits:
 ```bash
 git reflog
-git checkout <commit-hash>
+git checkout <verified-commit>
 git checkout -b recovered-branch
 git push origin recovered-branch
 ```
@@ -26,7 +26,7 @@ Check remote reflog if your Git server supports it:
 ```bash
 git ls-remote --heads origin
 git fetch origin
-git checkout <commit-hash>
+git checkout <verified-commit>
 ```
 
 ## Prevention

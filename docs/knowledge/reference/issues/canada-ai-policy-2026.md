@@ -19,11 +19,11 @@ Bill C-27 (June 2022) had 3 parts: CPPA (privacy), PIDPTA (tribunal), and AIDA (
 
 | Instrument | Status | Scope | Effective |
 |---|---|---|---|
-| Bill C-36 (PPCDA) | pending (second reading) | private-sector privacy; AI in privacy scope via "personal information" | TBD (not law) |
+| Bill C-36 (PPCDA) | pending (second reading) | private-sector privacy; AI in privacy scope via "personal information" | Not in force |
 | Quebec Law 25 (modernized privacy) | law | private-sector privacy; automated decisions | September 22, 2023 |
 | Ontario Employment Standards Act s. 8.4 | law | AI in hiring disclosure | January 1, 2026 |
 | Ontario EDSTA (Bill 194) | law (selected sections) | public-sector AI duties | January 29, 2025 (AI in force) |
-| Bill C-34 (Safe Social Media Act) | pending | AI chatbot duties | TBD |
+| Bill C-34 (Safe Social Media Act) | pending | AI chatbot duties | Not specified |
 
 The 5 instruments are layered: federal privacy (pending), provincial privacy + sectoral (in force), and federal sectoral (pending).
 

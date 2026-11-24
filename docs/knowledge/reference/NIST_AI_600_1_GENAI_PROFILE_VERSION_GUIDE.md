@@ -1,5 +1,6 @@
 ---
 title: "NIST AI 600-1 Generative AI Profile Version Guide"
+owner: Knowledge Engineering
 standard: "NIST AI 600-1"
 publisher: "U.S. National Institute of Standards and Technology (NIST)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Generative AI developers, deployers, risk officers, auditors"
 last-reviewed: "2026-09-04"
 review-cycle: "180 days"
 next-review: "2027-03-03"
+
 ---
 
 # NIST AI 600-1 Generative AI Profile Version Guide

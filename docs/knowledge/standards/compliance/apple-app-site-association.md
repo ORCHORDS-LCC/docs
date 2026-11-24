@@ -2,7 +2,7 @@
 
 **Issue:** iOS Universal Links + Saved Passwords autofill won't activate without correct AASA
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (PR #assetlinks + the platform issue #open-issue-aasa)
+**Repo:** <project-repository> at main (PR #assetlinks + the platform issue #open-issue-aasa)
 **Author:** the platform team
 **Status:** fixed (a sibling repo); the platform awaiting operator secrets
 

@@ -2,7 +2,7 @@
 
 **Issue:** Workers AI — current canonical URL split between `/configuration/` and `/features/`, with stale references to `/configuration/json-mode/` (now at `/features/json-mode/`) and a clarifying note that `/configuration/streaming/` was never a standalone page
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

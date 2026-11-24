@@ -1,5 +1,6 @@
 ---
 title: "NIST SP 800-131A Cryptographic Algorithm Assurance Reference Card"
+owner: Knowledge Engineering
 standard: "NIST SP 800-131A Rev. 2"
 publisher: "National Institute of Standards and Technology (NIST)"
 category: "reference"
@@ -11,6 +12,7 @@ audience: "Cryptographic implementers, security architects, compliance engineers
 last-reviewed: "2026-09-05"
 review-cycle: "180 days"
 next-review: "2027-03-04"
+
 ---
 
 # NIST SP 800-131A Cryptographic Algorithm Assurance Reference Card

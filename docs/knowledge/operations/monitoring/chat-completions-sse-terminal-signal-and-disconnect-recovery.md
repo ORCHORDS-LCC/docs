@@ -2,7 +2,7 @@
 
 **Issue:** SSE streaming chat — separating the provider-side `[DONE]` terminal signal from a transport-side stream close (OkHttp EventSource lifecycle, `providerTerminalObserved` flag)
 **Date:** 2026-10-03
-**Repo:** <your-org>/<your-repo> at <commit-hash>
+**Repo:** <project-repository> at <verified-commit>
 **Author:** the platform team
 **Status:** verified-live (<public-or-stage-URL>)
 

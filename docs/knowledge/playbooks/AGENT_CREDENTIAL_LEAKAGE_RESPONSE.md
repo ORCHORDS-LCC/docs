@@ -1,5 +1,6 @@
 ---
 title: "Agent Credential Leakage Response Playbook"
+owner: Security Operations
 standard: "NIST SP 800-61 Rev 3, OWASP Top 10 for LLM Applications (LLM02 Sensitive Information Disclosure)"
 publisher: "NIST / OWASP"
 category: "response-playbook"
@@ -11,6 +12,7 @@ audience: "security operations, AI engineering, identity management"
 last-reviewed: "2026-09-05"
 review-cycle: "90 days"
 next-review: "2026-12-04"
+
 ---
 
 # Agent Credential Leakage Response Playbook

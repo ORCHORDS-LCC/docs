@@ -224,7 +224,7 @@ const doId = env.STAMPEDE_GUARD.idFromName(`shard-${shard}:${cacheKey}`);
 ## Verification
 
 1. Seed a product into D1, then flush the Cache API with `cache.delete()`.
-2. Issue #<number> concurrent requests via `hey -n 100 -c 100 /products/123`.
+2. Issue concurrent requests via `hey -n 100 -c 100 /products/123`.
 3. Check D1 query logs — expect exactly **one** `SELECT` per product, not 100.
 4. Confirm `source` field in DO responses shows `"leader"` for one and `"coalesced"` for the rest.
 5. Issue a second burst after TTL expiry; confirm the pattern repeats cleanly.

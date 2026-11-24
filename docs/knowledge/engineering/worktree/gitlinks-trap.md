@@ -2,7 +2,7 @@
 
 **Issue:** `git worktree add` accidentally committed as a submodule gitlink breaks CI
 **Date:** 2026-08-09
-**Repo:** <your-org>/<your-repo> at main (PR #open-issue-commitlint-gitlinks fixed it)
+**Repo:** <project-repository> at main (the linked commitlint/gitlinks fix fixed it)
 **Author:** the platform team
 **Status:** documented (well-understood pitfall)
 
@@ -81,7 +81,7 @@ git push --force-with-lease
 - **Test:** `git ls-tree HEAD` should NOT contain any `160000` entries
   for `.worktrees/`
 - **CI:** PR builds pass after the fix is applied
-- **Live:** the platform main has 0 gitlinks after PR #open-issue-commitlint-gitlinks
+- **Live:** the platform main has 0 gitlinks after the linked commitlint/gitlinks fix
 
 ## Gotchas
 - **`git worktree add` doesn't auto-add to `.gitignore`.** You must
@@ -97,7 +97,7 @@ git push --force-with-lease
   gitlink.** `git rm --cached` it before any further work.
 
 ## Related
-- the platform PR #open-issue-commitlint-gitlinks (the fix)
+- the platform the linked commitlint/gitlinks fix (the fix)
 - `git worktree` docs: https://git-scm.com/docs/git-worktree
 - Submodule vs worktree: worktrees are working directories OF the
   same repo; submodules are nested repos. Don't mix them up.

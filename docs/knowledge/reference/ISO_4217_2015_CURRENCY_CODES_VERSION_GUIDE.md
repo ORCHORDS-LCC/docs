@@ -1,5 +1,6 @@
 ---
 title: "ISO 4217:2015 Currency Codes Version Guide"
+owner: Knowledge Engineering
 standard: "ISO 4217"
 standard_edition: "2015-08 (8th edition)"
 publisher: "International Organization for Standardization (ISO)"
@@ -10,7 +11,10 @@ canonical_url: "https://www.iso.org/iso-4217-currency-codes.html"
 status: "approved"
 classification: "public"
 audience: "engineers"
-last_reviewed: "2026-09-04"
+last-reviewed: "2026-09-04"
+review-cycle: 180 days
+next-review: 2027-05-23
+
 ---
 
 # ISO 4217:2015 Currency Codes Version Guide
