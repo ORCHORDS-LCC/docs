@@ -3,9 +3,9 @@ title: "Data and AI Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-10-27"
+last-reviewed: "2026-11-24"
 review-cycle: "90 days"
-next-review: "2027-01-25"
+next-review: "2027-02-22"
 ---
 
 # Data and AI Documentation
@@ -16,6 +16,11 @@ This family contains reusable guidance for data systems, artificial intelligence
 
 - [Agent Knowledge](agents/README.md) — architecture, evaluation, memory, authorization, delegated credentials, and task lifecycle patterns.
 - [AI/ML Knowledge](ai-ml/README.md) — LLM serving, retrieval-augmented generation, quantization, batching, routing, embeddings, and tokenizer governance.
+
+## Risk framework indexes
+
+- [OWASP Top 10 for LLM Applications 2026 Knowledge Index](OWASP_TOP_10_FOR_LLM_APPLICATIONS_2026_INDEX.md)
+- [OWASP Top 10 for Agentic Applications 2026 Knowledge Index](agents/OWASP_TOP_10_FOR_AGENTIC_APPLICATIONS_2026_INDEX.md)
 
 ## 2026-09-23 OWASP data and AI applicability reviews (Batch 132)
 
