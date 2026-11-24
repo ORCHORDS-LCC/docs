@@ -66,9 +66,9 @@ Bulk knowledge imports must fail closed unless all of the following are true:
 - the normal documentation-quality and public-neutrality gates pass after
   import.
 
-A prepared migration snapshot of 8,006 Markdown files has passed the
-sanitization/public-safety and relative-link gates. Preparation does not equal
-publication: those files become part of the public corpus only after the
-receiving import and repository checks complete successfully.
+The initial prepared migration snapshot of 8,006 Markdown files passed the
+sanitization/public-safety and relative-link gates as a historical import milestone. Preparation does not equal
+publication: files become part of the public corpus only after the
+receiving import and repository checks complete successfully. For current corpus size, regenerate counts from Git-tracked files; do not reuse historical snapshot numbers as live metrics.
 
 Knowledge must remain usable without turning the public repository into a private system inventory.

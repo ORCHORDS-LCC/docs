@@ -37,7 +37,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Migration status
 
-- Imported the validated 8,006-file reusable-knowledge snapshot into the
+- Imported the validated 8,006-file reusable-knowledge snapshot (historical initial migration figure) into the
   project-neutral top-level domain families.
 - Six previously reviewed canonical articles replace their corresponding
   transfer duplicates; non-identical path collisions remain refused.
